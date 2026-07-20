@@ -1,6 +1,6 @@
 # Careero recommendation scenarios
 
-These stories define expected frontend, Edge API, cache, provider, and abuse behavior.
+These stories define expected frontend, serverless API, cache, provider, and abuse behavior.
 
 ## Normal result flow
 
@@ -36,15 +36,15 @@ These stories define expected frontend, Edge API, cache, provider, and abuse beh
 **When** the same browser reloads
 **Then** Careero restores the results page and top 10
 **And** profession #1 is served from `localStorage`
-**And** no Edge or provider request occurs.
+**And** no serverless API or provider request occurs.
 
 ### Reload without local recommendation cache
 
 **Given** the browser recommendation entry was cleared
 **When** the result page requests the same profile and profession
-**Then** the Edge cache should serve it
+**Then** the server cache should serve it
 **And** no provider call occurs while that cache entry is alive
-**And** this survives Edge isolate changes only when Upstash Redis is configured.
+**And** this survives serverless instance changes only when Upstash Redis is configured.
 
 ### New browser or device
 
@@ -65,7 +65,7 @@ These stories define expected frontend, Edge API, cache, provider, and abuse beh
 
 **Given** prefetch and expand request the same uncached profession together
 **Then** the browser coalesces them into one request
-**And** one Edge isolate coalesces duplicates into one provider call.
+**And** one warm serverless instance coalesces duplicates into one provider call.
 
 ### Many unique profession requests
 

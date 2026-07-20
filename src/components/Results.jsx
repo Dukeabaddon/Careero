@@ -428,16 +428,6 @@ export default function Results({ profile, onRetake }) {
                           </div>
                         )}
 
-                        {insight && (
-                          <button
-                            className="text-button refresh-button"
-                            type="button"
-                            onClick={() => loadProfessionInsights(career, { forceRefresh: true })}
-                            disabled={isLoading}
-                          >
-                            <RefreshCcw size={16} /> {t('results.refresh')}
-                          </button>
-                        )}
                       </div>
                     </motion.div>
                   )}

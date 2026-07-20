@@ -4,6 +4,8 @@ coverage
 .vercel
 .env
 .env.local
+.env.*
+!.env.example
 .DS_Store
 npm-debug.log*
 tmp_onet/

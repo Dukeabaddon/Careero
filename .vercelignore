@@ -1,0 +1,8 @@
+.env
+.env.*
+coverage
+docs
+graphify-out
+tests
+tmp_onet
+tmp_onet.zip

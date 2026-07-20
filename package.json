@@ -7,6 +7,9 @@
     "dev": "node scripts/dev-local.mjs",
     "dev:local": "node scripts/dev-local.mjs",
     "dev:frontend": "vite",
+    "vercel:dev": "npx --yes vercel@56.3.2 dev --project careero",
+    "deploy:preview": "npx --yes vercel@56.3.2 --project careero",
+    "deploy:production": "npx --yes vercel@56.3.2 --prod --project careero",
     "server": "node scripts/dev-local.mjs",
     "build": "vite build",
     "preview": "vite preview",
@@ -18,9 +21,13 @@
     "validate:i18n": "node scripts/validate-i18n.mjs",
     "build:careers": "node scripts/build-career-catalog.mjs",
     "build:careers:onet": "node scripts/build-careers-from-onet.mjs",
-    "check": "npm run lint && npm run validate:i18n && npm test && npm run build"
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "check": "npm run check:secrets && npm run lint && npm run validate:i18n && npm test && npm run build"
   },
   "keywords": [],
+  "engines": {
+    "node": "24.x"
+  },
   "type": "module",
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",

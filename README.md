@@ -41,12 +41,12 @@ on-demand grounded education research
 validated schools, scholarships, and programs
 ```
 
-Assessment answers and career ranking stay client-side. The Edge API receives only the normalized profile, chosen location, language, and one validated top-ten profession. It never reranks careers.
+Assessment answers and career ranking stay client-side. The Node.js API receives only the normalized profile, chosen location, language, and one validated top-ten profession. It never reranks careers.
 
 ## Safety and reliability
 
 - Provider keys are server-only.
-- `.env` and `.env.local` are ignored.
+- All local `.env*` files are ignored except the empty example.
 - Requests use strict Zod validation.
 - Profession IDs must belong to the supplied profile's top ten.
 - Prompt-injection text is treated as data.
@@ -118,12 +118,18 @@ Manual flow:
 
 ## Deploy to Vercel
 
-1. Import `Dukeabaddon/Careero` into Vercel.
-2. Keep the framework preset as Vite.
-3. Add the server-only variables from `.env.example`.
-4. Deploy.
-5. Add Vercel Firewall rules before public promotion.
-6. Add Upstash Redis for deployment-wide caching and rate limiting.
+1. Import `Dukeabaddon/Careero` into Vercel and name the project `careero` in lowercase.
+2. Keep the root directory empty because Careero is the repository root.
+3. Use the Vite preset, `npm run build`, and output directory `dist`.
+4. Keep Node.js 24. The repository pins it through `package.json`.
+5. Add the server-only variables from `.env.example` to Production and Preview.
+6. Deploy, then set `OPENROUTER_SITE_URL` to the deployed HTTPS URL and redeploy.
+7. Add Upstash Redis for deployment-wide caching and rate limiting.
+8. Enable Vercel Firewall rate limiting before public promotion.
+
+The recommendation route uses a 90-second Node.js function limit. This supports provider failover without the Edge runtime's 25-second initial-response deadline. Provider network waits do not expose keys to the browser.
+
+The Vercel CLI is version-pinned in npm scripts without becoming an application dependency. Use `npm run vercel:dev`, `npm run deploy:preview`, or `npm run deploy:production` when CLI deployment is preferred.
 
 The included workflow verifies pull requests and can deploy `main` after `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID` are added as GitHub Actions secrets.
 

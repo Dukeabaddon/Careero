@@ -6,26 +6,12 @@ import { loadQuizState, saveQuizState } from './utils/storage.js'
 import Navbar from './components/Navbar.jsx'
 
 const Landing = lazy(() => import('./components/Landing.jsx'))
-const LocationModal = lazy(() => import('./components/LocationModal.jsx'))
 const Assessment = lazy(() => import('./components/Assessment.jsx'))
 const Results = lazy(() => import('./components/Results.jsx'))
 
-function createState(location, language) {
-  return {
-    version: 1,
-    location,
-    language,
-    currentQuestionIndex: 0,
-    responses: [],
-    isCompleted: false,
-  }
-}
-
 export default function App() {
   const { i18n } = useTranslation()
-  const [, setSavedSession] = useState(() => loadQuizState())
   const [assessmentState, setAssessmentState] = useState(() => loadQuizState())
-  const [isLocationOpen, setLocationOpen] = useState(false)
   const [phase, setPhase] = useState(() => (loadQuizState()?.isCompleted ? 'results' : 'landing'))
 
   // Initialize Lenis smooth scroll
@@ -61,22 +47,10 @@ export default function App() {
       normalizedScores,
       topDimensions,
       archetypeCode: topDimensions.map(({ code }) => code).join(''),
-      location: assessmentState.location,
-      language: assessmentState.language,
+      location: assessmentState.location || { country: 'Global', city: '' },
+      language: assessmentState.language || i18n.language,
     }
-  }, [assessmentState])
-
-  const startAssessment = (location) => {
-    const nextState = createState(location, i18n.language)
-    saveQuizState(nextState)
-    setAssessmentState(nextState)
-    setSavedSession(null)
-    setLocationOpen(false)
-    setPhase('quiz')
-    // Scroll to top so quiz renders at top of viewport
-    window.scrollTo({ top: 0, behavior: 'instant' })
-    if (window.lenis) window.lenis.scrollTo(0, { immediate: true })
-  }
+  }, [assessmentState, i18n.language])
 
   const updateAssessment = (nextState) => {
     const hydratedState = { ...nextState, language: i18n.language }
@@ -84,17 +58,34 @@ export default function App() {
     setAssessmentState(hydratedState)
   }
 
+  const startQuiz = () => {
+    setPhase('quiz')
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    if (window.lenis) window.lenis.scrollTo(0, { immediate: true })
+  }
+
+  const goHome = () => {
+    setPhase('landing')
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    if (window.lenis) window.lenis.scrollTo(0, { immediate: true })
+  }
+
   return (
     <div className="app-shell">
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
-      <Navbar onLanguageChange={(code) => i18n.changeLanguage(code)} onStart={() => setLocationOpen(true)} />
+      <Navbar
+        onLanguageChange={(code) => i18n.changeLanguage(code)}
+        onStart={startQuiz}
+        isQuiz={phase === 'quiz'}
+        onGoHome={goHome}
+      />
 
       <main>
         <Suspense fallback={<div className="screen-loader"><div className="spinner" /></div>}>
           {phase === 'landing' && (
-            <Landing onStart={() => setLocationOpen(true)} />
+            <Landing onStart={startQuiz} />
           )}
 
           {phase === 'quiz' && (
@@ -102,6 +93,11 @@ export default function App() {
               assessmentState={assessmentState}
               onUpdateState={updateAssessment}
               onComplete={() => setPhase('results')}
+              onReset={() => {
+                const freshState = { ...assessmentState, location: null, responses: [], currentQuestionIndex: 0, isCompleted: false }
+                saveQuizState(freshState)
+                setAssessmentState(freshState)
+              }}
             />
           )}
 
@@ -117,14 +113,6 @@ export default function App() {
           )}
         </Suspense>
       </main>
-
-      <Suspense fallback={null}>
-        <LocationModal
-          open={isLocationOpen}
-          onConfirm={startAssessment}
-          onClose={() => setLocationOpen(false)}
-        />
-      </Suspense>
     </div>
   )
 }

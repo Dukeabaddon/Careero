@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
-import { ChevronDown, Search } from 'lucide-react'
+import { ChevronDown, Search, ChevronLeft } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { SUPPORTED_LANGUAGES } from '../i18n.js'
 import { useScrollNavbar, NAV_MODES } from '../hooks/useScrollNavbar.js'
 
-export default function Navbar({ onLanguageChange, onStart }) {
+export default function Navbar({ onLanguageChange, onStart, isQuiz, onGoHome }) {
   const { i18n } = useTranslation()
   const { mode } = useScrollNavbar()
   const [isOpen, setIsOpen] = useState(false)
@@ -27,6 +27,27 @@ export default function Navbar({ onLanguageChange, onStart }) {
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
+
+  if (isQuiz) {
+    return (
+      <header className="navbar nav-mode-rest flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white/95 backdrop-blur-md sticky top-0 z-50">
+        <button
+          type="button"
+          onClick={onGoHome}
+          className="flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors cursor-pointer"
+          data-testid="back-to-home-btn"
+        >
+          <ChevronLeft size={18} />
+          <span>Home</span>
+        </button>
+
+        <a className="brand flex items-center gap-1" href="/" onClick={(e) => { e.preventDefault(); onGoHome(); }} aria-label="Careero home">
+          <img src="/logo.png" alt="C" className="brand-logo-img" width="36" height="36" />
+          <span className="brand-text font-bold text-slate-900 text-lg">areero</span>
+        </a>
+      </header>
+    )
+  }
 
   return (
     <header className={`navbar nav-mode-${mode}`}>

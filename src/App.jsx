@@ -73,6 +73,9 @@ export default function App() {
     setSavedSession(null)
     setLocationOpen(false)
     setPhase('quiz')
+    // Scroll to top so quiz renders at top of viewport
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    if (window.lenis) window.lenis.scrollTo(0, { immediate: true })
   }
 
   const updateAssessment = (nextState) => {

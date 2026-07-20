@@ -584,7 +584,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 
 .clean-upright-card:hover {
-  transform: scale(1.22);
+  transform: scale(1.2);
   z-index: 40;
 }
 
@@ -983,6 +983,223 @@ html.lenis, html.lenis body { height: auto; }
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.65;
+}
+
+/* Location Modal (Country → City Selection Overlay) */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 24px;
+}
+
+.location-modal {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: calc(100dvh - 48px);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 24px;
+  box-shadow: 0 32px 80px rgba(15, 23, 42, 0.28);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.location-modal .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 28px 0;
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+}
+
+.location-modal h2 {
+  margin: 10px 28px 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.location-modal .modal-description {
+  margin: 6px 28px 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  cursor: pointer;
+  color: var(--muted);
+  transition: background 150ms, color 150ms;
+}
+
+.modal-close:hover {
+  background: var(--surface-raised);
+  color: var(--text);
+}
+
+.location-modal .search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 28px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  background: var(--surface-raised);
+  color: var(--muted);
+}
+
+.location-modal .search-field input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.location-modal .search-field input::placeholder {
+  color: var(--muted);
+}
+
+.location-modal .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.location-list {
+  margin-top: 12px;
+  padding: 6px 12px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  flex: 1;
+  max-height: 320px;
+  scrollbar-width: none;
+}
+
+.location-list::-webkit-scrollbar {
+  display: none;
+}
+
+.location-list button[role="option"] {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--text);
+  transition: background-color 120ms ease;
+}
+
+.location-list button[role="option"]:hover {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.location-list button[role="option"].selected {
+  background: rgba(37, 99, 235, 0.1);
+  font-weight: 600;
+}
+
+.location-list button[role="option"] span:first-child {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.location-list button[role="option"] strong {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.location-list .empty-state {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 28px 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+.modal-actions .text-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: background 150ms, color 150ms;
+}
+
+.modal-actions .text-button:hover {
+  background: var(--surface-raised);
+  color: var(--text);
+}
+
+.modal-actions .secondary-button {
+  padding: 10px 20px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: background 150ms, border-color 150ms;
+}
+
+.modal-actions .secondary-button:hover {
+  background: var(--surface-raised);
+  border-color: var(--primary);
 }
 
 /* Footer (KursoKo Reference) */

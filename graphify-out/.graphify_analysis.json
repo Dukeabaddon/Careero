@@ -1,0 +1,389 @@
+{
+  "communities": {
+    "0": [
+      "src_app",
+      "src_app_app",
+      "src_app_assessment",
+      "src_app_createstate",
+      "src_app_landing",
+      "src_app_locationmodal",
+      "src_app_results",
+      "src_components_landing",
+      "src_components_landing_dimensionassets",
+      "src_components_landing_dimensionimage",
+      "src_components_landing_landing",
+      "src_components_navbar",
+      "src_components_navbar_navbar",
+      "src_i18n",
+      "src_i18n_savedlanguage",
+      "src_i18n_supported_languages",
+      "src_main",
+      "src_utils_riasecscoring",
+      "src_utils_riasecscoring_calculateriasecscores",
+      "src_utils_riasecscoring_correlationtomatchpercent",
+      "src_utils_riasecscoring_gettopdimensions",
+      "src_utils_riasecscoring_normalizeriasecscores",
+      "src_utils_riasecscoring_opportunity_counts",
+      "src_utils_riasecscoring_pearsoncorrelation",
+      "src_utils_riasecscoring_rankcareermatches",
+      "src_utils_riasecscoring_riasec_codes",
+      "src_utils_storage_clearcareerdata",
+      "src_utils_storage_clearquizstate",
+      "tests_unit_riasec_scoring_test"
+    ],
+    "1": [
+      "countries_list",
+      "fontsource_ibm_plex_mono",
+      "fontsource_variable_manrope",
+      "fontsource_variable_space_grotesk",
+      "framer_motion",
+      "i18next",
+      "lucide_react",
+      "package_dependencies",
+      "package_dependencies_countries_list",
+      "package_dependencies_fontsource_ibm_plex_mono",
+      "package_dependencies_fontsource_variable_manrope",
+      "package_dependencies_fontsource_variable_space_grotesk",
+      "package_dependencies_framer_motion",
+      "package_dependencies_i18next",
+      "package_dependencies_lucide_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_i18next",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "package_dependencies_zod",
+      "react",
+      "react_dom",
+      "react_i18next",
+      "tailwindcss",
+      "tailwindcss_vite",
+      "zod"
+    ],
+    "2": [
+      "package",
+      "package_description",
+      "package_keywords",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_check",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_scripts_test",
+      "package_scripts_test_keys",
+      "package_scripts_test_recommendations_live",
+      "package_scripts_test_watch",
+      "package_scripts_validate_i18n",
+      "package_type",
+      "package_version"
+    ],
+    "3": [
+      "eslint",
+      "eslint_js",
+      "eslint_plugin_react_hooks",
+      "eslint_plugin_react_refresh",
+      "globals",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "package_devdependencies_vitest",
+      "vite",
+      "vitejs_plugin_react",
+      "vitest"
+    ],
+    "4": [
+      "api_v1_recommendations",
+      "api_v1_recommendations_allowrequest",
+      "api_v1_recommendations_buildprompt",
+      "api_v1_recommendations_config",
+      "api_v1_recommendations_getrotator",
+      "api_v1_recommendations_handler",
+      "api_v1_recommendations_json",
+      "api_v1_recommendations_locationtext",
+      "api_v1_recommendations_ratelimit",
+      "api_v1_recommendations_requestschema",
+      "scripts_smoke_recommendations",
+      "scripts_smoke_recommendations_request",
+      "scripts_smoke_recommendations_summary",
+      "tests_unit_recommendations_api_test",
+      "tests_unit_recommendations_api_test_topprofession"
+    ],
+    "5": [
+      "src_services_multillmrotator",
+      "src_services_multillmrotator_createenvironmentkeypool",
+      "src_services_multillmrotator_isrotatableerror",
+      "src_services_multillmrotator_multillmrotator",
+      "src_services_multillmrotator_multillmrotator_constructor",
+      "src_services_multillmrotator_multillmrotator_executerequest",
+      "src_services_multillmrotator_multillmrotator_getavailablekeys",
+      "src_services_multillmrotator_multillmrotator_markcooldown",
+      "src_services_multillmrotator_multillmrotator_marksuccess",
+      "src_services_multillmrotator_normalizeproviderpayload",
+      "src_services_multillmrotator_providerrequesterror",
+      "src_services_multillmrotator_providerrequesterror_constructor",
+      "src_services_multillmrotator_requestprovider",
+      "src_services_multillmrotator_rotatable_status_codes",
+      "tests_unit_multi_llm_rotator_test"
+    ],
+    "6": [
+      "src_services_recommendations",
+      "src_services_recommendations_getrecommendations",
+      "src_utils_storage",
+      "src_utils_storage_assessmentstateschema",
+      "src_utils_storage_createprofilehash",
+      "src_utils_storage_digestpayload",
+      "src_utils_storage_loadquizstate",
+      "src_utils_storage_readresultscache",
+      "src_utils_storage_responseschema",
+      "src_utils_storage_savequizstate",
+      "src_utils_storage_writeresultscache",
+      "tests_unit_storage_test",
+      "tests_unit_storage_test_profile",
+      "tests_unit_storage_test_quizstate",
+      "tests_unit_storage_test_topprofession"
+    ],
+    "7": [
+      "src_components_radarchart",
+      "src_components_radarchart_point",
+      "src_components_radarchart_radarchart",
+      "src_components_results",
+      "src_components_results_archetypeassets",
+      "src_components_results_archetypes",
+      "src_components_results_primaryfallback",
+      "src_components_results_resolvearchetype",
+      "src_components_results_results",
+      "src_components_results_safehttpurl",
+      "src_components_sharecard",
+      "src_components_sharecard_sharecard",
+      "src_data_careers",
+      "src_data_careers_career_vectors"
+    ],
+    "8": [
+      "src_components_assessment",
+      "src_components_assessment_assessment",
+      "src_components_assessment_optionimage",
+      "src_components_assessment_questionassets",
+      "src_components_assessment_upsertresponse",
+      "src_data_localizedquestions",
+      "src_data_localizedquestions_getlocalizedquestion",
+      "src_data_localizedquestions_question_copy"
+    ],
+    "9": [
+      "scripts_validate_i18n",
+      "scripts_validate_i18n_base",
+      "scripts_validate_i18n_basekeys",
+      "scripts_validate_i18n_flatten",
+      "scripts_validate_i18n_languages",
+      "scripts_validate_i18n_localesdir",
+      "scripts_validate_i18n_projectroot"
+    ],
+    "10": [
+      "tests_unit_storage_test_memorystorage",
+      "tests_unit_storage_test_memorystorage_constructor",
+      "tests_unit_storage_test_memorystorage_getitem",
+      "tests_unit_storage_test_memorystorage_key",
+      "tests_unit_storage_test_memorystorage_length",
+      "tests_unit_storage_test_memorystorage_removeitem",
+      "tests_unit_storage_test_memorystorage_setitem"
+    ],
+    "11": [
+      "vercel",
+      "vercel_buildcommand",
+      "vercel_framework",
+      "vercel_headers",
+      "vercel_outputdirectory",
+      "vercel_rewrites",
+      "vercel_schema"
+    ],
+    "12": [
+      "scripts_validate_provider_keys",
+      "scripts_validate_provider_keys_checks",
+      "scripts_validate_provider_keys_environment",
+      "scripts_validate_provider_keys_envpath",
+      "scripts_validate_provider_keys_projectroot"
+    ],
+    "13": [
+      "src_components_locationmodal",
+      "src_components_locationmodal_locationmodal",
+      "src_components_locationmodal_major_cities"
+    ],
+    "14": [
+      "eslint_config"
+    ],
+    "15": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12561576354679804,
+    "1": 0.07407407407407407,
+    "2": 0.1111111111111111,
+    "3": 0.11764705882352941,
+    "4": 0.2,
+    "5": 0.22857142857142856,
+    "6": 0.2857142857142857,
+    "7": 0.2087912087912088,
+    "8": 0.39285714285714285,
+    "9": 0.2857142857142857,
+    "10": 0.2857142857142857,
+    "11": 0.2857142857142857,
+    "12": 0.4,
+    "13": 0.6666666666666666,
+    "14": 1.0,
+    "15": 1.0
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 11
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 10
+    },
+    {
+      "id": "src_services_multillmrotator_multillmrotator",
+      "label": "MultiLLMRotator",
+      "degree": 8
+    },
+    {
+      "id": "src_services_recommendations_getrecommendations",
+      "label": "getRecommendations()",
+      "degree": 7
+    },
+    {
+      "id": "tests_unit_storage_test_memorystorage",
+      "label": "MemoryStorage",
+      "degree": 7
+    },
+    {
+      "id": "api_v1_recommendations_handler",
+      "label": "handler()",
+      "degree": 7
+    },
+    {
+      "id": "src_components_results_results",
+      "label": "Results()",
+      "degree": 5
+    },
+    {
+      "id": "src_utils_riasecscoring_riasec_codes",
+      "label": "RIASEC_CODES",
+      "degree": 5
+    },
+    {
+      "id": "src_utils_riasecscoring_calculateriasecscores",
+      "label": "calculateRiasecScores()",
+      "degree": 5
+    },
+    {
+      "id": "src_utils_riasecscoring_rankcareermatches",
+      "label": "rankCareerMatches()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "getRotator()",
+      "target": "createEnvironmentKeyPool()",
+      "source_files": [
+        "api/v1/recommendations.js",
+        "src/services/multiLLMRotator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "App()",
+      "target": "loadQuizState()",
+      "source_files": [
+        "src/App.jsx",
+        "src/utils/storage.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "App()",
+      "target": "saveQuizState()",
+      "source_files": [
+        "src/App.jsx",
+        "src/utils/storage.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Results()",
+      "target": "getRecommendations()",
+      "source_files": [
+        "src/components/Results.jsx",
+        "src/services/recommendations.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Results()",
+      "target": "rankCareerMatches()",
+      "source_files": [
+        "src/components/Results.jsx",
+        "src/utils/riasecScoring.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Frontend Dependencies` to `Package Scripts`?",
+      "why": "High betweenness centrality (0.070) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `Dev Tooling Config` to `Package Scripts`?",
+      "why": "High betweenness centrality (0.047) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `name`, `version`, `description` to the rest of the system?",
+      "why": "77 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Career Assessment Logic` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12561576354679804 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Frontend Dependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Package Scripts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Dev Tooling Config` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "audience": "global-k12-and-highered",
+    "version": "1.0.0-global",
+    "questionCount": 30,
+    "dimensionCounts": {
+      "R": 10,
+      "I": 11,
+      "A": 9,
+      "S": 10,
+      "E": 9,
+      "C": 11
+    },
+    "pairDistribution": {
+      "RI": 8,
+      "RA": 0,
+      "RS": 1,
+      "RE": 0,
+      "RC": 1,
+      "IA": 0,
+      "IS": 0,
+      "IE": 1,
+      "IC": 2,
+      "AS": 9,
+      "AE": 0,
+      "AC": 0,
+      "SE": 0,
+      "SC": 0,
+      "EC": 8
+    },
+    "ratingScale": {
+      "1": "Okay",
+      "2": "Like",
+      "3": "Love It"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Assembling a toy robot from a kit", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Comparing two phones before your family buys one", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 2,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Drawing a poster for a school program", "code": "A", "hint": "Creative" },
+      "optionB": { "text": "Helping a classmate stuck on homework", "code": "S", "hint": "Helpful" }
+    },
+    {
+      "id": 3,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Calling out snack deals during a school fair", "code": "E", "hint": "Persuasive" },
+      "optionB": { "text": "Tracking who paid and who still owes for snacks", "code": "C", "hint": "Organized" }
+    },
+    {
+      "id": 4,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Installing a replacement screen film without bubbles", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Checking if a viral tip online actually works", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 5,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Writing a short story for fun", "code": "A", "hint": "Creative" },
+      "optionB": { "text": "Listening when a friend is upset", "code": "S", "hint": "Caring" }
+    },
+    {
+      "id": 6,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Making a short video to promote a school club", "code": "E", "hint": "Outgoing" },
+      "optionB": { "text": "Sorting names in the right order on a class list", "code": "C", "hint": "Careful" }
+    },
+    {
+      "id": 7,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Repairing a bike that keeps slipping gears", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Tracing why only one wall socket won't work", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 8,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Designing a T-shirt idea for your class", "code": "A", "hint": "Creative" },
+      "optionB": { "text": "Showing younger kids how to play a sport", "code": "S", "hint": "Helpful" }
+    },
+    {
+      "id": 9,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Convincing friends to join your booth game", "code": "E", "hint": "Persuasive" },
+      "optionB": { "text": "Marking paid vs unpaid on the snack money list", "code": "C", "hint": "Organized" }
+    },
+    {
+      "id": 10,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Putting up a DIY shelf from a kit", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Noticing tiny details on plants during a hike", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 11,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Making a playlist for a friend's party", "code": "A", "hint": "Creative" },
+      "optionB": { "text": "Handing out flyers at a local health fair", "code": "S", "hint": "Caring" }
+    },
+    {
+      "id": 12,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Leading your group's presentation in class", "code": "E", "hint": "Leading" },
+      "optionB": { "text": "Checking every name is spelled right on a form", "code": "C", "hint": "Careful" }
+    },
+    {
+      "id": 13,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Tightening screws on a wobbly desk fan", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Testing if a phone hack online really works", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 14,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Showing a younger sibling how to use an app", "code": "S", "hint": "Helpful" },
+      "optionB": { "text": "Decorating a classroom bulletin board", "code": "A", "hint": "Creative" }
+    },
+    {
+      "id": 15,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Running a snack booth at a school fair", "code": "E", "hint": "Leading" },
+      "optionB": { "text": "Making sure every peso and coin adds up correctly", "code": "C", "hint": "Careful" }
+    },
+    {
+      "id": 16,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Helping set up chairs and tents for an event", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Describing bird calls heard from a park bench", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 17,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Welcoming new students on the first day", "code": "S", "hint": "Welcoming" },
+      "optionB": { "text": "Painting a bright mural at school", "code": "A", "hint": "Creative" }
+    },
+    {
+      "id": 18,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Planning who does what for a group project", "code": "E", "hint": "Leading" },
+      "optionB": { "text": "Stacking and sorting documents so nothing is lost", "code": "C", "hint": "Organized" }
+    },
+    {
+      "id": 19,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Tightening loose screws on a wobbly classroom chair", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Reading how soap kills germs in a science article", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 20,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Guiding a new student around campus", "code": "S", "hint": "Helpful" },
+      "optionB": { "text": "Drawing pictures for a school handout", "code": "A", "hint": "Creative" }
+    },
+    {
+      "id": 21,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Tracking which snack sold fastest at a fair", "code": "I", "hint": "Curious" },
+      "optionB": { "text": "Tallying quiz scores without mistakes", "code": "C", "hint": "Careful" }
+    },
+    {
+      "id": 22,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Talking people into joining your club booth", "code": "E", "hint": "Persuasive" },
+      "optionB": { "text": "Double-checking every item on a checklist", "code": "C", "hint": "Careful" }
+    },
+    {
+      "id": 23,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Building a basic robot car from a starter kit", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Reading how plants grow in a science magazine", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 24,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Sitting with a classmate who feels left out", "code": "S", "hint": "Caring" },
+      "optionB": { "text": "Designing an accessible play zone with ramps and shade", "code": "A", "hint": "Creative" }
+    },
+    {
+      "id": 25,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Recording how long bubbles last on each soap sample", "code": "I", "hint": "Curious" },
+      "optionB": { "text": "Updating the class attendance sheet", "code": "C", "hint": "Organized" }
+    },
+    {
+      "id": 26,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Hammering nails to fix a loose wooden stool", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Sorting recyclables into the right bins", "code": "C", "hint": "Organized" }
+    },
+    {
+      "id": 27,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Drawing together with friends to relax", "code": "S", "hint": "Caring" },
+      "optionB": { "text": "Designing a logo for a school club", "code": "A", "hint": "Creative" }
+    },
+    {
+      "id": 28,
+      "text": "Which would you rather do?",
+      "optionA": { "text": "Pitching your project idea to the class", "code": "E", "hint": "Leading" },
+      "optionB": { "text": "Figuring out why a game lags on your phone", "code": "I", "hint": "Curious" }
+    },
+    {
+      "id": 29,
+      "text": "Which sounds more fun to you?",
+      "optionA": { "text": "Carrying supply boxes for a school event", "code": "R", "hint": "Hands-on" },
+      "optionB": { "text": "Planting vegetables in a school garden", "code": "S", "hint": "Caring" }
+    },
+    {
+      "id": 30,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": { "text": "Leading a debate on a class topic", "code": "E", "hint": "Persuasive" },
+      "optionB": { "text": "Writing step-by-step rules for a club game", "code": "C", "hint": "Organized" }
+    }
+  ]
+}

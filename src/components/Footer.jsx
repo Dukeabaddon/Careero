@@ -16,8 +16,8 @@ export default function Footer({ onStart }) {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="brand">
-              <img src="/logo.png" alt="C" className="brand-logo-img" width="32" height="32" />
-              <span className="brand-text">areero</span>
+              <img src="/logo.png" alt="" aria-hidden="true" className="brand-logo-img" width="32" height="32" />
+              <span className="brand-text">Careero</span>
             </div>
             <p>{t('footer.tagline')}</p>
           </div>

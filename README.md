@@ -7,7 +7,7 @@
 **Visual career matching → schools and scholarships near you**
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Node](https://img.shields.io/badge/Node-24-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Track](https://img.shields.io/badge/OpenAI%20Build%20Week-Education-2563eb)](https://openai.devpost.com/)
 [![License](https://img.shields.io/badge/License-MIT-0f172a)](LICENSE)
@@ -15,7 +15,7 @@
 **A privacy-first career guide for students.**  
 **Local assessment. No user database. AI research only when you expand a path.**
 
-[Features](#-features) · [How it works](#-how-it-works) · [Setup](#-local-development) · [Codex + GPT-5.6](#-how-codex-and-gpt-56-were-used-to-build-careero)
+[Features](#-features) · [Tech stack](#️-tech-stack) · [Architecture](#️-architecture) · [Privacy](#-privacy) · [Accuracy](#-accuracy--how-matching-works) · [Setup](#-local-development) · [Codex + GPT-5.6](#-how-codex-and-gpt-56-were-used-to-build-careero)
 
 </div>
 
@@ -42,6 +42,72 @@ The deterministic assessment and ranking remain useful even if every AI provider
 | 🎓 **Scholarships** | Programs students can pursue, with official HTTPS links when verified |
 | 🃏 **Share card** | Privacy-safe export without dumping private answers |
 | ⌨️ **Keyboard-friendly** | Full assessment navigation without a mouse |
+
+## 🛠️ Tech stack
+
+| Layer | Technology | Version |
+| --- | --- | --- |
+| UI | React | 19.2.x |
+| Bundler | Vite | 8.1.x |
+| Styling | Tailwind CSS + `@tailwindcss/vite` | 4.3.x |
+| Motion | Framer Motion | 12.x |
+| i18n | i18next + react-i18next | 26.x / 17.x |
+| Icons | Lucide React | 1.x |
+| Share export | html-to-image | 1.11.x |
+| Scroll | Lenis | 1.3.x |
+| Validation | Zod | 4.4.x |
+| Runtime | Node.js | 24.x |
+| Tests | Vitest | 4.1.x |
+| Career data | O*NET Interests + Occupation Data | 30.2 |
+| AI research | Gemini, Groq, OpenRouter, Cerebras, DeepSeek | rotating providers |
+
+## 🏗️ Architecture
+
+```text
+Browser (React + Vite)
+  ├─ Visual quiz + localStorage quiz state
+  ├─ RIASEC scoring + Pearson ranking (client)
+  └─ Results UI + share card
+           │
+           ▼  only when a top-10 profession is expanded
+Node API  /api/v1/recommendations
+  ├─ Zod request validation
+  ├─ Profession must be in that profile's top 10
+  ├─ Multi-provider LLM rotator + cooldown
+  ├─ HTTPS link verification
+  └─ Optional Upstash cache / rate limit
+```
+
+- Career ranking never leaves the browser for reordering.
+- The API receives a normalized profile, location, language, and one profession ID.
+- AI research is optional. The top 10 still works offline from provider outages.
+
+## 🔒 Privacy
+
+- ✅ Assessment answers stay in browser `localStorage`
+- ✅ No user accounts and no user database
+- ✅ No VITE-prefixed secrets (keys stay server-only)
+- ✅ Share card exports a result summary, not raw quiz answers
+- ✅ School research runs only when you expand a profession
+- ✅ Provider keys never ship to the client bundle
+
+## 🎯 Accuracy / how matching works
+
+Careero separates **deterministic matching** from **AI education research**.
+
+| Step | What happens | What “accuracy” means here |
+| --- | --- | --- |
+| 1. Score | 30 visual answers → six RIASEC totals → normalized profile | Same answers always produce the same profile |
+| 2. Rank | Pearson correlation vs **923** O*NET 30.2 interest vectors | Higher `r` = closer interest shape, shown as a match % |
+| 3. Top 10 | Sort by correlation with stable tie-breaks | Ranking is local, inspectable, and independent of LLMs |
+| 4. Research | Expand one career → grounded school or scholarship suggestions | Entries need verifiable `https://` links or they are dropped |
+
+**Honest limits**
+
+- Match % is **profile alignment**, not a guarantee you will love the job or get admitted.
+- O*NET vectors describe U.S. occupational interest patterns. Local school fit still needs your judgment.
+- AI school lists prefer nearby → country → wider options, but only keep verifiable official links.
+- If providers are down, career ranks still work. School research can wait.
 
 ## 🔁 How it works
 

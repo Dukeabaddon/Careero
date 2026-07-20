@@ -8,12 +8,18 @@ import tl from './locales/tl/translation.json'
 import fr from './locales/fr/translation.json'
 
 export const SUPPORTED_LANGUAGES = [
-  { code: 'en', label: 'English', short: 'EN' },
-  { code: 'ja', label: '日本語', short: '日本語' },
-  { code: 'zh-CN', label: '简体中文', short: '中文' },
-  { code: 'es', label: 'Español', short: 'ES' },
-  { code: 'tl', label: 'Tagalog', short: 'TL' },
-  { code: 'fr', label: 'Français', short: 'FR' },
+  { code: 'en', name: 'English', short: 'EN', flag: '🇺🇸' },
+  { code: 'ja', name: '日本語', short: 'JA', flag: '🇯🇵' },
+  { code: 'zh-CN', name: '简体中文', short: 'ZH', flag: '🇨🇳' },
+  { code: 'es', name: 'Español', short: 'ES', flag: '🇪🇸' },
+  { code: 'tl', name: 'Tagalog', short: 'TL', flag: '🇵🇭' },
+  { code: 'fr', name: 'Français', short: 'FR', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', short: 'DE', flag: '🇩🇪' },
+  { code: 'it', name: 'Italiano', short: 'IT', flag: '🇮🇹' },
+  { code: 'pt', name: 'Português', short: 'PT', flag: '🇵🇹' },
+  { code: 'ko', name: '한국어', short: 'KO', flag: '🇰🇷' },
+  { code: 'hi', name: 'हिन्दी', short: 'HI', flag: '🇮🇳' },
+  { code: 'ar', name: 'العربية', short: 'AR', flag: '🇸🇦' },
 ]
 
 const savedLanguage = globalThis.localStorage?.getItem('global_language')
@@ -26,6 +32,12 @@ i18n.use(initReactI18next).init({
     es: { translation: es },
     tl: { translation: tl },
     fr: { translation: fr },
+    de: { translation: en },
+    it: { translation: en },
+    pt: { translation: en },
+    ko: { translation: en },
+    hi: { translation: en },
+    ar: { translation: en },
   },
   lng: SUPPORTED_LANGUAGES.some(({ code }) => code === savedLanguage) ? savedLanguage : 'en',
   fallbackLng: 'en',

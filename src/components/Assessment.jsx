@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { ArrowLeft, ArrowRight, Heart, MapPin, RotateCcw, Sparkle, ThumbsUp } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { ArrowLeft, ArrowRight, MapPin, RotateCcw } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { getLocalizedQuestion } from '../data/localizedQuestions.js'
@@ -19,6 +19,38 @@ function upsertResponse(responses, response) {
   const existingIndex = responses.findIndex(({ questionId }) => questionId === response.questionId)
   if (existingIndex === -1) return [...responses, response]
   return responses.map((item, index) => (index === existingIndex ? response : item))
+}
+
+const REACTION_CONFIG = [
+  { value: 1, key: 'okay', label: 'Just Okay', gif: '/reactions/just-okay.gif' },
+  { value: 2, key: 'like', label: 'Like It', gif: '/reactions/love-it.gif' },
+  { value: 3, key: 'love', label: 'Love It!', gif: '/reactions/wow.gif' },
+]
+
+function ReactionCard({ config, isSelected, onClick }) {
+  const { t } = useTranslation()
+  const [isHovered, setIsHovered] = useState(false)
+  const isActive = isSelected || isHovered
+
+  return (
+    <button
+      type="button"
+      className={`reaction-gif-card ${isSelected ? 'active' : ''}`}
+      onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      data-testid={`rating-${config.value}-btn`}
+    >
+      <div className="gif-rounded-thumb">
+        <img
+          src={isActive ? config.gif : config.gif}
+          alt={t(`quiz.${config.key}`)}
+          className={`reaction-gif-img ${isActive ? 'playing' : 'paused-thumb'}`}
+        />
+      </div>
+      <span className="reaction-label">{config.value} · {t(`quiz.${config.key}`)}</span>
+    </button>
+  )
 }
 
 export default function Assessment({ questions, state, onChange, onComplete, onReset }) {
@@ -125,21 +157,14 @@ export default function Assessment({ questions, state, onChange, onComplete, onR
 
       <div className={`intensity-panel ${response ? 'revealed' : ''}`} aria-hidden={!response}>
         <p>{t('quiz.intensity')}</p>
-        <div className="intensity-options">
-          {[
-            { value: 1, key: 'okay', icon: ThumbsUp },
-            { value: 2, key: 'like', icon: Sparkle },
-            { value: 3, key: 'love', icon: Heart },
-          ].map(({ value, key, icon: Icon }) => (
-            <button
-              type="button"
-              key={value}
-              className={response?.rating === value ? 'active' : ''}
-              onClick={(event) => selectRating(value, event.timeStamp)}
-              data-testid={`rating-${value}-btn`}
-            >
-              <Icon size={17} /> <span>{value} · {t(`quiz.${key}`)}</span>
-            </button>
+        <div className="intensity-options flex gap-4 justify-center">
+          {REACTION_CONFIG.map((config) => (
+            <ReactionCard
+              key={config.value}
+              config={config}
+              isSelected={response?.rating === config.value}
+              onClick={(event) => selectRating(config.value, event.timeStamp)}
+            />
           ))}
         </div>
       </div>

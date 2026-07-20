@@ -347,6 +347,11 @@ button:disabled {
   overscroll-behavior: contain;
   flex: 1;
   padding: 6px;
+  scrollbar-width: none;
+}
+
+.language-options-list::-webkit-scrollbar {
+  display: none;
 }
 
 .language-option {

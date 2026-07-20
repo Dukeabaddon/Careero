@@ -58,7 +58,7 @@ export default function Navbar({ onLanguageChange, onStart }) {
           </button>
 
           {isOpen && (
-            <div className="language-menu">
+            <div className="language-menu" data-lenis-prevent>
               <div className="language-search">
                 <Search size={14} className="search-icon" />
                 <input

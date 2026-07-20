@@ -257,7 +257,11 @@ export function createRecommendationsHandler(options = {}) {
     const validate = (data) => recommendationsSchema.safeParse(
       boundedProviderResponse(data.recommendations ?? data),
     ).success
-    const result = await engine.executeRequest({ prompt: buildPrompt(input), validate }, providerFetch)
+    const result = await engine.executeRequest({
+      prompt: buildPrompt(input),
+      searchCountry: input.location.country,
+      validate,
+    }, providerFetch)
     const parsed = recommendationsSchema.safeParse(boundedProviderResponse(result.data.recommendations ?? result.data))
     if (!parsed.success) throw new Error('Provider response did not match the recommendation contract.')
     const payload = {
@@ -268,7 +272,13 @@ export function createRecommendationsHandler(options = {}) {
         providerUsed: result.model,
         latencyMs: Math.round(performance.now() - startedAt),
       },
-      recommendations: parsed.data,
+      recommendations: {
+        ...parsed.data,
+        professionSummary: {
+          ...parsed.data.professionSummary,
+          title: input.topProfession.title,
+        },
+      },
     }
     await serverCache.set(cacheKey, payload)
     return payload

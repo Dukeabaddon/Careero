@@ -22,6 +22,7 @@ const environment = Object.fromEntries(
 )
 
 const checks = []
+
 for (let index = 1; index <= 5; index += 1) {
   const key = environment[`GEMINI_API_KEY_${index}`]
   if (!key) continue
@@ -29,6 +30,39 @@ for (let index = 1; index <= 5; index += 1) {
     label: `Gemini slot ${index}`,
     request: () => fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1', {
       headers: { 'x-goog-api-key': key },
+    }),
+  })
+}
+
+for (let index = 1; index <= 2; index += 1) {
+  const key = environment[`GROQ_API_KEY_${index}`]
+  if (!key) continue
+  checks.push({
+    label: `Groq slot ${index}`,
+    request: () => fetch('https://api.groq.com/openai/v1/models', {
+      headers: { authorization: `Bearer ${key}` },
+    }),
+  })
+}
+
+for (let index = 1; index <= 2; index += 1) {
+  const key = environment[`CEREBRAS_API_KEY_${index}`]
+  if (!key) continue
+  checks.push({
+    label: `Cerebras slot ${index}`,
+    request: () => fetch('https://api.cerebras.ai/v1/models', {
+      headers: { authorization: `Bearer ${key}` },
+    }),
+  })
+}
+
+for (let index = 1; index <= 2; index += 1) {
+  const key = environment[`OPENROUTER_API_KEY_${index}`]
+  if (!key) continue
+  checks.push({
+    label: `OpenRouter slot ${index}`,
+    request: () => fetch('https://openrouter.ai/api/v1/key', {
+      headers: { authorization: `Bearer ${key}` },
     }),
   })
 }
@@ -47,7 +81,10 @@ for (const check of checks) {
   try {
     const response = await check.request()
     if (response.ok) console.log(`${check.label}: valid`)
-    else { console.error(`${check.label}: rejected (HTTP ${response.status})`); failures += 1 }
+    else {
+      console.error(`${check.label}: rejected (HTTP ${response.status})`)
+      failures += 1
+    }
   } catch {
     console.error(`${check.label}: network check failed`)
     failures += 1

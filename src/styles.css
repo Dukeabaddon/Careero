@@ -422,7 +422,7 @@ button:disabled {
 
 .reaction-gif-card:hover, .reaction-gif-card.active {
   border-color: var(--primary);
-  background: rgba(37, 99, 235, 0.06);
+  background: #ffffff;
   box-shadow: 0 10px 28px rgba(37, 99, 235, 0.14);
   transform: translateY(-3px);
 }
@@ -436,30 +436,19 @@ button:disabled {
   align-items: center;
   justify-content: center;
   background: #ffffff;
-  border: 1px solid var(--border);
+  border: none;
   transition: transform 250ms ease;
 }
 
 .reaction-gif-card:hover .gif-rounded-thumb,
 .reaction-gif-card.active .gif-rounded-thumb {
   transform: scale(1.1);
-  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .reaction-gif-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: opacity 250ms ease, filter 250ms ease;
-}
-
-.reaction-gif-img.paused-thumb {
-  filter: grayscale(50%) opacity(0.75);
-}
-
-.reaction-gif-img.playing {
-  filter: none;
-  opacity: 1;
 }
 
 .reaction-label {

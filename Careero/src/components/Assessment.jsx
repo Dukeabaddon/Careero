@@ -31,9 +31,40 @@ const REACTION_CONFIG = [
   { value: 3, key: 'love', label: 'Love It!', gif: '/reactions/love-it.gif' },
 ]
 
+/**
+ * Extracts a frozen first-frame from an animated GIF using canvas.
+ * Returns a data URL that can be used as a static poster image.
+ */
+function useGifFirstFrame(gifSrc) {
+  const [posterSrc, setPosterSrc] = useState(null)
+
+  useEffect(() => {
+    const img = new Image()
+    img.crossOrigin = 'anonymous'
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas')
+        canvas.width = img.naturalWidth
+        canvas.height = img.naturalHeight
+        const ctx = canvas.getContext('2d')
+        ctx.drawImage(img, 0, 0)
+        setPosterSrc(canvas.toDataURL('image/png'))
+      } catch {
+        // canvas tainted or CORS issue — fall back to gif src
+        setPosterSrc(gifSrc)
+      }
+    }
+    img.onerror = () => setPosterSrc(gifSrc)
+    img.src = gifSrc
+  }, [gifSrc])
+
+  return posterSrc
+}
+
 function ReactionCard({ config, isSelected, onClick }) {
   const [isHovered, setIsHovered] = useState(false)
   const isActive = isSelected || isHovered
+  const posterSrc = useGifFirstFrame(config.gif)
 
   return (
     <button
@@ -46,9 +77,9 @@ function ReactionCard({ config, isSelected, onClick }) {
     >
       <div className="gif-rounded-thumb">
         <img
-          src={config.gif}
+          src={isActive ? config.gif : (posterSrc || config.gif)}
           alt={config.label}
-          className={`reaction-gif-img ${isActive ? 'playing' : 'paused-thumb'}`}
+          className="reaction-gif-img"
         />
       </div>
       <span className="reaction-label">{config.label}</span>

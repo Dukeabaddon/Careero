@@ -4,7 +4,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { countries, getEmojiFlag } from 'countries-list'
 import { getLocalizedQuestion } from '../data/localizedQuestions.js'
-import defaultQuestions from '../data/questions.json'
+import questionsData from '../data/questions.json'
+
+const defaultQuestions = questionsData.questions || questionsData
 
 const questionAssets = import.meta.glob('../assets/riasec/questions/*.webp', {
   eager: true,
@@ -137,11 +139,18 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     onUpdateState(nextState)
   }
 
+  const questionsList = useMemo(() => {
+    if (Array.isArray(questions)) return questions
+    if (Array.isArray(questions?.questions)) return questions.questions
+    return defaultQuestions
+  }, [questions])
+
   // 30-Question Assessment Logic
   const currentIndex = assessmentState?.currentQuestionIndex || 0
-  const question = getLocalizedQuestion(questions[currentIndex] || questions[0], i18n.language)
-  const response = assessmentState?.responses?.find(({ questionId }) => questionId === question.id)
-  const progress = ((currentIndex + 1) / questions.length) * 100
+  const currentQ = questionsList[currentIndex] || questionsList[0] || {}
+  const question = getLocalizedQuestion(currentQ, i18n.language)
+  const response = assessmentState?.responses?.find(({ questionId }) => questionId === question?.id)
+  const progress = questionsList.length ? ((currentIndex + 1) / questionsList.length) * 100 : 0
 
   const selectOption = (option, timestamp) => {
     const selected = question[option]
@@ -169,7 +178,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
 
   const moveNext = () => {
     if (!response?.rating) return
-    if (currentIndex === questions.length - 1) {
+    if (currentIndex === questionsList.length - 1) {
       onComplete({ ...assessmentState, isCompleted: true })
       return
     }
@@ -325,7 +334,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     <section className="assessment section-wrap max-w-4xl mx-auto py-8 px-4">
       {/* Header Progress */}
       <div className="flex items-center justify-between text-sm font-semibold text-slate-600 mb-2">
-        <span>Question {currentIndex + 1} of {questions.length}</span>
+        <span>Question {currentIndex + 1} of {questionsList.length}</span>
         <span>{Math.round(progress)}% complete</span>
       </div>
 

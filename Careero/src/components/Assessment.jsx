@@ -103,6 +103,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
   }, [allCities, citySearch])
 
   const confirmLocation = (chosenCityName) => {
+    if (!selectedCountry) return
     const finalCity = chosenCityName || customCityInput.trim() || ''
     const newLocation = {
       country: selectedCountry.name,
@@ -198,8 +199,8 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
           </h1>
           <p className="text-sm text-slate-600 mb-6 leading-relaxed">
             {locStep === 1
-              ? 'Select your country (Required). We use this to localize career matches, university suggestions, and regional salary projections.'
-              : 'Pick your city/region (Optional). This helps prioritize local university campuses and regional scholarships first.'}
+              ? 'Select your country first (Required). We use this to localize career matches, university suggestions, and regional salary projections.'
+              : 'Pick your city or region (Optional). This helps prioritize local university campuses and regional scholarships first.'}
           </p>
 
           {locStep === 1 && (
@@ -216,31 +217,54 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                 />
               </div>
 
-              <div className="country-scroll-list max-h-80 overflow-y-auto space-y-1.5 pr-1 border border-slate-100 rounded-2xl p-2 bg-slate-50/50">
-                {filteredCountries.map((c) => (
-                  <button
-                    key={c.isoCode}
-                    type="button"
-                    onClick={() => {
-                      setSelectedCountry(c)
-                      setLocStep(2)
-                      setCountrySearch('')
-                    }}
-                    className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all text-left bg-white border border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 text-slate-800"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl">{c.flag}</span>
-                      <span className="font-semibold">{c.name}</span>
-                    </div>
-                    <span className="text-xs font-mono bg-slate-100 text-slate-500 px-2 py-0.5 rounded-md uppercase">{c.isoCode}</span>
-                  </button>
-                ))}
+              <div className="country-scroll-list max-h-72 overflow-y-auto space-y-1.5 pr-1 border border-slate-100 rounded-2xl p-2 bg-slate-50/50 mb-6">
+                {filteredCountries.map((c) => {
+                  const isSelected = selectedCountry?.isoCode === c.isoCode
+                  return (
+                    <button
+                      key={c.isoCode}
+                      type="button"
+                      onClick={() => setSelectedCountry(c)}
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all text-left border ${
+                        isSelected
+                          ? 'border-blue-600 bg-blue-50/90 text-blue-900 shadow-sm font-bold'
+                          : 'bg-white border-slate-200 hover:border-blue-300 hover:bg-slate-50 text-slate-800'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl">{c.flag}</span>
+                        <span>{c.name}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-mono bg-slate-100 text-slate-500 px-2 py-0.5 rounded-md uppercase">{c.isoCode}</span>
+                        {isSelected && <Check size={16} className="text-blue-600" />}
+                      </div>
+                    </button>
+                  )
+                })}
 
                 {filteredCountries.length === 0 && (
                   <div className="text-center py-8 text-slate-500 text-sm">
-                    No country found matching "{countrySearch}". You can type your country name directly above.
+                    No country found matching "{countrySearch}". You can select any listed country above.
                   </div>
                 )}
+              </div>
+
+              {/* Continue Button: Grayed out / disabled until country is selected */}
+              <div className="flex items-center justify-end pt-4 border-t border-slate-200">
+                <button
+                  type="button"
+                  disabled={!selectedCountry}
+                  onClick={() => setLocStep(2)}
+                  className={`w-full sm:w-auto px-8 py-3 rounded-2xl text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+                    selectedCountry
+                      ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md cursor-pointer'
+                      : 'bg-slate-200 text-slate-400 border border-slate-300 cursor-not-allowed'
+                  }`}
+                >
+                  <span>Continue to City Selection</span>
+                  <ArrowRight size={16} />
+                </button>
               </div>
             </>
           )}
@@ -360,7 +384,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
       <AnimatePresence mode="wait">
         <motion.div
           className="question-container"
-          key={question.id}
+          key={question?.id || currentIndex}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -16 }}
@@ -373,7 +397,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-10">
             {['optionA', 'optionB'].map((optionKey, idx) => {
-              const opt = question[optionKey]
+              const opt = question?.[optionKey] || {}
               const isSelected = response?.selectedCode === opt.code
               return (
                 <div
@@ -386,8 +410,8 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                   <div>
                     <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100 flex items-center justify-center">
                       <img
-                        src={optionImage(question.id, idx === 0 ? 'a' : 'b')}
-                        alt={opt.text}
+                        src={optionImage(question?.id || 1, idx === 0 ? 'a' : 'b')}
+                        alt={opt.text || ''}
                         className="w-full h-full object-contain p-2"
                       />
                     </div>

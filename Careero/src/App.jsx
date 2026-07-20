@@ -86,7 +86,7 @@ export default function App() {
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
-      <Navbar onLanguageChange={(code) => i18n.changeLanguage(code)} />
+      <Navbar onLanguageChange={(code) => i18n.changeLanguage(code)} onStart={() => setLocationOpen(true)} />
 
       <main>
         <Suspense fallback={<div className="screen-loader"><div className="spinner" /></div>}>
@@ -115,14 +115,13 @@ export default function App() {
         </Suspense>
       </main>
 
-      {isLocationOpen && (
-        <Suspense fallback={null}>
-          <LocationModal
-            onConfirm={startAssessment}
-            onClose={() => setLocationOpen(false)}
-          />
-        </Suspense>
-      )}
+      <Suspense fallback={null}>
+        <LocationModal
+          open={isLocationOpen}
+          onConfirm={startAssessment}
+          onClose={() => setLocationOpen(false)}
+        />
+      </Suspense>
     </div>
   )
 }

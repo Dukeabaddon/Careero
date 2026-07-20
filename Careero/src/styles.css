@@ -71,7 +71,7 @@ button:disabled {
   position: relative;
 }
 
-.app-shell>*:not(.ambient, .grain) {
+.app-shell>*:not(.ambient, .grain, .navbar) {
   position: relative;
   z-index: 5;
 }

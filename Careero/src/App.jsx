@@ -1,8 +1,8 @@
-import { lazy, Suspense, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import questionsData from './data/questions.json'
+import Lenis from 'lenis'
 import { calculateRiasecScores, getTopDimensions, normalizeRiasecScores } from './utils/riasecScoring.js'
-import { clearCareerData, clearQuizState, loadQuizState, saveQuizState } from './utils/storage.js'
+import { loadQuizState, saveQuizState } from './utils/storage.js'
 import Navbar from './components/Navbar.jsx'
 
 const Landing = lazy(() => import('./components/Landing.jsx'))
@@ -23,10 +23,30 @@ function createState(location, language) {
 
 export default function App() {
   const { i18n } = useTranslation()
-  const [savedSession, setSavedSession] = useState(() => loadQuizState())
+  const [, setSavedSession] = useState(() => loadQuizState())
   const [assessmentState, setAssessmentState] = useState(() => loadQuizState())
   const [isLocationOpen, setLocationOpen] = useState(false)
   const [phase, setPhase] = useState(() => (loadQuizState()?.isCompleted ? 'results' : 'landing'))
+
+  // Initialize Lenis smooth scroll
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothTouch: false,
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy()
+    }
+  }, [])
 
   const profile = useMemo(() => {
     if (!assessmentState?.responses?.length) return null
@@ -58,80 +78,46 @@ export default function App() {
     setAssessmentState(hydratedState)
   }
 
-  const resumeAssessment = () => {
-    if (!savedSession) return
-    i18n.changeLanguage(savedSession.language)
-    setAssessmentState(savedSession)
-    setPhase(savedSession.isCompleted ? 'results' : 'quiz')
-  }
-
-  const resetAssessment = () => {
-    clearQuizState()
-    setAssessmentState(null)
-    setSavedSession(null)
-    window.history.replaceState({}, '', '/')
-    setPhase('landing')
-  }
-
-  const finishAssessment = (completedState) => {
-    updateAssessment(completedState)
-    window.history.pushState({}, '', '/results')
-    setPhase('results')
-  }
-
-  const clearAllData = () => {
-    clearCareerData()
-    setAssessmentState(null)
-    setSavedSession(null)
-    window.history.replaceState({}, '', '/')
-    setPhase('landing')
-  }
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language)
-    if (!assessmentState) return
-    const nextState = { ...assessmentState, language }
-    saveQuizState(nextState)
-    setAssessmentState(nextState)
-    setSavedSession((current) => (current ? { ...current, language } : current))
-  }
-
   return (
     <div className="app-shell">
-      <div className="ambient ambient-one" aria-hidden="true" />
-      <div className="ambient ambient-two" aria-hidden="true" />
-      <div className="grain" aria-hidden="true" />
-      <Navbar onClearData={clearAllData} onLanguageChange={changeLanguage} />
+      <div className="ambient ambient-one" />
+      <div className="ambient ambient-two" />
+
+      <Navbar onLanguageChange={(code) => i18n.changeLanguage(code)} />
+
       <main>
-        <Suspense fallback={<div className="screen-loader"><span className="loader" /></div>}>
+        <Suspense fallback={<div className="screen-loader"><div className="spinner" /></div>}>
           {phase === 'landing' && (
-            <Landing
-              savedSession={savedSession}
-              onStart={() => setLocationOpen(true)}
-              onResume={resumeAssessment}
-              onStartFresh={() => {
-                resetAssessment()
-                setLocationOpen(true)
+            <Landing onStart={() => setLocationOpen(true)} />
+          )}
+
+          {phase === 'quiz' && (
+            <Assessment
+              assessmentState={assessmentState}
+              onUpdateState={updateAssessment}
+              onComplete={() => setPhase('results')}
+            />
+          )}
+
+          {phase === 'results' && profile && (
+            <Results
+              profile={profile}
+              onRetake={() => {
+                setAssessmentState(null)
+                saveQuizState(null)
+                setPhase('landing')
               }}
             />
           )}
-          {phase === 'quiz' && assessmentState && (
-            <Assessment
-              questions={questionsData.questions}
-              state={assessmentState}
-              onChange={updateAssessment}
-              onComplete={finishAssessment}
-              onReset={resetAssessment}
-            />
-          )}
-          {phase === 'results' && assessmentState && profile && (
-            <Results profile={profile} onRestart={resetAssessment} />
-          )}
         </Suspense>
       </main>
+
       {isLocationOpen && (
         <Suspense fallback={null}>
-          <LocationModal open onClose={() => setLocationOpen(false)} onConfirm={startAssessment} />
+          <LocationModal
+            onConfirm={startAssessment}
+            onClose={() => setLocationOpen(false)}
+          />
         </Suspense>
       )}
     </div>

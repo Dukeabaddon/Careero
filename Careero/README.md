@@ -83,9 +83,11 @@ The assessment works without provider keys. AI education research needs at least
 
 Copy names from `.env.example`. Never use a `VITE_` prefix for secrets.
 
+Multiple key slots are intentional. Gemini 2.5 free access is often capacity-limited or marked high demand, so Careero rotates across several keys and falls back to Groq, OpenRouter, Cerebras, and optional DeepSeek when Gemini cannot serve.
+
 | Variable | Purpose |
 | --- | --- |
-| `GEMINI_API_KEY_1..5` | Rotating Gemini credentials |
+| `GEMINI_API_KEY_1..5` | Rotating Gemini credentials (multi-key failover when free tier is busy) |
 | `GEMINI_MODEL` | Primary grounded model |
 | `GEMINI_FALLBACK_MODEL` | Grounded Gemini fallback |
 | `GROQ_API_KEY_1..2` | Grounded Groq Compound rotation |

@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, ArrowRight, Check, MapPin, Search, RotateCcw } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, MapPin, Search, RotateCcw, Building2, Globe } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { countries, getEmojiFlag } from 'countries-list'
+import { Country, City } from 'country-state-city'
 import { getLocalizedQuestion } from '../data/localizedQuestions.js'
 import questionsData from '../data/questions.json'
 
@@ -30,34 +30,6 @@ const REACTION_CONFIG = [
   { value: 2, key: 'like', label: 'Great!', gif: '/reactions/wow.gif' },
   { value: 3, key: 'love', label: 'Love It!', gif: '/reactions/love-it.gif' },
 ]
-
-const MAJOR_CITIES = {
-  AU: ['Sydney', 'Melbourne', 'Brisbane', 'Perth'],
-  BR: ['São Paulo', 'Rio de Janeiro', 'Brasília'],
-  CA: ['Toronto', 'Vancouver', 'Montreal', 'Calgary'],
-  CN: ['Shanghai', 'Beijing', 'Shenzhen', 'Guangzhou', 'Chengdu'],
-  DE: ['Berlin', 'Munich', 'Hamburg', 'Frankfurt'],
-  ES: ['Madrid', 'Barcelona', 'Valencia', 'Seville'],
-  FR: ['Paris', 'Lyon', 'Marseille', 'Toulouse'],
-  GB: ['London', 'Manchester', 'Birmingham', 'Edinburgh'],
-  ID: ['Jakarta', 'Surabaya', 'Bandung', 'Medan'],
-  IN: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Chennai'],
-  IT: ['Rome', 'Milan', 'Naples', 'Turin'],
-  JP: ['Tokyo', 'Osaka', 'Kyoto', 'Yokohama', 'Fukuoka'],
-  KR: ['Seoul', 'Busan', 'Incheon', 'Daejeon'],
-  MX: ['Mexico City', 'Guadalajara', 'Monterrey'],
-  MY: ['Kuala Lumpur', 'George Town', 'Johor Bahru'],
-  NG: ['Lagos', 'Abuja', 'Kano'],
-  NZ: ['Auckland', 'Wellington', 'Christchurch'],
-  PH: ['Manila', 'Quezon City', 'Cebu City', 'Davao City', 'Baguio'],
-  SG: ['Singapore'],
-  TH: ['Bangkok', 'Chiang Mai', 'Phuket'],
-  TR: ['Istanbul', 'Ankara', 'Izmir'],
-  TW: ['Taipei', 'Kaohsiung', 'Taichung'],
-  US: ['New York', 'Los Angeles', 'Chicago', 'San Francisco', 'Seattle', 'Austin', 'Boston'],
-  VN: ['Ho Chi Minh City', 'Hanoi', 'Da Nang'],
-  ZA: ['Johannesburg', 'Cape Town', 'Pretoria', 'Durban'],
-}
 
 function ReactionCard({ config, isSelected, onClick }) {
   const [isHovered, setIsHovered] = useState(false)
@@ -89,44 +61,52 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
 
   // Location Step state if location is not set yet
   const [locStep, setLocStep] = useState(1)
-  const [locQuery, setLocQuery] = useState('')
+  const [countrySearch, setCountrySearch] = useState('')
+  const [citySearch, setCitySearch] = useState('')
   const [selectedCountry, setSelectedCountry] = useState(null)
   const [selectedCity, setSelectedCity] = useState(null)
+  const [customCityInput, setCustomCityInput] = useState('')
 
   const hasLocation = Boolean(assessmentState?.location?.country)
 
-  const countryNames = useMemo(() => {
-    const displayNames = new Intl.DisplayNames([i18n.language], { type: 'region' })
-    return Object.entries(countries)
-      .map(([isoCode, item]) => ({
-        ...item,
-        isoCode,
-        flag: getEmojiFlag(isoCode),
-        displayName: displayNames.of(isoCode) || item.name,
-      }))
-      .sort((left, right) => left.displayName.localeCompare(right.displayName, i18n.language))
+  // Load 250 Worldwide Countries using country-state-city library
+  const allCountries = useMemo(() => {
+    return Country.getAllCountries().map((c) => ({
+      isoCode: c.isoCode,
+      name: c.name,
+      flag: c.flag || '🌐',
+    })).sort((a, b) => a.name.localeCompare(b.name, i18n.language))
   }, [i18n.language])
 
-  const cities = useMemo(() => {
-    if (!selectedCountry) return []
-    return [...new Set([...(MAJOR_CITIES[selectedCountry.isoCode] || []), selectedCountry.capital].filter(Boolean))].map((name) => ({ name }))
-  }, [selectedCountry])
-
+  // Filter countries by search query
   const filteredCountries = useMemo(() => {
-    const normalized = locQuery.trim().toLocaleLowerCase(i18n.language)
-    if (!normalized) return countryNames
-    return countryNames.filter((item) =>
-      item.displayName.toLocaleLowerCase(i18n.language).includes(normalized) ||
-      item.name.toLocaleLowerCase(i18n.language).includes(normalized) ||
-      item.isoCode.toLocaleLowerCase(i18n.language).includes(normalized)
+    const q = countrySearch.trim().toLowerCase()
+    if (!q) return allCountries
+    return allCountries.filter(
+      (c) => c.name.toLowerCase().includes(q) || c.isoCode.toLowerCase().includes(q)
     )
-  }, [countryNames, i18n.language, locQuery])
+  }, [allCountries, countrySearch])
 
-  const confirmLocation = (cityObj = selectedCity) => {
+  // Load cities for selected country using country-state-city library
+  const allCities = useMemo(() => {
+    if (!selectedCountry) return []
+    const rawCities = City.getCitiesOfCountry(selectedCountry.isoCode) || []
+    const unique = [...new Set(rawCities.map((c) => c.name))]
+    return unique.sort((a, b) => a.localeCompare(b, i18n.language))
+  }, [selectedCountry, i18n.language])
+
+  // Filter cities by search query
+  const filteredCities = useMemo(() => {
+    const q = citySearch.trim().toLowerCase()
+    if (!q) return allCities.slice(0, 100)
+    return allCities.filter((c) => c.toLowerCase().includes(q)).slice(0, 100)
+  }, [allCities, citySearch])
+
+  const confirmLocation = (chosenCityName) => {
+    const finalCity = chosenCityName || customCityInput.trim() || ''
     const newLocation = {
       country: selectedCountry.name,
-      city: cityObj?.isRegion ? '' : cityObj?.name || '',
-      ...(cityObj?.isRegion ? { region: cityObj.name } : {}),
+      city: finalCity,
     }
     const nextState = {
       version: 1,
@@ -139,13 +119,13 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     onUpdateState(nextState)
   }
 
+  // 30-Question Assessment Logic
   const questionsList = useMemo(() => {
     if (Array.isArray(questions)) return questions
     if (Array.isArray(questions?.questions)) return questions.questions
     return defaultQuestions
   }, [questions])
 
-  // 30-Question Assessment Logic
   const currentIndex = assessmentState?.currentQuestionIndex || 0
   const currentQ = questionsList[currentIndex] || questionsList[0] || {}
   const question = getLocalizedQuestion(currentQ, i18n.language)
@@ -198,10 +178,10 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     return () => document.removeEventListener('keydown', handleKeyboard)
   })
 
-  // STEP 0: Render Page-Based Location Selection (No Modal!)
+  // STEP 0: Render Page-Based Location Requirement View (No Modal!)
   if (!hasLocation) {
     return (
-      <section className="location-page-wrap section-wrap max-w-2xl mx-auto py-12 px-4">
+      <section className="location-page-wrap section-wrap max-w-2xl mx-auto py-10 px-4">
         <motion.div
           className="location-card bg-white border border-slate-200 rounded-3xl p-8 shadow-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -210,16 +190,16 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
         >
           <div className="flex items-center gap-2 text-blue-600 font-mono text-xs font-bold uppercase tracking-wider mb-2">
             <MapPin size={16} />
-            <span>Step {locStep} of 2</span>
+            <span>Required Location Setup · Step {locStep} of 2</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">
-            {locStep === 1 ? 'Where are you building your future?' : `Select your city in ${selectedCountry?.displayName}`}
+            {locStep === 1 ? 'Where are you building your future?' : `Select your city in ${selectedCountry?.name}`}
           </h1>
           <p className="text-sm text-slate-600 mb-6 leading-relaxed">
             {locStep === 1
-              ? 'Choose a country first. We use it only to localize careers, salaries, and learning paths.'
-              : 'Pick your nearest city or region for targeted local university and scholarship matches.'}
+              ? 'Select your country (Required). We use this to localize career matches, university suggestions, and regional salary projections.'
+              : 'Pick your city/region (Optional). This helps prioritize local university campuses and regional scholarships first.'}
           </p>
 
           {locStep === 1 && (
@@ -229,40 +209,36 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                 <input
                   type="text"
                   className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-2xl text-sm bg-slate-50 focus:bg-white focus:border-blue-600 focus:outline-none transition-all"
-                  placeholder="Search countries..."
-                  value={locQuery}
-                  onChange={(e) => setLocQuery(e.target.value)}
+                  placeholder="Search 250+ countries (e.g. Philippines, Japan, United States)..."
+                  value={countrySearch}
+                  onChange={(e) => setCountrySearch(e.target.value)}
                   autoFocus
                 />
               </div>
 
-              <div className="country-scroll-list max-h-72 overflow-y-auto space-y-1 pr-1 border border-slate-100 rounded-2xl p-2 bg-slate-50/50">
-                {filteredCountries.map((item) => {
-                  const isSelected = selectedCountry?.isoCode === item.isoCode
-                  return (
-                    <button
-                      key={item.isoCode}
-                      type="button"
-                      onClick={() => {
-                        setSelectedCountry(item)
-                        setLocStep(2)
-                        setLocQuery('')
-                      }}
-                      className={`w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium transition-all text-left ${
-                        isSelected ? 'bg-blue-600 text-white' : 'hover:bg-blue-50 text-slate-700'
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">{item.flag}</span>
-                        <span>{item.displayName}</span>
-                      </div>
-                      <span className="text-xs font-mono opacity-70 uppercase">{item.isoCode}</span>
-                    </button>
-                  )
-                })}
+              <div className="country-scroll-list max-h-80 overflow-y-auto space-y-1.5 pr-1 border border-slate-100 rounded-2xl p-2 bg-slate-50/50">
+                {filteredCountries.map((c) => (
+                  <button
+                    key={c.isoCode}
+                    type="button"
+                    onClick={() => {
+                      setSelectedCountry(c)
+                      setLocStep(2)
+                      setCountrySearch('')
+                    }}
+                    className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all text-left bg-white border border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 text-slate-800"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">{c.flag}</span>
+                      <span className="font-semibold">{c.name}</span>
+                    </div>
+                    <span className="text-xs font-mono bg-slate-100 text-slate-500 px-2 py-0.5 rounded-md uppercase">{c.isoCode}</span>
+                  </button>
+                ))}
+
                 {filteredCountries.length === 0 && (
-                  <div className="text-center py-6 text-slate-500 text-sm">
-                    No country found matching "{locQuery}"
+                  <div className="text-center py-8 text-slate-500 text-sm">
+                    No country found matching "{countrySearch}". You can type your country name directly above.
                   </div>
                 )}
               </div>
@@ -270,35 +246,69 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
           )}
 
           {locStep === 2 && (
-            <div className="space-y-4">
-              <div className="country-preview-pill flex items-center gap-3 p-3.5 bg-slate-100 rounded-2xl">
-                <span className="text-2xl">{selectedCountry?.flag}</span>
-                <span className="font-semibold text-slate-800 text-sm">{selectedCountry?.displayName}</span>
+            <div className="space-y-5">
+              <div className="country-preview-pill flex items-center justify-between p-4 bg-blue-50/60 border border-blue-200 rounded-2xl">
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl">{selectedCountry?.flag}</span>
+                  <div>
+                    <span className="text-xs text-blue-600 font-bold uppercase tracking-wider block">Selected Country</span>
+                    <span className="font-bold text-slate-900 text-base">{selectedCountry?.name}</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setLocStep(1)}
+                  className="text-xs font-semibold text-blue-600 hover:underline"
+                >
+                  Change
+                </button>
               </div>
 
-              <div className="cities-grid grid grid-cols-2 gap-2 max-h-60 overflow-y-auto p-1">
-                {cities.map((c) => {
-                  const isSelected = selectedCity?.name === c.name
-                  return (
-                    <button
-                      key={c.name}
-                      type="button"
-                      onClick={() => setSelectedCity(c)}
-                      className={`flex items-center justify-between p-3 rounded-xl border text-sm font-medium text-left transition-all ${
-                        isSelected ? 'border-blue-600 bg-blue-50 text-blue-700' : 'border-slate-200 hover:border-blue-400 text-slate-700'
-                      }`}
-                    >
-                      <span>{c.name}</span>
-                      {isSelected && <Check size={16} className="text-blue-600" />}
-                    </button>
-                  )
-                })}
+              <div className="relative">
+                <Building2 size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+                <input
+                  type="text"
+                  className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-2xl text-sm bg-slate-50 focus:bg-white focus:border-blue-600 focus:outline-none transition-all"
+                  placeholder={`Search or type city in ${selectedCountry?.name}...`}
+                  value={citySearch}
+                  onChange={(e) => {
+                    setCitySearch(e.target.value)
+                    setCustomCityInput(e.target.value)
+                  }}
+                  autoFocus
+                />
               </div>
+
+              {allCities.length > 0 ? (
+                <div className="cities-grid grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-60 overflow-y-auto p-1 border border-slate-100 rounded-2xl bg-slate-50/50">
+                  {filteredCities.map((cityName) => {
+                    const isSelected = selectedCity === cityName
+                    return (
+                      <button
+                        key={cityName}
+                        type="button"
+                        onClick={() => {
+                          setSelectedCity(cityName)
+                          setCustomCityInput(cityName)
+                        }}
+                        className={`flex items-center justify-between p-3 rounded-xl border text-xs font-medium text-left transition-all ${
+                          isSelected ? 'border-blue-600 bg-blue-600 text-white font-bold' : 'border-slate-200 bg-white hover:border-blue-400 text-slate-700'
+                        }`}
+                      >
+                        <span className="truncate">{cityName}</span>
+                        {isSelected && <Check size={14} className="text-white shrink-0 ml-1" />}
+                      </button>
+                    )
+                  })}
+                </div>
+              ) : (
+                <p className="text-xs text-slate-500 italic">No pre-listed cities found. Type your city or region name above, or skip to use country-wide recommendations.</p>
+              )}
 
               <div className="flex items-center justify-between pt-4 border-t border-slate-200">
                 <button
                   type="button"
-                  onClick={() => { setLocStep(1); setLocQuery(''); }}
+                  onClick={() => setLocStep(1)}
                   className="flex items-center gap-1 text-sm font-semibold text-slate-600 hover:text-slate-900"
                 >
                   <ArrowLeft size={16} /> Back
@@ -307,18 +317,19 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                 <div className="flex items-center gap-3">
                   <button
                     type="button"
-                    onClick={() => confirmLocation(null)}
+                    onClick={() => confirmLocation('')}
                     className="px-4 py-2.5 rounded-xl border border-slate-300 text-xs font-semibold text-slate-600 hover:bg-slate-50"
                   >
-                    Skip City
+                    Skip City (Country Only)
                   </button>
 
                   <button
                     type="button"
-                    onClick={() => confirmLocation(selectedCity)}
-                    className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md transition-all"
+                    onClick={() => confirmLocation(selectedCity || customCityInput)}
+                    className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
                   >
-                    Start Assessment
+                    <span>Start Assessment</span>
+                    <ArrowRight size={15} />
                   </button>
                 </div>
               </div>
@@ -329,7 +340,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     )
   }
 
-  // 30-Question Assessment Screen (KursoKo Style)
+  // STEP 1-30: Render 30-Question RIASEC Assessment Screen
   return (
     <section className="assessment section-wrap max-w-4xl mx-auto py-8 px-4">
       {/* Header Progress */}

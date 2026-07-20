@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, ArrowRight, Check, MapPin, Search, RotateCcw, Building2, Globe } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, MapPin, Search, Building2 } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Country, City } from 'country-state-city'
@@ -56,8 +56,8 @@ function ReactionCard({ config, isSelected, onClick }) {
   )
 }
 
-export default function Assessment({ questions = defaultQuestions, assessmentState, onUpdateState, onComplete, onReset }) {
-  const { t, i18n } = useTranslation()
+export default function Assessment({ questions = defaultQuestions, assessmentState, onUpdateState, onComplete, onReset: _onReset }) {
+  const { i18n } = useTranslation()
 
   // Location Step state if location is not set yet
   const [locStep, setLocStep] = useState(1)
@@ -402,23 +402,20 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
               return (
                 <div
                   key={optionKey}
-                  onClick={(e) => selectOption(optionKey, e.timeStamp)}
-                  className={`choice-card-wrap border-2 rounded-3xl p-6 bg-white transition-all cursor-pointer flex flex-col justify-between ${
-                    isSelected ? 'border-blue-600 shadow-xl bg-blue-50/20' : 'border-slate-200 hover:border-blue-400 hover:shadow-md'
-                  }`}
+                  className="choice-card-wrap border-2 rounded-3xl p-6 bg-white transition-all flex flex-col justify-between border-slate-200"
                 >
-                  <div>
-                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100 flex items-center justify-center">
+                  <div
+                    onClick={(e) => selectOption(optionKey, e.timeStamp)}
+                    className="cursor-pointer"
+                  >
+                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-[#fcfcfc] flex items-center justify-center">
                       <img
                         src={optionImage(question?.id || 1, idx === 0 ? 'a' : 'b')}
                         alt={opt.text || ''}
                         className="w-full h-full object-contain p-2"
                       />
                     </div>
-                    <h3 className="font-bold text-slate-800 text-base mb-1">{opt.text}</h3>
-                    <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-slate-100 text-slate-600 mb-4">
-                      {opt.code} · {t(`dimensions.${opt.code}.name`)}
-                    </span>
+                    <h3 className="font-bold text-slate-800 text-base mb-3">{opt.text}</h3>
                   </div>
 
                   {/* Reaction GIF Options */}
@@ -447,7 +444,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
               type="button"
               onClick={moveBack}
               disabled={currentIndex === 0}
-              className="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 flex items-center gap-1.5 transition-all"
+              className="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 hover:font-bold hover:border-slate-400 flex items-center gap-1.5 transition-all"
             >
               <ArrowLeft size={16} /> Previous
             </button>
@@ -456,10 +453,10 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
               type="button"
               onClick={moveNext}
               disabled={!response?.rating}
-              className="px-7 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-bold shadow-md flex items-center gap-1.5 transition-all"
+              className="px-7 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-extrabold shadow-md flex items-center gap-1.5 transition-all"
             >
-              <span>Next</span>
-              <ArrowRight size={16} />
+              <span className="text-white font-extrabold">Next</span>
+              <ArrowRight size={16} className="text-white" />
             </button>
           </div>
         </motion.div>

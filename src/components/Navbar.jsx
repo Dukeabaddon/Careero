@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { ChevronDown, Search, ChevronLeft } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { SUPPORTED_LANGUAGES } from '../i18n.js'
-import { useScrollNavbar, NAV_MODES } from '../hooks/useScrollNavbar.js'
+import { useScrollNavbar } from '../hooks/useScrollNavbar.js'
 
 export default function Navbar({ onLanguageChange, onStart, isQuiz, onGoHome }) {
   const { i18n } = useTranslation()

@@ -1,29 +1,35 @@
+![Careero](./readme-banner.png)
+
 # Careero
 
-Careero is a multilingual career-discovery platform. It turns a visual 30-question RIASEC assessment into explainable career matches, then finds location-aware schools, scholarships, and training programs.
+Careero helps students find careers that fit who they are, then schools and scholarships near them.
+
+It turns a visual 30-question RIASEC assessment into explainable career matches, then researches location-aware schools, scholarships, and training programs for one profession at a time.
 
 Built for the **Education** track of OpenAI Build Week 2026.
 
 ## Why Careero
 
-Career guidance is often generic, text-heavy, and disconnected from real education options. Careero gives students an immediate, private assessment result. AI research loads afterward, only when useful.
+Choosing college often feels like guessing. Many students do not know which path fits their strengths, which schools are strong for that path, or which scholarships exist for their course. So they default to what is near or already available.
 
-The deterministic assessment remains useful if every AI provider is unavailable.
+Careero is built for that moment. The assessment is visual and multilingual, not another long text form. Answers stay local in the browser with no user database. Career matches appear instantly. Schools and scholarships load when a student expands a profession.
+
+The deterministic assessment and ranking remain useful even if every AI provider is unavailable.
 
 ## What it does
 
-- Presents 30 visual, binary RIASEC questions.
-- Supports English, Japanese, Simplified Chinese, Spanish, Tagalog, and French.
-- Saves assessment progress locally.
-- Scores all six RIASEC dimensions.
-- Ranks 923 O*NET occupations with Pearson correlation.
-- Shows the top ten careers immediately.
-- Researches one expanded profession at a time.
-- Returns official HTTPS school and program links.
-- Prefers nearby, regional, then national options.
-- Caches results in the browser and server.
-- Exports a privacy-safe share card.
-- Supports keyboard-only assessment navigation.
+- Presents 30 visual, binary RIASEC questions
+- Supports English, Japanese, Simplified Chinese, Spanish, Tagalog, and French
+- Saves assessment progress locally with no user database
+- Scores all six RIASEC dimensions
+- Ranks 923 O*NET occupations with Pearson correlation
+- Shows the top ten careers immediately
+- Researches one expanded profession at a time
+- Suggests schools tied to the selected place, preferring nearby then national options
+- Returns scholarships and programs students can pursue, with official HTTPS links when verified
+- Caches results in the browser and server
+- Exports a privacy-safe share card
+- Supports keyboard-only assessment navigation
 
 ## How it works
 
@@ -45,17 +51,17 @@ Assessment answers and career ranking stay client-side. The Node.js API receives
 
 ## Safety and reliability
 
-- Provider keys are server-only.
-- All local `.env*` files are ignored except the empty example.
-- Requests use strict Zod validation.
-- Profession IDs must belong to the supplied profile's top ten.
-- Prompt-injection text is treated as data.
-- Provider responses require official HTTPS URLs.
-- Failed providers rotate without client secrets.
-- Browser and server caches prevent duplicate calls.
-- In-flight requests are deduplicated.
-- Rate limits protect uncached generation.
-- Local Pearson results fail soft when AI is unavailable.
+- Provider keys are server-only
+- All local `.env*` files are ignored except the empty example
+- Requests use strict Zod validation
+- Profession IDs must belong to the supplied profile's top ten
+- Prompt-injection text is treated as data
+- Provider responses require official HTTPS URLs
+- Failed providers rotate without client secrets
+- Browser and server caches prevent duplicate calls
+- In-flight requests are deduplicated
+- Rate limits protect uncached generation
+- Local Pearson results fail soft when AI is unavailable
 
 ## Local development
 
@@ -133,19 +139,27 @@ The Vercel CLI is version-pinned in npm scripts without becoming an application 
 
 The included workflow verifies pull requests and can deploy `main` after `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID` are added as GitHub Actions secrets.
 
-## Codex collaboration
+## How I used Codex
 
-Codex accelerated repository analysis, architecture tracing, accessibility implementation, API security review, provider failover, cache design, test generation, and deployment preparation. The product owner retained the core decisions: the visual assessment, light interface, six supported languages, local-first ranking, closed result accordions, and education-first recommendations.
+I built Careero through an ongoing collaboration with Codex. I provided the product direction, tested each experience, shared screenshots and real results, and refined the frontend until it matched the experience I wanted. Codex worked alongside me as an implementation and engineering partner, turning those decisions into working code and helping investigate problems as they appeared.
 
-The project used inspectable Telic, Graphify, and Gate MCP workflows during development. Tests and dated commits provide implementation evidence. The required `/feedback` Codex Session ID should be entered directly in the Devpost submission. Exact GPT-5.6 session attribution should be copied from that record rather than guessed in this README draft.
+We started with the project requirements and built the application from the ground up. Codex helped scaffold the React application, organize the architecture, configure six languages, implement the visual assessment, persist quiz progress, calculate normalized RIASEC scores, and match profiles against 923 O*NET occupations. We then worked through the results experience, keyboard accessibility, share cards, location-aware recommendations, and the rule that career matches must appear instantly without waiting for AI.
+
+Our process was iterative and practical. I tested the application, reported unexpected rankings or API failures, and explained how I wanted the experience to behave. Codex traced the relevant data and code paths, reproduced issues, proposed fixes, implemented them, and reran the test suite. This helped us catch scoring concerns, malformed provider responses, cache behavior, refresh behavior, rate-limit problems, and deployment risks without replacing my product decisions or visual direction.
+
+Codex also helped build and secure the recommendation backend. Together we added strict request validation, profession verification, prompt-injection boundaries, official HTTPS link validation, browser and server caching, request deduplication, abuse controls, and automatic rotation across Gemini, Groq, OpenRouter, Cerebras, and DeepSeek. The frontend remains useful when every AI provider is unavailable because the assessment and career ranking run locally.
+
+Finally, Codex helped create unit and live smoke tests, scan for exposed credentials, configure GitHub Actions, prepare Vercel deployment, verify production builds, and document the system. I remained responsible for the concept, design choices, testing feedback, and final product direction; Codex helped me move from those decisions to a tested, deployable application much faster.
+
+The required `/feedback` Codex Session ID will be added directly to the Devpost submission.
 
 ## Education-track submission draft
 
-**Problem:** Students receive broad career labels without a practical bridge to education.
+**Problem:** Students often choose schools and courses without knowing their fit, nearby options, or scholarships for that path.
 
-**Solution:** Careero combines a visual interest assessment with transparent career matching and grounded, local education research.
+**Solution:** Careero combines a visual interest assessment with transparent career matching and grounded, location-aware education research.
 
-**Impact:** Students can explore plausible careers privately, understand why each match appears, and move directly toward verifiable learning opportunities.
+**Impact:** Students can explore plausible careers privately, understand why each match appears, and move toward verifiable schools and scholarships.
 
 **Demo outline:** Choose a location, answer several visual questions, finish the assessment, show the instant top ten, expand two different professions, verify official links, refresh to prove persistence, then export the share card.
 

@@ -1,55 +1,79 @@
-import { useState } from 'react'
-import { Check, Copy, Share2 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
-export default function ShareCard({ archetype, profile, topProfession }) {
+/**
+ * Visual share card used for on-screen preview + transparent PNG export.
+ * Accent colors come from the resolved RIASEC character theme.
+ * Outer border matches results Top Profile card.
+ */
+export default function ShareCard({
+  archetype,
+  profile,
+  topProfession,
+  theme,
+  className = '',
+}) {
   const { t } = useTranslation()
-  const [status, setStatus] = useState('')
-  const location = [profile.location.city || profile.location.region, profile.location.country].filter(Boolean).join(', ')
-  const shareText = t('results.shareText', {
-    archetype: archetype.title,
-    code: profile.archetypeCode,
-    profession: topProfession.title,
-    percent: topProfession.matchPercent,
-  })
-
-  const share = async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: t('results.shareTitle'), text: shareText, url: window.location.href })
-        setStatus('shared')
-      } else {
-        await navigator.clipboard.writeText(`${shareText} ${window.location.href}`)
-        setStatus('copied')
-      }
-    } catch (error) {
-      if (error.name !== 'AbortError') setStatus('failed')
-    }
-  }
+  const accent = theme?.accent || '#2563eb'
+  const accentSoft = theme?.accentSoft || 'rgba(37, 99, 235, 0.12)'
+  const paper = theme?.paper || '#ffffff'
+  const ink = theme?.ink || '#0f172a'
+  const muted = theme?.muted || '#475569'
+  const highlight = theme?.highlight || '#fbbf24'
 
   return (
-    <section className="share-section" aria-labelledby="share-card-title">
-      <div className="share-card">
-        <img src={archetype.image} alt="" />
-        <div className="share-card-copy">
-          <p className="eyebrow">Careero · {profile.archetypeCode}</p>
-          <h2 id="share-card-title">{archetype.title}</h2>
-          <p>{t('results.shareProfession', { profession: topProfession.title, percent: topProfession.matchPercent })}</p>
-          <span>{location}</span>
+    <div
+      className={`share-card-export ${className}`.trim()}
+      style={{
+        width: 360,
+        boxSizing: 'border-box',
+        backgroundColor: paper,
+        color: ink,
+        ['--share-accent']: accent,
+        ['--share-accent-soft']: accentSoft,
+        ['--share-highlight']: highlight,
+      }}
+    >
+      <div className="share-card-export__hero">
+        <div className="share-card-export__portrait" style={{ ['--share-accent']: accent, ['--share-accent-soft']: accentSoft }}>
+          {archetype.image ? (
+            <img src={archetype.image} alt="" />
+          ) : null}
         </div>
-        <strong aria-hidden="true">{profile.archetypeCode}</strong>
+
+        <p className="share-card-export__brand">Careero</p>
+        <h3 style={{ color: accent }}>{archetype.title}</h3>
+        <p className="share-card-export__code" style={{ color: muted }}>
+          RIASEC {profile.archetypeCode}
+        </p>
       </div>
-      <div className="share-actions">
-        <div>
-          <h2>{t('results.shareHeading')}</h2>
-          <p>{t('results.shareDescription')}</p>
+
+      {topProfession ? (
+        <div className="share-card-export__match" style={{ backgroundColor: accent }}>
+          <p className="share-card-export__match-label">{t('results.shareCardTopFit')}</p>
+          <p className="share-card-export__match-title">{topProfession.title}</p>
+          <p className="share-card-export__match-percent" style={{ color: highlight }}>
+            {t('results.shareCardMatch', { percent: topProfession.matchPercent })}
+          </p>
+          <div
+            className="share-card-export__bar"
+            role="progressbar"
+            aria-valuenow={topProfession.matchPercent}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={topProfession.title}
+          >
+            <i style={{ width: `${topProfession.matchPercent}%`, background: highlight }} />
+          </div>
         </div>
-        <button className="primary-button" type="button" onClick={share}>
-          {status === 'copied' || status === 'shared' ? <Check size={18} /> : navigator.share ? <Share2 size={18} /> : <Copy size={18} />}
-          {t(status === 'copied' ? 'results.copied' : status === 'shared' ? 'results.shared' : 'results.share')}
-        </button>
+      ) : null}
+
+      <p className="share-card-export__summary" style={{ color: muted }}>
+        {t('results.shareCardSummary')}
+      </p>
+
+      <div className="share-card-export__footer" style={{ backgroundColor: accent }}>
+        {t('results.shareCardFooter')}
       </div>
-      <p className="sr-only" aria-live="polite">{status === 'failed' ? t('results.shareFailed') : status ? t(`results.${status}`) : ''}</p>
-    </section>
+    </div>
   )
 }

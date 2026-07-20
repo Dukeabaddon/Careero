@@ -1,6 +1,18 @@
 {
-  "brand": { "tagline": "Career intelligence na para sa iyo" },
-  "nav": { "language": "Wika", "clearData": "Burahin ang data ko" },
+  "brand": {
+    "tagline": "Career intelligence na para sa iyo"
+  },
+  "nav": {
+    "language": "Wika",
+    "clearData": "Burahin ang data ko",
+    "home": "Home",
+    "howItWorks": "Paano ito gumagana",
+    "dimensions": "Mga Dimensyon",
+    "faq": "FAQ",
+    "startAssessment": "Simulan ang assessment",
+    "searchLanguage": "Maghanap ng wika...",
+    "noLanguageFound": "Walang nahanap na wika"
+  },
   "hero": {
     "badge": "Pandaigdigang AI career compass",
     "title": "Hanapin ang trabahong parang",
@@ -16,12 +28,30 @@
     "title": "Higit ka sa isang career type.",
     "subtitle": "Sinusukat ng RIASEC ang kombinasyon ng mga kapaligirang pinakanaaangkop sa interes mo.",
     "signalsShort": "signal",
-    "R": { "name": "Realistic", "description": "Bumuo, magkumpuni, at gumawa nang hands-on." },
-    "I": { "name": "Investigative", "description": "Magtanong, magsuri, at tumuklas." },
-    "A": { "name": "Artistic", "description": "Mag-isip, magpahayag, at magdisenyo." },
-    "S": { "name": "Social", "description": "Magturo, sumuporta, at makipag-ugnayan." },
-    "E": { "name": "Enterprising", "description": "Mamuno, manghikayat, at magsimula." },
-    "C": { "name": "Conventional", "description": "Mag-ayos, magsuri, at magpahusay." }
+    "R": {
+      "name": "Realistic",
+      "description": "Bumuo, magkumpuni, at gumawa nang hands-on."
+    },
+    "I": {
+      "name": "Investigative",
+      "description": "Magtanong, magsuri, at tumuklas."
+    },
+    "A": {
+      "name": "Artistic",
+      "description": "Mag-isip, magpahayag, at magdisenyo."
+    },
+    "S": {
+      "name": "Social",
+      "description": "Magturo, sumuporta, at makipag-ugnayan."
+    },
+    "E": {
+      "name": "Enterprising",
+      "description": "Mamuno, manghikayat, at magsimula."
+    },
+    "C": {
+      "name": "Conventional",
+      "description": "Mag-ayos, magsuri, at magpahusay."
+    }
   },
   "location": {
     "step": "Lokasyon · Hakbang {{step}} sa 2",
@@ -36,17 +66,93 @@
     "confirm": "Magsimula para sa {{city}}, {{country}}",
     "skipCity": "Magpatuloy gamit ang {{country}} lamang",
     "useRegion": "Gamitin ang {{region}} bilang rehiyon",
-    "close": "Isara ang pagpili ng lokasyon"
+    "close": "Isara ang pagpili ng lokasyon",
+    "country": "Bansa",
+    "city": "Lungsod",
+    "selectCountry": "Pumili ng bansa",
+    "selectCityOptional": "Pumili ng lungsod (opsyonal)",
+    "continue": "Magpatuloy",
+    "noMatches": "Walang tugma"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Mga tumugmang trabaho"
+    },
+    "dimensions": {
+      "value": "6 Dimensyon",
+      "label": "RIASEC Psychological Model"
+    },
+    "free": {
+      "value": "100% Libre",
+      "label": "Walang Account na Kailangan"
+    }
+  },
+  "howItWorks": {
+    "title": "Paano Gumagana ang Careero",
+    "subtitle": "3 simpleng hakbang para matuklasan ang iyong career pathways at educational hubs.",
+    "step1": {
+      "title": "30 Biswal na Pagpili",
+      "description": "Pumili ng mga aktibidad at kapaligiran na tumutugma sa natural mong kagustuhan."
+    },
+    "step2": {
+      "title": "Pearson Vector Math Engine",
+      "description": "Kinakalkula ang Pearson r correlation sa pagitan ng 6-vector profile mo at {{count}} career vectors."
+    },
+    "step3": {
+      "title": "I-unlock ang Matched Pathways",
+      "description": "Tumanggap ng lokal na career recommendations, salary insights, at university matches."
+    }
+  },
+  "faq": {
+    "title": "Mga Madalas Itanong",
+    "subtitle": "Lahat ng kailangan mong malaman tungkol sa Careero assessment engine.",
+    "items": [
+      {
+        "q": "Paano gumagana ang RIASEC assessment?",
+        "a": "Sinusukat ng RIASEC ang interest sa 6 vectors. Ang 30 biswal na pagpili ay gumagawa ng profile, tapos iniraranggo ang {{count}} occupations gamit ang Pearson correlation — iba't ibang mix, iba't ibang top 10."
+      },
+      {
+        "q": "Pribado at secure ba ang data ko?",
+        "a": "Oo. 100% local sa browser ang Careero. Walang account registration o personal data na kinokolekta o ina-upload."
+      },
+      {
+        "q": "Pwede ba ito para sa university at scholarship discovery?",
+        "a": "Oo naman. Batay sa matched career profile mo, nagbibigay ang Careero ng lokal na degree programs, universities, at scholarship links."
+      },
+      {
+        "q": "Gaano katagal ang assessment?",
+        "a": "30 mabilis na biswal na binary choices, mga 3 hanggang 5 minuto."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Pandaigdigang AI Career Compass at Educational Matching Platform.",
+    "features": "Features",
+    "howItWorks": "Paano ito gumagana",
+    "dimensions": "Mga Dimensyon",
+    "faq": "FAQ",
+    "startAssessment": "Simulan ang assessment",
+    "copyright": "© 2026 Careero Platform. Binuo para sa open global education access."
   },
   "quiz": {
     "questionOf": "Tanong {{current}} sa {{total}}",
+    "percentComplete": "{{percent}}% tapos na",
+    "title": "Alin ang mas gusto mong gawin?",
+    "subtitle": "Pumili ng isang aktibidad at i-rate kung gaano mo ito mae-enjoy. (Tip: Double-click para sa susunod na tanong!)",
+    "or": "o",
     "choose": "Piliin ang aktibidad na mas mae-enjoy mo.",
     "keyboardHint": "Keyboard: A/B, 1–3, saka Enter.",
     "intensity": "Gaano ito kaangkop sa iyo?",
     "okay": "Okay",
     "like": "Gusto",
     "love": "Gustong-gusto",
-    "next": "Susunod na tanong",
+    "reactionJustOkay": "Ayos lang",
+    "reactionGreat": "Ang ganda!",
+    "reactionLoveIt": "Sobrang gusto!",
+    "previous": "Nakaraan",
+    "next": "Susunod",
+    "nextQuestion": "Susunod na tanong",
     "finish": "Tingnan ang profile ko",
     "reset": "I-reset ang progreso",
     "resumeTitle": "Naghihintay ang journey mo.",
@@ -71,17 +177,60 @@
     "programs": "Mga scholarship at programa",
     "topProfession": "Nangungunang rekomendasyon",
     "shareHeading": "Ibahagi ang career character mo",
-    "shareDescription": "Ipadala ang maikling profile nang hindi ibinabahagi ang mga sagot.",
+    "shareDescription": "Magbukas ng card para i-download o i-post — pribado ang mga sagot.",
     "shareTitle": "Aking Careero result",
     "shareProfession": "Top career: {{profession}} · {{percent}}% match",
     "shareText": "Ang Careero character ko ay {{archetype}} ({{code}}). Ang top career match ko ay {{profession}} sa {{percent}}%.",
-    "share": "Ibahagi",
+    "share": "Ibahagi ang resulta",
+    "shareModalTitle": "Ibahagi ang resulta",
+    "shareModalSubtitle": "Preview ng card · i-post sa stories o i-save",
+    "shareToSocial": "Ibahagi",
+    "downloadCard": "I-download ang card",
+    "sharing": "Ibinabahagi…",
+    "savingCard": "Sineseve…",
+    "shareDownloaded": "Na-download ang share card!",
+    "shareSavedCopied": "Na-save ang card · nakopya ang caption!",
+    "shareClose": "Isara",
     "shared": "Naibahagi",
     "copied": "Nakopya",
     "shareFailed": "Hindi available ang sharing.",
     "sources": "Mga ginamit na source",
     "opensNewTab": "magbubukas sa bagong tab",
     "startAgain": "Ulitin ang assessment",
-    "match": "{{percent}}% profile match"
+    "match": "{{percent}}% profile match",
+    "archetypeBlurb": "Ang pinakamalakas mong mix ay {{code}}. Sundin ng mga school at scholarship sa ibaba ang pattern na iyon.",
+    "riasecScores": "Mga RIASEC score",
+    "patternNote": "Top combo: {{combo}}. Buksan ang propesyon para mag-load ng schools at scholarships.",
+    "matchesEyebrow": "Pearson 6-vector",
+    "professionMatches": "Mga propesyon para sa iyo",
+    "matchesNote": "Niranggo ayon sa fit — hindi guarantee ng trabaho o admission.",
+    "topMatchBadge": "Top match",
+    "professionLabel": "Propesyon",
+    "whyPath": "Bakit promising ang landas na ito",
+    "topSchools": "Mga top school para sa landas na ito",
+    "topScholarships": "Mga top scholarship para sa propesyon na ito",
+    "visitSchool": "Bisitahin ang website ng school",
+    "openScholarship": "Buksan ang scholarship",
+    "noSchools": "Wala pang verified schools para sa lokasyong ito.",
+    "noScholarships": "Wala pang verified scholarships para sa lokasyong ito.",
+    "archetypes": {
+      "pathfinder": "Ang Pathfinder",
+      "creator": "Ang Creator",
+      "strategist": "Ang Strategist",
+      "visionary": "Ang Visionary",
+      "analyst": "Ang Analyst",
+      "builder": "Ang Builder",
+      "guardian": "Ang Guardian"
+    },
+    "tagAlignment": "{{dimension}} alignment",
+    "tagCampusFit": "{{dimension}} campus fit",
+    "tagKeywords": "{{count}} program keywords",
+    "tagKeywordsOne": "1 program keyword",
+    "tagFlagship": "Flagship option",
+    "tagSystemsFit": "Malakas na systems fit",
+    "shareCardTopFit": "Top career fit",
+    "shareCardMatch": "{{percent}}% match",
+    "shareCardSummary": "Compact Careero card — hindi kasama ang mga sagot.",
+    "shareCardFooter": "careero · humanap ng career na bagay sa iyo"
   }
 }

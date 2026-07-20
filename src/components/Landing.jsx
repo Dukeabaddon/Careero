@@ -3,6 +3,8 @@ import { ArrowRight, Clock3, LockKeyhole, ChevronDown } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { RIASEC_CODES } from '../utils/riasecScoring.js'
+import { CAREER_COUNT } from '../data/careers.js'
+import Footer from './Footer.jsx'
 
 const dimensionAssets = import.meta.glob('../assets/riasec/riasec_*.webp', {
   eager: true,
@@ -15,26 +17,8 @@ function dimensionImage(code) {
   return Object.entries(dimensionAssets).find(([path]) => path.endsWith(suffix))?.[1]
 }
 
-const FAQS = [
-  {
-    q: 'How does the RIASEC assessment work?',
-    a: 'RIASEC measures your psychological interest across 6 core vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections generate a normalized profile compared against 500+ global occupations using Pearson vector correlation.'
-  },
-  {
-    q: 'Is my data private and secure?',
-    a: 'Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases.'
-  },
-  {
-    q: 'Can I use this for university and scholarship discovery?',
-    a: 'Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links.'
-  },
-  {
-    q: 'How long does the assessment take?',
-    a: 'The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete.'
-  }
-]
+const FAQ_KEYS = [0, 1, 2, 3]
 
-// Custom viewport threshold for scroll animations: starts at 20% from bottom, completes by 35%
 const scrollRevealProps = {
   initial: { opacity: 0, y: 44, scale: 0.97 },
   whileInView: { opacity: 1, y: 0, scale: 1 },
@@ -127,8 +111,8 @@ export default function Landing({ onStart }) {
               <path fill="#543927" d="M70.213 36.301c-.367.157-.782.223-1.185.242l-.01-.033c.245-.171.473-.367.665-.616a1 1 0 1 0-1.586-1.218c-.19.247-.44.344-.707.38a2.219 2.219 0 0 0-.485-.056 2.247 2.247 0 0 0 0 4.492 2.24 2.24 0 0 0 1.821-.94c.021 0 .041.003.063.003.736 0 1.516-.118 2.211-.417a.999.999 0 1 0-.787-1.837zM48.95 35c-.167 0-.328.021-.484.055-.267-.036-.517-.133-.707-.38a1.001 1.001 0 0 0-1.586 1.218c.191.249.42.445.665.615a.217.217 0 0 0-.007.024c-.423-.015-.846-.08-1.173-.226a1 1 0 1 0-.816 1.826c.648.29 1.431.406 2.186.406.03 0 .058-.004.088-.005a2.24 2.24 0 0 0 1.836.958A2.247 2.247 0 1 0 48.95 35z"></path>
             </svg>
             <div>
-              <strong>500+</strong>
-              <span>Global Occupations</span>
+              <strong>{CAREER_COUNT}</strong>
+              <span>{t('stats.occupations.label')}</span>
             </div>
           </div>
 
@@ -140,8 +124,8 @@ export default function Landing({ onStart }) {
               <path fill="#ff5151" d="m 11.279779,6.4424189 a 0.26461974,0.26461196 0 0 0 -0.02584,0.00103 0.26461974,0.26461196 0 0 0 -0.08992,0.025321 L 7.3434359,8.2790119 A 0.26461974,0.26461196 0 0 0 7.2183743,8.4040698 L 5.4173828,12.216788 a 0.26461974,0.26461196 0 0 0 0.35193,0.35347 L 9.580076,10.767769 A 0.26461974,0.26461196 0 0 0 9.7066892,10.642714 L 11.515432,6.8201769 a 0.26461974,0.26461196 0 0 0 -0.235653,-0.377758 z"></path>
             </svg>
             <div>
-              <strong>6 Dimensions</strong>
-              <span>RIASEC Psychological Model</span>
+              <strong>{t('stats.dimensions.value')}</strong>
+              <span>{t('stats.dimensions.label')}</span>
             </div>
           </div>
 
@@ -155,8 +139,8 @@ export default function Landing({ onStart }) {
               <path fill="#e49f4e" d="M22,13H16V27h6a3,3,0,0,0,3-3V16A3,3,0,0,0,22,13Z"></path>
             </svg>
             <div>
-              <strong>100% Free</strong>
-              <span>No Account Required</span>
+              <strong>{t('stats.free.value')}</strong>
+              <span>{t('stats.free.label')}</span>
             </div>
           </div>
         </motion.div>
@@ -165,8 +149,8 @@ export default function Landing({ onStart }) {
       {/* How It Works Section */}
       <section className="how-it-works section-wrap" id="how-it-works">
         <div className="section-heading text-center">
-          <h2>How Careero Works</h2>
-          <p>3 simple steps to discover your tailored career pathways and educational hubs.</p>
+          <h2>{t('howItWorks.title')}</h2>
+          <p>{t('howItWorks.subtitle')}</p>
         </div>
         <motion.div className="steps-grid" {...scrollRevealProps}>
           {/* Task 40: Step 1 Color Combination SVG */}
@@ -184,8 +168,8 @@ export default function Landing({ onStart }) {
               <path fill="#FF421D" d="M79.02 186.431c-7.1 8.462-19.923 9.664-26.733.968a96 96 0 0 1-13.462-23.317c-4.128-10.245 3.324-20.749 14.202-22.668l36.583-6.453c5.467-.964 10.544 2.844 13.32 7.652s3.536 11.108-.032 15.361z"></path>
               <path fill="#FDB62F" d="M101.878 56.795c-3.778-10.38 1.592-22.085 12.528-23.634a96 96 0 0 1 26.924-.001c10.937 1.548 16.307 13.254 12.53 23.633l-12.703 34.909c-1.898 5.217-7.735 7.71-13.287 7.71-5.551 0-11.388-2.492-13.287-7.71z"></path>
             </svg>
-            <h3>Take 30 Visual Choices</h3>
-            <p>Select activities and work environments that resonate with your natural preferences.</p>
+            <h3>{t('howItWorks.step1.title')}</h3>
+            <p>{t('howItWorks.step1.description')}</p>
           </div>
 
           {/* Task 41: Step 2 Flowchart SVG */}
@@ -205,8 +189,8 @@ export default function Landing({ onStart }) {
               <rect width="16" height="9" x="16" y="3" rx="1" ry="1" fill="#0ca0f2"></rect>
               <path d="M32,10v1c0,.55-.45,1-1,1h-14c-.55,0-1-.45-1-1v-7c0-.55.45-1,1-1h1v6c0,.55.45,1,1,1h13Z" fill="#0588e2"></path>
             </svg>
-            <h3>Pearson Vector Math Engine</h3>
-            <p>Calculates Pearson r correlation coefficient between your 6-vector profile and 500+ O*NET career vectors.</p>
+            <h3>{t('howItWorks.step2.title')}</h3>
+            <p>{t('howItWorks.step2.description', { count: CAREER_COUNT })}</p>
           </div>
 
           <div className="step-card">
@@ -219,8 +203,8 @@ export default function Landing({ onStart }) {
                 <polygon fill="#006df0" points="17 51 17 59 14 56 11 59 11 51 17 51"></polygon>
               </g>
             </svg>
-            <h3>Unlock Matched Pathways</h3>
-            <p>Receive localized top career recommendations, salary insights, and university matches.</p>
+            <h3>{t('howItWorks.step3.title')}</h3>
+            <p>{t('howItWorks.step3.description')}</p>
           </div>
         </motion.div>
       </section>
@@ -253,7 +237,7 @@ export default function Landing({ onStart }) {
 
         {/* Static 3D Books PNG Asset */}
         <motion.div
-          className="absolute -bottom-6 right-0 sm:right-[-300px] z-10 pointer-events-none"
+          className="dimensions-book-asset"
           initial={{ opacity: 0, y: 60, scale: 0.92 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ amount: 0.2, margin: '0px 0px -15% 0px' }}
@@ -261,8 +245,8 @@ export default function Landing({ onStart }) {
         >
           <img
             src="/asset-book.png"
-            alt="Books and Apple background asset"
-            className="w-40 sm:w-125 h-auto drop-shadow-xl"
+            alt=""
+            aria-hidden="true"
           />
         </motion.div>
       </section>
@@ -270,11 +254,11 @@ export default function Landing({ onStart }) {
       {/* FAQ Section (Task 42 & 43: Centered text & 1s smooth expandable accordion) */}
       <section className="faq-section section-wrap mt-12" id="faq">
         <motion.div className="section-heading text-center" {...scrollRevealProps}>
-          <h2>Frequently Asked Questions</h2>
-          <p className="text-center mx-auto">{t('faq.subtitle') || 'Everything you need to know about the Careero assessment engine.'}</p>
+          <h2>{t('faq.title')}</h2>
+          <p className="text-center mx-auto">{t('faq.subtitle')}</p>
         </motion.div>
         <motion.div className="faq-list" {...scrollRevealProps}>
-          {FAQS.map((faq, idx) => {
+          {FAQ_KEYS.map((idx) => {
             const isOpen = activeFaq === idx
             return (
               <div
@@ -283,7 +267,7 @@ export default function Landing({ onStart }) {
                 onClick={() => setActiveFaq(isOpen ? null : idx)}
               >
                 <div className="faq-question">
-                  <h3>{faq.q}</h3>
+                  <h3>{t(`faq.items.${idx}.q`)}</h3>
                   <ChevronDown size={18} className={`faq-chevron transition-transform duration-300 ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
                 </div>
                 <AnimatePresence initial={false}>
@@ -295,7 +279,7 @@ export default function Landing({ onStart }) {
                       transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                       style={{ overflow: 'hidden' }}
                     >
-                      <p className="faq-answer mt-3 text-slate-600 text-sm leading-relaxed">{faq.a}</p>
+                      <p className="faq-answer mt-3 text-slate-600 text-sm leading-relaxed">{t(`faq.items.${idx}.a`, { count: CAREER_COUNT })}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -305,19 +289,7 @@ export default function Landing({ onStart }) {
         </motion.div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer-wrap">
-        <div className="section-wrap footer-content">
-          <div className="footer-brand">
-            <div className="brand">
-              <img src="/logo.png" alt="C" className="brand-logo-img" width="32" height="32" />
-              <span className="brand-text">areero</span>
-            </div>
-            <p>Global AI Career Compass & Educational Matching Platform.</p>
-          </div>
-          <p className="copyright">© 2026 Careero Platform. Built for open global education access.</p>
-        </div>
-      </footer>
+      <Footer onStart={onStart} />
     </>
   )
 }

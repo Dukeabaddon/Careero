@@ -6,3 +6,6 @@ coverage
 .env.local
 .DS_Store
 npm-debug.log*
+tmp_onet/
+tmp_onet.zip
+graphify-out/

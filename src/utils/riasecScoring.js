@@ -64,14 +64,67 @@ export function pearsonCorrelation(candidate, career) {
 }
 
 export function correlationToMatchPercent(correlation) {
-  return Math.round(((Math.max(-1, Math.min(1, correlation)) + 1) / 2) * 100)
+  return Math.round(Math.max(0, Math.min(1, correlation)) * 100)
 }
 
 export function rankCareerMatches(scores, careers) {
   return careers
-    .map((career) => {
+    .map((career, index) => {
       const correlation = pearsonCorrelation(scores, career.vector)
-      return { ...career, correlation, matchPercent: correlationToMatchPercent(correlation) }
+      return {
+        ...career,
+        correlation,
+        matchPercent: correlationToMatchPercent(correlation),
+        _stableIndex: index,
+      }
     })
-    .sort((left, right) => right.correlation - left.correlation)
+    .sort((left, right) => {
+      if (right.correlation !== left.correlation) return right.correlation - left.correlation
+      if (right.matchPercent !== left.matchPercent) return right.matchPercent - left.matchPercent
+      return left.title.localeCompare(right.title) || left._stableIndex - right._stableIndex
+    })
+    .map(({ _stableIndex, ...career }) => career)
+}
+
+/**
+ * Client-side KursoKo-style tags from user + career RIASEC vectors.
+ * No AI tokens used.
+ */
+export function buildProfessionTags(userScores, career) {
+  const tags = []
+  const sortedUser = RIASEC_CODES
+    .map((code) => ({ code, score: Number(userScores?.[code] ?? 0) }))
+    .sort((a, b) => b.score - a.score)
+  const sortedCareer = RIASEC_CODES
+    .map((code) => ({ code, score: Number(career?.vector?.[code] ?? 0) }))
+    .sort((a, b) => b.score - a.score)
+
+  const topUser = sortedUser.slice(0, 2).map(({ code }) => code)
+  const topCareer = sortedCareer.slice(0, 2).map(({ code }) => code)
+
+  for (const code of topCareer) {
+    tags.push({
+      id: `${topUser.includes(code) ? 'alignment' : 'campus'}-${code}`,
+      type: topUser.includes(code) ? 'alignment' : 'campus',
+      code,
+    })
+  }
+
+  const keywordCount = Array.isArray(career?.skills) ? Math.min(career.skills.length, 3) : 0
+  if (keywordCount > 0) tags.push({ id: `keywords-${keywordCount}`, type: 'keywords', count: keywordCount })
+
+  if ((career?.matchPercent ?? 0) >= 85) tags.push({ id: 'flagship', type: 'flagship' })
+  if ((career?.matchPercent ?? 0) >= 80 && (userScores?.C ?? 0) >= 8) tags.push({ id: 'systems', type: 'systems' })
+
+  return tags.slice(0, 5)
+}
+
+export function coverageTag(coverage = '') {
+  const text = String(coverage).toLowerCase()
+  if (!text) return null
+  if (text.includes('full tuition') || text.includes('full scholarship') || text.includes('100%')) {
+    return 'Full tuition fees'
+  }
+  if (text.includes('partial')) return 'Partial funding'
+  return null
 }

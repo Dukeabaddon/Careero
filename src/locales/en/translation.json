@@ -1,6 +1,16 @@
 {
   "brand": { "tagline": "Career intelligence, made personal" },
-  "nav": { "language": "Language", "clearData": "Clear my data" },
+  "nav": {
+    "language": "Language",
+    "clearData": "Clear my data",
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "dimensions": "Dimensions",
+    "faq": "FAQ",
+    "startAssessment": "Start Assessment",
+    "searchLanguage": "Search language...",
+    "noLanguageFound": "No language found"
+  },
   "hero": {
     "badge": "Global AI career compass",
     "title": "Discover the career path built for how your mind works.",
@@ -36,17 +46,84 @@
     "confirm": "Start for {{city}}, {{country}}",
     "skipCity": "Continue with {{country}} only",
     "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector"
+    "close": "Close location selector",
+    "country": "Country",
+    "city": "City",
+    "selectCountry": "Select country",
+    "selectCityOptional": "Select city (optional)",
+    "continue": "Continue",
+    "noMatches": "No matches"
+  },
+  "stats": {
+    "occupations": { "value": "538", "label": "Matched occupations" },
+    "dimensions": { "value": "6 Dimensions", "label": "RIASEC Psychological Model" },
+    "free": { "value": "100% Free", "label": "No Account Required" }
+  },
+  "howItWorks": {
+    "title": "How Careero Works",
+    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "step1": {
+      "title": "Take 30 Visual Choices",
+      "description": "Select activities and work environments that resonate with your natural preferences."
+    },
+    "step2": {
+      "title": "Pearson Vector Math Engine",
+      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+    },
+    "step3": {
+      "title": "Unlock Matched Pathways",
+      "description": "Receive localized top career recommendations, salary insights, and university matches."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "items": [
+      {
+        "q": "How does the RIASEC assessment work?",
+        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+      },
+      {
+        "q": "Is my data private and secure?",
+        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+      },
+      {
+        "q": "Can I use this for university and scholarship discovery?",
+        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+      },
+      {
+        "q": "How long does the assessment take?",
+        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Global AI Career Compass & Educational Matching Platform.",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "dimensions": "Dimensions",
+    "faq": "FAQ",
+    "startAssessment": "Start Assessment",
+    "copyright": "© 2026 Careero Platform. Built for open global education access."
   },
   "quiz": {
     "questionOf": "Question {{current}} of {{total}}",
+    "percentComplete": "{{percent}}% complete",
+    "title": "Which would you rather do?",
+    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
+    "or": "or",
     "choose": "Choose the activity you would enjoy more.",
     "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
     "intensity": "How strongly does this fit?",
     "okay": "Okay",
     "like": "Like",
     "love": "Love it",
-    "next": "Next question",
+    "reactionJustOkay": "Just Okay",
+    "reactionGreat": "Great!",
+    "reactionLoveIt": "Love It!",
+    "previous": "Previous",
+    "next": "Next",
+    "nextQuestion": "Next question",
     "finish": "See my profile",
     "reset": "Reset progress",
     "resumeTitle": "Your journey is waiting.",
@@ -71,17 +148,60 @@
     "programs": "Scholarships and programs",
     "topProfession": "Top recommendation",
     "shareHeading": "Share your career character",
-    "shareDescription": "Send a compact profile without sharing your answers.",
+    "shareDescription": "Open a card you can download or post — answers stay private.",
     "shareTitle": "My Careero result",
     "shareProfession": "Top career: {{profession}} · {{percent}}% match",
     "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
     "share": "Share result",
+    "shareModalTitle": "Share your result",
+    "shareModalSubtitle": "Preview your card · post to stories or save for later",
+    "shareToSocial": "Share",
+    "downloadCard": "Download card",
+    "sharing": "Sharing…",
+    "savingCard": "Saving…",
+    "shareDownloaded": "Share card downloaded!",
+    "shareSavedCopied": "Card saved · caption copied!",
+    "shareClose": "Close",
     "shared": "Shared",
     "copied": "Copied",
     "shareFailed": "Sharing was unavailable.",
     "sources": "Grounding sources",
     "opensNewTab": "opens in a new tab",
     "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match"
+    "match": "{{percent}}% profile match",
+    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
+    "riasecScores": "RIASEC scores",
+    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
+    "matchesEyebrow": "Pearson 6-vector",
+    "professionMatches": "Profession matches for you",
+    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
+    "topMatchBadge": "Top match",
+    "professionLabel": "Profession",
+    "whyPath": "Why this path feels promising",
+    "topSchools": "Top schools for this path",
+    "topScholarships": "Top scholarships for this profession",
+    "visitSchool": "Visit school website",
+    "openScholarship": "Open scholarship",
+    "noSchools": "No verified schools found for this location yet.",
+    "noScholarships": "No verified scholarships found for this location yet.",
+    "archetypes": {
+      "pathfinder": "The Pathfinder",
+      "creator": "The Creator",
+      "strategist": "The Strategist",
+      "visionary": "The Visionary",
+      "analyst": "The Analyst",
+      "builder": "The Builder",
+      "guardian": "The Guardian"
+    },
+    "tagAlignment": "{{dimension}} alignment",
+    "tagCampusFit": "{{dimension}} campus fit",
+    "tagKeywords": "{{count}} program keywords",
+    "tagKeywordsOne": "1 program keyword",
+    "tagFlagship": "Flagship option",
+    "tagSystemsFit": "Strong systems fit",
+    "shareCardTopFit": "Top career fit",
+    "shareCardMatch": "{{percent}}% match",
+    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
+    "shareCardFooter": "careero · find career that fits you"
   }
 }

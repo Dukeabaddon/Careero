@@ -4,7 +4,10 @@
   "description": "Global multilingual RIASEC career assessment platform",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/dev-local.mjs",
+    "dev:local": "node scripts/dev-local.mjs",
+    "dev:frontend": "vite",
+    "server": "node scripts/dev-local.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -13,6 +16,8 @@
     "test:keys": "node scripts/validate-provider-keys.mjs",
     "test:recommendations-live": "node --env-file=.env.local scripts/smoke-recommendations.mjs",
     "validate:i18n": "node scripts/validate-i18n.mjs",
+    "build:careers": "node scripts/build-career-catalog.mjs",
+    "build:careers:onet": "node scripts/build-careers-from-onet.mjs",
     "check": "npm run lint && npm run validate:i18n && npm test && npm run build"
   },
   "keywords": [],
@@ -25,6 +30,7 @@
     "countries-list": "^3.4.1",
     "country-state-city": "^3.2.1",
     "framer-motion": "^12.42.2",
+    "html-to-image": "^1.11.13",
     "i18next": "^26.3.6",
     "lenis": "^1.3.25",
     "lucide-react": "^1.25.0",

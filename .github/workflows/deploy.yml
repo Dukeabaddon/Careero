@@ -24,10 +24,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run lint
-      - run: npm run validate:i18n
-      - run: npm test
-      - run: npm run build
+      - run: npm run check
       - uses: actions/upload-artifact@v4
         with:
           name: production-dist

@@ -2,17 +2,37 @@ import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Lenis from 'lenis'
 import { calculateRiasecScores, getTopDimensions, normalizeRiasecScores } from './utils/riasecScoring.js'
-import { loadQuizState, saveQuizState } from './utils/storage.js'
+import { clearQuizState, loadQuizState, saveQuizState } from './utils/storage.js'
 import Navbar from './components/Navbar.jsx'
 
 const Landing = lazy(() => import('./components/Landing.jsx'))
 const Assessment = lazy(() => import('./components/Assessment.jsx'))
 const Results = lazy(() => import('./components/Results.jsx'))
 
+function initialPhase(state) {
+  if (!state) return 'landing'
+  if (state.isCompleted) return 'results'
+  const answered = state.responses?.filter((item) => item.rating)?.length || 0
+  // Recover older sessions that finished the quiz but never persisted isCompleted.
+  if (answered >= 30) return 'results'
+  if (state.location?.country || state.responses?.length) return 'quiz'
+  return 'landing'
+}
+
 export default function App() {
   const { i18n } = useTranslation()
-  const [assessmentState, setAssessmentState] = useState(() => loadQuizState())
-  const [phase, setPhase] = useState(() => (loadQuizState()?.isCompleted ? 'results' : 'landing'))
+  const [assessmentState, setAssessmentState] = useState(() => {
+    const saved = loadQuizState()
+    if (!saved) return null
+    const answered = saved.responses?.filter((item) => item.rating)?.length || 0
+    if (!saved.isCompleted && answered >= 30) {
+      const repaired = { ...saved, isCompleted: true }
+      try { saveQuizState(repaired) } catch { /* ignore repair write failures */ }
+      return repaired
+    }
+    return saved
+  })
+  const [phase, setPhase] = useState(() => initialPhase(assessmentState ?? loadQuizState()))
 
   // Initialize Lenis smooth scroll
   useEffect(() => {
@@ -58,6 +78,15 @@ export default function App() {
     setAssessmentState(hydratedState)
   }
 
+  const handleLanguageChange = (code) => {
+    i18n.changeLanguage(code)
+    if (phase === 'quiz' && assessmentState) {
+      const nextState = { ...assessmentState, language: code }
+      saveQuizState(nextState)
+      setAssessmentState(nextState)
+    }
+  }
+
   const startQuiz = () => {
     // ALWAYS reset location so the country selection step renders first
     const freshState = {
@@ -87,9 +116,9 @@ export default function App() {
       <div className="ambient ambient-two" />
 
       <Navbar
-        onLanguageChange={(code) => i18n.changeLanguage(code)}
+        onLanguageChange={handleLanguageChange}
         onStart={startQuiz}
-        isQuiz={phase === 'quiz'}
+        compact={phase === 'quiz' || phase === 'results'}
         onGoHome={goHome}
       />
 
@@ -103,7 +132,12 @@ export default function App() {
             <Assessment
               assessmentState={assessmentState}
               onUpdateState={updateAssessment}
-              onComplete={() => setPhase('results')}
+              onComplete={(completedState) => {
+                updateAssessment({ ...completedState, isCompleted: true })
+                setPhase('results')
+                window.scrollTo({ top: 0, behavior: 'instant' })
+                if (window.lenis) window.lenis.scrollTo(0, { immediate: true })
+              }}
               onReset={() => {
                 const freshState = { ...assessmentState, location: null, responses: [], currentQuestionIndex: 0, isCompleted: false }
                 saveQuizState(freshState)
@@ -116,8 +150,8 @@ export default function App() {
             <Results
               profile={profile}
               onRetake={() => {
+                clearQuizState()
                 setAssessmentState(null)
-                saveQuizState(null)
                 setPhase('landing')
               }}
             />

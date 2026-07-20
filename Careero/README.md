@@ -126,17 +126,13 @@ Manual flow:
 
 ## How Codex and GPT-5.6 were used to build Careero
 
-Careero was built in ongoing collaboration with Codex running GPT-5.6. The team set product direction, tested each experience, shared screenshots and real results, and refined the frontend until it felt right for students. Codex acted as an implementation and engineering partner, turning those decisions into working code and helping investigate problems as they appeared.
+Codex with GPT-5.6 was our engineering partner for Careero.
 
-Work started from the project requirements and grew the application from the ground up. Codex with GPT-5.6 helped scaffold the React app, shape the architecture, configure six languages, implement the visual assessment, persist quiz progress, calculate normalized RIASEC scores, and match profiles against 923 O*NET occupations. The same collaboration carried the results experience, keyboard accessibility, share cards, location-aware recommendations, and the rule that career matches must appear instantly without waiting for AI.
+It helped plan and ship the stack: React app, six languages, visual RIASEC assessment, local persistence, Pearson ranking over 923 O*NET careers, instant top-10 results, share cards, and on-demand school or scholarship research. It also secured the recommendation API with Zod validation, profession checks, HTTPS link rules, caching, rate limits, and multi-provider failover when Gemini free tier was busy.
 
-The loop stayed practical. Humans tested the product, reported unexpected rankings or API failures, and described the intended behavior. Codex traced data and code paths, reproduced issues, proposed fixes, implemented them, and reran the test suite. That caught scoring concerns, malformed provider responses, cache and refresh bugs, rate-limit problems, and deployment risks without replacing human product decisions or visual direction.
+We kept product and frontend decisions. We tested real flows and screenshots. Codex reproduced bugs, patched them, and expanded unit plus live smoke tests. GPT-5.6 accelerated architecture, coding, and validation without replacing our direction.
 
-Codex also helped build and secure the recommendation backend. Together we added strict request validation, profession verification, prompt-injection boundaries, official HTTPS link validation, browser and server caching, request deduplication, abuse controls, and automatic rotation across Gemini, Groq, OpenRouter, Cerebras, and DeepSeek. The frontend stays useful when every AI provider is unavailable because assessment and career ranking run locally.
-
-Finally, Codex helped create unit and live smoke tests, scan for exposed credentials, configure GitHub Actions, prepare deployment, verify production builds, and document the system. Humans remained responsible for the concept, design choices, testing feedback, and final product direction. GPT-5.6 through Codex accelerated planning, architecture, coding, validation, and shipping the idea into a tested application.
-
-The required `/feedback` Codex Session ID will be added directly to the Devpost submission.
+`/feedback` Codex Session ID goes in the Devpost form.
 
 ## Education-track submission draft
 

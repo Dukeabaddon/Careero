@@ -352,45 +352,57 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
 .lenis.lenis-stopped { overflow: hidden; }
 
-/* Task 36: KursoKo Floating Pill Navbar (Rest at top -> Floating Pill following on scroll) */
+/* Task 36: KursoKo Floating Pill Navbar — smooth morph between rest ↔ pill */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 max(24px, calc((100vw - 1240px) / 2));
-  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1), opacity 350ms ease, width 400ms cubic-bezier(0.16, 1, 0.3, 1), border-radius 400ms ease, background-color 300ms ease, box-shadow 400ms ease, margin 400ms ease;
+  /* Transition ALL properties that change between rest ↔ pill */
+  transition:
+    top 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    left 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    width 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    height 400ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    padding 400ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 350ms ease,
+    box-shadow 400ms ease,
+    border-color 350ms ease,
+    backdrop-filter 300ms ease,
+    transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navbar.nav-mode-rest {
   top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 0;
   height: 76px;
+  border-radius: 0;
+  padding: 0 max(24px, calc((100vw - 1240px) / 2));
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--border);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
   backdrop-filter: blur(20px);
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .navbar.nav-mode-pill {
   top: 14px;
+  /* Center with left + translateX so width can transition smoothly */
+  left: 50%;
+  transform: translateX(-50%);
   width: min(960px, calc(100vw - 32px));
-  margin-inline: auto;
-  border-radius: 999px;
   height: 64px;
-  padding-inline: 24px;
-  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 0 24px;
   background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border-strong);
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
   backdrop-filter: blur(16px);
-  transform: translateY(0);
-  opacity: 1;
 }
 
 /* Task 38: Clean Normal Circular Orbit (Strictly Locked on Orbit Track, Upright, No Bloom) */

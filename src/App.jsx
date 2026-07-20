@@ -59,6 +59,18 @@ export default function App() {
   }
 
   const startQuiz = () => {
+    if (!assessmentState?.location?.country) {
+      const freshState = {
+        version: 1,
+        location: null,
+        language: i18n.language,
+        currentQuestionIndex: 0,
+        responses: [],
+        isCompleted: false,
+      }
+      saveQuizState(freshState)
+      setAssessmentState(freshState)
+    }
     setPhase('quiz')
     window.scrollTo({ top: 0, behavior: 'instant' })
     if (window.lenis) window.lenis.scrollTo(0, { immediate: true })

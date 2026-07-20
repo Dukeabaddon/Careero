@@ -283,6 +283,124 @@ button:disabled {
   transform: translateY(-2px);
 }
 
+/* Language Selector Dropdown */
+.custom-language-control {
+  position: relative;
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 280px;
+  max-height: 380px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: dropdown-enter 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdown-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.language-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.language-search .search-icon {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.language-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.language-search input::placeholder {
+  color: var(--muted);
+}
+
+.language-options-list {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  flex: 1;
+  padding: 6px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: background-color 120ms ease;
+}
+
+.language-option:hover {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.language-option.active {
+  background: rgba(37, 99, 235, 0.1);
+  font-weight: 600;
+}
+
+.language-option .flag-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.language-option .lang-full-name {
+  flex: 1;
+  text-align: left;
+}
+
+.language-option .lang-code-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--surface-raised);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.no-lang-found {
+  padding: 20px 16px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 /* Reaction GIF Cards (Quiz Intensity Ratings) */
 .reaction-gif-card {
   display: flex;

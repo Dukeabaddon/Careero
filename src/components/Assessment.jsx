@@ -50,7 +50,7 @@ function useGifFirstFrame(gifSrc) {
         ctx.drawImage(img, 0, 0)
         setPosterSrc(canvas.toDataURL('image/png'))
       } catch {
-        // canvas tainted or CORS issue — fall back to gif src
+        // canvas fallback to gif src
         setPosterSrc(gifSrc)
       }
     }
@@ -61,7 +61,7 @@ function useGifFirstFrame(gifSrc) {
   return posterSrc
 }
 
-function ReactionCard({ config, isSelected, onClick }) {
+function ReactionCard({ config, isSelected, onClick, onDoubleClick }) {
   const [isHovered, setIsHovered] = useState(false)
   const isActive = isSelected || isHovered
   const posterSrc = useGifFirstFrame(config.gif)
@@ -71,6 +71,7 @@ function ReactionCard({ config, isSelected, onClick }) {
       type="button"
       className={`reaction-gif-card ${isSelected ? 'active' : ''}`}
       onClick={onClick}
+      onDoubleClick={onDoubleClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       data-testid={`rating-${config.value}-btn`}
@@ -164,23 +165,18 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
   const response = assessmentState?.responses?.find(({ questionId }) => questionId === question?.id)
   const progress = questionsList.length ? ((currentIndex + 1) / questionsList.length) * 100 : 0
 
-  const selectOption = (option, timestamp) => {
-    const selected = question[option]
+  // Atomic function to select option and rating together without stale closure bugs
+  const selectOptionAndRating = (optionKey, rating = null, timestamp = Date.now()) => {
+    const selected = question[optionKey]
+    if (!selected) return
+    const newRating = rating !== null ? rating : (response?.selectedCode === selected.code ? response.rating : null)
     const nextResponse = {
       questionId: question.id,
       selectedCode: selected.code,
-      rating: response?.selectedCode === selected.code ? response.rating : null,
+      rating: newRating,
       timestamp,
     }
     onUpdateState({ ...assessmentState, responses: upsertResponse(assessmentState.responses || [], nextResponse) })
-  }
-
-  const selectRating = (rating, timestamp) => {
-    if (!response) return
-    onUpdateState({
-      ...assessmentState,
-      responses: upsertResponse(assessmentState.responses || [], { ...response, rating, timestamp }),
-    })
   }
 
   const moveBack = () => {
@@ -201,19 +197,22 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     if (!hasLocation) return undefined
     const handleKeyboard = (event) => {
       if (event.altKey || event.ctrlKey || event.metaKey || event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement) return
-      if (event.key === 'ArrowLeft' || event.key.toLowerCase() === 'a') selectOption('optionA', event.timeStamp)
-      if (event.key === 'ArrowRight' || event.key.toLowerCase() === 'b') selectOption('optionB', event.timeStamp)
-      if (['1', '2', '3'].includes(event.key) && response) selectRating(Number(event.key), event.timeStamp)
+      if (event.key === 'ArrowLeft' || event.key.toLowerCase() === 'a') selectOptionAndRating('optionA', null, event.timeStamp)
+      if (event.key === 'ArrowRight' || event.key.toLowerCase() === 'b') selectOptionAndRating('optionB', null, event.timeStamp)
+      if (['1', '2', '3'].includes(event.key) && response?.selectedCode) {
+        const activeOptKey = response.selectedCode === question.optionA.code ? 'optionA' : 'optionB'
+        selectOptionAndRating(activeOptKey, Number(event.key), event.timeStamp)
+      }
       if (event.key === 'Enter' && response?.rating) moveNext()
     }
     document.addEventListener('keydown', handleKeyboard)
     return () => document.removeEventListener('keydown', handleKeyboard)
   })
 
-  // STEP 0: Render Page-Based Location Requirement View (No Modal!)
+  // STEP 0: Render Page-Based Location Requirement View (Country & City Setup)
   if (!hasLocation) {
     return (
-      <section className="location-page-wrap section-wrap max-w-2xl mx-auto py-10 px-4">
+      <section className="location-page-wrap section-wrap max-w-2xl mx-auto py-12 px-4 min-h-[calc(100vh-100px)] flex flex-col justify-center">
         <motion.div
           className="location-card bg-white border border-slate-200 rounded-3xl p-8 shadow-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -423,7 +422,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
         >
           <div className="text-center mb-8">
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">Which would you rather do?</h1>
-            <p className="text-sm text-slate-500">Pick one activity and rate how much you'd enjoy it.</p>
+            <p className="text-sm text-slate-500">Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-10">
@@ -436,7 +435,11 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                   className="choice-card-wrap border-2 rounded-3xl p-6 bg-white transition-all flex flex-col justify-between border-slate-200"
                 >
                   <div
-                    onClick={(e) => selectOption(optionKey, e.timeStamp)}
+                    onClick={(e) => selectOptionAndRating(optionKey, null, e.timeStamp)}
+                    onDoubleClick={(e) => {
+                      selectOptionAndRating(optionKey, null, e.timeStamp)
+                      if (response?.rating) moveNext()
+                    }}
                     className="cursor-pointer"
                   >
                     <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-[#fcfcfc] flex items-center justify-center">
@@ -458,8 +461,25 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                         isSelected={isSelected && response?.rating === cfg.value}
                         onClick={(e) => {
                           e.stopPropagation()
-                          if (!isSelected) selectOption(optionKey, e.timeStamp)
-                          selectRating(cfg.value, e.timeStamp)
+                          selectOptionAndRating(optionKey, cfg.value, e.timeStamp)
+                        }}
+                        onDoubleClick={(e) => {
+                          e.stopPropagation()
+                          selectOptionAndRating(optionKey, cfg.value, e.timeStamp)
+                          if (currentIndex < questionsList.length - 1) {
+                            onUpdateState({
+                              ...assessmentState,
+                              responses: upsertResponse(assessmentState.responses || [], {
+                                questionId: question.id,
+                                selectedCode: opt.code,
+                                rating: cfg.value,
+                                timestamp: e.timeStamp,
+                              }),
+                              currentQuestionIndex: currentIndex + 1,
+                            })
+                          } else {
+                            onComplete({ ...assessmentState, isCompleted: true })
+                          }
                         }}
                       />
                     ))}

@@ -120,7 +120,7 @@ export default function LocationModal({ open, onClose, onConfirm }) {
   return (
     <AnimatePresence>
       {open && (
-        <motion.div className="modal-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <motion.div className="modal-backdrop" data-lenis-prevent initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
           <motion.section
             className="location-modal"
             ref={modalRef}

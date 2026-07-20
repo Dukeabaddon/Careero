@@ -22,8 +22,8 @@ export default function Navbar({ onLanguageChange, onStart, compact, onGoHome })
 
         <div className="quiz-nav-brand flex items-center gap-3">
           <a className="brand flex items-center gap-1" href="/" onClick={(e) => { e.preventDefault(); onGoHome(); }} aria-label="Careero home">
-            <img src="/logo.png" alt="C" className="brand-logo-img" width="36" height="36" />
-            <span className="brand-text font-bold text-slate-900 text-lg">areero</span>
+            <img src="/logo.png" alt="" aria-hidden="true" className="brand-logo-img" width="36" height="36" />
+            <span className="brand-text font-bold text-slate-900 text-lg">Careero</span>
           </a>
           <LanguageSelector onLanguageChange={onLanguageChange} compact />
         </div>
@@ -34,8 +34,8 @@ export default function Navbar({ onLanguageChange, onStart, compact, onGoHome })
   return (
     <header className={`navbar nav-mode-${mode}`}>
       <a className="brand" href="/" aria-label="Careero home">
-        <img src="/logo.png" alt="C" className="brand-logo-img" width="48" height="48" />
-        <span className="brand-text">areero</span>
+        <img src="/logo.png" alt="" aria-hidden="true" className="brand-logo-img" width="48" height="48" />
+        <span className="brand-text">Careero</span>
       </a>
 
       <nav className="nav-links-center hidden md:flex items-center gap-7">

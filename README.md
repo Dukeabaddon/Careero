@@ -124,34 +124,17 @@ Manual flow:
 7. Refresh Results. Saved results should remain.
 8. Verify every education link opens an official HTTPS page.
 
-## Deploy to Vercel
+## How Codex and GPT-5.6 were used to build Careero
 
-1. Import `Dukeabaddon/Careero` into Vercel and name the project `careero` in lowercase.
-2. Keep the root directory empty because Careero is the repository root.
-3. Use the Vite preset, `npm run build`, and output directory `dist`.
-4. Keep Node.js 24. The repository pins it through `package.json`.
-5. Add the server-only variables from `.env.example` to Production and Preview.
-6. Deploy, then set `OPENROUTER_SITE_URL` to the deployed HTTPS URL and redeploy.
-7. Add Upstash Redis for deployment-wide caching and rate limiting.
-8. Enable Vercel Firewall rate limiting before public promotion.
+Careero was built in ongoing collaboration with Codex running GPT-5.6. The team set product direction, tested each experience, shared screenshots and real results, and refined the frontend until it felt right for students. Codex acted as an implementation and engineering partner, turning those decisions into working code and helping investigate problems as they appeared.
 
-The recommendation route uses a 90-second Node.js function limit. This supports provider failover without the Edge runtime's 25-second initial-response deadline. Provider network waits do not expose keys to the browser.
+Work started from the project requirements and grew the application from the ground up. Codex with GPT-5.6 helped scaffold the React app, shape the architecture, configure six languages, implement the visual assessment, persist quiz progress, calculate normalized RIASEC scores, and match profiles against 923 O*NET occupations. The same collaboration carried the results experience, keyboard accessibility, share cards, location-aware recommendations, and the rule that career matches must appear instantly without waiting for AI.
 
-The Vercel CLI is version-pinned in npm scripts without becoming an application dependency. Use `npm run vercel:dev`, `npm run deploy:preview`, or `npm run deploy:production` when CLI deployment is preferred.
+The loop stayed practical. Humans tested the product, reported unexpected rankings or API failures, and described the intended behavior. Codex traced data and code paths, reproduced issues, proposed fixes, implemented them, and reran the test suite. That caught scoring concerns, malformed provider responses, cache and refresh bugs, rate-limit problems, and deployment risks without replacing human product decisions or visual direction.
 
-The included workflow verifies pull requests and can deploy `main` after `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID` are added as GitHub Actions secrets.
+Codex also helped build and secure the recommendation backend. Together we added strict request validation, profession verification, prompt-injection boundaries, official HTTPS link validation, browser and server caching, request deduplication, abuse controls, and automatic rotation across Gemini, Groq, OpenRouter, Cerebras, and DeepSeek. The frontend stays useful when every AI provider is unavailable because assessment and career ranking run locally.
 
-## How I used Codex
-
-I built Careero through an ongoing collaboration with Codex. I provided the product direction, tested each experience, shared screenshots and real results, and refined the frontend until it matched the experience I wanted. Codex worked alongside me as an implementation and engineering partner, turning those decisions into working code and helping investigate problems as they appeared.
-
-We started with the project requirements and built the application from the ground up. Codex helped scaffold the React application, organize the architecture, configure six languages, implement the visual assessment, persist quiz progress, calculate normalized RIASEC scores, and match profiles against 923 O*NET occupations. We then worked through the results experience, keyboard accessibility, share cards, location-aware recommendations, and the rule that career matches must appear instantly without waiting for AI.
-
-Our process was iterative and practical. I tested the application, reported unexpected rankings or API failures, and explained how I wanted the experience to behave. Codex traced the relevant data and code paths, reproduced issues, proposed fixes, implemented them, and reran the test suite. This helped us catch scoring concerns, malformed provider responses, cache behavior, refresh behavior, rate-limit problems, and deployment risks without replacing my product decisions or visual direction.
-
-Codex also helped build and secure the recommendation backend. Together we added strict request validation, profession verification, prompt-injection boundaries, official HTTPS link validation, browser and server caching, request deduplication, abuse controls, and automatic rotation across Gemini, Groq, OpenRouter, Cerebras, and DeepSeek. The frontend remains useful when every AI provider is unavailable because the assessment and career ranking run locally.
-
-Finally, Codex helped create unit and live smoke tests, scan for exposed credentials, configure GitHub Actions, prepare Vercel deployment, verify production builds, and document the system. I remained responsible for the concept, design choices, testing feedback, and final product direction; Codex helped me move from those decisions to a tested, deployable application much faster.
+Finally, Codex helped create unit and live smoke tests, scan for exposed credentials, configure GitHub Actions, prepare deployment, verify production builds, and document the system. Humans remained responsible for the concept, design choices, testing feedback, and final product direction. GPT-5.6 through Codex accelerated planning, architecture, coding, validation, and shipping the idea into a tested application.
 
 The required `/feedback` Codex Session ID will be added directly to the Devpost submission.
 

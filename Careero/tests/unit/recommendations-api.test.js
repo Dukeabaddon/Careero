@@ -1,5 +1,9 @@
 import { describe, expect, it, vi } from 'vitest'
-import handler, { buildPrompt, createRecommendationsHandler } from '../../api/v1/recommendations.js'
+import deploymentHandler, {
+  buildPrompt,
+  createRecommendationsHandler,
+  recommendationsHandler as handler,
+} from '../../api/v1/recommendations.js'
 
 const topProfession = { id: 'data-scientists-15-2051-00', title: 'Data Scientists', matchPercent: 100 }
 const validProfile = {
@@ -57,7 +61,11 @@ function successfulEngine(recommendations = validRecommendations) {
   }
 }
 
-describe('recommendations edge API', () => {
+describe('recommendations serverless API', () => {
+  it('exports a Vercel Web Handler', () => {
+    expect(deploymentHandler.fetch).toBe(handler)
+  })
+
   it('rejects unsupported methods', async () => {
     const response = await handler(new Request('https://example.test/api/v1/recommendations'))
     expect(response.status).toBe(405)

@@ -11,7 +11,7 @@ for (const [name, value] of Object.entries(localEnvironment)) {
   if (process.env[name] === undefined) process.env[name] = value
 }
 
-const [{ default: recommendationsHandler }, vite] = await Promise.all([
+const [{ recommendationsHandler }, vite] = await Promise.all([
   import('../api/v1/recommendations.js'),
   createViteServer({
     appType: 'spa',

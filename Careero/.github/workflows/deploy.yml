@@ -60,8 +60,8 @@ jobs:
       - if: steps.deployment.outputs.configured == 'true'
         run: npm ci
       - if: steps.deployment.outputs.configured == 'true'
-        run: npx --yes vercel@latest pull --yes --environment=production --token="$VERCEL_TOKEN"
+        run: npx --yes vercel@56.3.2 pull --yes --environment=production --token="$VERCEL_TOKEN"
       - if: steps.deployment.outputs.configured == 'true'
-        run: npx --yes vercel@latest build --prod --token="$VERCEL_TOKEN"
+        run: npx --yes vercel@56.3.2 build --prod --token="$VERCEL_TOKEN"
       - if: steps.deployment.outputs.configured == 'true'
-        run: npx --yes vercel@latest deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        run: npx --yes vercel@56.3.2 deploy --prebuilt --prod --token="$VERCEL_TOKEN"

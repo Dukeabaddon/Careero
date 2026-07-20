@@ -4,8 +4,6 @@ import { MultiLLMRotator, createEnvironmentKeyPool } from '../../src/services/mu
 import { createRecommendationCacheKey, ServerRecommendationCache } from '../../src/services/serverRecommendationCache.js'
 import { rankCareerMatches } from '../../src/utils/riasecScoring.js'
 
-export const config = { runtime: 'edge' }
-
 const locationText = z
   .string()
   .trim()
@@ -306,4 +304,8 @@ export function createRecommendationsHandler(options = {}) {
 }
 }
 
-export default createRecommendationsHandler()
+export const recommendationsHandler = createRecommendationsHandler()
+
+export default {
+  fetch: recommendationsHandler,
+}

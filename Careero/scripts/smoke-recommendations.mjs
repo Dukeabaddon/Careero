@@ -1,4 +1,4 @@
-import handler from '../api/v1/recommendations.js'
+import { recommendationsHandler as handler } from '../api/v1/recommendations.js'
 
 const payload = {
   profile: {

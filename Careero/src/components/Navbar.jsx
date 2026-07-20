@@ -1,50 +1,32 @@
-import { useState, useRef, useEffect } from 'react'
-import { ChevronDown, Search, ChevronLeft } from 'lucide-react'
+import { ChevronLeft } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { SUPPORTED_LANGUAGES } from '../i18n.js'
 import { useScrollNavbar } from '../hooks/useScrollNavbar.js'
+import LanguageSelector from './LanguageSelector.jsx'
 
-export default function Navbar({ onLanguageChange, onStart, isQuiz, onGoHome }) {
-  const { i18n } = useTranslation()
+export default function Navbar({ onLanguageChange, onStart, compact, onGoHome }) {
+  const { t } = useTranslation()
   const { mode } = useScrollNavbar()
-  const [isOpen, setIsOpen] = useState(false)
-  const [searchTerm, setSearchTerm] = useState('')
-  const dropdownRef = useRef(null)
 
-  const currentLang = SUPPORTED_LANGUAGES.find((l) => l.code === i18n.language) || SUPPORTED_LANGUAGES[0]
-
-  const filteredLanguages = SUPPORTED_LANGUAGES.filter((l) =>
-    l.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    l.code.toLowerCase().includes(searchTerm.toLowerCase())
-  )
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false)
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
-
-  if (isQuiz) {
+  if (compact) {
     return (
-      <header className="navbar nav-mode-rest flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white/95 backdrop-blur-md sticky top-0 z-50">
+      <header className="navbar navbar-compact">
         <button
           type="button"
           onClick={onGoHome}
-          className="flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors cursor-pointer"
+          className="quiz-nav-home flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors cursor-pointer"
           data-testid="back-to-home-btn"
         >
           <ChevronLeft size={18} />
-          <span>Home</span>
+          <span>{t('nav.home')}</span>
         </button>
 
-        <a className="brand flex items-center gap-1" href="/" onClick={(e) => { e.preventDefault(); onGoHome(); }} aria-label="Careero home">
-          <img src="/logo.png" alt="C" className="brand-logo-img" width="36" height="36" />
-          <span className="brand-text font-bold text-slate-900 text-lg">areero</span>
-        </a>
+        <div className="quiz-nav-brand flex items-center gap-3">
+          <a className="brand flex items-center gap-1" href="/" onClick={(e) => { e.preventDefault(); onGoHome(); }} aria-label="Careero home">
+            <img src="/logo.png" alt="C" className="brand-logo-img" width="36" height="36" />
+            <span className="brand-text font-bold text-slate-900 text-lg">areero</span>
+          </a>
+          <LanguageSelector onLanguageChange={onLanguageChange} compact />
+        </div>
       </header>
     )
   }
@@ -56,77 +38,23 @@ export default function Navbar({ onLanguageChange, onStart, isQuiz, onGoHome }) 
         <span className="brand-text">areero</span>
       </a>
 
-      {/* Centered Navlinks */}
       <nav className="nav-links-center hidden md:flex items-center gap-7">
-        <a href="#how-it-works" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">How It Works</a>
-        <a href="#dimensions" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Dimensions</a>
-        <a href="#faq" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">FAQ</a>
+        <a href="#how-it-works" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">{t('nav.howItWorks')}</a>
+        <a href="#dimensions" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">{t('nav.dimensions')}</a>
+        <a href="#faq" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">{t('nav.faq')}</a>
       </nav>
 
-      {/* Language Selector + Start Assessment Button */}
       <div className="nav-actions flex items-center gap-3">
-        <div className="custom-language-control" ref={dropdownRef}>
-          <button
-            type="button"
-            className="language-trigger-pill px-3.5 h-9.5 flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 shadow-sm text-xs font-semibold text-slate-700 hover:border-blue-500 hover:bg-slate-50 transition-all cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-expanded={isOpen}
-            data-testid="language-dropdown"
-          >
-            <span className="flag-icon text-sm">{currentLang.flag}</span>
-            <span className="lang-name">{currentLang.short}</span>
-            <ChevronDown size={13} className={`chevron transition-transform duration-200 ${isOpen ? 'rotate-180 text-blue-600' : 'text-slate-400'}`} />
-          </button>
-
-          {isOpen && (
-            <div className="language-menu" data-lenis-prevent>
-              <div className="language-search">
-                <Search size={14} className="search-icon" />
-                <input
-                  type="text"
-                  placeholder="Search language..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  autoFocus
-                />
-              </div>
-
-              <div className="language-options-list">
-                {filteredLanguages.length > 0 ? (
-                  filteredLanguages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      type="button"
-                      className={`language-option ${lang.code === currentLang.code ? 'active' : ''}`}
-                      onClick={() => {
-                        i18n.changeLanguage(lang.code)
-                        if (onLanguageChange) onLanguageChange(lang.code)
-                        setIsOpen(false)
-                        setSearchTerm('')
-                      }}
-                    >
-                      <span className="flag-icon">{lang.flag}</span>
-                      <span className="lang-full-name">{lang.name}</span>
-                      <span className="lang-code-badge">{lang.code.toUpperCase()}</span>
-                    </button>
-                  ))
-                ) : (
-                  <div className="no-lang-found">No language found</div>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Start Assessment Button with 1.2s smooth color transition */}
         <button
           type="button"
           className="nav-start-btn"
           onClick={onStart}
           data-testid="nav-start-assessment-btn"
         >
-          Start Assessment
+          {t('nav.startAssessment')}
         </button>
+
+        <LanguageSelector onLanguageChange={onLanguageChange} />
       </div>
     </header>
   )

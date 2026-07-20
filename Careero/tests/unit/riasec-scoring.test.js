@@ -40,6 +40,12 @@ describe('RIASEC scoring engine', () => {
     expect(pearsonCorrelation(user, inverse)).toBeLessThan(-0.9)
   })
 
+  it('reports positive Pearson alignment without inflating it into a probability', () => {
+    expect(correlationToMatchPercent(0.943456)).toBe(94)
+    expect(correlationToMatchPercent(0)).toBe(0)
+    expect(correlationToMatchPercent(-0.8)).toBe(0)
+  })
+
   it('extracts the top dimensions with stable tie handling', () => {
     const top = getTopDimensions({ R: 9.5, I: 11, A: 4, S: 3, E: 6, C: 8 }, 2)
     expect(top).toEqual([{ code: 'I', score: 11 }, { code: 'R', score: 9.5 }])

@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, ArrowRight, Check, MapPin, Search, Building2 } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { ArrowLeft, ArrowRight, ChevronDown, Search } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Country, City } from 'country-state-city'
+import ClickSpark from './ClickSpark.jsx'
 import { getLocalizedQuestion } from '../data/localizedQuestions.js'
 import questionsData from '../data/questions.json'
 
@@ -25,10 +26,10 @@ function upsertResponse(responses, response) {
   return responses.map((item, index) => (index === existingIndex ? response : item))
 }
 
-const REACTION_CONFIG = [
-  { value: 1, key: 'okay', label: 'Just Okay', gif: '/reactions/just-okay.gif' },
-  { value: 2, key: 'like', label: 'Great!', gif: '/reactions/wow.gif' },
-  { value: 3, key: 'love', label: 'Love It!', gif: '/reactions/love-it.gif' },
+const REACTION_KEYS = [
+  { value: 1, labelKey: 'quiz.reactionJustOkay', gif: '/reactions/just-okay.gif' },
+  { value: 2, labelKey: 'quiz.reactionGreat', gif: '/reactions/wow.gif' },
+  { value: 3, labelKey: 'quiz.reactionLoveIt', gif: '/reactions/love-it.gif' },
 ]
 
 /**
@@ -61,10 +62,11 @@ function useGifFirstFrame(gifSrc) {
   return posterSrc
 }
 
-function ReactionCard({ config, isSelected, onClick, onDoubleClick }) {
+function ReactionCard({ config, label, isSelected, onClick, onDoubleClick }) {
   const [isHovered, setIsHovered] = useState(false)
-  const isActive = isSelected || isHovered
   const posterSrc = useGifFirstFrame(config.gif)
+  const allowHoverPlayback = config.value !== 1
+  const shouldAnimate = isSelected || (allowHoverPlayback && isHovered)
 
   return (
     <button
@@ -78,46 +80,54 @@ function ReactionCard({ config, isSelected, onClick, onDoubleClick }) {
     >
       <div className="gif-rounded-thumb">
         <img
-          src={isActive ? config.gif : (posterSrc || config.gif)}
-          alt={config.label}
+          src={shouldAnimate ? config.gif : (posterSrc || config.gif)}
+          alt={label}
           className="reaction-gif-img"
         />
       </div>
-      <span className="reaction-label">{config.label}</span>
+      <span className="reaction-label">{label}</span>
     </button>
   )
 }
 
 export default function Assessment({ questions = defaultQuestions, assessmentState, onUpdateState, onComplete, onReset: _onReset }) {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
 
-  // Location Step state if location is not set yet
-  const [locStep, setLocStep] = useState(1)
-  const [countrySearch, setCountrySearch] = useState('')
-  const [citySearch, setCitySearch] = useState('')
+  const [countryOpen, setCountryOpen] = useState(false)
+  const [cityOpen, setCityOpen] = useState(false)
+  const [countryQuery, setCountryQuery] = useState('')
+  const [cityQuery, setCityQuery] = useState('')
   const [selectedCountry, setSelectedCountry] = useState(null)
   const [selectedCity, setSelectedCity] = useState(null)
-  const [customCityInput, setCustomCityInput] = useState('')
+  const countryDropdownRef = useRef(null)
+  const cityDropdownRef = useRef(null)
+  const latestResponseRef = useRef(null)
 
   const hasLocation = Boolean(assessmentState?.location?.country)
 
   // Load 250 Worldwide Countries using country-state-city library
+  const regionNames = useMemo(() => {
+    try {
+      return new Intl.DisplayNames([i18n.language], { type: 'region' })
+    } catch {
+      return null
+    }
+  }, [i18n.language])
+
   const allCountries = useMemo(() => {
     return Country.getAllCountries().map((c) => ({
       isoCode: c.isoCode,
-      name: c.name,
+      name: regionNames?.of(c.isoCode) || c.name,
       flag: c.flag || '🌐',
     })).sort((a, b) => a.name.localeCompare(b.name, i18n.language))
-  }, [i18n.language])
+  }, [i18n.language, regionNames])
 
-  // Filter countries by search query
   const filteredCountries = useMemo(() => {
-    const q = countrySearch.trim().toLowerCase()
+    const q = countryQuery.trim().toLowerCase()
     if (!q) return allCountries
-    return allCountries.filter(
-      (c) => c.name.toLowerCase().includes(q) || c.isoCode.toLowerCase().includes(q)
-    )
-  }, [allCountries, countrySearch])
+    return allCountries
+      .filter((c) => c.name.toLowerCase().includes(q) || c.isoCode.toLowerCase().includes(q))
+  }, [allCountries, countryQuery])
 
   // Load cities for selected country using country-state-city library
   const allCities = useMemo(() => {
@@ -127,19 +137,45 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
     return unique.sort((a, b) => a.localeCompare(b, i18n.language))
   }, [selectedCountry, i18n.language])
 
-  // Filter cities by search query
   const filteredCities = useMemo(() => {
-    const q = citySearch.trim().toLowerCase()
-    if (!q) return allCities.slice(0, 100)
-    return allCities.filter((c) => c.toLowerCase().includes(q)).slice(0, 100)
-  }, [allCities, citySearch])
+    const q = cityQuery.trim().toLowerCase()
+    if (!q) return allCities
+    return allCities.filter((c) => c.toLowerCase().includes(q))
+  }, [allCities, cityQuery])
 
-  const confirmLocation = (chosenCityName) => {
+  const pickCountry = (country) => {
+    setSelectedCountry(country)
+    setSelectedCity(null)
+    setCountryQuery('')
+    setCityQuery('')
+    setCountryOpen(false)
+    setCityOpen(false)
+  }
+
+  const pickCity = (cityName) => {
+    setSelectedCity(cityName)
+    setCityQuery('')
+    setCityOpen(false)
+  }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (countryDropdownRef.current && !countryDropdownRef.current.contains(event.target)) {
+        setCountryOpen(false)
+      }
+      if (cityDropdownRef.current && !cityDropdownRef.current.contains(event.target)) {
+        setCityOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleOutsideClick)
+    return () => document.removeEventListener('mousedown', handleOutsideClick)
+  }, [])
+
+  const confirmLocation = () => {
     if (!selectedCountry) return
-    const finalCity = chosenCityName || customCityInput.trim() || ''
     const newLocation = {
       country: selectedCountry.name,
-      city: finalCity,
+      city: selectedCity || '',
     }
     const nextState = {
       version: 1,
@@ -165,306 +201,303 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
   const response = assessmentState?.responses?.find(({ questionId }) => questionId === question?.id)
   const progress = questionsList.length ? ((currentIndex + 1) / questionsList.length) * 100 : 0
 
+  const assessmentRef = useRef(assessmentState)
+  const questionRef = useRef(question)
+  const currentIndexRef = useRef(currentIndex)
+  const questionsLenRef = useRef(questionsList.length)
+
+  useEffect(() => {
+    assessmentRef.current = assessmentState
+  }, [assessmentState])
+
+  useEffect(() => {
+    questionRef.current = question
+    currentIndexRef.current = currentIndex
+    questionsLenRef.current = questionsList.length
+  }, [question, currentIndex, questionsList.length])
+
+  useEffect(() => {
+    latestResponseRef.current = response || null
+  }, [response])
+
   // Atomic function to select option and rating together without stale closure bugs
   const selectOptionAndRating = (optionKey, rating = null, timestamp = Date.now()) => {
-    const selected = question[optionKey]
-    if (!selected) return
-    const newRating = rating !== null ? rating : (response?.selectedCode === selected.code ? response.rating : null)
+    const activeQuestion = questionRef.current
+    const activeState = assessmentRef.current
+    const selected = activeQuestion?.[optionKey]
+    if (!selected || !activeState) return
+    const existing = (activeState.responses || []).find(({ questionId }) => questionId === activeQuestion.id)
+    const newRating = rating !== null ? rating : (existing?.selectedCode === selected.code ? existing.rating : null)
     const nextResponse = {
-      questionId: question.id,
+      questionId: activeQuestion.id,
       selectedCode: selected.code,
       rating: newRating,
       timestamp,
     }
-    onUpdateState({ ...assessmentState, responses: upsertResponse(assessmentState.responses || [], nextResponse) })
+    latestResponseRef.current = nextResponse
+    onUpdateState({ ...activeState, responses: upsertResponse(activeState.responses || [], nextResponse) })
   }
 
   const moveBack = () => {
-    if (currentIndex === 0) return
-    onUpdateState({ ...assessmentState, currentQuestionIndex: currentIndex - 1 })
+    const index = currentIndexRef.current
+    const activeState = assessmentRef.current
+    if (index === 0 || !activeState) return
+    onUpdateState({ ...activeState, currentQuestionIndex: index - 1 })
   }
 
   const moveNext = () => {
-    if (!response?.rating) return
-    if (currentIndex === questionsList.length - 1) {
-      onComplete({ ...assessmentState, isCompleted: true })
+    const activeState = assessmentRef.current
+    const index = currentIndexRef.current
+    const total = questionsLenRef.current
+    const latest = latestResponseRef.current
+    if (!activeState || !latest?.rating) return
+    if (index >= total - 1) {
+      onComplete({ ...activeState, isCompleted: true })
       return
     }
-    onUpdateState({ ...assessmentState, currentQuestionIndex: currentIndex + 1 })
+    onUpdateState({ ...activeState, currentQuestionIndex: index + 1 })
   }
 
   useEffect(() => {
     if (!hasLocation) return undefined
     const handleKeyboard = (event) => {
-      if (event.altKey || event.ctrlKey || event.metaKey || event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement) return
-      if (event.key === 'ArrowLeft' || event.key.toLowerCase() === 'a') selectOptionAndRating('optionA', null, event.timeStamp)
-      if (event.key === 'ArrowRight' || event.key.toLowerCase() === 'b') selectOptionAndRating('optionB', null, event.timeStamp)
-      if (['1', '2', '3'].includes(event.key) && response?.selectedCode) {
-        const activeOptKey = response.selectedCode === question.optionA.code ? 'optionA' : 'optionB'
-        selectOptionAndRating(activeOptKey, Number(event.key), event.timeStamp)
-      }
-      if (event.key === 'Enter' && response?.rating) moveNext()
-    }
-    document.addEventListener('keydown', handleKeyboard)
-    return () => document.removeEventListener('keydown', handleKeyboard)
-  })
+      if (event.altKey || event.ctrlKey || event.metaKey) return
+      if (
+        event.target instanceof HTMLInputElement
+        || event.target instanceof HTMLSelectElement
+        || event.target instanceof HTMLTextAreaElement
+      ) return
 
-  // STEP 0: Render Page-Based Location Requirement View (Country & City Setup)
+      const key = event.key
+      if (key === 'ArrowLeft' || key.toLowerCase() === 'a') {
+        selectOptionAndRating('optionA', null, event.timeStamp)
+        return
+      }
+      if (key === 'ArrowRight' || key.toLowerCase() === 'b') {
+        selectOptionAndRating('optionB', null, event.timeStamp)
+        return
+      }
+      if (['1', '2', '3'].includes(key) && latestResponseRef.current?.selectedCode) {
+        const activeQuestion = questionRef.current
+        const activeOptKey = latestResponseRef.current.selectedCode === activeQuestion?.optionA?.code ? 'optionA' : 'optionB'
+        selectOptionAndRating(activeOptKey, Number(key), event.timeStamp)
+        return
+      }
+      if ((key === 'Enter' || key === 'NumpadEnter') && latestResponseRef.current?.rating) {
+        event.preventDefault()
+        moveNext()
+      }
+    }
+    document.addEventListener('keydown', handleKeyboard, true)
+    return () => document.removeEventListener('keydown', handleKeyboard, true)
+  }, [hasLocation, onComplete, onUpdateState])
+
   if (!hasLocation) {
     return (
-      <section className="location-page-wrap section-wrap max-w-2xl mx-auto py-12 px-4 min-h-[calc(100vh-100px)] flex flex-col justify-center">
+      <ClickSpark sparkColor="#2563eb" sparkRadius={28} sparkSize={12} duration={650} sparkCount={10}>
+        <section className="location-setup">
         <motion.div
-          className="location-card bg-white border border-slate-200 rounded-3xl p-8 shadow-xl"
-          initial={{ opacity: 0, y: 20 }}
+          className="location-setup-inner"
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.35 }}
         >
-          <div className="flex items-center gap-2 text-blue-600 font-mono text-xs font-bold uppercase tracking-wider mb-2">
-            <MapPin size={16} />
-            <span>Required Location Setup · Step {locStep} of 2</span>
+          <div className="location-field" ref={countryDropdownRef}>
+            <span className="location-label">{t('location.country')}</span>
+            <button
+              type="button"
+              className={`location-dropdown-trigger ${countryOpen ? 'open' : ''}`}
+              onClick={() => {
+                setCountryOpen((open) => !open)
+                setCityOpen(false)
+              }}
+              data-testid="country-dropdown-trigger"
+            >
+              <span className="location-dropdown-value">
+                {selectedCountry ? (
+                  <>
+                    <span className="location-flag">{selectedCountry.flag}</span>
+                    {selectedCountry.name}
+                  </>
+                ) : (
+                  t('location.selectCountry')
+                )}
+              </span>
+              <ChevronDown size={18} />
+            </button>
+            {countryOpen && (
+              <div className="location-dropdown-panel" data-lenis-prevent>
+                <label className="location-search">
+                  <Search size={16} />
+                  <input
+                    type="text"
+                    value={countryQuery}
+                    onChange={(event) => setCountryQuery(event.target.value)}
+                    placeholder={t('location.searchCountry')}
+                    autoFocus
+                    data-testid="country-search-input"
+                  />
+                </label>
+                <div className="location-dropdown-list location-dropdown-list-countries" role="listbox">
+                  {filteredCountries.map((country) => (
+                    <button
+                      key={country.isoCode}
+                      type="button"
+                      role="option"
+                      className="location-dropdown-option"
+                      onClick={() => pickCountry(country)}
+                      data-testid="country-option"
+                    >
+                      <span className="location-flag">{country.flag}</span>
+                      <span>{country.name}</span>
+                    </button>
+                  ))}
+                  {countryQuery.trim() && filteredCountries.length === 0 && (
+                    <p className="location-dropdown-hint">{t('location.noMatches')}</p>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">
-            {locStep === 1 ? 'Where are you building your future?' : `Select your city in ${selectedCountry?.name}`}
-          </h1>
-          <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-            {locStep === 1
-              ? 'Select your country first (Required). We use this to localize career matches, university suggestions, and regional salary projections.'
-              : 'Pick your city or region (Optional). This helps prioritize local university campuses and regional scholarships first.'}
-          </p>
-
-          {locStep === 1 && (
-            <>
-              <div className="relative mb-4">
-                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-                <input
-                  type="text"
-                  className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-2xl text-sm bg-slate-50 focus:bg-white focus:border-blue-600 focus:outline-none transition-all"
-                  placeholder="Search 250+ countries (e.g. Philippines, Japan, United States)..."
-                  value={countrySearch}
-                  onChange={(e) => setCountrySearch(e.target.value)}
-                  autoFocus
-                />
-              </div>
-
-              <div className="country-scroll-list max-h-72 overflow-y-auto space-y-1.5 pr-1 border border-slate-100 rounded-2xl p-2 bg-slate-50/50 mb-6">
-                {filteredCountries.map((c) => {
-                  const isSelected = selectedCountry?.isoCode === c.isoCode
-                  return (
+          <div className="location-field" ref={cityDropdownRef}>
+            <span className="location-label">{t('location.city')}</span>
+            <button
+              type="button"
+              className={`location-dropdown-trigger ${cityOpen ? 'open' : ''}`}
+              disabled={!selectedCountry}
+              onClick={() => {
+                if (!selectedCountry) return
+                setCityOpen((open) => !open)
+                setCountryOpen(false)
+              }}
+              data-testid="city-dropdown-trigger"
+            >
+              <span className="location-dropdown-value">
+                {selectedCity || t('location.selectCityOptional')}
+              </span>
+              <ChevronDown size={18} />
+            </button>
+            {cityOpen && selectedCountry && (
+              <div className="location-dropdown-panel location-dropdown-panel-cities" data-lenis-prevent>
+                <label className="location-search">
+                  <Search size={16} />
+                  <input
+                    type="text"
+                    value={cityQuery}
+                    onChange={(event) => setCityQuery(event.target.value)}
+                    placeholder={t('location.searchCity')}
+                    autoFocus
+                    data-testid="city-search-input"
+                  />
+                </label>
+                <div className="location-dropdown-list location-dropdown-list-cities" role="listbox">
+                  {filteredCities.map((cityName) => (
                     <button
-                      key={c.isoCode}
+                      key={cityName}
                       type="button"
-                      onClick={() => setSelectedCountry(c)}
-                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all text-left border ${
-                        isSelected
-                          ? 'border-blue-600 bg-blue-50/90 text-blue-900 shadow-sm font-bold'
-                          : 'bg-white border-slate-200 hover:border-blue-300 hover:bg-slate-50 text-slate-800'
-                      }`}
+                      role="option"
+                      className={`location-dropdown-option ${selectedCity === cityName ? 'selected' : ''}`}
+                      onClick={() => pickCity(cityName)}
+                      data-testid="city-option"
                     >
-                      <div className="flex items-center gap-3">
-                        <span className="text-2xl">{c.flag}</span>
-                        <span>{c.name}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-mono bg-slate-100 text-slate-500 px-2 py-0.5 rounded-md uppercase">{c.isoCode}</span>
-                        {isSelected && <Check size={16} className="text-blue-600" />}
-                      </div>
+                      {cityName}
                     </button>
-                  )
-                })}
-
-                {filteredCountries.length === 0 && (
-                  <div className="text-center py-8 text-slate-500 text-sm">
-                    No country found matching "{countrySearch}". You can select any listed country above.
-                  </div>
-                )}
-              </div>
-
-              {/* Continue Button: Grayed out / disabled until country is selected */}
-              <div className="flex items-center justify-end pt-4 border-t border-slate-200">
-                <button
-                  type="button"
-                  disabled={!selectedCountry}
-                  onClick={() => setLocStep(2)}
-                  className={`w-full sm:w-auto px-8 py-3 rounded-2xl text-sm font-bold transition-all flex items-center justify-center gap-2 ${
-                    selectedCountry
-                      ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md cursor-pointer'
-                      : 'bg-slate-200 text-slate-400 border border-slate-300 cursor-not-allowed'
-                  }`}
-                >
-                  <span>Continue to City Selection</span>
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            </>
-          )}
-
-          {locStep === 2 && (
-            <div className="space-y-5">
-              <div className="country-preview-pill flex items-center justify-between p-4 bg-blue-50/60 border border-blue-200 rounded-2xl">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">{selectedCountry?.flag}</span>
-                  <div>
-                    <span className="text-xs text-blue-600 font-bold uppercase tracking-wider block">Selected Country</span>
-                    <span className="font-bold text-slate-900 text-base">{selectedCountry?.name}</span>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setLocStep(1)}
-                  className="text-xs font-semibold text-blue-600 hover:underline"
-                >
-                  Change
-                </button>
-              </div>
-
-              <div className="relative">
-                <Building2 size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-                <input
-                  type="text"
-                  className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-2xl text-sm bg-slate-50 focus:bg-white focus:border-blue-600 focus:outline-none transition-all"
-                  placeholder={`Search or type city in ${selectedCountry?.name}...`}
-                  value={citySearch}
-                  onChange={(e) => {
-                    setCitySearch(e.target.value)
-                    setCustomCityInput(e.target.value)
-                  }}
-                  autoFocus
-                />
-              </div>
-
-              {allCities.length > 0 ? (
-                <div className="cities-grid grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-60 overflow-y-auto p-1 border border-slate-100 rounded-2xl bg-slate-50/50">
-                  {filteredCities.map((cityName) => {
-                    const isSelected = selectedCity === cityName
-                    return (
-                      <button
-                        key={cityName}
-                        type="button"
-                        onClick={() => {
-                          setSelectedCity(cityName)
-                          setCustomCityInput(cityName)
-                        }}
-                        className={`flex items-center justify-between p-3 rounded-xl border text-xs font-medium text-left transition-all ${
-                          isSelected ? 'border-blue-600 bg-blue-600 text-white font-bold' : 'border-slate-200 bg-white hover:border-blue-400 text-slate-700'
-                        }`}
-                      >
-                        <span className="truncate">{cityName}</span>
-                        {isSelected && <Check size={14} className="text-white shrink-0 ml-1" />}
-                      </button>
-                    )
-                  })}
-                </div>
-              ) : (
-                <p className="text-xs text-slate-500 italic">No pre-listed cities found. Type your city or region name above, or skip to use country-wide recommendations.</p>
-              )}
-
-              <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-                <button
-                  type="button"
-                  onClick={() => setLocStep(1)}
-                  className="flex items-center gap-1 text-sm font-semibold text-slate-600 hover:text-slate-900"
-                >
-                  <ArrowLeft size={16} /> Back
-                </button>
-
-                <div className="flex items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={() => confirmLocation('')}
-                    className="px-4 py-2.5 rounded-xl border border-slate-300 text-xs font-semibold text-slate-600 hover:bg-slate-50"
-                  >
-                    Skip City (Country Only)
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => confirmLocation(selectedCity || customCityInput)}
-                    className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
-                  >
-                    <span>Start Assessment</span>
-                    <ArrowRight size={15} />
-                  </button>
+                  ))}
+                  {filteredCities.length === 0 && (
+                    <p className="location-dropdown-hint">{t('location.noMatches')}</p>
+                  )}
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
+
+          <button
+            type="button"
+            className="location-continue-btn"
+            disabled={!selectedCountry}
+            onClick={confirmLocation}
+            data-testid="confirm-location-btn"
+          >
+            {t('location.continue')}
+          </button>
         </motion.div>
       </section>
+      </ClickSpark>
     )
   }
 
   // STEP 1-30: Render 30-Question RIASEC Assessment Screen
   return (
-    <section className="assessment section-wrap max-w-4xl mx-auto py-8 px-4">
-      {/* Header Progress */}
-      <div className="flex items-center justify-between text-sm font-semibold text-slate-600 mb-2">
-        <span>Question {currentIndex + 1} of {questionsList.length}</span>
-        <span>{Math.round(progress)}% complete</span>
-      </div>
-
-      <div className="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden mb-8">
-        <motion.div
-          className="h-full bg-blue-600 rounded-full"
-          animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.3 }}
-        />
-      </div>
-
-      <AnimatePresence mode="wait">
-        <motion.div
-          className="question-container"
-          key={question?.id || currentIndex}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -16 }}
-          transition={{ duration: 0.25 }}
-        >
-          <div className="text-center mb-8">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">Which would you rather do?</h1>
-            <p className="text-sm text-slate-500">Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)</p>
+    <ClickSpark sparkColor="#2563eb" sparkRadius={28} sparkSize={12} duration={650} sparkCount={10}>
+      <section className="assessment section-wrap max-w-4xl mx-auto py-8 px-4">
+        {/* Progress stays mounted — only questions/options remount on change */}
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-between text-sm font-semibold text-slate-600 mb-2">
+            <span>{t('quiz.questionOf', { current: currentIndex + 1, total: questionsList.length })}</span>
+            <span>{t('quiz.percentComplete', { percent: Math.round(progress) })}</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-10">
+          <div className="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden mb-6">
+            <div
+              className="h-full bg-blue-600 rounded-full transition-[width] duration-300 ease-out"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
+
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">{t('quiz.title')}</h1>
+          <p className="text-sm text-slate-500">{t('quiz.subtitle')}</p>
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            className="question-container"
+            key={question?.id || currentIndex}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.25 }}
+          >
+          <div className="choice-cards mb-10">
             {['optionA', 'optionB'].map((optionKey, idx) => {
               const opt = question?.[optionKey] || {}
               const isSelected = response?.selectedCode === opt.code
               return (
-                <div
-                  key={optionKey}
-                  className="choice-card-wrap border-2 rounded-3xl p-6 bg-white transition-all flex flex-col justify-between border-slate-200"
-                >
-                  <div
-                    onClick={(e) => selectOptionAndRating(optionKey, null, e.timeStamp)}
-                    onDoubleClick={(e) => {
-                      selectOptionAndRating(optionKey, null, e.timeStamp)
-                      if (response?.rating) moveNext()
-                    }}
-                    className="cursor-pointer"
-                  >
-                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-[#fcfcfc] flex items-center justify-center">
-                      <img
-                        src={optionImage(question?.id || 1, idx === 0 ? 'a' : 'b')}
-                        alt={opt.text || ''}
-                        className="w-full h-full object-contain p-2"
-                      />
+                <div key={optionKey} className="contents">
+                  {idx === 1 && (
+                    <span className="choice-or" aria-hidden="true">{t('quiz.or')}</span>
+                  )}
+                  <div className="choice-card-wrap border-2 rounded-3xl p-6 bg-white transition-all flex flex-col justify-between border-slate-200">
+                    <div
+                      onClick={(e) => selectOptionAndRating(optionKey, null, e.timeStamp)}
+                      onDoubleClick={(e) => {
+                        selectOptionAndRating(optionKey, null, e.timeStamp)
+                        if (response?.rating) moveNext()
+                      }}
+                      className="cursor-pointer"
+                    >
+                      <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-[#fcfcfc] flex items-center justify-center">
+                        <img
+                          src={optionImage(question?.id || 1, idx === 0 ? 'a' : 'b')}
+                          alt={opt.text || ''}
+                          className="w-full h-full object-contain p-2"
+                        />
+                      </div>
+                      <h3 className="font-bold text-slate-800 text-base mb-3">{opt.text}</h3>
                     </div>
-                    <h3 className="font-bold text-slate-800 text-base mb-3">{opt.text}</h3>
-                  </div>
 
-                  {/* Reaction GIF Options */}
-                  <div className="grid grid-cols-3 gap-2 pt-4 border-t border-slate-100">
-                    {REACTION_CONFIG.map((cfg) => (
-                      <ReactionCard
-                        key={cfg.value}
-                        config={cfg}
-                        isSelected={isSelected && response?.rating === cfg.value}
+                    {/* Reaction GIF Options */}
+                    <div className="grid grid-cols-3 gap-2 pt-4 border-t border-slate-100">
+                      {REACTION_KEYS.map((cfg) => (
+                        <ReactionCard
+                          key={cfg.value}
+                          config={cfg}
+                          label={t(cfg.labelKey)}
+                          isSelected={isSelected && response?.rating === cfg.value}
                         onClick={(e) => {
-                          e.stopPropagation()
                           selectOptionAndRating(optionKey, cfg.value, e.timeStamp)
                         }}
                         onDoubleClick={(e) => {
-                          e.stopPropagation()
                           selectOptionAndRating(optionKey, cfg.value, e.timeStamp)
                           if (currentIndex < questionsList.length - 1) {
                             onUpdateState({
@@ -481,8 +514,9 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
                             onComplete({ ...assessmentState, isCompleted: true })
                           }
                         }}
-                      />
-                    ))}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
               )
@@ -497,7 +531,7 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
               disabled={currentIndex === 0}
               className="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 hover:font-bold hover:border-slate-400 flex items-center gap-1.5 transition-all"
             >
-              <ArrowLeft size={16} /> Previous
+              <ArrowLeft size={16} /> {t('quiz.previous')}
             </button>
 
             <button
@@ -506,12 +540,13 @@ export default function Assessment({ questions = defaultQuestions, assessmentSta
               disabled={!response?.rating}
               className="px-7 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-extrabold shadow-md flex items-center gap-1.5 transition-all"
             >
-              <span className="text-white font-extrabold">Next</span>
+              <span className="text-white font-extrabold">{t('quiz.next')}</span>
               <ArrowRight size={16} className="text-white" />
             </button>
           </div>
-        </motion.div>
-      </AnimatePresence>
-    </section>
+          </motion.div>
+        </AnimatePresence>
+      </section>
+    </ClickSpark>
   )
 }

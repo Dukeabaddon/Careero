@@ -1,6 +1,18 @@
 {
-  "brand": { "tagline": "为你而生的职业智能" },
-  "nav": { "language": "语言", "clearData": "清除我的数据" },
+  "brand": {
+    "tagline": "为你而生的职业智能"
+  },
+  "nav": {
+    "language": "语言",
+    "clearData": "清除我的数据",
+    "home": "首页",
+    "howItWorks": "使用方式",
+    "dimensions": "兴趣维度",
+    "faq": "常见问题",
+    "startAssessment": "开始测评",
+    "searchLanguage": "搜索语言...",
+    "noLanguageFound": "未找到语言"
+  },
   "hero": {
     "badge": "全球 AI 职业指南",
     "title": "找到真正适合你的工作，",
@@ -16,12 +28,30 @@
     "title": "你不止一种职业类型。",
     "subtitle": "RIASEC 衡量你的兴趣更容易在哪些环境组合中发挥。",
     "signalsShort": "信号",
-    "R": { "name": "现实型", "description": "动手、建造与修理。" },
-    "I": { "name": "研究型", "description": "提问、分析与发现。" },
-    "A": { "name": "艺术型", "description": "想象、表达与设计。" },
-    "S": { "name": "社会型", "description": "教导、支持与连接。" },
-    "E": { "name": "企业型", "description": "领导、说服与发起。" },
-    "C": { "name": "常规型", "description": "组织、核对与改进。" }
+    "R": {
+      "name": "现实型",
+      "description": "动手、建造与修理。"
+    },
+    "I": {
+      "name": "研究型",
+      "description": "提问、分析与发现。"
+    },
+    "A": {
+      "name": "艺术型",
+      "description": "想象、表达与设计。"
+    },
+    "S": {
+      "name": "社会型",
+      "description": "教导、支持与连接。"
+    },
+    "E": {
+      "name": "企业型",
+      "description": "领导、说服与发起。"
+    },
+    "C": {
+      "name": "常规型",
+      "description": "组织、核对与改进。"
+    }
   },
   "location": {
     "step": "地区 · 第 {{step}} 步，共 2 步",
@@ -36,17 +66,93 @@
     "confirm": "为 {{city}}，{{country}} 开始",
     "skipCity": "仅使用 {{country}} 继续",
     "useRegion": "将 {{region}} 用作我的地区",
-    "close": "关闭地区选择"
+    "close": "关闭地区选择",
+    "country": "国家",
+    "city": "城市",
+    "selectCountry": "选择国家",
+    "selectCityOptional": "选择城市（可选）",
+    "continue": "继续",
+    "noMatches": "未找到匹配项"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "匹配职业数"
+    },
+    "dimensions": {
+      "value": "6 个维度",
+      "label": "RIASEC 心理模型"
+    },
+    "free": {
+      "value": "完全免费",
+      "label": "无需账户"
+    }
+  },
+  "howItWorks": {
+    "title": "Careero 如何运作",
+    "subtitle": "3 个简单步骤，发现适合你的职业路径和教育资源。",
+    "step1": {
+      "title": "30 个视觉选择",
+      "description": "选择与你自然偏好相符的活动和工作环境。"
+    },
+    "step2": {
+      "title": "皮尔逊相关引擎",
+      "description": "计算你的 6 维画像与 500 多个 O*NET 职业向量的皮尔逊相关系数。"
+    },
+    "step3": {
+      "title": "解锁匹配路径",
+      "description": "获取本地化的职业推荐、薪资洞察和大学匹配。"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于 Careero 测评引擎，你需要了解的一切。",
+    "items": [
+      {
+        "q": "RIASEC 测评如何运作？",
+        "a": "RIASEC 测量你在现实型、研究型、艺术型、社会型、企业型和常规型 6 个核心向量上的心理兴趣。30 个视觉选择生成标准化画像，与 500 多个全球职业进行皮尔逊相关比较。"
+      },
+      {
+        "q": "我的数据是否私密安全？",
+        "a": "是的。Careero 完全在你的浏览器中运行。不收集个人账户信息，也不上传到外部数据库。"
+      },
+      {
+        "q": "可以用于大学和奖学金搜索吗？",
+        "a": "当然可以。根据你的职业画像，Careero 提供本地学位项目、区域大学和奖学金链接。"
+      },
+      {
+        "q": "测评需要多长时间？",
+        "a": "30 个快速视觉二选一，大约 3 到 5 分钟完成。"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "全球 AI 职业指南与教育匹配平台。",
+    "features": "功能",
+    "howItWorks": "使用方式",
+    "dimensions": "兴趣维度",
+    "faq": "常见问题",
+    "startAssessment": "开始测评",
+    "copyright": "© 2026 Careero Platform. 为开放全球教育而构建。"
   },
   "quiz": {
     "questionOf": "第 {{current}} 题，共 {{total}} 题",
+    "percentComplete": "已完成 {{percent}}%",
+    "title": "你更愿意做哪一项？",
+    "subtitle": "选择一项活动并评价你有多喜欢。（提示：双击可跳到下一题！）",
+    "or": "或",
     "choose": "选择你更喜欢的活动。",
     "keyboardHint": "键盘：A/B、1–3，然后按回车。",
     "intensity": "它有多适合你？",
     "okay": "还可以",
     "like": "喜欢",
     "love": "非常喜欢",
+    "reactionJustOkay": "一般",
+    "reactionGreat": "很棒！",
+    "reactionLoveIt": "超喜欢！",
+    "previous": "上一题",
     "next": "下一题",
+    "nextQuestion": "下一题",
     "finish": "查看我的画像",
     "reset": "重置进度",
     "resumeTitle": "你的旅程还在等待。",
@@ -71,17 +177,60 @@
     "programs": "奖学金与项目",
     "topProfession": "首选推荐",
     "shareHeading": "分享你的职业角色",
-    "shareDescription": "无需分享答案，即可发送精简档案。",
+    "shareDescription": "打开卡片即可下载或发帖——答案保持私密。",
     "shareTitle": "我的 Careero 结果",
     "shareProfession": "首选职业：{{profession}} · 匹配度 {{percent}}%",
     "shareText": "我的 Careero 角色是 {{archetype}}（{{code}}）。首选职业是 {{profession}}，匹配度 {{percent}}%。",
     "share": "分享结果",
+    "shareModalTitle": "分享你的结果",
+    "shareModalSubtitle": "预览卡片 · 发到动态或保存",
+    "shareToSocial": "分享",
+    "downloadCard": "下载卡片",
+    "sharing": "分享中…",
+    "savingCard": "保存中…",
+    "shareDownloaded": "卡片已下载！",
+    "shareSavedCopied": "卡片已保存 · 文案已复制！",
+    "shareClose": "关闭",
     "shared": "已分享",
     "copied": "已复制",
     "shareFailed": "无法分享。",
     "sources": "参考来源",
     "opensNewTab": "在新标签页中打开",
     "startAgain": "重新测评",
-    "match": "画像匹配度 {{percent}}%"
+    "match": "画像匹配度 {{percent}}%",
+    "archetypeBlurb": "你最强的组合是 {{code}}。展开职业后，学校与奖学金会按该倾向显示。",
+    "riasecScores": "RIASEC 分数",
+    "patternNote": "主要组合：{{combo}}。展开职业即可加载学校与奖学金。",
+    "matchesEyebrow": "Pearson 六维",
+    "professionMatches": "适合你的职业",
+    "matchesNote": "按匹配度排序——不是就业或录取保证。",
+    "topMatchBadge": "最佳匹配",
+    "professionLabel": "职业",
+    "whyPath": "为什么这条路值得关注",
+    "topSchools": "该路径的优选学校",
+    "topScholarships": "该职业的优选奖学金",
+    "visitSchool": "访问学校网站",
+    "openScholarship": "打开奖学金",
+    "noSchools": "该地区暂无已核实的学校。",
+    "noScholarships": "该地区暂无已核实的奖学金。",
+    "archetypes": {
+      "pathfinder": "探路者",
+      "creator": "创造者",
+      "strategist": "战略家",
+      "visionary": "远见者",
+      "analyst": "分析师",
+      "builder": "建造者",
+      "guardian": "守护者"
+    },
+    "tagAlignment": "{{dimension}}契合",
+    "tagCampusFit": "{{dimension}}校园适配",
+    "tagKeywords": "{{count}} 个项目关键词",
+    "tagKeywordsOne": "1 个项目关键词",
+    "tagFlagship": "旗舰选项",
+    "tagSystemsFit": "强系统契合",
+    "shareCardTopFit": "最佳职业契合",
+    "shareCardMatch": "匹配度 {{percent}}%",
+    "shareCardSummary": "精简 Careero 卡片——不包含测验答案。",
+    "shareCardFooter": "careero · 找到适合你的职业"
   }
 }

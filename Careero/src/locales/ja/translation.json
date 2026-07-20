@@ -1,6 +1,18 @@
 {
-  "brand": { "tagline": "あなたのためのキャリアインテリジェンス" },
-  "nav": { "language": "言語", "clearData": "データを消去" },
+  "brand": {
+    "tagline": "あなたのためのキャリアインテリジェンス"
+  },
+  "nav": {
+    "language": "言語",
+    "clearData": "データを消去",
+    "home": "ホーム",
+    "howItWorks": "使い方",
+    "dimensions": "6つの興味",
+    "faq": "よくある質問",
+    "startAssessment": "診断を始める",
+    "searchLanguage": "言語を検索...",
+    "noLanguageFound": "言語が見つかりません"
+  },
   "hero": {
     "badge": "グローバルAIキャリアコンパス",
     "title": "自分らしい仕事を、",
@@ -16,12 +28,30 @@
     "title": "キャリアタイプは一つではありません。",
     "subtitle": "RIASECは、あなたの興味が活きる環境の組み合わせを測ります。",
     "signalsShort": "シグナル",
-    "R": { "name": "現実的", "description": "つくる、直す、手を動かす。" },
-    "I": { "name": "研究的", "description": "問い、分析し、発見する。" },
-    "A": { "name": "芸術的", "description": "想像し、表現し、デザインする。" },
-    "S": { "name": "社会的", "description": "教え、支え、つながる。" },
-    "E": { "name": "企業的", "description": "導き、説得し、始める。" },
-    "C": { "name": "慣習的", "description": "整理し、確認し、改善する。" }
+    "R": {
+      "name": "現実的",
+      "description": "つくる、直す、手を動かす。"
+    },
+    "I": {
+      "name": "研究的",
+      "description": "問い、分析し、発見する。"
+    },
+    "A": {
+      "name": "芸術的",
+      "description": "想像し、表現し、デザインする。"
+    },
+    "S": {
+      "name": "社会的",
+      "description": "教え、支え、つながる。"
+    },
+    "E": {
+      "name": "企業的",
+      "description": "導き、説得し、始める。"
+    },
+    "C": {
+      "name": "慣習的",
+      "description": "整理し、確認し、改善する。"
+    }
   },
   "location": {
     "step": "地域 · 2ステップ中{{step}}",
@@ -36,17 +66,93 @@
     "confirm": "{{city}}、{{country}}で始める",
     "skipCity": "{{country}}のみで続ける",
     "useRegion": "{{region}}を地域として使う",
-    "close": "地域選択を閉じる"
+    "close": "地域選択を閉じる",
+    "country": "国",
+    "city": "都市",
+    "selectCountry": "国を選択",
+    "selectCityOptional": "都市を選択（任意）",
+    "continue": "続ける",
+    "noMatches": "一致する項目がありません"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "適合職業データ"
+    },
+    "dimensions": {
+      "value": "6つの次元",
+      "label": "RIASEC心理モデル"
+    },
+    "free": {
+      "value": "完全無料",
+      "label": "アカウント不要"
+    }
+  },
+  "howItWorks": {
+    "title": "Careeroの仕組み",
+    "subtitle": "3つのステップで、あなたに合ったキャリアと学びの道を見つけます。",
+    "step1": {
+      "title": "30のビジュアル選択",
+      "description": "自然な好みに合う活動や環境を選びます。"
+    },
+    "step2": {
+      "title": "ピアソン相関エンジン",
+      "description": "6次元プロフィールと500以上のO*NET職業ベクトルのピアソン相関係数を計算します。"
+    },
+    "step3": {
+      "title": "最適な道を解放",
+      "description": "地域に合わせたキャリア、給与、大学のおすすめを受け取れます。"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "Careeroの診断エンジンについて知っておきたいこと。",
+    "items": [
+      {
+        "q": "RIASEC診断はどのように機能しますか？",
+        "a": "RIASECは現実的・研究的・芸術的・社会的・企業的・慣習的の6つの興味ベクトルを測定します。30のビジュアル選択から正規化プロフィールを作成し、500以上の職業とピアソン相関で比較します。"
+      },
+      {
+        "q": "データは安全ですか？",
+        "a": "はい。Careeroはブラウザ内で完結します。アカウント登録や個人データの収集・外部送信は行いません。"
+      },
+      {
+        "q": "大学や奨学金の検索に使えますか？",
+        "a": "はい。マッチしたキャリアプロフィールに基づき、地域の学位プログラム、大学、奨学金情報を提供します。"
+      },
+      {
+        "q": "診断にどのくらいかかりますか？",
+        "a": "30のビジュアル二択で、およそ3〜5分で完了します。"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "グローバルAIキャリアコンパス＆教育マッチングプラットフォーム",
+    "features": "特徴",
+    "howItWorks": "使い方",
+    "dimensions": "6つの興味",
+    "faq": "よくある質問",
+    "startAssessment": "診断を始める",
+    "copyright": "© 2026 Careero Platform. オープンな教育アクセスのために。"
   },
   "quiz": {
     "questionOf": "{{total}}問中{{current}}問目",
+    "percentComplete": "{{percent}}%完了",
+    "title": "どちらを選びますか？",
+    "subtitle": "楽しめそうな活動を選び、好きな度合いを評価してください。（ヒント：ダブルクリックで次へ進めます）",
+    "or": "または",
     "choose": "より楽しめそうな活動を選んでください。",
     "keyboardHint": "キーボード：A/B、1〜3、Enter。",
     "intensity": "どのくらい自分に合いますか？",
     "okay": "まあまあ",
     "like": "好き",
     "love": "大好き",
-    "next": "次の質問",
+    "reactionJustOkay": "ふつう",
+    "reactionGreat": "いいね！",
+    "reactionLoveIt": "大好き！",
+    "previous": "前へ",
+    "next": "次へ",
+    "nextQuestion": "次の質問",
     "finish": "プロフィールを見る",
     "reset": "進捗をリセット",
     "resumeTitle": "続きから始められます。",
@@ -71,17 +177,60 @@
     "programs": "奨学金とプログラム",
     "topProfession": "トップのおすすめ",
     "shareHeading": "キャリアキャラクターを共有",
-    "shareDescription": "回答を公開せず、プロフィールの要約を共有できます。",
+    "shareDescription": "カードを開いてダウンロードや投稿ができます。回答は非公開です。",
     "shareTitle": "Careeroの結果",
     "shareProfession": "トップ職業：{{profession}}・一致度{{percent}}%",
     "shareText": "私のCareeroキャラクターは{{archetype}}（{{code}}）。トップ職業は{{profession}}で一致度{{percent}}%です。",
     "share": "結果を共有",
+    "shareModalTitle": "結果を共有",
+    "shareModalSubtitle": "カードをプレビュー · ストーリー投稿や保存",
+    "shareToSocial": "共有",
+    "downloadCard": "カードをダウンロード",
+    "sharing": "共有中…",
+    "savingCard": "保存中…",
+    "shareDownloaded": "カードをダウンロードしました！",
+    "shareSavedCopied": "カードを保存 · キャプションをコピーしました！",
+    "shareClose": "閉じる",
     "shared": "共有しました",
     "copied": "コピーしました",
     "shareFailed": "共有できませんでした。",
     "sources": "参照ソース",
     "opensNewTab": "新しいタブで開きます",
     "startAgain": "もう一度診断する",
-    "match": "プロフィール適合度 {{percent}}%"
+    "match": "プロフィール適合度 {{percent}}%",
+    "archetypeBlurb": "あなたの強い組み合わせは{{code}}です。職業を開くと、その傾向に合う学校と奨学金が表示されます。",
+    "riasecScores": "RIASECスコア",
+    "patternNote": "上位コンボ：{{combo}}。職業を開くと学校と奨学金を読み込みます。",
+    "matchesEyebrow": "ピアソン6次元",
+    "professionMatches": "あなたに合う職業",
+    "matchesNote": "適合度順の候補です。就職や入学の保証ではありません。",
+    "topMatchBadge": "トップマッチ",
+    "professionLabel": "職業",
+    "whyPath": "この道が有望な理由",
+    "topSchools": "この道の上位校",
+    "topScholarships": "この職業の奨学金",
+    "visitSchool": "学校サイトを見る",
+    "openScholarship": "奨学金を開く",
+    "noSchools": "この地域で確認できた学校はまだありません。",
+    "noScholarships": "この地域で確認できた奨学金はまだありません。",
+    "archetypes": {
+      "pathfinder": "パスファインダー",
+      "creator": "クリエイター",
+      "strategist": "ストラテジスト",
+      "visionary": "ビジョナリー",
+      "analyst": "アナリスト",
+      "builder": "ビルダー",
+      "guardian": "ガーディアン"
+    },
+    "tagAlignment": "{{dimension}}との一致",
+    "tagCampusFit": "{{dimension}}のキャンパス適合",
+    "tagKeywords": "プログラムキーワード{{count}}件",
+    "tagKeywordsOne": "プログラムキーワード1件",
+    "tagFlagship": "フラッグシップ候補",
+    "tagSystemsFit": "強いシステム適合",
+    "shareCardTopFit": "トップキャリア適合",
+    "shareCardMatch": "一致度{{percent}}%",
+    "shareCardSummary": "コンパクトなCareeroカード — 回答は含まれません。",
+    "shareCardFooter": "careero · 合うキャリアを見つけよう"
   }
 }

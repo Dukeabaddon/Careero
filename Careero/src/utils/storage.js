@@ -12,7 +12,11 @@ const responseSchema = z.object({
 
 const assessmentStateSchema = z.object({
   version: z.literal(1),
-  location: z.object({ country: z.string(), city: z.string().optional().default(''), region: z.string().optional() }),
+  // `location` is nullable until the user selects a country.
+  // `Assessment` gates the next step on `Boolean(location?.country)`.
+  location: z
+    .object({ country: z.string(), city: z.string().optional().default(''), region: z.string().optional() })
+    .nullable(),
   language: z.string(),
   currentQuestionIndex: z.number().int().min(0).max(29),
   responses: z.array(responseSchema).max(30),
@@ -85,14 +89,16 @@ export function clearCareerData(storage = globalThis.localStorage) {
   removable.forEach((key) => storage.removeItem(key))
 }
 
-export async function createProfileHash(profile) {
+export async function createProfileHash(profile, professionId = '') {
   const stablePayload = JSON.stringify({
     normalizedScores: Object.fromEntries(
       Object.entries(profile.normalizedScores).sort(([left], [right]) => left.localeCompare(right)),
     ),
     country: profile.location.country,
     city: profile.location.city,
+    region: profile.location.region || '',
     language: profile.language,
+    professionId: professionId || '',
   })
   return digestPayload(stablePayload)
 }

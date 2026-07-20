@@ -1,37 +1,49 @@
+<div align="center">
+
 ![Careero](./readme-banner.png)
 
 # Careero
 
-Careero helps students find careers that fit who they are, then schools and scholarships near them.
+**Visual career matching → schools and scholarships near you**
 
-It turns a visual 30-question RIASEC assessment into explainable career matches, then researches location-aware schools, scholarships, and training programs for one profession at a time.
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Node](https://img.shields.io/badge/Node-24-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Track](https://img.shields.io/badge/OpenAI%20Build%20Week-Education-2563eb)](https://openai.devpost.com/)
+[![License](https://img.shields.io/badge/License-MIT-0f172a)](LICENSE)
 
-Built for the **Education** track of OpenAI Build Week 2026.
+**A privacy-first career guide for students.**  
+**Local assessment. No user database. AI research only when you expand a path.**
+
+[Features](#-features) · [How it works](#-how-it-works) · [Setup](#-local-development) · [Codex + GPT-5.6](#-how-codex-and-gpt-56-were-used-to-build-careero)
+
+</div>
+
+---
 
 ## Why Careero
 
 Choosing college often feels like guessing. Many students do not know which path fits their strengths, which schools are strong for that path, or which scholarships exist for their course. So they default to what is near or already available.
 
-Careero is built for that moment. The assessment is visual and multilingual, not another long text form. Answers stay local in the browser with no user database. Career matches appear instantly. Schools and scholarships load when a student expands a profession.
+Careero is built for that moment. The assessment is visual and multilingual, not another long text form. Answers stay local in the browser. Career matches appear instantly. Schools and scholarships load when a student expands a profession.
 
 The deterministic assessment and ranking remain useful even if every AI provider is unavailable.
 
-## What it does
+## ✨ Features
 
-- Presents 30 visual, binary RIASEC questions
-- Supports English, Japanese, Simplified Chinese, Spanish, Tagalog, and French
-- Saves assessment progress locally with no user database
-- Scores all six RIASEC dimensions
-- Ranks 923 O*NET occupations with Pearson correlation
-- Shows the top ten careers immediately
-- Researches one expanded profession at a time
-- Suggests schools tied to the selected place, preferring nearby then national options
-- Returns scholarships and programs students can pursue, with official HTTPS links when verified
-- Caches results in the browser and server
-- Exports a privacy-safe share card
-- Supports keyboard-only assessment navigation
+| Feature | Description |
+| --- | --- |
+| 🎨 **Visual RIASEC quiz** | 30 image choices, not a wall of text forms |
+| 🌍 **Six languages** | English, Japanese, Chinese, Spanish, Tagalog, French |
+| 🔒 **Local-first privacy** | Progress stays in the browser with no user database |
+| 📊 **Explainable matches** | Six RIASEC scores plus Pearson ranking over 923 O*NET careers |
+| ⚡ **Instant top 10** | Career results show before any AI research |
+| 🏫 **Schools near you** | Expand a profession for location-aware school suggestions |
+| 🎓 **Scholarships** | Programs students can pursue, with official HTTPS links when verified |
+| 🃏 **Share card** | Privacy-safe export without dumping private answers |
+| ⌨️ **Keyboard-friendly** | Full assessment navigation without a mouse |
 
-## How it works
+## 🔁 How it works
 
 ```text
 30 visual choices
@@ -49,7 +61,7 @@ validated schools, scholarships, and programs
 
 Assessment answers and career ranking stay client-side. The Node.js API receives only the normalized profile, chosen location, language, and one validated top-ten profession. It never reranks careers.
 
-## Safety and reliability
+## 🛡️ Safety and reliability
 
 - Provider keys are server-only
 - All local `.env*` files are ignored except the empty example
@@ -63,7 +75,7 @@ Assessment answers and career ranking stay client-side. The Node.js API receives
 - Rate limits protect uncached generation
 - Local Pearson results fail soft when AI is unavailable
 
-## Local development
+## 🚀 Local development
 
 Requires Node.js 24 or newer.
 
@@ -79,7 +91,7 @@ Open `http://127.0.0.1:5173`.
 
 The assessment works without provider keys. AI education research needs at least one configured grounded provider.
 
-## Environment variables
+## 🔑 Environment variables
 
 Copy names from `.env.example`. Never use a `VITE_` prefix for secrets.
 
@@ -103,7 +115,7 @@ Multiple key slots are intentional. Gemini 2.5 free access is often capacity-lim
 
 Local secrets belong only in `.env.local`. Vercel secrets belong in Project Settings → Environment Variables.
 
-## Testing
+## ✅ Testing
 
 ```bash
 npm run check
@@ -124,7 +136,7 @@ Manual flow:
 7. Refresh Results. Saved results should remain.
 8. Verify every education link opens an official HTTPS page.
 
-## How Codex and GPT-5.6 were used to build Careero
+## 🤝 How Codex and GPT-5.6 were used to build Careero
 
 Codex with GPT-5.6 was our engineering partner for Careero.
 
@@ -134,7 +146,7 @@ We kept product and frontend decisions. We tested real flows and screenshots. Co
 
 `/feedback` Codex Session ID goes in the Devpost form.
 
-## Education-track submission draft
+## 🎓 Education-track submission draft
 
 **Problem:** Students often choose schools and courses without knowing their fit, nearby options, or scholarships for that path.
 
@@ -146,10 +158,10 @@ We kept product and frontend decisions. We tested real flows and screenshots. Co
 
 Before submission, add the deployed URL, a public YouTube demo under three minutes, and the `/feedback` session ID.
 
-## Data attribution
+## 📚 Data attribution
 
 Career titles, descriptions, and interest profiles are derived from the official O*NET 30.2 database. O*NET is a trademark of the U.S. Department of Labor, Employment and Training Administration. Third-party data and assets remain subject to their respective terms.
 
-## License
+## 📄 License
 
 Careero source code is available under the [MIT License](LICENSE).

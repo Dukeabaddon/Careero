@@ -63,9 +63,15 @@ const server = createHttpServer((request, response) => {
 server.listen(port, host, () => {
   const geminiKeys = Array.from({ length: 5 }, (_, index) => process.env[`GEMINI_API_KEY_${index + 1}`])
     .filter(Boolean).length
+  const countKeys = (prefix) => Array.from({ length: 2 }, (_, index) => process.env[`${prefix}_${index + 1}`])
+    .filter(Boolean).length
   const deepSeek = Boolean(process.env.DEEPSEEK_API_KEY_1)
   console.log(`Careero local: http://${host}:${port}`)
-  console.log(`Providers loaded: Gemini=${geminiKeys}, DeepSeek=${deepSeek ? 1 : 0}`)
+  console.log(
+    `Providers loaded: Groq=${countKeys('GROQ_API_KEY')}, Gemini=${geminiKeys}, `
+    + `OpenRouter=${countKeys('OPENROUTER_API_KEY')}, Cerebras=${countKeys('CEREBRAS_API_KEY')}, `
+    + `DeepSeek=${deepSeek ? 1 : 0}`,
+  )
 })
 
 async function shutdown() {

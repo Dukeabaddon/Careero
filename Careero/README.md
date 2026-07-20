@@ -82,6 +82,12 @@ Copy names from `.env.example`. Never use a `VITE_` prefix for secrets.
 | `GEMINI_API_KEY_1..5` | Rotating Gemini credentials |
 | `GEMINI_MODEL` | Primary grounded model |
 | `GEMINI_FALLBACK_MODEL` | Grounded Gemini fallback |
+| `GROQ_API_KEY_1..2` | Grounded Groq Compound rotation |
+| `GROQ_MODEL` | Defaults to `groq/compound-mini` |
+| `OPENROUTER_API_KEY_1..2` | OpenRouter web-search rotation |
+| `OPENROUTER_MODEL` | Free inference model used with paid web search |
+| `CEREBRAS_API_KEY_1..2` | Late, non-search Cerebras fallback |
+| `CEREBRAS_MODEL` | Defaults to `gpt-oss-120b` |
 | `DEEPSEEK_API_KEY_1` | Optional DeepSeek fallback |
 | `ENABLE_PAID_DEEPSEEK` | Explicit DeepSeek switch |
 | `UPSTASH_REDIS_REST_URL` | Optional durable cache and limiter |

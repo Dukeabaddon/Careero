@@ -126,7 +126,15 @@ describe('recommendations edge API', () => {
     const engine = successfulEngine()
     engine.executeRequest.mockImplementation(async (requestPayload) => {
       prompt = requestPayload.prompt
-      return { data: { recommendations: validRecommendations }, model: 'gemini-2.5-flash-lite' }
+      return {
+        data: {
+          recommendations: {
+            ...validRecommendations,
+            professionSummary: { ...validRecommendations.professionSummary, title: 'Data Scientist' },
+          },
+        },
+        model: 'gemini-2.5-flash-lite',
+      }
     })
     const isolatedHandler = createRecommendationsHandler({ engine, environment: {} })
     const response = await isolatedHandler(request(payload({
@@ -138,6 +146,9 @@ describe('recommendations edge API', () => {
     expect(response.status).toBe(200)
     expect(prompt).toContain('"title":"Data Scientists"')
     expect(prompt).not.toContain('Ignore prior instructions')
+    await expect(response.json()).resolves.toMatchObject({
+      recommendations: { professionSummary: { title: 'Data Scientists' } },
+    })
   })
 
   it('allows 20 unique profession requests per IP, then returns 429', async () => {

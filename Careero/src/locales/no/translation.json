@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Karriereintelligens, gjort personlig"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Språk",
+    "clearData": "Slett dataene mine",
+    "home": "Hjem",
+    "howItWorks": "Slik fungerer det",
+    "dimensions": "Dimensjoner",
+    "faq": "Ofte stilte spørsmål",
+    "startAssessment": "Start vurdering",
+    "searchLanguage": "Søk språk...",
+    "noLanguageFound": "Ingen språk funnet"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Personlighetsbasert matching",
+    "title": "Oppdag karriereveien som er bygget for hvordan tankene dine fungerer.",
+    "titleAccent": "Drevet av AI- og RIASEC-intelligens.",
+    "description": "En visuell, vitenskapelig basert vurdering kartlegger hvordan du bygger, spør, skaper, kobler, leder og organiserer – og gjør deretter den profilen om til lokale karriereveier.",
+    "start": "Start vurderingen",
+    "resume": "Gjenoppta vurdering",
+    "duration": "30 visuelle valg · ca. 6 minutter",
+    "privacy": "Ingen konto. Ingen personlige data. Fremdriften din forblir på denne enheten."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Din seks-signal profil",
+    "title": "Mer enn én karrieretype.",
+    "subtitle": "RIASEC måler kombinasjonen av miljøer der dine interesser har en tendens til å trives.",
+    "signalsShort": "signaler",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Realistisk",
+      "description": "Bygge, reparere og jobbe praktisk."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Undersøkende",
+      "description": "Stille spørsmål, analysere og oppdage."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "Kunstnerisk",
+      "description": "Forestille seg, uttrykke og designe."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "Sosial",
+      "description": "Undervise, støtte og koble til."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Foretagende",
+      "description": "Lede, overtale og initiere."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Konvensjonell",
+      "description": "Organisere, verifisere og forbedre."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
+    "step": "Sted · Trinn {{step}} av 2",
+    "titleCountry": "Hvor bygger du fremtiden din?",
+    "titleCity": "Hvilken by eller region skal forme anbefalingene dine?",
+    "descriptionCountry": "Velg et land først. Vi bruker det kun for å lokalisere karrierer, lønninger og læringsveier.",
+    "descriptionCity": "Velg en by, skriv inn en region, eller hopp over dette trinnet for {{country}}.",
+    "searchCountry": "Søk land",
+    "searchCity": "Søk byer",
+    "noResults": "Ingen treff funnet.",
+    "back": "Tilbake",
     "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "skipCity": "Fortsett kun med {{country}}",
+    "useRegion": "Bruk {{region}} som min region",
+    "close": "Lukk stedsvelger",
+    "country": "Land",
+    "city": "By",
+    "selectCountry": "Velg land",
+    "selectCityOptional": "Velg by (valgfritt)",
+    "continue": "Fortsett",
+    "noMatches": "Ingen treff"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Matchede yrker",
+      "description": "Basert på din RIASEC-profil, matcher vi deg med karrierer som stemmer overens med dine interesser og styrker."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "RIASEC Psykologisk Modell",
+      "description": "Seks interessesignaler avslører hvordan du bygger, utforsker, skaper, kobler, leder og organiserer."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100 % gratis",
+      "label": "Ingen konto kreves",
+      "description": "Ingen konto kreves. Fremdriften din forblir på denne enheten."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Careero høydepunkter"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Slik fungerer Careero",
+    "subtitle": "3 enkle trinn for å oppdage dine skreddersydde karriereveier og utdanningssentre.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Ta 30 visuelle valg",
+      "description": "Velg aktiviteter og arbeidsmiljøer som stemmer overens med dine naturlige preferanser."
     },
     "step2": {
       "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "description": "Beregner Pearson r-korrelasjon mellom din 6-vektorprofil og {{count}} karrierevektorer."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Lås opp matchede veier",
+      "description": "Motta lokaliserte toppkarriereanbefalinger, lønnsinnsikt og universitetsmatcher."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Ofte stilte spørsmål",
+    "subtitle": "Alt du trenger å vite om Careero vurderingsmotor.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Hvordan fungerer RIASEC-vurderingen?",
+        "a": "RIASEC måler interesse på tvers av 6 vektorer: Realistisk, Undersøkende, Kunstnerisk, Sosial, Foretagende og Konvensjonell. Dine 30 visuelle valg skaper en normalisert profil. Careero rangerer {{count}} yrker etter Pearson-korrelasjon – slik at forskjellige interesseblandinger produserer forskjellige topp-10 karrierer."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Er dataene mine private og sikre?",
+        "a": "Ja. Careero opererer 100 % lokalt i nettleseren din. Ingen kontoregistrering eller personlige data samles inn eller lastes opp til eksterne sporingsdatabaser."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Kan jeg bruke dette for å finne universiteter og stipender?",
+        "a": "Absolutt. Basert på din matchede karriereprofil, tilbyr Careero lokaliserte studieprogrammer, topp regionale universiteter og målrettede stipendlenker."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Hvor lang tid tar vurderingen?",
+        "a": "Vurderingen består av 30 raske visuelle binære valg og tar omtrent 3 til 5 minutter å fullføre."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Globalt AI Karrierekompass og Utdanningsmatchingplattform.",
+    "features": "Funksjoner",
+    "howItWorks": "Slik fungerer det",
+    "dimensions": "Dimensjoner",
+    "faq": "Ofte stilte spørsmål",
+    "startAssessment": "Start vurdering",
+    "copyright": "© 2026 Careero Platform. Bygget for åpen global utdanningstilgang."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Spørsmål {{current}} av {{total}}",
+    "percentComplete": "{{percent}}% fullført",
+    "title": "Hva ville du helst gjort?",
+    "subtitle": "Velg én aktivitet og vurder hvor mye du ville likt den. (Tips: Dobbeltklikk for å gå til neste spørsmål!)",
+    "or": "eller",
+    "choose": "Velg aktiviteten du ville likt best.",
+    "keyboardHint": "Tastatur: A/B, 1–3, deretter Enter.",
+    "intensity": "Hvor sterkt passer dette?",
+    "okay": "Ok",
+    "like": "Liker",
+    "love": "Elsker det",
+    "reactionJustOkay": "Helt greit",
+    "reactionGreat": "Flott!",
+    "reactionLoveIt": "Elsker det!",
+    "previous": "Forrige",
+    "next": "Neste",
+    "nextQuestion": "Neste spørsmål",
+    "finish": "Se profilen min",
+    "reset": "Tilbakestill fremdrift",
+    "resumeTitle": "Reisen din venter.",
+    "sessionSaved": "Økt lagret",
+    "resumeBody": "Fortsett ved spørsmål {{question}} med alle tidligere svar gjenopprettet.",
+    "resume": "Gjenoppta",
+    "fresh": "Start på nytt"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "Ditt karrieresignal",
+    "title": "En profil bygget på det som gir deg energi.",
+    "cached": "Lastet fra hurtigbuffer",
+    "live": "Fersk AI-innsikt",
+    "topProfile": "Topp profil",
+    "localMatches": "Kontinuerlige karrierematcher",
+    "aiTitle": "Skoler og finansiering for {{profession}} nær {{location}}",
+    "aiLoading": "Finner gode skoler, stipender og programmer i bakgrunnen…",
+    "aiUnavailable": "AI-innsikt er utilgjengelig, men dine lokale korrelasjonsmatcher er klare.",
+    "refresh": "Oppdater AI-innsikt",
+    "retry": "Prøv igjen",
+    "skills": "Ferdigheter å bygge",
+    "programs": "Stipender og programmer",
+    "topProfession": "Topp anbefaling",
+    "shareHeading": "Del din karrierekarakter",
+    "shareDescription": "Åpne et kort du kan laste ned eller poste – svar forblir private.",
+    "shareTitle": "Mitt Careero-resultat",
+    "shareProfession": "Topp karriere: {{profession}} · {{percent}}% match",
+    "shareText": "Min Careero-karakter er {{archetype}} ({{code}}). Min topp karrierematch er {{profession}} med {{percent}}%.",
+    "share": "Del resultat",
+    "shareModalTitle": "Del resultatet ditt",
+    "shareModalSubtitle": "Forhåndsvis kortet ditt · post til historier eller lagre for senere",
+    "shareToSocial": "Del",
+    "downloadCard": "Last ned kort",
+    "sharing": "Deler…",
+    "savingCard": "Lagrer…",
+    "shareDownloaded": "Delingskort lastet ned!",
+    "shareSavedCopied": "Kort lagret · bildetekst kopiert!",
+    "shareClose": "Lukk",
+    "shared": "Delt",
+    "copied": "Kopiert",
+    "shareFailed": "Deling var utilgjengelig.",
+    "sources": "Grunnleggende kilder",
+    "opensNewTab": "åpnes i en ny fane",
+    "startAgain": "Ta vurderingen på nytt",
+    "match": "{{percent}}% profilmatch",
+    "archetypeBlurb": "Din sterkeste kombinasjon er {{code}}. Skoler og stipender nedenfor følger dette mønsteret når du åpner et yrke.",
+    "riasecScores": "RIASEC-poeng",
+    "patternNote": "Topp kombinasjon: {{combo}}. Utvid et yrke for å laste skoler og stipender.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Yrkesmatcher for deg",
+    "matchesNote": "Rangert etter hvor godt hver vei passer deg – ikke en jobb- eller opptaksgaranti.",
+    "topMatchBadge": "Topp match",
+    "professionLabel": "Yrke",
+    "whyPath": "Hvorfor denne veien virker lovende",
+    "topSchools": "Topp skoler for denne veien",
+    "topScholarships": "Topp stipender for dette yrket",
+    "visitSchool": "Besøk skolens nettsted",
+    "openScholarship": "Åpne stipend",
+    "noSchools": "Ingen verifiserte skoler funnet for dette stedet ennå.",
+    "noScholarships": "Ingen verifiserte stipender funnet for dette stedet ennå.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Stifinneren",
+      "creator": "Skaperen",
+      "strategist": "Strategen",
+      "visionary": "Visjonæren",
+      "analyst": "Analytikeren",
+      "builder": "Byggeren",
+      "guardian": "Vokteren"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
+    "tagAlignment": "{{dimension}} justering",
+    "tagCampusFit": "{{dimension}} campus-passform",
+    "tagKeywords": "{{count}} programnøkkelord",
+    "tagKeywordsOne": "1 programnøkkelord",
+    "tagFlagship": "Flaggskipalternativ",
+    "tagSystemsFit": "Sterk systempassform",
+    "shareCardTopFit": "Topp karrierepassform",
     "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "shareCardSummary": "Et kompakt Careero-profilkort – ingen quizsvar inkludert.",
+    "shareCardFooter": "careero · finn karrieren som passer deg"
   }
 }

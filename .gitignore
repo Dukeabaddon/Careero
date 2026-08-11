@@ -32,3 +32,8 @@ Careero/tmp_onet.zip
 # Private demo / pitch scripts (local only)
 docs/code01.md
 **/code01.md
+
+# Cursor local agent notes / arena scratch
+.cursor/
+
+graphify-out/

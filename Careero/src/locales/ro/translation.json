@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Inteligență de carieră, personalizată"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Limbă",
+    "clearData": "Șterge datele mele",
+    "home": "Acasă",
+    "howItWorks": "Cum funcționează",
+    "dimensions": "Dimensiuni",
+    "faq": "Întrebări frecvente",
+    "startAssessment": "Începe evaluarea",
+    "searchLanguage": "Caută limbă...",
+    "noLanguageFound": "Nicio limbă găsită"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Potrivire bazată pe personalitate",
+    "title": "Descoperă calea profesională creată pentru modul în care funcționează mintea ta.",
+    "titleAccent": "Susținut de inteligență AI și RIASEC.",
+    "description": "O evaluare vizuală, susținută de știință, mapează modul în care construiești, pui întrebări, creezi, te conectezi, conduci și organizezi — apoi transformă acel profil în trasee de carieră locale.",
+    "start": "Începe evaluarea",
+    "resume": "Continuă evaluarea",
+    "duration": "30 de alegeri vizuale · aproximativ 6 minute",
+    "privacy": "Fără cont. Fără date personale. Progresul tău rămâne pe acest dispozitiv."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Profilul tău cu șase semnale",
+    "title": "Mai mult decât un singur tip de carieră.",
+    "subtitle": "RIASEC măsoară combinația de medii în care interesele tale tind să prospere.",
+    "signalsShort": "semnale",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Realist",
+      "description": "Construiește, repară și lucrează practic."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Investigativ",
+      "description": "Întreabă, analizează și descoperă."
     },
     "A": {
       "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "description": "Imaginează, exprimă și proiectează."
     },
     "S": {
       "name": "Social",
-      "description": "Teach, support, and connect."
+      "description": "Predă, sprijină și conectează."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Întreprinzător",
+      "description": "Conduce, convinge și inițiază."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Convențional",
+      "description": "Organizează, verifică și îmbunătățește."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "Locație · Pasul {{step}} din 2",
+    "titleCountry": "Unde îți construiești viitorul?",
+    "titleCity": "Ce oraș sau regiune ar trebui să modeleze recomandările tale?",
+    "descriptionCountry": "Alege mai întâi o țară. O folosim doar pentru a localiza cariere, salarii și trasee de învățare.",
+    "descriptionCity": "Selectează un oraș, tastează o regiune sau sari peste acest pas pentru {{country}}.",
+    "searchCountry": "Caută țări",
+    "searchCity": "Caută orașe",
+    "noResults": "Niciun rezultat găsit.",
+    "back": "Înapoi",
+    "confirm": "Începe pentru {{city}}, {{country}}",
+    "skipCity": "Continuă doar cu {{country}}",
+    "useRegion": "Folosește {{region}} ca regiune",
+    "close": "Închide selectorul de locație",
+    "country": "Țară",
+    "city": "Oraș",
+    "selectCountry": "Selectează țara",
+    "selectCityOptional": "Selectează orașul (opțional)",
+    "continue": "Continuă",
+    "noMatches": "Nicio potrivire"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Ocupații potrivite",
+      "description": "Pe baza profilului tău RIASEC, te potrivim cu cariere care se aliniază intereselor și punctelor tale forte."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "Model psihologic RIASEC",
+      "description": "Șase semnale de interes dezvăluie modul în care construiești, explorezi, creezi, te conectezi, conduci și organizezi."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% Gratuit",
+      "label": "Fără cont necesar",
+      "description": "Nu este necesar un cont. Progresul evaluării rămâne pe acest dispozitiv."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Repere Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Cum funcționează Careero",
+    "subtitle": "3 pași simpli pentru a descoperi traseele de carieră și centrele educaționale adaptate ție.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Fă 30 de alegeri vizuale",
+      "description": "Selectează activități și medii de lucru care rezonează cu preferințele tale naturale."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Motor matematic Pearson Vector",
+      "description": "Calculează corelația Pearson r între profilul tău cu 6 vectori și {{count}} vectori de carieră."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Deblochează traseele potrivite",
+      "description": "Primește recomandări de carieră localizate, informații despre salarii și potriviri universitare."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce trebuie să știi despre motorul de evaluare Careero.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Cum funcționează evaluarea RIASEC?",
+        "a": "RIASEC măsoară interesul pe 6 vectori: Realist, Investigativ, Artistic, Social, Întreprinzător și Convențional. Cele 30 de selecții vizuale creează un profil normalizat. Careero clasifică {{count}} ocupații după corelația Pearson — astfel, combinații diferite de interese produc cariere top-10 diferite."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Datele mele sunt private și securizate?",
+        "a": "Da. Careero funcționează 100% local în browserul tău. Nu se colectează și nu se încarcă date personale sau înregistrări de cont în baze de date externe de urmărire."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Pot folosi asta pentru descoperirea universităților și a burselor?",
+        "a": "Absolut. Pe baza profilului tău de carieră potrivit, Careero oferă programe de studiu localizate, universități regionale de top și linkuri către burse țintite."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Cât durează evaluarea?",
+        "a": "Evaluarea constă din 30 de alegeri vizuale binare rapide și durează aproximativ 3 până la 5 minute."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Busolă globală de carieră AI și platformă de potrivire educațională.",
+    "features": "Funcții",
+    "howItWorks": "Cum funcționează",
+    "dimensions": "Dimensiuni",
+    "faq": "Întrebări frecvente",
+    "startAssessment": "Începe evaluarea",
+    "copyright": "© 2026 Platforma Careero. Construită pentru acces educațional global deschis."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Întrebarea {{current}} din {{total}}",
+    "percentComplete": "{{percent}}% complet",
+    "title": "Ce ai prefera să faci?",
+    "subtitle": "Alege o activitate și evaluează cât de mult ți-ar plăcea. (Sfat: Dublu-clic pentru a trece la următoarea întrebare!)",
+    "or": "sau",
+    "choose": "Alege activitatea pe care ai prefera-o mai mult.",
+    "keyboardHint": "Tastatură: A/B, 1–3, apoi Enter.",
+    "intensity": "Cât de bine se potrivește?",
+    "okay": "OK",
+    "like": "Îmi place",
+    "love": "Îmi place mult",
+    "reactionJustOkay": "Doar OK",
+    "reactionGreat": "Grozav!",
+    "reactionLoveIt": "Îmi place mult!",
+    "previous": "Anterior",
+    "next": "Următor",
+    "nextQuestion": "Următoarea întrebare",
+    "finish": "Vezi profilul meu",
+    "reset": "Resetează progresul",
+    "resumeTitle": "Călătoria ta te așteaptă.",
+    "sessionSaved": "Sesiune salvată",
+    "resumeBody": "Continuă la întrebarea {{question}} cu fiecare răspuns anterior restaurat.",
+    "resume": "Continuă",
+    "fresh": "Începe de la zero"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
+    "label": "Semnalul tău de carieră",
+    "title": "Un profil construit din ceea ce te energizează.",
+    "cached": "Încărcat din cache",
+    "live": "Perspectivă AI proaspătă",
+    "topProfile": "Profil principal",
+    "localMatches": "Potriviri de carieră cu potrivire continuă",
+    "aiTitle": "Școli și finanțare pentru {{profession}} lângă {{location}}",
+    "aiLoading": "Se caută școli, burse și programe puternice în fundal…",
+    "aiUnavailable": "Perspectivele AI nu sunt disponibile, dar potrivirile locale de corelație sunt gata.",
+    "refresh": "Reîmprospătează perspectivele AI",
+    "retry": "Încearcă din nou",
+    "skills": "Abilități de dezvoltat",
+    "programs": "Burse și programe",
+    "topProfession": "Recomandare principală",
+    "shareHeading": "Distribuie-ți caracterul de carieră",
+    "shareDescription": "Deschide un card pe care îl poți descărca sau posta — răspunsurile rămân private.",
+    "shareTitle": "Rezultatul meu Careero",
+    "shareProfession": "Carieră principală: {{profession}} · {{percent}}% potrivire",
+    "shareText": "Caracterul meu Careero este {{archetype}} ({{code}}). Potrivirea mea de carieră principală este {{profession}} la {{percent}}%.",
+    "share": "Distribuie rezultatul",
+    "shareModalTitle": "Distribuie rezultatul",
+    "shareModalSubtitle": "Previzualizează cardul · postează în stories sau salvează pentru mai târziu",
+    "shareToSocial": "Distribuie",
+    "downloadCard": "Descarcă cardul",
+    "sharing": "Se distribuie…",
+    "savingCard": "Se salvează…",
+    "shareDownloaded": "Card de distribuire descărcat!",
+    "shareSavedCopied": "Card salvat · text copiat!",
+    "shareClose": "Închide",
+    "shared": "Distribuit",
+    "copied": "Copiat",
+    "shareFailed": "Distribuirea nu a fost disponibilă.",
+    "sources": "Surse de fundamentare",
+    "opensNewTab": "se deschide într-un tab nou",
+    "startAgain": "Refă evaluarea",
+    "match": "{{percent}}% potrivire de profil",
+    "archetypeBlurb": "Combinația ta cea mai puternică este {{code}}. Școlile și bursele de mai jos urmează acel model când deschizi o profesie.",
+    "riasecScores": "Scoruri RIASEC",
+    "patternNote": "Combinație principală: {{combo}}. Extinde o profesie pentru a încărca școli și burse.",
     "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "professionMatches": "Potriviri de profesie pentru tine",
+    "matchesNote": "Clasificate după cât de bine se potrivește fiecare traseu — nu o garanție de angajare sau admitere.",
+    "topMatchBadge": "Potrivire principală",
+    "professionLabel": "Profesie",
+    "whyPath": "De ce acest traseu pare promițător",
+    "topSchools": "Școli de top pentru acest traseu",
+    "topScholarships": "Burse de top pentru această profesie",
+    "visitSchool": "Vizitează site-ul școlii",
+    "openScholarship": "Deschide bursa",
+    "noSchools": "Nu s-au găsit încă școli verificate pentru această locație.",
+    "noScholarships": "Nu s-au găsit încă burse verificate pentru această locație.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Exploratorul",
+      "creator": "Creatorul",
+      "strategist": "Strategul",
+      "visionary": "Vizionarul",
+      "analyst": "Analistul",
+      "builder": "Constructorul",
+      "guardian": "Gardianul"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "Aliniere {{dimension}}",
+    "tagCampusFit": "Potrivire campus {{dimension}}",
+    "tagKeywords": "{{count}} cuvinte cheie de program",
+    "tagKeywordsOne": "1 cuvânt cheie de program",
+    "tagFlagship": "Opțiune emblematică",
+    "tagSystemsFit": "Potrivire puternică de sisteme",
+    "shareCardTopFit": "Potrivire de carieră principală",
+    "shareCardMatch": "{{percent}}% potrivire",
+    "shareCardSummary": "Un card compact de profil Careero — fără răspunsuri la quiz incluse.",
+    "shareCardFooter": "careero · găsește cariera care ți se potrivește"
   }
 }

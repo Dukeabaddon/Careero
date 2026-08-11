@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "បញ្ញាការងារ ផ្ទាល់ខ្លួន"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "ភាសា",
+    "clearData": "លុបទិន្នន័យរបស់ខ្ញុំ",
+    "home": "ទំព័រដើម",
+    "howItWorks": "របៀបដែលវាដំណើរការ",
+    "dimensions": "វិមាត្រ",
+    "faq": "សំណួរញឹកញាប់",
+    "startAssessment": "ចាប់ផ្តើមការវាយតម្លៃ",
+    "searchLanguage": "ស្វែងរកភាសា...",
+    "noLanguageFound": "រកមិនឃើញភាសា"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "ការផ្គូផ្គងតាមបុគ្គលិកលក្ខណៈ",
+    "title": "ស្វែងរកផ្លូវការងារដែលបង្កើតសម្រាប់របៀបដែលខួរក្បាលរបស់អ្នកដំណើរការ។",
+    "titleAccent": "ដំណើរការដោយ AI និងបញ្ញា RIASEC។",
+    "description": "ការវាយតម្លៃជារូបភាព និងមានមូលដ្ឋានវិទ្យាសាស្ត្រ បង្ហាញពីរបៀបដែលអ្នកបង្កើត សួរ បង្កើត តភ្ជាប់ ដឹកនាំ និងរៀបចំ—បន្ទាប់មកបំលែងប្រវត្តិរូបនោះទៅជាផ្លូវការងារក្នុងតំបន់។",
+    "start": "ចាប់ផ្តើមការវាយតម្លៃ",
+    "resume": "បន្តការវាយតម្លៃ",
+    "duration": "ជម្រើសរូបភាព ៣០ · ប្រហែល ៦ នាទី",
+    "privacy": "គ្មានគណនី។ គ្មានទិន្នន័យផ្ទាល់ខ្លួន។ វឌ្ឍនភាពរបស់អ្នកនៅលើឧបករណ៍នេះ។"
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "ប្រវត្តិរូបសញ្ញា ៦ របស់អ្នក",
+    "title": "ច្រើនជាងប្រភេទការងារមួយ។",
+    "subtitle": "RIASEC វាស់ការរួមបញ្ចូលនៃបរិយាកាសដែលចំណូលចិត្តរបស់អ្នកតែងតែរីកចម្រើន។",
+    "signalsShort": "សញ្ញា",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "ជាក់ស្តែង",
+      "description": "បង្កើត ជួសជុល និងធ្វើការដោយដៃ។"
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "ស្រាវជ្រាវ",
+      "description": "សួរ វិភាគ និងរកឃើញ។"
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "សិល្បៈ",
+      "description": "ស្រមៃ បង្ហាញ និងរចនា។"
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "សង្គម",
+      "description": "បង្រៀន គាំទ្រ និងតភ្ជាប់។"
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "អាជីវកម្ម",
+      "description": "ដឹកនាំ បញ្ចុះបញ្ចូល និងចាប់ផ្តើម។"
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "ប្រពៃណី",
+      "description": "រៀបចំ ផ្ទៀងផ្ទាត់ និងកែលម្អ។"
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "ទីតាំង · ជំហាន {{step}} នៃ ២",
+    "titleCountry": "តើអ្នកកំពុងបង្កើតអនាគតរបស់អ្នកនៅឯណា?",
+    "titleCity": "ទីក្រុង ឬតំបន់ណាដែលគួរបង្កើតការណែនាំរបស់អ្នក?",
+    "descriptionCountry": "ជ្រើសរើសប្រទេសជាមុន។ យើងប្រើវាតែដើម្បីប្ដូរការងារ ប្រាក់ខែ និងផ្លូវសិក្សាទៅតាមតំបន់។",
+    "descriptionCity": "ជ្រើសរើសទីក្រុង វាយបញ្ចូលតំបន់ ឬរំលងជំហាននេះសម្រាប់ {{country}}។",
+    "searchCountry": "ស្វែងរកប្រទេស",
+    "searchCity": "ស្វែងរកទីក្រុង",
+    "noResults": "រកមិនឃើញផ្គូផ្គង។",
+    "back": "ត្រឡប់ក្រោយ",
+    "confirm": "ចាប់ផ្តើមសម្រាប់ {{city}}, {{country}}",
+    "skipCity": "បន្តជាមួយ {{country}} តែប៉ុណ្ណោះ",
+    "useRegion": "ប្រើ {{region}} ជាតំបន់របស់ខ្ញុំ",
+    "close": "បិទកម្មវិធីជ្រើសរើសទីតាំង",
+    "country": "ប្រទេស",
+    "city": "ទីក្រុង",
+    "selectCountry": "ជ្រើសរើសប្រទេស",
+    "selectCityOptional": "ជ្រើសរើសទីក្រុង (ស្រេចចិត្ត)",
+    "continue": "បន្ត",
+    "noMatches": "គ្មានផ្គូផ្គង"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "មុខរបរផ្គូផ្គង",
+      "description": "ផ្អែកលើប្រវត្តិរូប RIASEC របស់អ្នក យើងផ្គូផ្គងអ្នកជាមួយការងារដែលសមនឹងចំណូលចិត្ត និងចំណុចខ្លាំងរបស់អ្នក។"
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "គំរូចិត្តវិទ្យា RIASEC",
+      "description": "សញ្ញាចំណូលចិត្ត ៦ បង្ហាញពីរបៀបដែលអ្នកបង្កើត រុករក បង្កើត តភ្ជាប់ ដឹកនាំ និងរៀបចំ។"
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "១០០% ឥតគិតថ្លៃ",
+      "label": "មិនត្រូវការគណនី",
+      "description": "មិនត្រូវការគណនី។ វឌ្ឍនភាពការវាយតម្លៃរបស់អ្នកនៅលើឧបករណ៍នេះ។"
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "ចំណុចពិសេស Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "របៀបដែល Careero ដំណើរការ",
+    "subtitle": "៣ ជំហានសាមញ្ញដើម្បីស្វែងរកផ្លូវការងារ និងមជ្ឈមណ្ឌលអប់រំដែលត្រូវនឹងអ្នក។",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "ធ្វើជម្រើសរូបភាព ៣០",
+      "description": "ជ្រើសរើសសកម្មភាព និងបរិយាកាសការងារដែលសមនឹងចំណូលចិត្តធម្មជាតិរបស់អ្នក។"
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "ម៉ាស៊ីនគណិតវិទ្យាវ៉ិចទ័រ Pearson",
+      "description": "គណនាសមាមាត្រការសម្ពាធ Pearson r រវាងប្រវត្តិរូប ៦-វ៉ិចទ័ររបស់អ្នក និងវ៉ិចទ័រការងារ {{count}}។"
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "បើកផ្លូវផ្គូផ្គង",
+      "description": "ទទួលការណែនាំការងារកំពូលក្នុងតំបន់ ការយល់ដឹងអំពីប្រាក់ខែ និងការផ្គូផ្គងសាកលវិទ្យាល័យ។"
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "សំណួរញឹកញាប់",
+    "subtitle": "អ្វីៗទាំងអស់ដែលអ្នកត្រូវដឹងអំពីម៉ាស៊ីនវាយតម្លៃ Careero។",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "ការវាយតម្លៃ RIASEC ដំណើរការយ៉ាងដូចម្តេច?",
+        "a": "RIASEC វាស់ចំណូលចិត្តតាមវ៉ិចទ័រ ៦៖ ជាក់ស្តែង ស្រាវជ្រាវ សិល្បៈ សង្គម អាជីវកម្ម និងប្រពៃណី។ ជម្រើសរូបភាព ៣០ របស់អ្នកបង្កើតប្រវត្តិរូបដែលបានធ្វើឱ្យស្តង់ដារ។ Careero ចាត់ថ្នាក់មុខរបរ {{count}} តាមសមាមាត្រការសម្ពាធ Pearson — ដូច្នេះការលាយបញ្ចូលចំណូលចិត្តផ្សេងៗបង្កើតការងារ top-10 ផ្សេងៗ។"
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "តើទិន្នន័យរបស់ខ្ញុំឯកជន និងមានសុវត្ថិភាពទេ?",
+        "a": "បាទ/ចាស។ Careero ដំណើរការ ១០០% ក្នុងតំបន់នៅក្នុងកម្មវិធីរុករករបស់អ្នក។ គ្មានការប្រមូលទិន្នន័យផ្ទាល់ខ្លួន ឬការចុះឈ្មោះគណនី ហើយទិន្នន័យមិនត្រូវបានផ្ទុកទៅមូលដ្ឋានទិន្នន័យតាមដានខាងក្រៅទេ។"
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "តើខ្ញុំអាចប្រើវាសម្រាប់ស្វែងរកសាកលវិទ្យាល័យ និងអាហារូបករណ៍ទេ?",
+        "a": "ប្រាកដណាស់។ ផ្អែកលើប្រវត្តិរូបការងារផ្គូផ្គងរបស់អ្នក Careero ផ្តល់កម្មវិធីបរិញ្ញាបត្រក្នុងតំបន់ សាកលវិទ្យាល័យតំបន់កំពូល និងតំណភ្ជាប់អាហារូបករណ៍គោលដៅ។"
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "ការវាយតម្លៃចំណាយពេលប៉ុន្មាន?",
+        "a": "ការវាយតម្លៃមានជម្រើសរូបភាពប្រព័ន្ធ ២ លឿន ៣០ ហើយចំណាយពេលប្រហែល ៣ ដល់ ៥ នាទី។"
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "តម្រងទិសការងារ AI សកល និងវេទិកាផ្គូផ្គងអប់រំ។",
+    "features": "មុខងារ",
+    "howItWorks": "របៀបដែលវាដំណើរការ",
+    "dimensions": "វិមាត្រ",
+    "faq": "សំណួរញឹកញាប់",
+    "startAssessment": "ចាប់ផ្តើមការវាយតម្លៃ",
+    "copyright": "© ២០២៦ វេទិកា Careero។ បង្កើតសម្រាប់ការចូលដំណើរការអប់រំសកលបើកចំហ។"
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "សំណួរ {{current}} នៃ {{total}}",
+    "percentComplete": "{{percent}}% បានបញ្ចប់",
+    "title": "តើអ្នកចង់ធ្វើអ្វីជាង?",
+    "subtitle": "ជ្រើសរើសសកម្មភាពមួយ ហើយវាយតម្លៃថាតើអ្នករីករាយប៉ុន្មាន។ (ព័ត៌មាន៖ ចុចពីរដងដើម្បីទៅសំណួរបន្ទាប់!)",
+    "or": "ឬ",
+    "choose": "ជ្រើសរើសសកម្មភាពដែលអ្នករីករាយជាង។",
+    "keyboardHint": "ក្ដារចុច៖ A/B, ១–៣, បន្ទាប់មក Enter។",
+    "intensity": "តើវាសមនឹងអ្នកប៉ុន្មាន?",
+    "okay": "យល់ព្រម",
+    "like": "ចូលចិត្ត",
+    "love": "ចូលចិត្តខ្លាំង",
+    "reactionJustOkay": "គ្រាន់តែយល់ព្រម",
+    "reactionGreat": "អស្ចារ្យ!",
+    "reactionLoveIt": "ចូលចិត្តខ្លាំង!",
+    "previous": "មុន",
+    "next": "បន្ទាប់",
+    "nextQuestion": "សំណួរបន្ទាប់",
+    "finish": "មើលប្រវត្តិរូបរបស់ខ្ញុំ",
+    "reset": "កំណត់វឌ្ឍនភាពឡើងវិញ",
+    "resumeTitle": "ដំណើររបស់អ្នកកំពុងរង់ចាំ។",
+    "sessionSaved": "បានរក្សាទុកសម័យ",
+    "resumeBody": "បន្តនៅសំណួរ {{question}} ជាមួយចម្លើយមុនៗទាំងអស់ត្រូវបានស្តារឡើងវិញ។",
+    "resume": "បន្ត",
+    "fresh": "ចាប់ផ្តើមឡើងវិញ"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "សញ្ញាការងាររបស់អ្នក",
+    "title": "ប្រវត្តិរូបបង្កើតពីអ្វីដែលផ្តល់ថាមពលដល់អ្នក។",
+    "cached": "បានផ្ទុកពីឃ្លាំង",
+    "live": "ការយល់ដឹង AI ថ្មី",
+    "topProfile": "ប្រវត្តិរូបកំពូល",
+    "localMatches": "ការផ្គូផ្គងការងារសមស្របបន្ត",
+    "aiTitle": "សាលា និងមូលនិធិសម្រាប់ {{profession}} ក្បែរ {{location}}",
+    "aiLoading": "កំពុងស្វែងរកសាលា អាហារូបករណ៍ និងកម្មវិធីខ្លាំងនៅផ្ទៃខាងក្រោយ…",
+    "aiUnavailable": "ការយល់ដឹង AI មិនមាន ប៉ុន្តែការផ្គូផ្គងសមាមាត្រការសម្ពាធក្នុងតំបន់របស់អ្នករួចរាល់ហើយ។",
+    "refresh": "ធ្វើបច្ចុប្បន្នភាពការយល់ដឹង AI",
+    "retry": "ព្យាយាមម្តងទៀត",
+    "skills": "ជំនាញដែលត្រូវបង្កើត",
+    "programs": "អាហារូបករណ៍ និងកម្មវិធី",
+    "topProfession": "ការណែនាំកំពូល",
+    "shareHeading": "ចែករំលែកតួអក្សរការងាររបស់អ្នក",
+    "shareDescription": "បើកកាតដែលអ្នកអាចទាញយក ឬបង្ហោះ — ចម្លើយនៅឯកជន។",
+    "shareTitle": "លទ្ធផល Careero របស់ខ្ញុំ",
+    "shareProfession": "ការងារកំពូល៖ {{profession}} · {{percent}}% ផ្គូផ្គង",
+    "shareText": "តួអក្សរ Careero របស់ខ្ញុំគឺ {{archetype}} ({{code}})។ ការផ្គូផ្គងការងារកំពូលរបស់ខ្ញុំគឺ {{profession}} នៅ {{percent}}%។",
+    "share": "ចែករំលែកលទ្ធផល",
+    "shareModalTitle": "ចែករំលែកលទ្ធផលរបស់អ្នក",
+    "shareModalSubtitle": "មើលកាតជាមុន · បង្ហោះទៅរឿង ឬរក្សាទុកសម្រាប់ពេលក្រោយ",
+    "shareToSocial": "ចែករំលែក",
+    "downloadCard": "ទាញយកកាត",
+    "sharing": "កំពុងចែករំលែក…",
+    "savingCard": "កំពុងរក្សាទុក…",
+    "shareDownloaded": "បានទាញយកកាតចែករំលែក!",
+    "shareSavedCopied": "បានរក្សាទុកកាត · បានចម្លងអត្ថបទ!",
+    "shareClose": "បិទ",
+    "shared": "បានចែករំលែក",
+    "copied": "បានចម្លង",
+    "shareFailed": "ការចែករំលែកមិនមាន។",
+    "sources": "ប្រភពគ្រឹះ",
+    "opensNewTab": "បើកក្នុងផ្ទាំងថ្មី",
+    "startAgain": "ធ្វើការវាយតម្លៃម្តងទៀត",
+    "match": "{{percent}}% ផ្គូផ្គងប្រវត្តិរូប",
+    "archetypeBlurb": "ការលាយបញ្ចូលខ្លាំងបំផុតរបស់អ្នកគឺ {{code}}។ សាលា និងអាហារូបករណ៍ខាងក្រោមតាមរចនាប័ទ្មនោះនៅពេលអ្នកបើកមុខរបរ។",
+    "riasecScores": "ពិន្ទុ RIASEC",
+    "patternNote": "ការលាយបញ្ចូលកំពូល៖ {{combo}}។ ពង្រីកមុខរបរដើម្បីផ្ទុកសាលា និងអាហារូបករណ៍។",
+    "matchesEyebrow": "Pearson ៦-វ៉ិចទ័រ",
+    "professionMatches": "ការផ្គូផ្គងមុខរបរសម្រាប់អ្នក",
+    "matchesNote": "ចាត់ថ្នាក់តាមរបៀបដែលផ្លូវនីមួយៗសមនឹងអ្នក — មិនមែនជាការធានាការងារ ឬការទទួលចូលទេ។",
+    "topMatchBadge": "ផ្គូផ្គងកំពូល",
+    "professionLabel": "មុខរបរ",
+    "whyPath": "ហេតុអ្វីផ្លូវនេះមើលទៅសន្យា",
+    "topSchools": "សាលាកំពូលសម្រាប់ផ្លូវនេះ",
+    "topScholarships": "អាហារូបករណ៍កំពូលសម្រាប់មុខរបរនេះ",
+    "visitSchool": "ទស្សនាគេហទំព័រសាលា",
+    "openScholarship": "បើកអាហារូបករណ៍",
+    "noSchools": "មិនទាន់រកឃើញសាលាដែលបានផ្ទៀងផ្ទាត់សម្រាប់ទីតាំងនេះទេ។",
+    "noScholarships": "មិនទាន់រកឃើញអាហារូបករណ៍ដែលបានផ្ទៀងផ្ទាត់សម្រាប់ទីតាំងនេះទេ។",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "អ្នកស្វែងរកផ្លូវ",
+      "creator": "អ្នកបង្កើត",
+      "strategist": "អ្នកយុទ្ធសាស្ត្រ",
+      "visionary": "អ្នកមានចក្ខុវិស័យ",
+      "analyst": "អ្នកវិភាគ",
+      "builder": "អ្នកសាងសង់",
+      "guardian": "អ្នករក្សា"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "ការសមស្រប {{dimension}}",
+    "tagCampusFit": "ការសមស្របវាលសិក្សា {{dimension}}",
+    "tagKeywords": "ពាក្យគន្លឹះកម្មវិធី {{count}}",
+    "tagKeywordsOne": "ពាក្យគន្លឹះកម្មវិធី ១",
+    "tagFlagship": "ជម្រើសដឹកនាំ",
+    "tagSystemsFit": "ការសមស្របប្រព័ន្ធខ្លាំង",
+    "shareCardTopFit": "ការសមស្របការងារកំពូល",
+    "shareCardMatch": "{{percent}}% ផ្គូផ្គង",
+    "shareCardSummary": "កាតប្រវត្តិរូប Careero តូច — គ្មានចម្លើយប្រលង។",
+    "shareCardFooter": "careero · រកការងារដែលសមនឹងអ្នក"
   }
 }

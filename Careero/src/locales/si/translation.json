@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "වෘත්තීය බුද්ධිමතාව, පුද්ගලිකව"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "භාෂාව",
+    "clearData": "මගේ දත්ත මකන්න",
+    "home": "මුල් පිටුව",
+    "howItWorks": "එය ක්‍රියා කරන ආකාරය",
+    "dimensions": "මාන",
+    "faq": "නිතර අසන ප්‍රශ්න",
+    "startAssessment": "ඇගයීම ආරම්භ කරන්න",
+    "searchLanguage": "භාෂාව සොයන්න...",
+    "noLanguageFound": "භාෂාවක් හමු නොවීය"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "පෞර්ෂය මත පදනම් වූ ගැලපීම",
+    "title": "ඔබේ මනස ක්‍රියා කරන ආකාරය සඳහා ගොඩනැගූ වෘත්තීය මාර්ගය සොයා ගන්න.",
+    "titleAccent": "AI සහ RIASEC බුද්ධිමතාවෙන් ධාවනය වේ.",
+    "description": "දෘශ්‍ය, විද්‍යාත්මක ඇගයීමක් ඔබ ගොඩනගන, ප්‍රශ්න කරන, නිර්මාණය කරන, සම්බන්ධ වන, නායකත්වය දක්වන සහ සංවිධානය කරන ආකාරය සිතියම්ගත කරයි — ඉන්පසු එම පැතිකඩ දේශීය වෘත්තීය මාර්ග බවට පරිවර්තනය කරයි.",
+    "start": "ඇගයීම ආරම්භ කරන්න",
+    "resume": "ඇගයීම දිගටම කරන්න",
+    "duration": "දෘශ්‍ය තේරීම් 30 · මිනිත්තු 6 පමණ",
+    "privacy": "ගිණුමක් නැත. පෞද්ගලික දත්ත නැත. ඔබේ ප්‍රගතිය මෙම උපාංගයේම තබා ගනී."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "ඔබේ සිග්නල් හයක පැතිකඩ",
+    "title": "වෘත්තීය වර්ගයකට වඩා වැඩියි.",
+    "subtitle": "RIASEC ඔබේ උනන්දුවන් සාර්ථක වන පරිසර සංයෝජනය මැනයි.",
+    "signalsShort": "සිග්නල්",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "යථාර්ථවාදී",
+      "description": "ගොඩනගන්න, අලුත්වැඩියා කරන්න, අත්පොතෙන් වැඩ කරන්න."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "පරීක්ෂණාත්මක",
+      "description": "ප්‍රශ්න කරන්න, විශ්ලේෂණය කරන්න, සොයා ගන්න."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "කලාත්මක",
+      "description": "සිතින්න, ප්‍රකාශ කරන්න, නිර්මාණය කරන්න."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "සමාජීය",
+      "description": "උගන්වන්න, සහාය දක්වන්න, සම්බන්ධ වන්න."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "ව්‍යවසායක",
+      "description": "නායකත්වය දක්වන්න, ඒකාධිපත්‍යය කරන්න, ආරම්භ කරන්න."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "සම්ප්‍රදායික",
+      "description": "සංවිධානය කරන්න, සත්‍යාපනය කරන්න, වැඩිදියුණු කරන්න."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "ස්ථානය · පියවර {{step}} / 2",
+    "titleCountry": "ඔබේ අනාගතය ගොඩනගන්නේ කොහේද?",
+    "titleCity": "ඔබේ නිර්දේශ හැඩගස්විය යුත්තේ කුමන නගරයක් හෝ කලාපයක්ද?",
+    "descriptionCountry": "පළමුව රටක් තෝරන්න. අපි එය වෘත්තීය, වැටුප් සහ ඉගෙනුම් මාර්ග දේශීයකරණය කිරීමට පමණක් භාවිතා කරමු.",
+    "descriptionCity": "නගරයක් තෝරන්න, කලාපයක් ටයිප් කරන්න, හෝ {{country}} සඳහා මෙම පියවර මඟ හරින්න.",
+    "searchCountry": "රටවල් සොයන්න",
+    "searchCity": "නගර සොයන්න",
+    "noResults": "ගැලපීම් හමු නොවීය.",
+    "back": "ආපසු",
+    "confirm": "{{city}}, {{country}} සඳහා ආරම්භ කරන්න",
+    "skipCity": "{{country}} පමණක් සමඟ දිගටම කරන්න",
+    "useRegion": "{{region}} මගේ කලාපය ලෙස භාවිතා කරන්න",
+    "close": "ස්ථාන තෝරකය වසන්න",
+    "country": "රට",
+    "city": "නගරය",
+    "selectCountry": "රට තෝරන්න",
+    "selectCityOptional": "නගරය තෝරන්න (විකල්ප)",
+    "continue": "දිගටම කරන්න",
+    "noMatches": "ගැලපීම් නැත"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "ගැලපූ රැකියා",
+      "description": "ඔබේ RIASEC පැතිකඩ මත පදනම්ව, අපි ඔබේ උනන්දුවන් සහ ශක්තීන් සමඟ ගැලපෙන වෘත්තීය සමඟ ඔබව ගැලපුවෙමු."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "RIASEC මනෝවිද්‍යා මාදිලිය",
+      "description": "උනන්දුවේ සිග්නල් හයක් ඔබ ගොඩනගන, ගවේෂණය කරන, නිර්මාණය කරන, සම්බන්ධ වන, නායකත්වය දක්වන සහ සංවිධානය කරන ආකාරය හෙළි කරයි."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% නොමිලේ",
+      "label": "ගිණුමක් අවශ්‍ය නැත",
+      "description": "ගිණුමක් අවශ්‍ය නැත. ඔබේ ඇගයීම් ප්‍රගතිය මෙම උපාංගයේම තබා ගනී."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Careero ඉස්මතු කිරීම්"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Careero ක්‍රියා කරන ආකාරය",
+    "subtitle": "ඔබට සුදුසු වෘත්තීය මාර්ග සහ අධ්‍යාපනික මධ්‍යස්ථාන සොයා ගැනීමට සරල පියවර 3ක්.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "දෘශ්‍ය තේරීම් 30ක් කරන්න",
+      "description": "ඔබේ ස්වාභාවික මනාප සමඟ ගැලපෙන ක්‍රියාකාරකම් සහ වැඩ පරිසර තෝරන්න."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Pearson Vector ගණිත එන්ජිම",
+      "description": "ඔබේ 6-වෙක්ටර පැතිකඩ සහ {{count}} වෘත්තීය වෙක්ටර අතර Pearson r සම්බන්ධතාව ගණනය කරයි."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "ගැලපූ මාර්ග අගුළු හරින්න",
+      "description": "දේශීයකරණය කළ ඉහළම වෘත්තීය නිර්දේශ, වැටුප් තොරතුරු සහ විශ්වවිද්‍යාල ගැලපීම් ලබා ගන්න."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "නිතර අසන ප්‍රශ්න",
+    "subtitle": "Careero ඇගයීම් එන්ජිම ගැන ඔබ දැන සිටිය යුතු සියල්ල.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "RIASEC ඇගයීම ක්‍රියා කරන්නේ කෙසේද?",
+        "a": "RIASEC වෙක්ටර 6ක උනන්දුව මැනයි: යථාර්ථවාදී, පරීක්ෂණාත්මක, කලාත්මක, සමාජීය, ව්‍යවසායක සහ සම්ප්‍රදායික. ඔබේ දෘශ්‍ය තේරීම් 30ක් සාමාන්‍යීකෘත පැතිකඩක් සාදයි. Careero {{count}} රැකියා Pearson සම්බන්ධතාව මගින් ශ්‍රේණිගත කරයි — එබැවින් විවිධ උනන්දු සංයෝජන ඉහළම-10 වෘත්තීය වෙනස් කරයි."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "මගේ දත්ත පෞද්ගලික සහ ආරක්ෂිතද?",
+        "a": "ඔව්. Careero ඔබේ බ්‍රවුසරයේ 100% දේශීයව ක්‍රියා කරයි. ගිණුම් ලියාපදිංචියක් හෝ පෞද්ගලික දත්ත බාහිර ට්‍රැකිං දත්ත සමුදා වෙත එකතු හෝ උඩුගත නොකෙරේ."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "මෙය විශ්වවිද්‍යාල සහ උපාධි සොයා ගැනීමට භාවිතා කළ හැකිද?",
+        "a": "අනිවාර්යයෙන්ම. ඔබේ ගැලපූ වෘත්තීය පැතිකඩ මත පදනම්ව, Careero දේශීයකරණය කළ උපාධි වැඩසටහන්, ඉහළම කලාපීය විශ්වවිද්‍යාල සහ ඉලක්කගත උපාධි සබැඳි සපයයි."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "ඇගයීමට කොපමණ කාලයක් ගත වේද?",
+        "a": "ඇගයීමේ ද්විමාන දෘශ්‍ය තේරීම් 30ක් අඩංගු වන අතර සම්පූර්ණ කිරීමට මිනිත්තු 3 සිට 5 පමණ ගත වේ."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "ගෝලීය AI වෘත්තීය මාලිමාව සහ අධ්‍යාපනික ගැලපීම් වේදිකාව.",
+    "features": "විශේෂාංග",
+    "howItWorks": "එය ක්‍රියා කරන ආකාරය",
+    "dimensions": "මාන",
+    "faq": "නිතර අසන ප්‍රශ්න",
+    "startAssessment": "ඇගයීම ආරම්භ කරන්න",
+    "copyright": "© 2026 Careero වේදිකාව. විවෘත ගෝලීය අධ්‍යාපන ප්‍රවේශය සඳහා නිර්මාණය කරන ලදී."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "ප්‍රශ්නය {{current}} / {{total}}",
+    "percentComplete": "{{percent}}% සම්පූර්ණයි",
+    "title": "ඔබ කැමති වන්නේ කුමක් කිරීමටද?",
+    "subtitle": "ක්‍රියාකාරකමක් තෝරා ඔබ එය භුක්ති විඳින තරම මනාන් කරන්න. (ඉඟිය: ඊළඟ ප්‍රශ්නයට යාමට දෙවරක් ක්ලික් කරන්න!)",
+    "or": "හෝ",
+    "choose": "ඔබ වඩාත් භුක්ති විඳින ක්‍රියාකාරකම තෝරන්න.",
+    "keyboardHint": "යතුරුපුවරුව: A/B, 1–3, ඉන්පසු Enter.",
+    "intensity": "මෙය කොපමණ දුරට ගැලපෙනවාද?",
+    "okay": "හරි",
+    "like": "කැමතියි",
+    "love": "ඉතා කැමතියි",
+    "reactionJustOkay": "හරි විතරයි",
+    "reactionGreat": "නියමයි!",
+    "reactionLoveIt": "ඉතා කැමතියි!",
+    "previous": "පෙර",
+    "next": "ඊළඟ",
+    "nextQuestion": "ඊළඟ ප්‍රශ්නය",
+    "finish": "මගේ පැතිකඩ බලන්න",
+    "reset": "ප්‍රගතිය යළි සකසන්න",
+    "resumeTitle": "ඔබේ ගමන බලා සිටී.",
+    "sessionSaved": "සැසිය සුරකින ලදී",
+    "resumeBody": "ප්‍රශ්නය {{question}} හි දිගටම කරන්න, පෙර සියලුම පිළිතුරු ප්‍රතිස්ථාපනය කර ඇත.",
+    "resume": "දිගටම කරන්න",
+    "fresh": "නැවත ආරම්භ කරන්න"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "ඔබේ වෘත්තීය සිග්නලය",
+    "title": "ඔබට ජවය ලබා දෙන දේවලින් ගොඩනැගූ පැතිකඩක්.",
+    "cached": "කෑෂ් වෙතින් පූරණය කරන ලදී",
+    "live": "නව AI අවබෝධය",
+    "topProfile": "ඉහළම පැතිකඩ",
+    "localMatches": "අඛණ්ඩ-ගැලපීම් වෘත්තීය ගැලපීම්",
+    "aiTitle": "{{location}} අසල {{profession}} සඳහා පාසල් සහ අරමුදල්",
+    "aiLoading": "පසුබිමේ ශක්තිමත් පාසල්, උපාධි සහ වැඩසටහන් සොයමින්…",
+    "aiUnavailable": "AI අවබෝධ ලබා ගත නොහැක, නමුත් ඔබේ දේශීය සම්බන්ධතා ගැලපීම් සූදානම්ය.",
+    "refresh": "AI අවබෝධ නැවුම් කරන්න",
+    "retry": "නැවත උත්සාහ කරන්න",
+    "skills": "වර්ධනය කළ යුතු කුසලතා",
+    "programs": "උපාධි සහ වැඩසටහන්",
+    "topProfession": "ඉහළම නිර්දේශය",
+    "shareHeading": "ඔබේ වෘත්තීය චරිතය බෙදා ගන්න",
+    "shareDescription": "බාගත හෝ පළ කළ හැකි කාඩ්පතක් විවෘත කරන්න — පිළිතුරු පෞද්ගලිකව තබා ගනී.",
+    "shareTitle": "මගේ Careero ප්‍රතිඵලය",
+    "shareProfession": "ඉහළම වෘත්තිය: {{profession}} · {{percent}}% ගැලපීම",
+    "shareText": "මගේ Careero චරිතය {{archetype}} ({{code}}) වේ. මගේ ඉහළම වෘත්තීය ගැලපීම {{profession}} {{percent}}% වේ.",
+    "share": "ප්‍රතිඵලය බෙදා ගන්න",
+    "shareModalTitle": "ඔබේ ප්‍රතිඵලය බෙදා ගන්න",
+    "shareModalSubtitle": "ඔබේ කාඩ්පත පෙරදසුන · කතාන්දර වලට පළ කරන්න හෝ පසුව සඳහා සුරකින්න",
+    "shareToSocial": "බෙදා ගන්න",
+    "downloadCard": "කාඩ්පත බාගත කරන්න",
+    "sharing": "බෙදා ගනිමින්…",
+    "savingCard": "සුරකිමින්…",
+    "shareDownloaded": "බෙදා ගැනීමේ කාඩ්පත බාගත කරන ලදී!",
+    "shareSavedCopied": "කාඩ්පත සුරකින ලදී · ශීර්ෂය පිටපත් කරන ලදී!",
+    "shareClose": "වසන්න",
+    "shared": "බෙදා ගන්නා ලදී",
+    "copied": "පිටපත් කරන ලදී",
+    "shareFailed": "බෙදා ගැනීම ලබා ගත නොහැකි විය.",
+    "sources": "පදනම් කිරීමේ මූලාශ්‍ර",
+    "opensNewTab": "නව ටැබයක විවෘත වේ",
+    "startAgain": "ඇගයීම නැවත කරන්න",
+    "match": "{{percent}}% පැතිකඩ ගැලපීම",
+    "archetypeBlurb": "ඔබේ ශක්තිමත්ම සංයෝජනය {{code}} වේ. ඔබ වෘත්තියක් විවෘත කළ විට පහත පාසල් සහ උපාධි එම රටාව අනුගමනය කරයි.",
+    "riasecScores": "RIASEC ලකුණු",
+    "patternNote": "ඉහළම සංයෝජනය: {{combo}}. පාසල් සහ උපාධි පූරණය කිරීමට වෘත්තිය විස්තාරණය කරන්න.",
+    "matchesEyebrow": "Pearson 6-වෙක්ටර",
+    "professionMatches": "ඔබ සඳහා වෘත්තීය ගැලපීම්",
+    "matchesNote": "එක් එක් මාර්ගය ඔබට කොපමණ ගැලපෙනවාද යන්න අනුව ශ්‍රේණිගත — රැකියා හෝ ඇතුළත් වීමේ සහතිකයක් නොවේ.",
+    "topMatchBadge": "ඉහළම ගැලපීම",
+    "professionLabel": "වෘත්තිය",
+    "whyPath": "මෙම මාර්ගය පොරොව්දාකම් පෙන්වන්නේ ඇයි",
+    "topSchools": "මෙම මාර්ගය සඳහා ඉහළම පාසල්",
+    "topScholarships": "මෙම වෘත්තිය සඳහා ඉහළම උපාධි",
+    "visitSchool": "පාසල් වෙබ් අඩවියට පිවිසෙන්න",
+    "openScholarship": "උපාධිය විවෘත කරන්න",
+    "noSchools": "මෙම ස්ථානය සඳහා සත්‍යාපිත පාසල් තවම හමු නොවීය.",
+    "noScholarships": "මෙම ස්ථානය සඳහා සත්‍යාපිත උපාධි තවම හමු නොවීය.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "මාර්ග සොයන්නා",
+      "creator": "නිර්මාතෘ",
+      "strategist": "උපාය මාර්ගික",
+      "visionary": "දර්ශනික",
+      "analyst": "විශ්ලේෂක",
+      "builder": "ගොඩනගන්නා",
+      "guardian": "රක්ෂක"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "{{dimension}} සම්බන්ධතාව",
+    "tagCampusFit": "{{dimension}} කැම්පස් ගැලපීම",
+    "tagKeywords": "වැඩසටහන් මූල පද {{count}}",
+    "tagKeywordsOne": "වැඩසටහන් මූල පද 1",
+    "tagFlagship": "ප්‍රධාන විකල්පය",
+    "tagSystemsFit": "ශක්තිමත් පද්ධති ගැලපීම",
+    "shareCardTopFit": "ඉහළම වෘත්තීය ගැලපීම",
+    "shareCardMatch": "{{percent}}% ගැලපීම",
+    "shareCardSummary": "සංකුෂිත Careero පැතිකඩ කාඩ්පත — ක්විස් පිළිතුරු ඇතුළත් නොවේ.",
+    "shareCardFooter": "careero · ඔබට ගැලපෙන වෘත්තිය සොයා ගන්න"
   }
 }

@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Επαγγελματική ευφυΐα, εξατομικευμένη"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Γλώσσα",
+    "clearData": "Εκκαθάριση των δεδομένων μου",
+    "home": "Αρχική",
+    "howItWorks": "Πώς λειτουργεί",
+    "dimensions": "Διαστάσεις",
+    "faq": "Συχνές Ερωτήσεις",
+    "startAssessment": "Έναρξη Αξιολόγησης",
+    "searchLanguage": "Αναζήτηση γλώσσας...",
+    "noLanguageFound": "Δεν βρέθηκε γλώσσα"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Αντιστοίχιση βάσει Προσωπικότητας",
+    "title": "Ανακαλύψτε την επαγγελματική πορεία που είναι φτιαγμένη για τον τρόπο που λειτουργεί το μυαλό σας.",
+    "titleAccent": "Με την υποστήριξη της τεχνητής νοημοσύνης & της ευφυΐας RIASEC.",
+    "description": "Μια οπτική, επιστημονικά τεκμηριωμένη αξιολόγηση χαρτογραφεί τον τρόπο που χτίζετε, αμφισβητείτε, δημιουργείτε, συνδέεστε, ηγείστε και οργανώνετε—και στη συνέχεια μετατρέπει αυτό το προφίλ σε τοπικές επαγγελματικές διαδρομές.",
+    "start": "Ξεκινήστε την αξιολόγηση",
+    "resume": "Συνέχιση αξιολόγησης",
+    "duration": "30 οπτικές επιλογές · περίπου 6 λεπτά",
+    "privacy": "Χωρίς λογαριασμό. Χωρίς προσωπικά δεδομένα. Η πρόοδός σας παραμένει σε αυτή τη συσκευή."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Το προφίλ σας με έξι σήματα",
+    "title": "Περισσότεροι από έναν τύπους καριέρας.",
+    "subtitle": "Το RIASEC μετρά τον συνδυασμό περιβαλλόντων όπου τα ενδιαφέροντά σας τείνουν να ευδοκιμούν.",
+    "signalsShort": "σήματα",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Ρεαλιστικός",
+      "description": "Κατασκευή, επισκευή και πρακτική εργασία."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Ερευνητικός",
+      "description": "Αμφισβήτηση, ανάλυση και ανακάλυψη."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "Καλλιτεχνικός",
+      "description": "Φαντασία, έκφραση και σχεδιασμός."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "Κοινωνικός",
+      "description": "Διδασκαλία, υποστήριξη και σύνδεση."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Επιχειρηματικός",
+      "description": "Ηγεσία, πειθώ και πρωτοβουλία."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Συμβατικός",
+      "description": "Οργάνωση, επαλήθευση και βελτίωση."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "Τοποθεσία · Βήμα {{step}} από 2",
+    "titleCountry": "Πού χτίζετε το μέλλον σας;",
+    "titleCity": "Ποια πόλη ή περιοχή πρέπει να διαμορφώσει τις συστάσεις σας;",
+    "descriptionCountry": "Επιλέξτε πρώτα μια χώρα. Τη χρησιμοποιούμε μόνο για να εντοπίσουμε καριέρες, μισθούς και εκπαιδευτικές διαδρομές.",
+    "descriptionCity": "Επιλέξτε μια πόλη, πληκτρολογήστε μια περιοχή ή παραλείψτε αυτό το βήμα για {{country}}.",
+    "searchCountry": "Αναζήτηση χωρών",
+    "searchCity": "Αναζήτηση πόλεων",
+    "noResults": "Δεν βρέθηκαν αποτελέσματα.",
+    "back": "Πίσω",
+    "confirm": "Έναρξη για {{city}}, {{country}}",
+    "skipCity": "Συνέχιση μόνο με {{country}}",
+    "useRegion": "Χρήση {{region}} ως περιοχή μου",
+    "close": "Κλείσιμο επιλογέα τοποθεσίας",
+    "country": "Χώρα",
+    "city": "Πόλη",
+    "selectCountry": "Επιλέξτε χώρα",
+    "selectCityOptional": "Επιλέξτε πόλη (προαιρετικό)",
+    "continue": "Συνέχεια",
+    "noMatches": "Καμία αντιστοιχία"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Αντιστοιχισμένα επαγγέλματα",
+      "description": "Με βάση το προφίλ σας RIASEC, σας αντιστοιχίζουμε με καριέρες που ευθυγραμμίζονται με τα ενδιαφέροντα και τις δυνάμεις σας."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "Ψυχολογικό Μοντέλο RIASEC",
+      "description": "Έξι σήματα ενδιαφέροντος αποκαλύπτουν πώς χτίζετε, εξερευνάτε, δημιουργείτε, συνδέεστε, ηγείστε και οργανώνετε."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% Δωρεάν",
+      "label": "Δεν απαιτείται λογαριασμός",
+      "description": "Δεν απαιτείται λογαριασμός. Η πρόοδος της αξιολόγησής σας παραμένει σε αυτή τη συσκευή."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Στιγμιότυπα Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Πώς λειτουργεί το Careero",
+    "subtitle": "3 απλά βήματα για να ανακαλύψετε τις προσαρμοσμένες επαγγελματικές σας διαδρομές και εκπαιδευτικά κέντρα.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Κάντε 30 Οπτικές Επιλογές",
+      "description": "Επιλέξτε δραστηριότητες και εργασιακά περιβάλλοντα που ταιριάζουν με τις φυσικές σας προτιμήσεις."
     },
     "step2": {
       "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "description": "Υπολογίζει τη συσχέτιση Pearson r μεταξύ του 6-διανυσματικού προφίλ σας και {{count}} διανυσμάτων καριέρας."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Ξεκλειδώστε Αντιστοιχισμένες Διαδρομές",
+      "description": "Λάβετε τοπικές κορυφαίες συστάσεις καριέρας, πληροφορίες μισθών και αντιστοιχίσεις πανεπιστημίων."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Συχνές Ερωτήσεις",
+    "subtitle": "Όλα όσα πρέπει να γνωρίζετε για τη μηχανή αξιολόγησης Careero.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Πώς λειτουργεί η αξιολόγηση RIASEC;",
+        "a": "Το RIASEC μετρά το ενδιαφέρον σε 6 διανύσματα: Ρεαλιστικό, Ερευνητικό, Καλλιτεχνικό, Κοινωνικό, Επιχειρηματικό και Συμβατικό. Οι 30 οπτικές σας επιλογές δημιουργούν ένα κανονικοποιημένο προφίλ. Το Careero κατατάσσει {{count}} επαγγέλματα με βάση τη συσχέτιση Pearson — έτσι διαφορετικά μείγματα ενδιαφερόντων παράγουν διαφορετικές κορυφαίες 10 καριέρες."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Είναι τα δεδομένα μου ιδιωτικά και ασφαλή;",
+        "a": "Ναι. Το Careero λειτουργεί 100% τοπικά στο πρόγραμμα περιήγησής σας. Δεν συλλέγονται ή ανεβάζονται προσωπικά δεδομένα ή εγγραφές λογαριασμών σε εξωτερικές βάσεις δεδομένων παρακολούθησης."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Μπορώ να το χρησιμοποιήσω για ανακάλυψη πανεπιστημίων και υποτροφιών;",
+        "a": "Απολύτως. Με βάση το αντιστοιχισμένο επαγγελματικό σας προφίλ, το Careero παρέχει τοπικά προγράμματα σπουδών, κορυφαία περιφερειακά πανεπιστήμια και στοχευμένους συνδέσμους υποτροφιών."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Πόσο χρόνο διαρκεί η αξιολόγηση;",
+        "a": "Η αξιολόγηση αποτελείται από 30 γρήγορες οπτικές δυαδικές επιλογές και διαρκεί περίπου 3 έως 5 λεπτά για να ολοκληρωθεί."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Παγκόσμια Πλατφόρμα Πυξίδας Καριέρας AI & Εκπαιδευτικής Αντιστοίχισης.",
+    "features": "Χαρακτηριστικά",
+    "howItWorks": "Πώς λειτουργεί",
+    "dimensions": "Διαστάσεις",
+    "faq": "Συχνές Ερωτήσεις",
+    "startAssessment": "Έναρξη Αξιολόγησης",
+    "copyright": "© 2026 Careero Platform. Κατασκευάστηκε για ανοιχτή παγκόσμια πρόσβαση στην εκπαίδευση."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Ερώτηση {{current}} από {{total}}",
+    "percentComplete": "{{percent}}% ολοκληρωμένο",
+    "title": "Τι θα προτιμούσατε να κάνετε;",
+    "subtitle": "Επιλέξτε μία δραστηριότητα και βαθμολογήστε πόσο θα την απολαμβάνατε. (Συμβουλή: Κάντε διπλό κλικ για να προχωρήσετε στην επόμενη ερώτηση!)",
+    "or": "ή",
+    "choose": "Επιλέξτε τη δραστηριότητα που θα απολαμβάνατε περισσότερο.",
+    "keyboardHint": "Πληκτρολόγιο: A/B, 1–3, μετά Enter.",
+    "intensity": "Πόσο έντονα ταιριάζει αυτό;",
+    "okay": "Εντάξει",
+    "like": "Μου αρέσει",
+    "love": "Το λατρεύω",
+    "reactionJustOkay": "Απλά εντάξει",
+    "reactionGreat": "Υπέροχο!",
+    "reactionLoveIt": "Το λατρεύω!",
+    "previous": "Προηγούμενο",
+    "next": "Επόμενο",
+    "nextQuestion": "Επόμενη ερώτηση",
+    "finish": "Δείτε το προφίλ μου",
+    "reset": "Επαναφορά προόδου",
+    "resumeTitle": "Το ταξίδι σας περιμένει.",
+    "sessionSaved": "Η συνεδρία αποθηκεύτηκε",
+    "resumeBody": "Συνεχίστε στην ερώτηση {{question}} με όλες τις προηγούμενες απαντήσεις αποκατεστημένες.",
+    "resume": "Συνέχιση",
+    "fresh": "Ξεκινήστε από την αρχή"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "Το σήμα της καριέρας σας",
+    "title": "Ένα προφίλ χτισμένο από αυτό που σας δίνει ενέργεια.",
+    "cached": "Φορτώθηκε από την κρυφή μνήμη",
+    "live": "Νέα πληροφορία AI",
+    "topProfile": "Κορυφαίο προφίλ",
+    "localMatches": "Αντιστοιχίσεις καριέρας συνεχούς εφαρμογής",
+    "aiTitle": "Σχολεία και χρηματοδότηση για {{profession}} κοντά σε {{location}}",
+    "aiLoading": "Βρίσκω δυνατά σχολεία, υποτροφίες και προγράμματα στο παρασκήνιο…",
+    "aiUnavailable": "Οι πληροφορίες AI δεν είναι διαθέσιμες, αλλά οι τοπικές σας αντιστοιχίσεις συσχέτισης είναι έτοιμες.",
+    "refresh": "Ανανέωση πληροφοριών AI",
+    "retry": "Δοκιμάστε ξανά",
+    "skills": "Δεξιότητες για ανάπτυξη",
+    "programs": "Υποτροφίες και προγράμματα",
+    "topProfession": "Κορυφαία σύσταση",
+    "shareHeading": "Μοιραστείτε τον χαρακτήρα της καριέρας σας",
+    "shareDescription": "Ανοίξτε μια κάρτα που μπορείτε να κατεβάσετε ή να δημοσιεύσετε — οι απαντήσεις παραμένουν ιδιωτικές.",
+    "shareTitle": "Το αποτέλεσμα του Careero μου",
+    "shareProfession": "Κορυφαία καριέρα: {{profession}} · {{percent}}% αντιστοιχία",
+    "shareText": "Ο χαρακτήρας του Careero μου είναι {{archetype}} ({{code}}). Η κορυφαία αντιστοιχία καριέρας μου είναι {{profession}} στο {{percent}}%.",
+    "share": "Κοινοποίηση αποτελέσματος",
+    "shareModalTitle": "Κοινοποιήστε το αποτέλεσμά σας",
+    "shareModalSubtitle": "Προεπισκόπηση της κάρτας σας · δημοσίευση σε ιστορίες ή αποθήκευση για αργότερα",
+    "shareToSocial": "Κοινοποίηση",
+    "downloadCard": "Λήψη κάρτας",
+    "sharing": "Κοινοποίηση…",
+    "savingCard": "Αποθήκευση…",
+    "shareDownloaded": "Η κάρτα κοινοποίησης κατέβηκε!",
+    "shareSavedCopied": "Κάρτα αποθηκεύτηκε · λεζάντα αντιγράφηκε!",
+    "shareClose": "Κλείσιμο",
+    "shared": "Κοινοποιήθηκε",
+    "copied": "Αντιγράφηκε",
+    "shareFailed": "Η κοινοποίηση δεν ήταν διαθέσιμη.",
+    "sources": "Πηγές θεμελίωσης",
+    "opensNewTab": "ανοίγει σε νέα καρτέλα",
+    "startAgain": "Κάντε ξανά την αξιολόγηση",
+    "match": "{{percent}}% αντιστοιχία προφίλ",
+    "archetypeBlurb": "Ο ισχυρότερος συνδυασμός σας είναι {{code}}. Τα σχολεία και οι υποτροφίες παρακάτω ακολουθούν αυτό το μοτίβο όταν ανοίγετε ένα επάγγελμα.",
+    "riasecScores": "Βαθμολογίες RIASEC",
+    "patternNote": "Κορυφαίος συνδυασμός: {{combo}}. Αναπτύξτε ένα επάγγελμα για να φορτώσετε σχολεία και υποτροφίες.",
+    "matchesEyebrow": "Pearson 6-διανυσματικό",
+    "professionMatches": "Αντιστοιχίσεις επαγγελμάτων για εσάς",
+    "matchesNote": "Κατατάσσονται με βάση το πόσο καλά σας ταιριάζει κάθε διαδρομή — όχι εγγύηση εργασίας ή εισαγωγής.",
+    "topMatchBadge": "Κορυφαία αντιστοιχία",
+    "professionLabel": "Επάγγελμα",
+    "whyPath": "Γιατί αυτή η διαδρομή φαίνεται πολλά υποσχόμενη",
+    "topSchools": "Κορυφαία σχολεία για αυτή τη διαδρομή",
+    "topScholarships": "Κορυφαίες υποτροφίες για αυτό το επάγγελμα",
+    "visitSchool": "Επισκεφθείτε την ιστοσελίδα του σχολείου",
+    "openScholarship": "Άνοιγμα υποτροφίας",
+    "noSchools": "Δεν βρέθηκαν επαληθευμένα σχολεία για αυτήν την τοποθεσία ακόμα.",
+    "noScholarships": "Δεν βρέθηκαν επαληθευμένες υποτροφίες για αυτήν την τοποθεσία ακόμα.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Ο Εξερευνητής",
+      "creator": "Ο Δημιουργός",
+      "strategist": "Ο Στρατηγός",
+      "visionary": "Ο Οραματιστής",
+      "analyst": "Ο Αναλυτής",
+      "builder": "Ο Κατασκευαστής",
+      "guardian": "Ο Φύλακας"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "Ευθυγράμμιση {{dimension}}",
+    "tagCampusFit": "Ταιριάζει στην πανεπιστημιούπολη {{dimension}}",
+    "tagKeywords": "{{count}} λέξεις-κλειδιά προγράμματος",
+    "tagKeywordsOne": "1 λέξη-κλειδί προγράμματος",
+    "tagFlagship": "Επιλογή ναυαρχίδας",
+    "tagSystemsFit": "Ισχυρή εφαρμογή συστημάτων",
+    "shareCardTopFit": "Κορυφαία επαγγελματική εφαρμογή",
+    "shareCardMatch": "{{percent}}% αντιστοιχία",
+    "shareCardSummary": "Μια συνοπτική κάρτα προφίλ Careero — δεν περιλαμβάνονται απαντήσεις κουίζ.",
+    "shareCardFooter": "careero · βρείτε την καριέρα που σας ταιριάζει"
   }
 }

@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "კარიერული ინტელექტი, პერსონალურად"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "ენა",
+    "clearData": "ჩემი მონაცემების წაშლა",
+    "home": "მთავარი",
+    "howItWorks": "როგორ მუშაობს",
+    "dimensions": "განზომილებები",
+    "faq": "ხშირი კითხვები",
+    "startAssessment": "შეფასების დაწყება",
+    "searchLanguage": "ენის ძებნა...",
+    "noLanguageFound": "ენა ვერ მოიძებნა"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "პიროვნებაზე დაფუძნებული შესაბამისობა",
+    "title": "აღმოაჩინეთ კარიერის გზა, რომელიც აგებულია თქვენი გონების მუშაობისთვის.",
+    "titleAccent": "მართავს AI და RIASEC ინტელექტი.",
+    "description": "ვიზუალური, მეცნიერულად დაფუძნებული შეფასება ასახავს, როგორ აშენებთ, კითხულობთ, ქმნით, უკავშირდებით, ხელმძღვანელობთ და აწყობთ—შემდეგ კი ამ პროფილს ადგილობრივ კარიერის გზებად გარდაქმნის.",
+    "start": "შეფასების დაწყება",
+    "resume": "შეფასების გაგრძელება",
+    "duration": "30 ვიზუალური არჩევანი · დაახლოებით 6 წუთი",
+    "privacy": "ანგარიში არ არის საჭირო. პირადი მონაცემები არ არის. თქვენი პროგრესი ამ მოწყობილობაზე რჩება."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "თქვენი ექვს სიგნალის პროფილი",
+    "title": "ერთზე მეტი კარიერის ტიპი.",
+    "subtitle": "RIASEC აზომავს იმ გარემოს კომბინაციას, სადაც თქვენი ინტერესები ჩვეულებრივ ყვავის.",
+    "signalsShort": "სიგნალები",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "რეალისტური",
+      "description": "აშენებთ, შეკეთებთ და ხელით მუშაობთ."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "კვლევითი",
+      "description": "კითხულობთ, აანალიზებთ და აღმოაჩენებთ."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "არტისტული",
+      "description": "წარმოიდგენთ, გამოხატავთ და აპროექტებთ."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "სოციალური",
+      "description": "ასწავლით, უჭერთ მხარს და უკავშირდებით."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "საწარმოო",
+      "description": "ხელმძღვანელობთ, არწმუნებთ და იწყებთ."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "კონვენციური",
+      "description": "აწყობთ, ამოწმებთ და აუმჯობესებთ."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "მდებარეობა · ნაბიჯი {{step}} 2-დან",
+    "titleCountry": "სად აშენებთ თქვენს მომავალს?",
+    "titleCity": "რომელი ქალაქი ან რეგიონი უნდა ჩამოაყალიბოს თქვენს რეკომენდაციებს?",
+    "descriptionCountry": "ჯერ აირჩიეთ ქვეყანა. ჩვენ მას მხოლოდ კარიერების, ხელფასებისა და სწავლის გზების ლოკალიზაციისთვის ვიყენებთ.",
+    "descriptionCity": "აირჩიეთ ქალაქი, შეიყვანეთ რეგიონი ან გამოტოვეთ ეს ნაბიჯი {{country}}-სთვის.",
+    "searchCountry": "ქვეყნების ძებნა",
+    "searchCity": "ქალაქების ძებნა",
+    "noResults": "შესაბამისობა ვერ მოიძებნა.",
+    "back": "უკან",
+    "confirm": "დაწყება {{city}}, {{country}}-სთვის",
+    "skipCity": "გაგრძელება მხოლოდ {{country}}-ით",
+    "useRegion": "გამოვიყენო {{region}} როგორც ჩემი რეგიონი",
+    "close": "მდებარეობის ამრჩევის დახურვა",
+    "country": "ქვეყანა",
+    "city": "ქალაქი",
+    "selectCountry": "აირჩიეთ ქვეყანა",
+    "selectCityOptional": "აირჩიეთ ქალაქი (არასავალდებულო)",
+    "continue": "გაგრძელება",
+    "noMatches": "შესაბამისობა არ არის"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "შესაბამისი პროფესიები",
+      "description": "თქვენი RIASEC პროფილის საფუძველზე, ვუკავშირებთ კარიერებს, რომლებიც შეესაბამება თქვენს ინტერესებსა და ძლიერ მხარეებს."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "RIASEC ფსიქოლოგიური მოდელი",
+      "description": "ექვსი ინტერესის სიგნალი გამოჩნდება, როგორ აშენებთ, იკვლევთ, ქმნით, უკავშირდებით, ხელმძღვანელობთ და აწყობთ."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% უფასო",
+      "label": "ანგარიში არ არის საჭირო",
+      "description": "ანგარიში არ არის საჭირო. თქვენი შეფასების პროგრესი ამ მოწყობილობაზე რჩება."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Careero-ს მთავარი პუნქტები"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "როგორ მუშაობს Careero",
+    "subtitle": "3 მარტივი ნაბიჯი თქვენთვის მორგებული კარიერის გზებისა და საგანმანათლებლო ცენტრების აღმოსაჩენად.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "გააკეთეთ 30 ვიზუალური არჩევანი",
+      "description": "აირჩიეთ აქტივობები და სამუშაო გარემო, რომლებიც ეხმიანება თქვენს ბუნებრივ პრეფერენციებს."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Pearson ვექტორული მათემატიკური ძრავა",
+      "description": "გამოთვლის Pearson r კორელაციას თქვენს 6-ვექტორულ პროფილსა და {{count}} კარიერის ვექტორს შორის."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "გახსენით შესაბამისი გზები",
+      "description": "მიიღეთ ლოკალიზებული საუკეთესო კარიერის რეკომენდაციები, ხელფასის ინსაითები და უნივერსიტეტის შესაბამისობები."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "ხშირად დასმული კითხვები",
+    "subtitle": "ყველაფერი, რაც უნდა იცოდეთ Careero შეფასების ძრავის შესახებ.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "როგორ მუშაობს RIASEC შეფასება?",
+        "a": "RIASEC აზომავს ინტერესს 6 ვექტორით: რეალისტური, კვლევითი, არტისტული, სოციალური, საწარმოო და კონვენციური. თქვენი 30 ვიზუალური არჩევანი ქმნის ნორმალიზებულ პროფილს. Careero აჯერებს {{count}} პროფესიას Pearson კორელაციით — ამიტომ სხვადასხვა ინტერესის ნაზავები იძლევა სხვადასხვა top-10 კარიერას."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "არის თუ არა ჩემი მონაცემები პირადი და დაცული?",
+        "a": "დიახ. Careero 100%-ით ლოკალურად მუშაობს თქვენს ბრაუზერში. პირადი მონაცემები არ იკრიბება, ანგარიში არ რეგისტრირდება და მონაცემები არ იტვირთება გარე თვალთვალის ბაზებში."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "შემიძლია ეს გამოვიყენო უნივერსიტეტისა და სტიპენდიის აღმოსაჩენად?",
+        "a": "რა თქმა უნდა. თქვენი შესაბამისი კარიერის პროფილის საფუძველზე Careero გთავაზობთ ლოკალიზებულ ბაკალავრის პროგრამებს, საუკეთესო რეგიონალურ უნივერსიტეტებსა და სამიზნე სტიპენდიის ბმულებს."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "რამდენ ხანს გრძელდება შეფასება?",
+        "a": "შეფასება შედგება 30 სწრაფი ვიზუალური ბინარული არჩევანისგან და დაახლოებით 3-5 წუთს სჭირდება."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "გლობალური AI კარიერის კომპასი და საგანმანათლებლო შესაბამისობის პლატფორმა.",
+    "features": "ფუნქციები",
+    "howItWorks": "როგორ მუშაობს",
+    "dimensions": "განზომილებები",
+    "faq": "ხშირი კითხვები",
+    "startAssessment": "შეფასების დაწყება",
+    "copyright": "© 2026 Careero პლატფორმა. აშენებულია ღია გლობალური განათლების წვდომისთვის."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "კითხვა {{current}} {{total}}-დან",
+    "percentComplete": "{{percent}}% დასრულებული",
+    "title": "რას გააკეთებდით სასურვლად?",
+    "subtitle": "აირჩიეთ ერთი აქტივობა და შეაფასეთ, რამდენად ისიამოვნებდით. (რჩევა: ორმაგი დაწკაპუნება შემდეგ კითხვაზე გადასასვლელად!)",
+    "or": "ან",
+    "choose": "აირჩიეთ აქტივობა, რომელიც მეტად მოგეწონებათ.",
+    "keyboardHint": "კლავიატურა: A/B, 1–3, შემდეგ Enter.",
+    "intensity": "რამდენად გიხდებათ?",
+    "okay": "კარგი",
+    "like": "მომწონს",
+    "love": "მიყვარს",
+    "reactionJustOkay": "უბრალოდ კარგი",
+    "reactionGreat": "შესანიშნავია!",
+    "reactionLoveIt": "მიყვარს!",
+    "previous": "წინა",
+    "next": "შემდეგი",
+    "nextQuestion": "შემდეგი კითხვა",
+    "finish": "ჩემი პროფილის ნახვა",
+    "reset": "პროგრესის გადატვირთვა",
+    "resumeTitle": "თქვენი მოგზაურობა გელოდებათ.",
+    "sessionSaved": "სესია შენახულია",
+    "resumeBody": "გააგრძელეთ {{question}} კითხვიდან ყველა წინა პასუხის აღდგენით.",
+    "resume": "გაგრძელება",
+    "fresh": "ახლიდან დაწყება"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "თქვენი კარიერის სიგნალი",
+    "title": "პროფილი, აგებული იმისგან, რაც გაგიძლიერებთ.",
+    "cached": "ქეშიდან ჩატვირთული",
+    "live": "ახალი AI ინსაითი",
+    "topProfile": "საუკეთესო პროფილი",
+    "localMatches": "უწყვეტი შესაბამისობის კარიერის დამთხვევები",
+    "aiTitle": "სკოლები და დაფინანსება {{profession}}-სთვის {{location}}-თან ახლოს",
+    "aiLoading": "ძლიერი სკოლები, სტიპენდიები და პროგრამები ძებნის ფონში…",
+    "aiUnavailable": "AI ინსაითები მიუწვდომელია, მაგრამ თქვენი ლოკალური კორელაციის დამთხვევები მზადაა.",
+    "refresh": "AI ინსაითების განახლება",
+    "retry": "კვლავ ცდა",
+    "skills": "გასანვითარებელი უნარები",
+    "programs": "სტიპენდიები და პროგრამები",
+    "topProfession": "საუკეთესო რეკომენდაცია",
+    "shareHeading": "გაუზიარეთ თქვენი კარიერის პერსონაჟი",
+    "shareDescription": "გახსენით ბარათი, რომელიც შეგიძლიათ ჩამოტვირთოთ ან გამოაქვეყნოთ — პასუხები პირადი რჩება.",
+    "shareTitle": "ჩემი Careero შედეგი",
+    "shareProfession": "საუკეთესო კარიერა: {{profession}} · {{percent}}% შესაბამისობა",
+    "shareText": "ჩემი Careero პერსონაჟია {{archetype}} ({{code}}). ჩემი საუკეთესო კარიერის დამთხვევაა {{profession}} {{percent}}%-ით.",
+    "share": "შედეგის გაზიარება",
+    "shareModalTitle": "შედეგის გაზიარება",
+    "shareModalSubtitle": "ბარათის გადახედვა · გამოქვეყნება ისტორიებში ან შენახვა მოგვიანებით",
+    "shareToSocial": "გაზიარება",
+    "downloadCard": "ბარათის ჩამოტვირთვა",
+    "sharing": "იზიარება…",
+    "savingCard": "ინახება…",
+    "shareDownloaded": "გაზიარების ბარათი ჩამოტვირთულია!",
+    "shareSavedCopied": "ბარათი შენახულია · წარწერა დაკოპირდა!",
+    "shareClose": "დახურვა",
+    "shared": "გაზიარებული",
+    "copied": "დაკოპირებული",
+    "shareFailed": "გაზიარება მიუწვდომელი იყო.",
+    "sources": "საფუძვლის წყაროები",
+    "opensNewTab": "იხსნება ახალ ჩანართში",
+    "startAgain": "შეფასების ხელახლა გავლა",
+    "match": "{{percent}}% პროფილის შესაბამისობა",
+    "archetypeBlurb": "თქვენი ყველაზე ძლიერი ნაზავია {{code}}. ქვემოთ სკოლები და სტიპენდიები ამ ნიმუშს მიჰყვება, როცა პროფესიას გახსნით.",
+    "riasecScores": "RIASEC ქულები",
+    "patternNote": "საუკეთესო კომბინაცია: {{combo}}. გააფართოვეთ პროფესია სკოლებისა და სტიპენდიების ჩასატვირთად.",
+    "matchesEyebrow": "Pearson 6-ვექტორი",
+    "professionMatches": "პროფესიის დამთხვევები თქვენთვის",
+    "matchesNote": "დალაგებულია თითოეული გზის შესაბამისობით — არა სამუშაოს ან მიღების გარანტია.",
+    "topMatchBadge": "საუკეთესო დამთხვევა",
+    "professionLabel": "პროფესია",
+    "whyPath": "რატომ ჩანს ეს გზა სასიამოვნო",
+    "topSchools": "საუკეთესო სკოლები ამ გზისთვის",
+    "topScholarships": "საუკეთესო სტიპენდიები ამ პროფესიისთვის",
+    "visitSchool": "სკოლის ვებსაიტის ნახვა",
+    "openScholarship": "სტიპენდიის გახსნა",
+    "noSchools": "ამ მდებარეობისთვის დადასტურებული სკოლები ჯერ ვერ მოიძებნა.",
+    "noScholarships": "ამ მდებარეობისთვის დადასტურებული სტიპენდიები ჯერ ვერ მოიძებნა.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "გზის მძებნელი",
+      "creator": "შემოქმედი",
+      "strategist": "სტრატეგი",
+      "visionary": "ვიზიონერი",
+      "analyst": "ანალიტიკოსი",
+      "builder": "მშენებელი",
+      "guardian": "მცველი"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "{{dimension}} შესაბამისობა",
+    "tagCampusFit": "{{dimension}} კამპუსის შესაბამისობა",
+    "tagKeywords": "{{count}} პროგრამის საკვანძო სიტყვა",
+    "tagKeywordsOne": "1 პროგრამის საკვანძო სიტყვა",
+    "tagFlagship": "ფლაგმანური ვარიანტი",
+    "tagSystemsFit": "ძლიერი სისტემური შესაბამისობა",
+    "shareCardTopFit": "საუკეთესო კარიერის შესაბამისობა",
+    "shareCardMatch": "{{percent}}% შესაბამისობა",
+    "shareCardSummary": "კომპაქტური Careero პროფილის ბარათი — ქვიზის პასუხების გარეშე.",
+    "shareCardFooter": "careero · იპოვე შენთვის შესაფერისი კარიერა"
   }
 }

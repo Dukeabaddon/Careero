@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "אינטליגנציה קריירה, מותאמת אישית"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "שפה",
+    "clearData": "מחק את הנתונים שלי",
+    "home": "בית",
+    "howItWorks": "איך זה עובד",
+    "dimensions": "ממדים",
+    "faq": "שאלות נפוצות",
+    "startAssessment": "התחל הערכה",
+    "searchLanguage": "חפש שפה...",
+    "noLanguageFound": "לא נמצאה שפה"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "התאמה מבוססת אישיות",
+    "title": "גלה את מסלול הקריירה שנבנה לאופן שבו המוח שלך עובד.",
+    "titleAccent": "מונע על ידי בינה מלאכותית ואינטליגנציית RIASEC.",
+    "description": "הערכה חזותית ומבוססת מדע ממפה כיצד אתה בונה, שואל, יוצר, מתחבר, מוביל ומארגן—ואז הופכת את הפרופיל הזה למסלולי קריירה מקומיים.",
+    "start": "התחל את ההערכה",
+    "resume": "המשך הערכה",
+    "duration": "30 בחירות חזותיות · כ-6 דקות",
+    "privacy": "ללא חשבון. ללא נתונים אישיים. ההתקדמות שלך נשארת במכשיר זה."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "פרופיל ששת הסיגנלים שלך",
+    "title": "יותר מסוג קריירה אחד.",
+    "subtitle": "RIASEC מודד את השילוב של סביבות שבהן התחומים שלך נוטים לפרוח.",
+    "signalsShort": "סיגנלים",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "ריאליסטי",
+      "description": "בנה, תקן ועבוד בידיים."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "חוקר",
+      "description": "שאל, נתח וגלה."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "אמנותי",
+      "description": "דמיין, בטא ועצב."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "חברתי",
+      "description": "למד, תמוך והתחבר."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "יזמי",
+      "description": "הובל, שכנע ויזום."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "קונבנציונלי",
+      "description": "ארגן, אמת ושפר."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "מיקום · שלב {{step}} מתוך 2",
+    "titleCountry": "איפה אתה בונה את העתיד שלך?",
+    "titleCity": "איזו עיר או אזור צריכים לעצב את ההמלצות שלך?",
+    "descriptionCountry": "בחר מדינה תחילה. אנו משתמשים בה רק כדי להתאים קריירות, משכורות ומסלולי למידה.",
+    "descriptionCity": "בחר עיר, הקלד אזור, או דלג על שלב זה עבור {{country}}.",
+    "searchCountry": "חפש מדינות",
+    "searchCity": "חפש ערים",
+    "noResults": "לא נמצאו התאמות.",
+    "back": "חזרה",
+    "confirm": "התחל עבור {{city}}, {{country}}",
+    "skipCity": "המשך עם {{country}} בלבד",
+    "useRegion": "השתמש ב-{{region}} כאזור שלי",
+    "close": "סגור בורר מיקום",
+    "country": "מדינה",
+    "city": "עיר",
+    "selectCountry": "בחר מדינה",
+    "selectCityOptional": "בחר עיר (אופציונלי)",
+    "continue": "המשך",
+    "noMatches": "אין התאמות"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "מקצועות מותאמים",
+      "description": "בהתבסס על פרופיל RIASEC שלך, אנו מתאימים אותך לקריירות שמתאימות לתחומי העניין והחוזקות שלך."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "מודל פסיכולוגי RIASEC",
+      "description": "שישה סיגנלי עניין חושפים כיצד אתה בונה, חוקר, יוצר, מתחבר, מוביל ומארגן."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% חינם",
+      "label": "ללא צורך בחשבון",
+      "description": "ללא צורך בחשבון. התקדמות ההערכה שלך נשארת במכשיר זה."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "דגשי Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "איך Careero עובד",
+    "subtitle": "3 שלבים פשוטים לגילוי מסלולי הקריירה והמרכזים החינוכיים המותאמים לך.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "בצע 30 בחירות חזותיות",
+      "description": "בחר פעילויות וסביבות עבודה שמהדהדות עם ההעדפות הטבעיות שלך."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "מנוע מתמטיקת וקטורים Pearson",
+      "description": "מחשב מתאם Pearson r בין פרופיל 6-הווקטורים שלך ל-{{count}} וקטורי קריירה."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "פתח מסלולים מותאמים",
+      "description": "קבל המלצות קריירה מקומיות מובילות, תובנות שכר והתאמות אוניברסיטאיות."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "שאלות נפוצות",
+    "subtitle": "כל מה שצריך לדעת על מנוע ההערכה של Careero.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "איך עובדת הערכת RIASEC?",
+        "a": "RIASEC מודד עניין ב-6 וקטורים: ריאליסטי, חוקר, אמנותי, חברתי, יזמי וקונבנציונלי. 30 הבחירות החזותיות שלך יוצרות פרופיל מנורמל. Careero מדרג {{count}} מקצועות לפי מתאם Pearson — כך ששילובי עניין שונים מייצרים 10 קריירות מובילות שונות."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "האם הנתונים שלי פרטיים ומאובטחים?",
+        "a": "כן. Careero פועל 100% מקומית בדפדפן שלך. לא נאספים נתונים אישיים ולא נרשם חשבון, ולא מועלים נתונים למאגרי מעקב חיצוניים."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "האם אפשר להשתמש בזה לגילוי אוניברסיטאות ומלגות?",
+        "a": "בהחלט. בהתבסס על פרופיל הקריירה המותאם שלך, Careero מספק תוכניות לימודים מקומיות, אוניברסיטאות אזוריות מובילות וקישורי מלגות ממוקדים."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "כמה זמן לוקחת ההערכה?",
+        "a": "ההערכה כוללת 30 בחירות חזותיות בינאריות מהירות ולוקחת בערך 3 עד 5 דקות להשלמה."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "מצפן קריירה גלובלי מבוסס AI ופלטפורמת התאמה חינוכית.",
+    "features": "תכונות",
+    "howItWorks": "איך זה עובד",
+    "dimensions": "ממדים",
+    "faq": "שאלות נפוצות",
+    "startAssessment": "התחל הערכה",
+    "copyright": "© 2026 פלטפורמת Careero. נבנה לגישה חינוכית גלובלית פתוחה."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "שאלה {{current}} מתוך {{total}}",
+    "percentComplete": "{{percent}}% הושלם",
+    "title": "מה היית מעדיף לעשות?",
+    "subtitle": "בחר פעילות אחת ודרג כמה היית נהנה ממנה. (טיפ: לחיצה כפולה כדי לעבור לשאלה הבאה!)",
+    "or": "או",
+    "choose": "בחר את הפעילות שהיית נהנה ממנה יותר.",
+    "keyboardHint": "מקלדת: A/B, 1–3, ואז Enter.",
+    "intensity": "עד כמה זה מתאים?",
+    "okay": "בסדר",
+    "like": "אוהב",
+    "love": "אוהב מאוד",
+    "reactionJustOkay": "רק בסדר",
+    "reactionGreat": "מעולה!",
+    "reactionLoveIt": "אוהב את זה!",
+    "previous": "הקודם",
+    "next": "הבא",
+    "nextQuestion": "שאלה הבאה",
+    "finish": "ראה את הפרופיל שלי",
+    "reset": "אפס התקדמות",
+    "resumeTitle": "המסע שלך מחכה.",
+    "sessionSaved": "הסשן נשמר",
+    "resumeBody": "המשך בשאלה {{question}} עם כל התשובות הקודמות משוחזרות.",
+    "resume": "המשך",
+    "fresh": "התחל מחדש"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "סיגנל הקריירה שלך",
+    "title": "פרופיל שנבנה ממה שמעורר בך אנרגיה.",
+    "cached": "נטען מהמטמון",
+    "live": "תובנת AI טרייה",
+    "topProfile": "פרופיל מוביל",
+    "localMatches": "התאמות קריירה בהתאמה רציפה",
+    "aiTitle": "בתי ספר ומימון עבור {{profession}} ליד {{location}}",
+    "aiLoading": "מוצא בתי ספר, מלגות ותוכניות חזקים ברקע…",
+    "aiUnavailable": "תובנות AI אינן זמינות, אך ההתאמות המקומיות שלך מוכנות.",
+    "refresh": "רענן תובנות AI",
+    "retry": "נסה שוב",
+    "skills": "מיומנויות לבנייה",
+    "programs": "מלגות ותוכניות",
+    "topProfession": "המלצה מובילה",
+    "shareHeading": "שתף את דמות הקריירה שלך",
+    "shareDescription": "פתח כרטיס שאפשר להוריד או לפרסם — התשובות נשארות פרטיות.",
+    "shareTitle": "התוצאה שלי ב-Careero",
+    "shareProfession": "קריירה מובילה: {{profession}} · {{percent}}% התאמה",
+    "shareText": "דמות הקריירה שלי ב-Careero היא {{archetype}} ({{code}}). ההתאמה הקריירתית המובילה שלי היא {{profession}} ב-{{percent}}%.",
+    "share": "שתף תוצאה",
+    "shareModalTitle": "שתף את התוצאה שלך",
+    "shareModalSubtitle": "תצוגה מקדימה של הכרטיס · פרסם בסטוריז או שמור למועד מאוחר יותר",
+    "shareToSocial": "שתף",
+    "downloadCard": "הורד כרטיס",
+    "sharing": "משתף…",
+    "savingCard": "שומר…",
+    "shareDownloaded": "כרטיס השיתוף הורד!",
+    "shareSavedCopied": "הכרטיס נשמר · הכיתוב הועתק!",
+    "shareClose": "סגור",
+    "shared": "שותף",
+    "copied": "הועתק",
+    "shareFailed": "השיתוף לא היה זמין.",
+    "sources": "מקורות בסיס",
+    "opensNewTab": "נפתח בלשונית חדשה",
+    "startAgain": "בצע הערכה שוב",
+    "match": "{{percent}}% התאמת פרופיל",
+    "archetypeBlurb": "השילוב החזק ביותר שלך הוא {{code}}. בתי ספר ומלגות למטה עוקבים אחרי התבנית הזו כשאתה פותח מקצוע.",
+    "riasecScores": "ציוני RIASEC",
+    "patternNote": "שילוב מוביל: {{combo}}. הרחב מקצוע כדי לטעון בתי ספר ומלגות.",
+    "matchesEyebrow": "Pearson 6-וקטור",
+    "professionMatches": "התאמות מקצוע עבורך",
+    "matchesNote": "מדורג לפי עד כמה כל מסלול מתאים לך — לא ערובה לעבודה או קבלה.",
+    "topMatchBadge": "התאמה מובילה",
+    "professionLabel": "מקצוע",
+    "whyPath": "למה המסלול הזה מרגיש מבטיח",
+    "topSchools": "בתי ספר מובילים למסלול זה",
+    "topScholarships": "מלגות מובילות למקצוע זה",
+    "visitSchool": "בקר באתר בית הספר",
+    "openScholarship": "פתח מלגה",
+    "noSchools": "עדיין לא נמצאו בתי ספר מאומתים למיקום זה.",
+    "noScholarships": "עדיין לא נמצאו מלגות מאומתות למיקום זה.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "מגלה הדרכים",
+      "creator": "היוצר",
+      "strategist": "האסטרטג",
+      "visionary": "החזוני",
+      "analyst": "האנליסט",
+      "builder": "הבונה",
+      "guardian": "השומר"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "התאמת {{dimension}}",
+    "tagCampusFit": "התאמת קמפוס {{dimension}}",
+    "tagKeywords": "{{count}} מילות מפתח לתוכנית",
+    "tagKeywordsOne": "מילת מפתח אחת לתוכנית",
+    "tagFlagship": "אפשרות דגל",
+    "tagSystemsFit": "התאמת מערכות חזקה",
+    "shareCardTopFit": "התאמת קריירה מובילה",
+    "shareCardMatch": "{{percent}}% התאמה",
+    "shareCardSummary": "כרטיס פרופיל Careero קומפקטי — ללא תשובות לשאלון.",
+    "shareCardFooter": "careero · מצא קריירה שמתאימה לך"
   }
 }

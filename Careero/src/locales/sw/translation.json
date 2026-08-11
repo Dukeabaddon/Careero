@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Akili ya kazi, iliyobinafsishwa"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Lugha",
+    "clearData": "Futa data yangu",
+    "home": "Nyumbani",
+    "howItWorks": "Jinsi Inavyofanya Kazi",
+    "dimensions": "Vipimo",
+    "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+    "startAssessment": "Anza Tathmini",
+    "searchLanguage": "Tafuta lugha...",
+    "noLanguageFound": "Hakuna lugha iliyopatikana"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Ulinganifu Kulingana na Haiba",
+    "title": "Gundua njia ya kazi iliyoundwa kulingana na jinsi akili yako inavyofanya kazi.",
+    "titleAccent": "Inaendeshwa na akili ya AI & RIASEC.",
+    "description": "Tathmini inayoonekana, inayoungwa mkono na sayansi, inaonyesha jinsi unavyojenga, kuuliza, kuunda, kuunganisha, kuongoza, na kupanga—kisha inabadilisha wasifu huo kuwa njia za kazi za ndani.",
+    "start": "Anza tathmini",
+    "resume": "Endelea na tathmini",
+    "duration": "Chaguzi 30 za kuona · takriban dakika 6",
+    "privacy": "Hakuna akaunti. Hakuna data binafsi. Maendeleo yako yanabaki kwenye kifaa hiki."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Wasifu wako wa ishara sita",
+    "title": "Zaidi ya aina moja ya kazi.",
+    "subtitle": "RIASEC inapima mchanganyiko wa mazingira ambapo maslahi yako yanaelekea kustawi.",
+    "signalsShort": "ishara",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Uhalisia",
+      "description": "Jenga, tengeneza, na fanya kazi kwa vitendo."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Uchunguzi",
+      "description": "Uliza, chambua, na gundua."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "Kisanii",
+      "description": "Wazia, eleza, na unda."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "Kijamii",
+      "description": "Fundisha, saidia, na unganisha."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Ujasiriamali",
+      "description": "Ongoza, shawishi, na anzisha."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Kimila",
+      "description": "Panga, thibitisha, na boresha."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "Mahali · Hatua ya {{step}} kati ya 2",
+    "titleCountry": "Unajenga wapi mustakabali wako?",
+    "titleCity": "Ni jiji au eneo gani linapaswa kuunda mapendekezo yako?",
+    "descriptionCountry": "Chagua nchi kwanza. Tunaitumia tu kubinafsisha kazi, mishahara, na njia za kujifunza.",
+    "descriptionCity": "Chagua jiji, andika eneo, au ruka hatua hii kwa {{country}}.",
+    "searchCountry": "Tafuta nchi",
+    "searchCity": "Tafuta miji",
+    "noResults": "Hakuna matokeo yaliyopatikana.",
+    "back": "Rudi nyuma",
+    "confirm": "Anza kwa {{city}}, {{country}}",
+    "skipCity": "Endelea na {{country}} pekee",
+    "useRegion": "Tumia {{region}} kama eneo langu",
+    "close": "Funga kiteuzi cha eneo",
+    "country": "Nchi",
+    "city": "Jiji",
+    "selectCountry": "Chagua nchi",
+    "selectCityOptional": "Chagua jiji (si lazima)",
+    "continue": "Endelea",
+    "noMatches": "Hakuna zinazolingana"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Kazi zinazolingana",
+      "description": "Kulingana na wasifu wako wa RIASEC, tunakulinganisha na kazi zinazolingana na maslahi na uwezo wako."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "Mfumo wa Kisaikolojia wa RIASEC",
+      "description": "Ishara sita za maslahi zinafunua jinsi unavyojenga, kuchunguza, kuunda, kuunganisha, kuongoza, na kupanga."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "Bure 100%",
+      "label": "Hakuna Akaunti Inayohitajika",
+      "description": "Hakuna akaunti inayohitajika. Maendeleo ya tathmini yako yanabaki kwenye kifaa hiki."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Vivutio vya Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Jinsi Careero Inavyofanya Kazi",
+    "subtitle": "Hatua 3 rahisi za kugundua njia zako za kazi zilizobinafsishwa na vituo vya elimu.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Fanya Chaguzi 30 za Kuona",
+      "description": "Chagua shughuli na mazingira ya kazi yanayolingana na mapendeleo yako ya asili."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Injini ya Hisabati ya Veta ya Pearson",
+      "description": "Inakokotoa uwiano wa Pearson r kati ya wasifu wako wa vekta 6 na vekta {{count}} za kazi."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Fungua Njia Zinazolingana",
+      "description": "Pokea mapendekezo ya kazi bora yaliyobinafsishwa, ufahamu wa mishahara, na ulinganifu wa vyuo vikuu."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Maswali Yanayoulizwa Mara kwa Mara",
+    "subtitle": "Kila kitu unachohitaji kujua kuhusu injini ya tathmini ya Careero.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Tathmini ya RIASEC inafanya kazi vipi?",
+        "a": "RIASEC inapima maslahi katika vekta 6: Uhalisia, Uchunguzi, Kisanii, Kijamii, Ujasiriamali, na Kimila. Chaguzi zako 30 za kuona huunda wasifu uliorekebishwa. Careero huorodhesha kazi {{count}} kwa uwiano wa Pearson — hivyo mchanganyiko tofauti wa maslahi hutoa kazi 10 bora tofauti."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Je, data yangu ni ya faragha na salama?",
+        "a": "Ndio. Careero inafanya kazi 100% ndani ya kivinjari chako. Hakuna usajili wa akaunti au data binafsi inayokusanywa au kupakiwa kwenye hifadhidata za ufuatiliaji za nje."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Je, ninaweza kutumia hii kwa ugunduzi wa vyuo vikuu na ufadhili wa masomo?",
+        "a": "Kabisa. Kulingana na wasifu wako wa kazi uliolingana, Careero hutoa programu za digrii zilizobinafsishwa, vyuo vikuu vikuu vya kikanda, na viungo vya ufadhili wa masomo vilivyolengwa."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Tathmini inachukua muda gani?",
+        "a": "Tathmini inajumuisha chaguzi 30 za haraka za kuona na inachukua takriban dakika 3 hadi 5 kukamilisha."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Dira ya Kazi ya AI ya Kimataifa & Jukwaa la Ulinganifu wa Kielimu.",
+    "features": "Vipengele",
+    "howItWorks": "Jinsi Inavyofanya Kazi",
+    "dimensions": "Vipimo",
+    "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+    "startAssessment": "Anza Tathmini",
+    "copyright": "© 2026 Jukwaa la Careero. Imejengwa kwa ajili ya upatikanaji wa elimu huria ya kimataifa."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Swali la {{current}} kati ya {{total}}",
+    "percentComplete": "{{percent}}% imekamilika",
+    "title": "Ungependa kufanya lipi zaidi?",
+    "subtitle": "Chagua shughuli moja na pima ni kiasi gani utaifurahia. (Kidokezo: Bofya mara mbili ili kuendelea na swali linalofuata!)",
+    "or": "au",
+    "choose": "Chagua shughuli unayofurahia zaidi.",
+    "keyboardHint": "Kibodi: A/B, 1–3, kisha Enter.",
+    "intensity": "Hii inalingana kiasi gani?",
+    "okay": "Sawa",
+    "like": "Penda",
+    "love": "Naipenda sana",
+    "reactionJustOkay": "Sawa tu",
+    "reactionGreat": "Nzuri!",
+    "reactionLoveIt": "Naipenda Sana!",
+    "previous": "Iliyopita",
+    "next": "Inayofuata",
+    "nextQuestion": "Swali linalofuata",
+    "finish": "Angalia wasifu wangu",
+    "reset": "Weka upya maendeleo",
+    "resumeTitle": "Safari yako inasubiri.",
+    "sessionSaved": "Kikao kimehifadhiwa",
+    "resumeBody": "Endelea kwenye swali la {{question}} na majibu yote ya awali yakiwa yamerejeshwa.",
+    "resume": "Endelea",
+    "fresh": "Anza upya"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "Ishara yako ya kazi",
+    "title": "Wasifu uliojengwa kutokana na kinachokupa nguvu.",
+    "cached": "Imepakiwa kutoka kwenye akiba",
+    "live": "Ufahamu mpya wa AI",
+    "topProfile": "Wasifu bora",
+    "localMatches": "Ulinganifu wa kazi unaoendelea",
+    "aiTitle": "Shule na ufadhili kwa {{profession}} karibu na {{location}}",
+    "aiLoading": "Inatafuta shule zenye nguvu, ufadhili wa masomo, na programu chinichini…",
+    "aiUnavailable": "Ufahamu wa AI haupatikani, lakini ulinganifu wako wa uwiano wa ndani uko tayari.",
+    "refresh": "Onyesha upya ufahamu wa AI",
+    "retry": "Jaribu tena",
+    "skills": "Ujuzi wa kujenga",
+    "programs": "Ufadhili wa masomo na programu",
+    "topProfession": "Pendekezo bora",
+    "shareHeading": "Shiriki tabia yako ya kazi",
+    "shareDescription": "Fungua kadi unayoweza kupakua au kuchapisha — majibu yanabaki faragha.",
+    "shareTitle": "Matokeo yangu ya Careero",
+    "shareProfession": "Kazi bora: {{profession}} · {{percent}}% ulinganifu",
+    "shareText": "Tabia yangu ya Careero ni {{archetype}} ({{code}}). Ulinganifu wangu wa kazi bora ni {{profession}} kwa {{percent}}%.",
+    "share": "Shiriki matokeo",
+    "shareModalTitle": "Shiriki matokeo yako",
+    "shareModalSubtitle": "Hakiki kadi yako · chapisha kwenye hadithi au hifadhi kwa baadaye",
+    "shareToSocial": "Shiriki",
+    "downloadCard": "Pakua kadi",
+    "sharing": "Inashirikiwa…",
+    "savingCard": "Inahifadhiwa…",
+    "shareDownloaded": "Kadi ya kushiriki imepakuliwa!",
+    "shareSavedCopied": "Kadi imehifadhiwa · maelezo yamenakiliwa!",
+    "shareClose": "Funga",
+    "shared": "Imeshirikiwa",
+    "copied": "Imenakiliwa",
+    "shareFailed": "Kushiriki hakukupatikana.",
+    "sources": "Vyanzo vya msingi",
+    "opensNewTab": "inafungua katika kichupo kipya",
+    "startAgain": "Fanya tathmini tena",
+    "match": "{{percent}}% ulinganifu wa wasifu",
+    "archetypeBlurb": "Mchanganyiko wako wenye nguvu zaidi ni {{code}}. Shule na ufadhili wa masomo hapa chini hufuata muundo huo unapofungua taaluma.",
+    "riasecScores": "Alama za RIASEC",
+    "patternNote": "Mchanganyiko bora: {{combo}}. Panua taaluma ili kupakia shule na ufadhili wa masomo.",
+    "matchesEyebrow": "Pearson vekta 6",
+    "professionMatches": "Ulinganifu wa taaluma kwako",
+    "matchesNote": "Imeorodheshwa kulingana na jinsi kila njia inavyokufaa — si dhamana ya kazi au uandikishaji.",
+    "topMatchBadge": "Ulinganifu bora",
+    "professionLabel": "Taaluma",
+    "whyPath": "Kwa nini njia hii inaonekana kuahidi",
+    "topSchools": "Shule bora kwa njia hii",
+    "topScholarships": "Ufadhili bora wa masomo kwa taaluma hii",
+    "visitSchool": "Tembelea tovuti ya shule",
+    "openScholarship": "Fungua ufadhili wa masomo",
+    "noSchools": "Hakuna shule zilizothibitishwa zilizopatikana kwa eneo hili bado.",
+    "noScholarships": "Hakuna ufadhili wa masomo uliothibitishwa uliopatikana kwa eneo hili bado.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Mtafuta Njia",
+      "creator": "Muumbaji",
+      "strategist": "Mtaalamu wa Mikakati",
+      "visionary": "Mwenye Maono",
+      "analyst": "Mchambuzi",
+      "builder": "Mjenzi",
+      "guardian": "Mlinzi"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "Ulinganifu wa {{dimension}}",
+    "tagCampusFit": "Ulinganifu wa kampasi ya {{dimension}}",
+    "tagKeywords": "Maneno muhimu ya programu {{count}}",
+    "tagKeywordsOne": "Neno muhimu 1 la programu",
+    "tagFlagship": "Chaguo kuu",
+    "tagSystemsFit": "Ulinganifu thabiti wa mifumo",
+    "shareCardTopFit": "Ulinganifu bora wa kazi",
+    "shareCardMatch": "{{percent}}% ulinganifu",
+    "shareCardSummary": "Kadi fupi ya wasifu wa Careero — hakuna majibu ya maswali yaliyojumuishwa.",
+    "shareCardFooter": "careero · pata kazi inayokufaa"
   }
 }

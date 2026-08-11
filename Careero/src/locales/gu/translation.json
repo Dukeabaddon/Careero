@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "કેરિયર ઇન્ટેલિજન્સ, વ્યક્તિગત બનાવેલ"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "ભાષા",
+    "clearData": "મારા ડેટા સાફ કરો",
+    "home": "ઘર",
+    "howItWorks": "તે કેવી રીતે કાર્ય કરે છે",
+    "dimensions": "પરિમાણો",
+    "faq": "સામાન્ય પ્રશ્નો",
+    "startAssessment": "મૂલ્યાંકન શરૂ કરો",
+    "searchLanguage": "ભાષા શોધો...",
+    "noLanguageFound": "કોઈ ભાષા મળી નથી"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "વ્યક્તિત્વ આધારિત મેળાપ",
+    "title": "તમારા મન કેવી રીતે કાર્ય કરે છે તેના માટે બનાવેલ કારકિર્દી માર્ગ શોધો.",
+    "titleAccent": "AI અને RIASEC બુદ્ધિ દ્વારા ચલાવવામાં આવે છે.",
+    "description": "એક દૃશ્ય, વૈજ્ઞાનિક આધારિત મૂલ્યાંકન તમારા બનાવવાની, પ્રશ્ન કરવાની, સર્જન કરવાની, જોડાવાની, નેતૃત્વ કરવાની અને સંગઠિત કરવાની રીતને નકશા કરે છે—પછી તે પ્રોફાઇલને સ્થાનિક કારકિર્દી માર્ગોમાં ફેરવે છે.",
+    "start": "મૂલ્યાંકન શરૂ કરો",
+    "resume": "મૂલ્યાંકન ફરી શરૂ કરો",
+    "duration": "30 દૃશ્ય પસંદગીઓ · અંદાજે 6 મિનિટ",
+    "privacy": "કોઈ ખાતું નથી. કોઈ વ્યક્તિગત ડેટા નથી. તમારી પ્રગતિ આ ઉપકરણ પર જ રહે છે."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "તમારો છ-સિગ્નલ પ્રોફાઇલ",
+    "title": "એક કરતાં વધુ કારકિર્દી પ્રકાર.",
+    "subtitle": "RIASEC તમારા રસ જ્યાં ફૂલે છે તે પર્યાવરણોના સંયોજનને માપે છે.",
+    "signalsShort": "સિગ્નલ",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "વાસ્તવિક",
+      "description": "બનાવો, મરામત કરો, અને હાથે કામ કરો."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "તપાસણી",
+      "description": "પ્રશ્ન કરો, વિશ્લેષણ કરો, અને શોધો."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "કલાકારી",
+      "description": "કલ્પના કરો, વ્યક્ત કરો, અને ડિઝાઇન કરો."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "સામાજિક",
+      "description": "શિક્ષણ આપો, સમર્થન કરો, અને જોડાવો."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "ઉદ્યોગસાહસિક",
+      "description": "નેતૃત્વ કરો, મનાવવું, અને પ્રારંભ કરો."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "પરંપરાગત",
+      "description": "સંગઠિત કરો, ચકાસો, અને સુધારો."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "સ્થાન · પગલું {{step}} માંથી 2",
+    "titleCountry": "તમે ક્યાં તમારું ભવિષ્ય બનાવી રહ્યા છો?",
+    "titleCity": "કઈ શહેર અથવા પ્રદેશ તમારા ભલામણોને આકાર આપવો જોઈએ?",
+    "descriptionCountry": "પ્રથમ દેશ પસંદ કરો. અમે તેનો ઉપયોગ માત્ર કારકિર્દી, પગાર, અને શીખવાની માર્ગોને સ્થાનિક બનાવવા માટે કરીએ છીએ.",
+    "descriptionCity": "શહેર પસંદ કરો, પ્રદેશ ટાઇપ કરો, અથવા {{country}} માટે આ પગલું છોડો.",
+    "searchCountry": "દેશો શોધો",
+    "searchCity": "શહેરો શોધો",
+    "noResults": "કોઈ મેળ મળ્યો નથી.",
+    "back": "પાછા",
+    "confirm": "{{city}}, {{country}} માટે શરૂ કરો",
+    "skipCity": "{{country}} સાથે જ ચાલુ રાખો",
+    "useRegion": "{{region}} ને મારું પ્રદેશ તરીકે ઉપયોગ કરો",
+    "close": "સ્થાન પસંદગી બંધ કરો",
+    "country": "દેશ",
+    "city": "શહેર",
+    "selectCountry": "દેશ પસંદ કરો",
+    "selectCityOptional": "શહેર પસંદ કરો (વૈકલ્પિક)",
+    "continue": "ચાલુ રાખો",
+    "noMatches": "કોઈ મેળ નથી"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "મેચ થયેલ વ્યવસાયો",
+      "description": "તમારા RIASEC પ્રોફાઇલના આધારે, અમે તમને તમારા રસ અને શક્તિઓ સાથે મેળ ખાતી કારકિર્દીઓ સાથે મેળ કરીએ છીએ."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "RIASEC માનસિક મોડેલ",
+      "description": "છ રસ સિગ્નલ બતાવે છે કે તમે કેવી રીતે બનાવો છો, શોધો છો, સર્જો છો, જોડાવો છો, નેતૃત્વ કરો છો, અને સંગઠિત કરો છો."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% મફત",
+      "label": "ખાતાની જરૂર નથી",
+      "description": "ખાતાની જરૂર નથી. તમારું મૂલ્યાંકન પ્રગતિ આ ઉપકરણ પર જ રહે છે."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Careero હાઇલાઇટ્સ"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Careero કેવી રીતે કાર્ય કરે છે",
+    "subtitle": "તમારા અનુકૂળ કારકિર્દી માર્ગો અને શૈક્ષણિક કેન્દ્રો શોધવા માટે 3 સરળ પગલાં.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "30 દૃશ્ય પસંદગીઓ લો",
+      "description": "તમારી કુદરતી પસંદગીઓ સાથે ગુંજતા પ્રવૃત્તિઓ અને કાર્ય પર્યાવરણ પસંદ કરો."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Pearson વેક્ટર ગણિત એન્જિન",
+      "description": "તમારા 6-વેક્ટર પ્રોફાઇલ અને {{count}} કારકિર્દી વેક્ટર વચ્ચે Pearson r સહસંબંધ ગણતરી કરે છે."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "મેચ થયેલ માર્ગો અનલોક કરો",
+      "description": "સ્થાનિક ટોચની કારકિર્દી ભલામણો, પગારની સમજ, અને યુનિવર્સિટી મેળાપ મેળવો."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "વારંવાર પૂછાતા પ્રશ્નો",
+    "subtitle": "Careero મૂલ્યાંકન એન્જિન વિશે તમને જાણવાની જરૂરિયાત બધું.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "RIASEC મૂલ્યાંકન કેવી રીતે કાર્ય કરે છે?",
+        "a": "RIASEC 6 વેક્ટરોમાં રસ માપે છે: વાસ્તવિક, તપાસણી, કલાકારી, સામાજિક, ઉદ્યોગસાહસિક, અને પરંપરાગત. તમારી 30 દૃશ્ય પસંદગીઓ સામાન્ય પ્રોફાઇલ બનાવે છે. Careero Pearson સહસંબંધ દ્વારા {{count}} વ્યવસાયોનું ક્રમબદ્ધ કરે છે — તેથી વિવિધ રસ મિશ્રણો અલગ-અલગ ટોચના-10 કારકિર્દીઓ ઉત્પન્ન કરે છે."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "મારો ડેટા ખાનગી અને સુરક્ષિત છે?",
+        "a": "હા. Careero 100% સ્થાનિક રીતે તમારા બ્રાઉઝરમાં કાર્ય કરે છે. કોઈ ખાતા નોંધણી અથવા વ્યક્તિગત ડેટા એકત્રિત અથવા બાહ્ય ટ્રેકિંગ ડેટાબેઝમાં અપલોડ કરવામાં આવતું નથી."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "શું હું આનો ઉપયોગ યુનિવર્સિટી અને સ્કોલરશિપ શોધ માટે કરી શકું?",
+        "a": "ખરેખર. તમારા મેચ થયેલ કારકિર્દી પ્રોફાઇલના આધારે, Careero સ્થાનિક ડિગ્રી કાર્યક્રમો, ટોચના પ્રદેશીય યુનિવર્સિટીઓ, અને લક્ષિત સ્કોલરશિપ લિંક્સ પ્રદાન કરે છે."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "મૂલ્યાંકન કેટલો સમય લે છે?",
+        "a": "મૂલ્યાંકનમાં 30 ઝડપી દૃશ્ય બાઇનરી પસંદગીઓ હોય છે અને પૂર્ણ કરવા માટે અંદાજે 3 થી 5 મિનિટ લાગે છે."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "વૈશ્વિક AI કારકિર્દી કમ્પાસ અને શૈક્ષણિક મેળાપ પ્લેટફોર્મ.",
+    "features": "વિશેષતાઓ",
+    "howItWorks": "તે કેવી રીતે કાર્ય કરે છે",
+    "dimensions": "પરિમાણો",
+    "faq": "સામાન્ય પ્રશ્નો",
+    "startAssessment": "મૂલ્યાંકન શરૂ કરો",
+    "copyright": "© 2026 Careero પ્લેટફોર્મ. ખુલ્લી વૈશ્વિક શિક્ષણ ઍક્સેસ માટે બનાવેલ."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "પ્રશ્ન {{current}} માંથી {{total}}",
+    "percentComplete": "{{percent}}% પૂર્ણ",
+    "title": "તમે કઈ કરવાનું પસંદ કરશો?",
+    "subtitle": "એક પ્રવૃત્તિ પસંદ કરો અને તમે તેને કેટલું આનંદ માણશો તે દર કરો. (ટિપ: આગળના પ્રશ્ન પર જવા માટે ડબલ-ક્લિક કરો!)",
+    "or": "અથવા",
+    "choose": "તમે વધુ આનંદ માણશો તેવી પ્રવૃત્તિ પસંદ કરો.",
+    "keyboardHint": "કીબોર્ડ: A/B, 1–3, પછી Enter.",
+    "intensity": "આ કેટલું મજબૂત રીતે ફીટ થાય છે?",
+    "okay": "ઠીક છે",
+    "like": "પસંદ",
+    "love": "પ્રેમ",
+    "reactionJustOkay": "સામાન્ય",
+    "reactionGreat": "ઉત્તમ!",
+    "reactionLoveIt": "પ્રેમ છે!",
+    "previous": "પાછલું",
+    "next": "આગલું",
+    "nextQuestion": "આગલું પ્રશ્ન",
+    "finish": "મારો પ્રોફાઇલ જુઓ",
+    "reset": "પ્રગતિ ફરીથી સેટ કરો",
+    "resumeTitle": "તમારી યાત્રા રાહ જોઈ રહી છે.",
+    "sessionSaved": "સત્ર સાચવ્યું",
+    "resumeBody": "પ્રશ્ન {{question}} પર ચાલુ રાખો, દરેક અગાઉની જવાબ પુનઃસ્થાપિત સાથે.",
+    "resume": "ફરી શરૂ કરો",
+    "fresh": "તાજું શરૂ કરો"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "તમારો કારકિર્દી સિગ્નલ",
+    "title": "તમને ઊર્જિત કરનાર વસ્તુઓ પરથી બનાવેલ પ્રોફાઇલ.",
+    "cached": "કૅશમાંથી લોડ થયું",
+    "live": "તાજું AI સમજ",
+    "topProfile": "ટોચનું પ્રોફાઇલ",
+    "localMatches": "સતત-ફિટ કારકિર્દી મેળાપ",
+    "aiTitle": "{{location}} નજીક {{profession}} માટે સ્કૂલ અને ફંડિંગ",
+    "aiLoading": "પૃષ્ઠભૂમિમાં મજબૂત સ્કૂલ, સ્કોલરશિપ, અને કાર્યક્રમો શોધી રહ્યા છીએ…",
+    "aiUnavailable": "AI સમજ ઉપલબ્ધ નથી, પરંતુ તમારા સ્થાનિક સહસંબંધ મેળાપ તૈયાર છે.",
+    "refresh": "AI સમજ તાજું કરો",
+    "retry": "ફરી પ્રયાસ કરો",
+    "skills": "બનાવવાની કુશળતાઓ",
+    "programs": "સ્કોલરશિપ અને કાર્યક્રમો",
+    "topProfession": "ટોચની ભલામણ",
+    "shareHeading": "તમારો કારકિર્દી પાત્ર શેર કરો",
+    "shareDescription": "એક કાર્ડ ખોલો જે તમે ડાઉનલોડ અથવા પોસ્ટ કરી શકો છો — જવાબો ખાનગી રહે છે.",
+    "shareTitle": "મારો Careero પરિણામ",
+    "shareProfession": "ટોચની કારકિર્દી: {{profession}} · {{percent}}% મેળ",
+    "shareText": "મારો Careero પાત્ર {{archetype}} ({{code}}) છે. મારી ટોચની કારકિર્દી મેળ {{profession}} છે {{percent}}% પર.",
+    "share": "પરિણામ શેર કરો",
+    "shareModalTitle": "તમારો પરિણામ શેર કરો",
+    "shareModalSubtitle": "તમારો કાર્ડ પૂર્વદર્શન કરો · વાર્તાઓમાં પોસ્ટ કરો અથવા પછી માટે સાચવો",
+    "shareToSocial": "શેર કરો",
+    "downloadCard": "કાર્ડ ડાઉનલોડ કરો",
+    "sharing": "શેર કરી રહ્યા છીએ…",
+    "savingCard": "સાચવી રહ્યા છીએ…",
+    "shareDownloaded": "શેર કાર્ડ ડાઉનલોડ થયું!",
+    "shareSavedCopied": "કાર્ડ સાચવ્યું · કેપ્શન નકલ થયું!",
+    "shareClose": "બંધ કરો",
+    "shared": "શેર થયું",
+    "copied": "નકલ થયું",
+    "shareFailed": "શેરિંગ ઉપલબ્ધ નહોતું.",
+    "sources": "મૂળ સ્ત્રોતો",
+    "opensNewTab": "નવી ટેબમાં ખોલે છે",
+    "startAgain": "મૂલ્યાંકન ફરી લો",
+    "match": "{{percent}}% પ્રોફાઇલ મેળ",
+    "archetypeBlurb": "તમારો સૌથી મજબૂત મિશ્રણ {{code}} છે. નીચેની સ્કૂલ અને સ્કોલરશિપ તે પેટર્નનું અનુસરણ કરે છે જ્યારે તમે વ્યવસાય ખોલો છો.",
+    "riasecScores": "RIASEC સ્કોર્સ",
+    "patternNote": "ટોચનું સંયોજન: {{combo}}. વ્યવસાય વિસ્તારો સ્કૂલ અને સ્કોલરશિપ લોડ કરવા માટે.",
+    "matchesEyebrow": "Pearson 6-વેક્ટર",
+    "professionMatches": "તમારા માટે વ્યવસાય મેળાપ",
+    "matchesNote": "દરેક માર્ગ તમારા માટે કેટલો ફીટ થાય છે તેના આધારે ક્રમબદ્ધ — નોકરી અથવા પ્રવેશની ખાતરી નહીં.",
+    "topMatchBadge": "ટોચનું મેળ",
+    "professionLabel": "વ્યવસાય",
+    "whyPath": "આ માર્ગ કેમ આશાસ્પદ લાગે છે",
+    "topSchools": "આ માર્ગ માટે ટોચની સ્કૂલ",
+    "topScholarships": "આ વ્યવસાય માટે ટોચની સ્કોલરશિપ",
+    "visitSchool": "સ્કૂલ વેબસાઇટ મુલાકાત લો",
+    "openScholarship": "સ્કોલરશિપ ખોલો",
+    "noSchools": "આ સ્થાન માટે હજી સુધી કોઈ પ્રમાણિત સ્કૂલ મળી નથી.",
+    "noScholarships": "આ સ્થાન માટે હજી સુધી કોઈ પ્રમાણિત સ્કોલરશિપ મળી નથી.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "પાથફાઇન્ડર",
+      "creator": "સર્જક",
+      "strategist": "વ્યૂહરચનાકાર",
+      "visionary": "દ્રષ્ટા",
+      "analyst": "વિશ્લેષક",
+      "builder": "બિલ્ડર",
+      "guardian": "રક્ષક"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "{{dimension}} સુસંગતતા",
+    "tagCampusFit": "{{dimension}} કેમ્પસ સુસંગતતા",
+    "tagKeywords": "{{count}} કાર્યક્રમ કીવર્ડ્સ",
+    "tagKeywordsOne": "1 કાર્યક્રમ કીવર્ડ",
+    "tagFlagship": "ફ્લેગશિપ વિકલ્પ",
+    "tagSystemsFit": "મજબૂત સિસ્ટમ સુસંગતતા",
+    "shareCardTopFit": "ટોચની કારકિર્દી સુસંગતતા",
+    "shareCardMatch": "{{percent}}% મેળ",
+    "shareCardSummary": "એક સંક્ષિપ્ત Careero પ્રોફાઇલ કાર્ડ — ક્વિઝ જવાબો શામેલ નથી.",
+    "shareCardFooter": "careero · તમારી સાથે સુસંગત કારકિર્દી શોધો"
   }
 }

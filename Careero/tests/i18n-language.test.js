@@ -56,10 +56,13 @@ describe('landing language switch', () => {
     expect(i18n.t('hero.title')).toBe(english)
   })
 
-  it('keeps English copy for draft locales scaffolded from en', async () => {
+  it('changes hero.title for machine-translated locales', async () => {
     const { i18n, setAppLanguage } = await createAppI18n()
     const english = i18n.t('hero.title')
+    const de = loadLocale('de')
     await setAppLanguage('de')
-    expect(i18n.t('hero.title')).toBe(english)
+    expect(i18n.language).toBe('de')
+    expect(i18n.t('hero.title')).not.toBe(english)
+    expect(i18n.t('hero.title')).toBe(de.hero.title)
   })
 })

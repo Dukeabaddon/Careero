@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Inteligencia kariéry, vyrobená osobne"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Jazyk",
+    "clearData": "Vymazať moje údaje",
+    "home": "Domov",
+    "howItWorks": "Ako to funguje",
+    "dimensions": "Rozmery",
+    "faq": "Často kladené otázky",
+    "startAssessment": "Začať hodnotenie",
+    "searchLanguage": "Hľadať jazyk...",
+    "noLanguageFound": "Žiadny jazyk nenájdený"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Založené na osobnosti",
+    "title": "Objavte kariérnu cestu, ktorá je stvorená pre váš spôsob myslenia.",
+    "titleAccent": "Vedené umelou inteligenciou a inteligenciou RIASEC.",
+    "description": "Vizuálna, vedecky podložená hodnotenie mapuje, ako ste zostavujete, skúmate, vytvárate, spájaťe, viediete a organizujete - a potom sa táto profilová stránka premieňa na miestne kariérne cesty.",
+    "start": "Začať hodnotenie",
+    "resume": "Obnovenie hodnotenia",
+    "duration": "30 vizuálnych volieb · približne 6 minút",
+    "privacy": "Žiadny účet. Žiadne osobné údaje. Váš postup zostáva na tomto zariadení."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Vaša šesťsignálna profilová stránka",
+    "title": "Viac ako jeden kariérny typ.",
+    "subtitle": "RIASEC meria kombináciu prostredí, kde vaše záujmy tendujú k rozvoju.",
+    "signalsShort": "signály",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Reálny",
+      "description": "Stavte, opravujte a pracujte ručne."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Vyšetrovací",
+      "description": "Skúmajte, analyzujte a objavujte."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "Umelecký",
+      "description": "Predstavujte si, vyjadrujte a navrhujte."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "Sociálny",
+      "description": "Učte, podporujte a spájaťe."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Podnikateľský",
+      "description": "Viediete, presviedčajte a začínajte."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Konvenčný",
+      "description": "Organizujte, overte a zlepšujte."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "Lokalita · Krok {{step}} z 2",
+    "titleCountry": "Kde budujete svoju budúcnosť?",
+    "titleCity": "Ktoré mesto alebo región by malo tvarovať vaše odporúčania?",
+    "descriptionCountry": "Vyberte krajinu najskôr. Používame ju len na lokalizáciu kariéry, platov a učebných ciest.",
+    "descriptionCity": "Vyberte mesto, zadajte región alebo preskočte tento krok pre {{country}}.",
+    "searchCountry": "Hľadať krajiny",
+    "searchCity": "Hľadať mestá",
+    "noResults": "Žiadne výsledky.",
+    "back": "Späť",
+    "confirm": "Začať pre {{city}}, {{country}}",
+    "skipCity": "Pokračovať s {{country}} iba",
+    "useRegion": "Použiť {{region}} ako môj región",
+    "close": "Zatvoriť výber lokality",
+    "country": "Krajina",
+    "city": "Mesto",
+    "selectCountry": "Vybrať krajinu",
+    "selectCityOptional": "Vybrať mesto (nepovinné)",
+    "continue": "Pokračovať",
+    "noMatches": "Žiadne zhody"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Zhodné povolania",
+      "description": "Na základe vášho profilu RIASEC, zhodneme vás s kariérnymi cestami, ktoré sú v súlade s vašimi záujmami a silnými stránkami."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "Psychologický model RIASEC",
+      "description": "Šesť signálnych signálov odhaľuje, ako zostavujete, skúmate, vytvárate, spájaťe, viediete a organizujete."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100% Zadarmo",
+      "label": "Žiadny účet nevyžadovaný",
+      "description": "Žiadny účet nevyžadovaný. Váš postup zostáva na tomto zariadení."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Vysvetlivky Careero"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Ako funguje Careero",
+    "subtitle": "3 jednoduché kroky, aby ste objavili vaše osobné kariérne cesty a vzdelávacie centrá.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Vykonajte 30 vizuálnych volieb",
+      "description": "Vyberte činnosti a pracovné prostredia, ktoré rezonujú s vašimi prirodzenými preferenciami."
     },
     "step2": {
       "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "description": "Vypočítava Pearsonov korelačný koeficient medzi vaším 6-vektorovým profilom a {{count}} kariérnymi vektormi."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Odblokuje zhodné cesty",
+      "description": "Získajte lokalizované odporúčania kariéry, informácie o platovej úrovni a univerzitné zhody."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Často kladené otázky",
+    "subtitle": "Všetko, čo potrebujete vedieť o Careero hodnotiacom motore.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Ako funguje hodnotenie RIASEC?",
+        "a": "RIASEC meria záujem cez 6 vektorov: Reálny, Vyšetrovací, Umelecký, Sociálny, Podnikateľský a Konvenčný. Vaše 30 vizuálne výbery vytvárajú normalizovaný profil. Careero radí {{count}} povolania podľa Pearsonovej korelácie - takže rôzne zmesi záujmov produkujú rôzne top-10 kariéry."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Sú moje údaje súkromné a zabezpečené?",
+        "a": "Áno. Careero funguje 100% lokálne vo vašom prehliadači. Žiadna registrácia účtu alebo osobných údajov nie je zhromažďovaná alebo nahrávaná do externých sledovacích databáz."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Môžem to použiť pre univerzitné a štipendijné objavy?",
+        "a": "Určite. Na základe vášho zhodného kariérneho profilu, Careero poskytuje lokalizované študijné programy, top regionálne univerzity a cielene štipendijné odkazy."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Ako dlho trvá hodnotenie?",
+        "a": "Hodnotenie sa skladá z 30 rýchlych vizuálnych binárnych volieb a trvá približne 3 až 5 minút."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Globálny kariérny kompas a vzdelávací platforma.",
+    "features": "Funkcie",
+    "howItWorks": "Ako to funguje",
+    "dimensions": "Rozmery",
+    "faq": "Často kladené otázky",
+    "startAssessment": "Začať hodnotenie",
+    "copyright": " 2026 Careero Platform. Postavené pre otvorený globálny prístup k vzdelaniu."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Otázka {{current}} z {{total}}",
+    "percentComplete": "{{percent}}% dokončené",
+    "title": "Čo by ste radšej robili?",
+    "subtitle": "Vyberte jednu aktivitu a ohodnoťte, ako veľa by ste si ju užili. (Tip: Dvojitým kliknutím prejdite na ďalšiu otázku!)",
+    "or": "alebo",
+    "choose": "Vyberte aktivitu, ktorú by ste si viac užili.",
+    "keyboardHint": "Klávesnica: A/B, 1–3, potom Enter.",
+    "intensity": "Ako silne to sedí?",
+    "okay": "Poriadne",
+    "like": "Páči sa mi",
+    "love": "Milujem to",
+    "reactionJustOkay": "Len poriadne",
+    "reactionGreat": "Veľmi dobre!",
+    "reactionLoveIt": "Milujem to!",
+    "previous": "Predchádzajúca",
+    "next": "Ďalšia",
+    "nextQuestion": "Ďalšia otázka",
+    "finish": "Zobraziť môj profil",
+    "reset": "Resetovať postup",
+    "resumeTitle": "Vaša cesta čaká.",
+    "sessionSaved": "Relácia bola uložená",
+    "resumeBody": "Pokračovať na otázke {{question}} s všetkými predchádzajúcimi odpoveďami obnovenými.",
+    "resume": "Obnoviť",
+    "fresh": "Začať znova"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "Vaša kariérna signálna",
+    "title": "Profil zostavený z toho, čo vás energizuje.",
+    "cached": "Načítané z cache",
+    "live": "Súčasné umelé inteligencie",
+    "topProfile": "Top profil",
+    "localMatches": "Kariérne zhody",
+    "aiTitle": "Školy a financovanie pre {{profession}} v blízkosti {{location}}",
+    "aiLoading": "Hľadanie škôl, štipendií a programov v pozadí…",
+    "aiUnavailable": "Umelé inteligencie nie sú k dispozícii, ale vaše lokálne zhody sú pripravené.",
+    "refresh": "Obnoviť umelé inteligencie",
+    "retry": "Skúsiť znova",
+    "skills": "Dovednosti na vybudovanie",
+    "programs": "Štipendia a programy",
+    "topProfession": "Top odporúčanie",
+    "shareHeading": "Zdieľať váš kariérny charakter",
+    "shareDescription": "Otvorte kartu, ktorú môžete stiahnuť alebo zdieľať - odpovede zostanú súkromné.",
+    "shareTitle": "Môj výsledok Careero",
+    "shareProfession": "Top kariéra: {{profession}} · {{percent}}% zhoda",
+    "shareText": "Môj kariérny charakter Careero je {{archetype}} ({{code}}). Môj top kariérny zhod je {{profession}} na {{percent}}%.",
+    "share": "Zdieľať výsledok",
+    "shareModalTitle": "Zdieľať váš výsledok",
+    "shareModalSubtitle": "Náhľad vášej karty · zdieľať do príbehov alebo uložiť pre neskôr",
+    "shareToSocial": "Zdieľať",
+    "downloadCard": "Stiahnuť kartu",
+    "sharing": "Zdieľanie…",
+    "savingCard": "Ukladanie…",
+    "shareDownloaded": "Karta bola stiahnutá!",
+    "shareSavedCopied": "Karta bola uložená · náhľad bol skopírovaný!",
+    "shareClose": "Zatvoriť",
+    "shared": "Zdieľané",
+    "copied": "Skopírované",
+    "shareFailed": "Zdieľanie nebolo k dispozícii.",
+    "sources": "Zdroje",
+    "opensNewTab": "otvorí sa v novom okne",
+    "startAgain": "Začať hodnotenie znova",
+    "match": "{{percent}}% zhoda profilu",
+    "archetypeBlurb": "Vaša najsilnejšia zmes je {{code}}. Školy a štipendia nižšie súvisia s touto zmesou, keď otvoríte profesiu.",
+    "riasecScores": "Skóre RIASEC",
+    "patternNote": "Top kombinácia: {{combo}}. Rozbaliť profesiu na načítanie škôl a štipendií.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Profesijné zhody pre vás",
+    "matchesNote": "Radené podľa toho, ako dobre každá cesta sedí vám - nie je to žiaduce povolanie alebo záruka prijatia.",
+    "topMatchBadge": "Top zhoda",
+    "professionLabel": "Profesia",
+    "whyPath": "Prečo táto cesta vyzerá sľubne",
+    "topSchools": "Top školy pre túto cestu",
+    "topScholarships": "Top štipendia pre túto profesiu",
+    "visitSchool": "Navštíviť školskú webovú stránku",
+    "openScholarship": "Otvoriť štipendium",
+    "noSchools": "Žiadne overené školy neboli nájdené pre túto lokalitu.",
+    "noScholarships": "Žiadne overené štipendia neboli nájdené pre túto lokalitu.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Hľadač ciest",
+      "creator": "Tvorca",
+      "strategist": "Stratég",
+      "visionary": "Víziár",
+      "analyst": "Analytik",
+      "builder": "Staviteľ",
+      "guardian": "Strážca"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "{{dimension}} zhoda",
+    "tagCampusFit": "{{dimension}} zhoda kampusu",
+    "tagKeywords": "{{count}} programové kľúčové slová",
+    "tagKeywordsOne": "1 programové kľúčové slovo",
+    "tagFlagship": "Vlajková loď",
+    "tagSystemsFit": "Silná zhoda systémov",
+    "shareCardTopFit": "Top kariérna zhoda",
+    "shareCardMatch": "{{percent}}% zhoda",
+    "shareCardSummary": "Kompaktná karta Careero profilu - žiadne odpovede na otázky nie sú zahrnuté.",
+    "shareCardFooter": "careero · nájdi kariéru, ktorá sedí vám"
   }
 }

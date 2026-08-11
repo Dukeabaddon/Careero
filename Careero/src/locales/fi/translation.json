@@ -1,240 +1,240 @@
 {
   "brand": {
-    "tagline": "Career intelligence, made personal"
+    "tagline": "Kariyerintäsmys, räätälöity sinulle"
   },
   "nav": {
-    "language": "Language",
-    "clearData": "Clear my data",
-    "home": "Home",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "searchLanguage": "Search language...",
-    "noLanguageFound": "No language found"
+    "language": "Kieli",
+    "clearData": "Tyhjennä tietoni",
+    "home": "Koti",
+    "howItWorks": "Miten se toimii",
+    "dimensions": "Ulottuvuudet",
+    "faq": "UKK",
+    "startAssessment": "Aloita arviointi",
+    "searchLanguage": "Etsi kieltä...",
+    "noLanguageFound": "Kieltä ei löytynyt"
   },
   "hero": {
-    "badge": "Personality-Based Matching",
-    "title": "Discover the career path built for how your mind works.",
-    "titleAccent": "Driven by AI & RIASEC intelligence.",
-    "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
-    "start": "Start the assessment",
-    "resume": "Resume assessment",
-    "duration": "30 visual choices · about 6 minutes",
-    "privacy": "No account. No personal data. Your progress stays on this device."
+    "badge": "Personaalipohjainen vastaavuus",
+    "title": "Löydä urapolku, joka on rakennettu mielesi toiminnan mukaan.",
+    "titleAccent": "Ohjattu tekoälyn ja RIASEC-älykkyyden avulla.",
+    "description": "Visuaalinen, tieteellisesti tukema arviointi kartoittaa, miten rakennat, kysyt, luot, yhdistät, johdat ja järjestät – ja muuntaa sen profiiliksi paikalliset urapolut.",
+    "start": "Aloita arviointi",
+    "resume": "Jatka arviointia",
+    "duration": "30 visuaalista valintaa · noin 6 minuuttia",
+    "privacy": "Ei tiliä. Ei henkilökohtaisia tietoja. Edistymäsi pysyy tässä laitteessa."
   },
   "dimensions": {
-    "label": "Your six-signal profile",
-    "title": "More than one career type.",
-    "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
-    "signalsShort": "signals",
+    "label": "Sinun kuusi signaalia sisältävä profiili",
+    "title": "Enemmän kuin yksi uratyyppi.",
+    "subtitle": "RIASEC mittaa ympäristöjen yhdistelmää, joissa kiinnostuksesi kukoistaa.",
+    "signalsShort": "signaaleja",
     "R": {
-      "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "name": "Realistinen",
+      "description": "Rakennat, korjaat ja työskentelet kätevästi."
     },
     "I": {
-      "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "name": "Tutkiva",
+      "description": "Kysyt, analysoit ja löydät."
     },
     "A": {
-      "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "name": "Taiteellinen",
+      "description": "Kuvittelet, ilmaiset ja suunnittelet."
     },
     "S": {
-      "name": "Social",
-      "description": "Teach, support, and connect."
+      "name": "Sosiaalinen",
+      "description": "Opetat, tuet ja yhdistät."
     },
     "E": {
-      "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "name": "Kaupallinen",
+      "description": "Johtat, vakuutat ja aloitat."
     },
     "C": {
-      "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "name": "Perinteinen",
+      "description": "Järjestät, vahvistat ja parannat."
     }
   },
   "location": {
-    "step": "Location · Step {{step}} of 2",
-    "titleCountry": "Where are you building your future?",
-    "titleCity": "Which city or region should shape your recommendations?",
-    "descriptionCountry": "Choose a country first. We use it only to localize careers, salaries, and learning paths.",
-    "descriptionCity": "Select a city, type a region, or skip this step for {{country}}.",
-    "searchCountry": "Search countries",
-    "searchCity": "Search cities",
-    "noResults": "No matches found.",
-    "back": "Back",
-    "confirm": "Start for {{city}}, {{country}}",
-    "skipCity": "Continue with {{country}} only",
-    "useRegion": "Use {{region}} as my region",
-    "close": "Close location selector",
-    "country": "Country",
-    "city": "City",
-    "selectCountry": "Select country",
-    "selectCityOptional": "Select city (optional)",
-    "continue": "Continue",
-    "noMatches": "No matches"
+    "step": "Sijainti · Vaihe {{step}} / 2",
+    "titleCountry": "Missä rakennat tulevaisuuttasi?",
+    "titleCity": "Mikä kaupunki tai alue muotoilee suosituksesi?",
+    "descriptionCountry": "Valitse ensin maa. Käytämme sitä vain urien, palkan ja oppimispolkujen paikallistamiseen.",
+    "descriptionCity": "Valitse kaupunki, kirjoita alue tai ohita tämä vaihe {{country}}:lle.",
+    "searchCountry": "Etsi maita",
+    "searchCity": "Etsi kaupunkeja",
+    "noResults": "Ei löytynyt vastaavuuksia.",
+    "back": "Takaisin",
+    "confirm": "Aloita {{city}}, {{country}}:lle",
+    "skipCity": "Jatka vain {{country}}:lla",
+    "useRegion": "Käytä {{region}} alueellasi",
+    "close": "Sulje sijaintivalitsin",
+    "country": "Maa",
+    "city": "Kaupunki",
+    "selectCountry": "Valitse maa",
+    "selectCityOptional": "Valitse kaupunki (valinnainen)",
+    "continue": "Jatka",
+    "noMatches": "Ei vastaavuuksia"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Matched occupations",
-      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+      "label": "Vastaavat ammatit",
+      "description": "RIASEC-profiilisi perusteella sovitamme sinut uriin, jotka vastaavat kiinnostuksen kohteitasi ja vahvuuksiasi."
     },
     "dimensions": {
       "value": "6",
-      "label": "RIASEC Psychological Model",
-      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+      "label": "RIASEC-psykologinen malli",
+      "description": "Kuusi kiinnostuksen signaalia paljastaa, miten rakennat, tutkit, luot, yhdistät, johdat ja järjestät."
     },
     "free": {
-      "value": "100% Free",
-      "label": "No Account Required",
-      "description": "No account required. Your assessment progress stays on this device."
+      "value": "100 % ilmainen",
+      "label": "Tiliä ei tarvita",
+      "description": "Tiliä ei tarvita. Arviointiasentumasi pysyy tässä laitteessa."
     },
-    "groupLabel": "Careero highlights"
+    "groupLabel": "Careero:n kohokohdat"
   },
   "howItWorks": {
-    "title": "How Careero Works",
-    "subtitle": "3 simple steps to discover your tailored career pathways and educational hubs.",
+    "title": "Miten Careero toimii",
+    "subtitle": "Kolme helppoa vaihetta räätälöityjen urapolkujen ja oppimisympäristöjen löytämiseen.",
     "step1": {
-      "title": "Take 30 Visual Choices",
-      "description": "Select activities and work environments that resonate with your natural preferences."
+      "title": "Valitse 30 visuaalista vaihtoehtoa",
+      "description": "Valitse aktiviteetit ja työympäristöt, jotka sopivat luonnollisiin mieltymyksiisi."
     },
     "step2": {
-      "title": "Pearson Vector Math Engine",
-      "description": "Calculates Pearson r correlation between your 6-vector profile and {{count}} career vectors."
+      "title": "Pearsonin vektori- matemaattinen moottori",
+      "description": "Laskee Pearson r -korrelaation 6-vektoriprofiilisi ja {{count}} uravektorin välillä."
     },
     "step3": {
-      "title": "Unlock Matched Pathways",
-      "description": "Receive localized top career recommendations, salary insights, and university matches."
+      "title": "Avaa vastaavat polut",
+      "description": "Saat paikallisia parhaimpia urasuosituksia, palkkatietoja ja yliopistovastaavuuksia."
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about the Careero assessment engine.",
+    "title": "Usein kysytyt kysymykset",
+    "subtitle": "Kaikki, mitä sinun tarvitsee tietää Careero:n arviointimoottorista.",
     "items": [
       {
-        "q": "How does the RIASEC assessment work?",
-        "a": "RIASEC measures interest across 6 vectors: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. Your 30 visual selections create a normalized profile. Careero ranks {{count}} occupations by Pearson correlation — so different interest mixes produce different top-10 careers."
+        "q": "Miten RIASEC-arviointi toimii?",
+        "a": "RIASEC mittaa kiinnostusta 6 vektoriin: Realistinen, Tutkiva, Taiteellinen, Sosiaalinen, Kaupallinen ja Perinteinen. 30 visuaalista valintaa luo normalisoidun profiilin. Careero sijoittaa {{count}} ammattia Pearsonin korrelaation mukaan – eri kiinnostuksen sekoitukset tuottavat erilaisia top-10-uravaihtoehtoja."
       },
       {
-        "q": "Is my data private and secure?",
-        "a": "Yes. Careero operates 100% locally on your browser. No account registration or personal data is collected or uploaded to external tracking databases."
+        "q": "Onko tietoni yksityisiä ja turvassa?",
+        "a": "Kyllä. Careero toimii 100 % paikallisesti selaimessasi. Tiliä ei rekisteröidä eikä henkilökohtaisia tietoja kerätä tai ladata ulkoisiin seurantadatoihin."
       },
       {
-        "q": "Can I use this for university and scholarship discovery?",
-        "a": "Absolutely. Based on your matched career profile, Careero provides localized degree programs, top regional universities, and targeted scholarship links."
+        "q": "Voinko käyttää tätä yliopiston ja apurahojen löytämiseen?",
+        "a": "Totta kai. Vastaavan uraprosessisi perusteella Careero tarjoaa paikallisia tutkintoharjoja, parhaat alueelliset yliopistot ja kohdennetut apurahalinkit."
       },
       {
-        "q": "How long does the assessment take?",
-        "a": "The assessment consists of 30 quick visual binary choices and takes approximately 3 to 5 minutes to complete."
+        "q": "Kuinka kauan arviointi kestää?",
+        "a": "Arviointi koostuu 30 nopeasta visuaalisesta binäärivalinnasta ja kestää noin 3–5 minuuttia."
       }
     ]
   },
   "footer": {
-    "tagline": "Global AI Career Compass & Educational Matching Platform.",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "dimensions": "Dimensions",
-    "faq": "FAQ",
-    "startAssessment": "Start Assessment",
-    "copyright": "© 2026 Careero Platform. Built for open global education access."
+    "tagline": "Globaali tekoälypohjainen urakompassi ja oppimismuuntamisalusta.",
+    "features": "Ominaisuudet",
+    "howItWorks": "Miten se toimii",
+    "dimensions": "Ulottuvuudet",
+    "faq": "UKK",
+    "startAssessment": "Aloita arviointi",
+    "copyright": "© 2026 Careero Platform. Rakennettu avoimeen globaaliseen koulutukseen."
   },
   "quiz": {
-    "questionOf": "Question {{current}} of {{total}}",
-    "percentComplete": "{{percent}}% complete",
-    "title": "Which would you rather do?",
-    "subtitle": "Pick one activity and rate how much you'd enjoy it. (Tip: Double-click to advance to next question!)",
-    "or": "or",
-    "choose": "Choose the activity you would enjoy more.",
-    "keyboardHint": "Keyboard: A/B, 1–3, then Enter.",
-    "intensity": "How strongly does this fit?",
-    "okay": "Okay",
-    "like": "Like",
-    "love": "Love it",
-    "reactionJustOkay": "Just Okay",
-    "reactionGreat": "Great!",
-    "reactionLoveIt": "Love It!",
-    "previous": "Previous",
-    "next": "Next",
-    "nextQuestion": "Next question",
-    "finish": "See my profile",
-    "reset": "Reset progress",
-    "resumeTitle": "Your journey is waiting.",
-    "sessionSaved": "Session saved",
-    "resumeBody": "Continue at question {{question}} with every earlier answer restored.",
-    "resume": "Resume",
-    "fresh": "Start fresh"
+    "questionOf": "Kysymys {{current}} / {{total}}",
+    "percentComplete": "{{percent}} % valmis",
+    "title": "Mitä haluaisit tehdä?",
+    "subtitle": "Valitse yksi aktiviteetti ja arvioi, kuinka paljon nautit siitä. (Vinkki: Kaksoisnapsauta siirtyäksesi seuraavaan kysymykseen!)",
+    "or": "tai",
+    "choose": "Valitse aktiviteetti, josta nautit enemmän.",
+    "keyboardHint": "Näppäimistö: A/B, 1–3, sitten Enter.",
+    "intensity": "Kuinka vahvasti tämä sopii?",
+    "okay": "Hyvä",
+    "like": "Tykkään",
+    "love": "Rakastan",
+    "reactionJustOkay": "Vain ok",
+    "reactionGreat": "Mahtavaa!",
+    "reactionLoveIt": "Rakastan sitä!",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "nextQuestion": "Seuraava kysymys",
+    "finish": "Näytä profiilini",
+    "reset": "Nollaa edistys",
+    "resumeTitle": "Matkasi odottaa.",
+    "sessionSaved": "Istunto tallennettu",
+    "resumeBody": "Jatka kysymyksestä {{question}} ja kaikki aiemmat vastaukset palautetaan.",
+    "resume": "Jatka",
+    "fresh": "Aloita alusta"
   },
   "results": {
-    "label": "Your career signal",
-    "title": "A profile built from what energizes you.",
-    "cached": "Loaded from cache",
-    "live": "Fresh AI insight",
-    "topProfile": "Top profile",
-    "localMatches": "Continuous-fit career matches",
-    "aiTitle": "Schools and funding for {{profession}} near {{location}}",
-    "aiLoading": "Finding strong schools, scholarships, and programs in the background…",
-    "aiUnavailable": "AI insights are unavailable, but your local correlation matches are ready.",
-    "refresh": "Refresh AI insights",
-    "retry": "Try again",
-    "skills": "Skills to build",
-    "programs": "Scholarships and programs",
-    "topProfession": "Top recommendation",
-    "shareHeading": "Share your career character",
-    "shareDescription": "Open a card you can download or post — answers stay private.",
-    "shareTitle": "My Careero result",
-    "shareProfession": "Top career: {{profession}} · {{percent}}% match",
-    "shareText": "My Careero character is {{archetype}} ({{code}}). My top career match is {{profession}} at {{percent}}%.",
-    "share": "Share result",
-    "shareModalTitle": "Share your result",
-    "shareModalSubtitle": "Preview your card · post to stories or save for later",
-    "shareToSocial": "Share",
-    "downloadCard": "Download card",
-    "sharing": "Sharing…",
-    "savingCard": "Saving…",
-    "shareDownloaded": "Share card downloaded!",
-    "shareSavedCopied": "Card saved · caption copied!",
-    "shareClose": "Close",
-    "shared": "Shared",
-    "copied": "Copied",
-    "shareFailed": "Sharing was unavailable.",
-    "sources": "Grounding sources",
-    "opensNewTab": "opens in a new tab",
-    "startAgain": "Take assessment again",
-    "match": "{{percent}}% profile match",
-    "archetypeBlurb": "Your strongest mix is {{code}}. Schools and scholarships below follow that pattern when you open a profession.",
-    "riasecScores": "RIASEC scores",
-    "patternNote": "Top combo: {{combo}}. Expand a profession to load schools and scholarships.",
-    "matchesEyebrow": "Pearson 6-vector",
-    "professionMatches": "Profession matches for you",
-    "matchesNote": "Ranked by how well each path fits you — not a job or admission guarantee.",
-    "topMatchBadge": "Top match",
-    "professionLabel": "Profession",
-    "whyPath": "Why this path feels promising",
-    "topSchools": "Top schools for this path",
-    "topScholarships": "Top scholarships for this profession",
-    "visitSchool": "Visit school website",
-    "openScholarship": "Open scholarship",
-    "noSchools": "No verified schools found for this location yet.",
-    "noScholarships": "No verified scholarships found for this location yet.",
+    "label": "Uraprofiilisi signaali",
+    "title": "Profiili, joka perustuu siihen, mikä sinut energisoi.",
+    "cached": "Ladattu välimuistista",
+    "live": "Tuore tekoälyn näkemys",
+    "topProfile": "Parhaimmaksi profiili",
+    "localMatches": "Jatkuva sopivuus uravastaavuuksiin",
+    "aiTitle": "Koulut ja rahoitus {{profession}}:lle lähellä {{location}}",
+    "aiLoading": "Etsitään vahvoja kouluja, apurahoja ja ohjelmia taustalla…",
+    "aiUnavailable": "Tekoälyn näkemykset eivät ole käytettävissä, mutta paikalliset korrelaatiovastaavuudet ovat valmiita.",
+    "refresh": "Päivitä tekoälyn näkemykset",
+    "retry": "Yritä uudelleen",
+    "skills": "Kehitettävät taidot",
+    "programs": "Apurahat ja ohjelmat",
+    "topProfession": "Parhaiten suositeltu",
+    "shareHeading": "Jaa uraprosessisi",
+    "shareDescription": "Avaa kortti, jonka voit ladata tai jakaa – vastaukset pysyvät yksityisinä.",
+    "shareTitle": "Minun Careero-tulokseni",
+    "shareProfession": "Parhaimmaksi uraksi: {{profession}} · {{percent}} % vastaavuus",
+    "shareText": "Careero-ominaisuuteni on {{archetype}} ({{code}}). Parhaimmaksi uravastaavuudeksi on {{profession}} {{percent}} %.",
+    "share": "Jaa tulos",
+    "shareModalTitle": "Jaa tuloksesi",
+    "shareModalSubtitle": "Esikatsele korttiasi · jaa tarinoihin tai tallenna myöhemmin",
+    "shareToSocial": "Jaa",
+    "downloadCard": "Lataa kortti",
+    "sharing": "Jaetaan…",
+    "savingCard": "Tallennetaan…",
+    "shareDownloaded": "Jaa kortti ladattu!",
+    "shareSavedCopied": "Kortti tallennettu · otsikko kopioitu!",
+    "shareClose": "Sulje",
+    "shared": "Jaettu",
+    "copied": "Kopioitu",
+    "shareFailed": "Jakaminen ei ollut käytettävissä.",
+    "sources": "Perustelulähteet",
+    "opensNewTab": "avautuu uuteen välilehteen",
+    "startAgain": "Ota arviointi uudelleen",
+    "match": "{{percent}} % profiili-sopivuus",
+    "archetypeBlurb": "Suurin sekoituksesi on {{code}}. Alla olevat koulut ja apurahat noudattavat tätä mallia, kun avaat ammatin.",
+    "riasecScores": "RIASEC-pisteet",
+    "patternNote": "Parhaimmaksi yhdistelmä: {{combo}}. Laajenna ammatin lataaksesi koulut ja apurahat.",
+    "matchesEyebrow": "Pearson 6-vektori",
+    "professionMatches": "Ammattiluokat sinulle",
+    "matchesNote": "Sijoitettu sen mukaan, kuinka hyvin jokainen polku sopii sinulle – ei työtä tai hyväksyntää takaa.",
+    "topMatchBadge": "Parhaimmaksi vastaavuus",
+    "professionLabel": "Ammatti",
+    "whyPath": "Miksi tämä polku tuntuu lupaavalta",
+    "topSchools": "Parhaimmat koulut tälle polulle",
+    "topScholarships": "Parhaimmat apurahat tälle ammatille",
+    "visitSchool": "Käy koulun verkkosivustolla",
+    "openScholarship": "Avaa apuraha",
+    "noSchools": "Tälle sijainnille ei ole vielä vahvistettuja kouluja.",
+    "noScholarships": "Tälle sijainnille ei ole vielä vahvistettuja apurahoja.",
     "archetypes": {
-      "pathfinder": "The Pathfinder",
-      "creator": "The Creator",
-      "strategist": "The Strategist",
-      "visionary": "The Visionary",
-      "analyst": "The Analyst",
-      "builder": "The Builder",
-      "guardian": "The Guardian"
+      "pathfinder": "Polkuja etsijä",
+      "creator": "Luova",
+      "strategist": "Strategi",
+      "visionary": "Visio",
+      "analyst": "Analyytikko",
+      "builder": "Rakentaja",
+      "guardian": "Suojaaja"
     },
-    "tagAlignment": "{{dimension}} alignment",
-    "tagCampusFit": "{{dimension}} campus fit",
-    "tagKeywords": "{{count}} program keywords",
-    "tagKeywordsOne": "1 program keyword",
-    "tagFlagship": "Flagship option",
-    "tagSystemsFit": "Strong systems fit",
-    "shareCardTopFit": "Top career fit",
-    "shareCardMatch": "{{percent}}% match",
-    "shareCardSummary": "A compact Careero profile card — no quiz answers included.",
-    "shareCardFooter": "careero · find career that fits you"
+    "tagAlignment": "{{dimension}} tasaus",
+    "tagCampusFit": "{{dimension}} kampus-sopivuus",
+    "tagKeywords": "{{count}} ohjelma-avainsanat",
+    "tagKeywordsOne": "1 ohjelma-avainsana",
+    "tagFlagship": "Etusijalla oleva vaihtoehto",
+    "tagSystemsFit": "Vahva järjestelmä-sopivuus",
+    "shareCardTopFit": "Parhaimmaksi urasopivuus",
+    "shareCardMatch": "{{percent}} % vastaavuus",
+    "shareCardSummary": "Kompakti Careero-profiilikortti – kyselyvastauksia ei sisälly.",
+    "shareCardFooter": "careero · löydä sinulle sopiva ura"
   }
 }

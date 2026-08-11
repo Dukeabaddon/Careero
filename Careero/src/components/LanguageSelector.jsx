@@ -82,8 +82,6 @@ export default function LanguageSelector({ onLanguageChange, compact = false }) 
                 >
                   <span className="flag-icon">{lang.flag}</span>
                   <span className="lang-full-name">{lang.name}</span>
-                  {lang.quality === 'draft' ? <span className="lang-code-badge">draft</span> : null}
-                  {lang.quality === 'machine' ? <span className="lang-code-badge">auto</span> : null}
                   <span className="lang-code-badge">{lang.code.toUpperCase()}</span>
                 </button>
               ))

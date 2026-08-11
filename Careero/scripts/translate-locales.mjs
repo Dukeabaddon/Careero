@@ -57,23 +57,25 @@ function unflatten(entries) {
   return root
 }
 
-function collectGeminiKeys() {
+function collectNumberedKeys(prefix) {
   const keys = []
   for (let i = 1; i <= 8; i += 1) {
-    const key = process.env[`GEMINI_API_KEY_${i}`] || (i === 1 ? process.env.GEMINI_API_KEY : null)
+    const key = process.env[`${prefix}_${i}`] || (i === 1 ? process.env[prefix] : null)
     if (key) keys.push(key)
   }
   return keys
 }
 
-const geminiKeys = collectGeminiKeys()
-if (!geminiKeys.length) {
-  console.error('No GEMINI_API_KEY_* found in environment / .env.local')
+const geminiKeys = collectNumberedKeys('GEMINI_API_KEY')
+const groqKeys = collectNumberedKeys('GROQ_API_KEY')
+const openrouterKeys = collectNumberedKeys('OPENROUTER_API_KEY')
+if (!geminiKeys.length && !groqKeys.length && !openrouterKeys.length) {
+  console.error('No GEMINI/GROQ/OPENROUTER keys found in environment / .env.local')
   process.exit(1)
 }
 
 const geminiModels = ['gemini-2.5-flash']
-const openrouterKeys = [process.env.OPENROUTER_API_KEY_1, process.env.OPENROUTER_API_KEY_2].filter(Boolean)
+const groqModel = 'llama-3.3-70b-versatile'
 const openrouterModel = process.env.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free'
 const only = process.argv.includes('--only')
   ? process.argv[process.argv.indexOf('--only') + 1]?.split(',').filter(Boolean)
@@ -86,8 +88,8 @@ const enFlat = Object.fromEntries(flatten(en))
 const enJson = JSON.stringify(enFlat, null, 2)
 
 let keyCursor = 0
-function nextKey() {
-  const key = geminiKeys[keyCursor % geminiKeys.length]
+function nextFrom(keys) {
+  const key = keys[keyCursor % keys.length]
   keyCursor += 1
   return key
 }
@@ -119,12 +121,40 @@ async function sleep(ms) {
   await new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+async function groqTranslate(targetName, targetCode) {
+  if (!groqKeys.length) throw new Error('No Groq keys')
+  const apiKey = nextFrom(groqKeys)
+  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: groqModel,
+      temperature: 0.2,
+      response_format: { type: 'json_object' },
+      messages: [
+        { role: 'system', content: 'Return only a valid JSON object with the exact same keys.' },
+        { role: 'user', content: buildPrompt(targetName, targetCode) },
+      ],
+    }),
+  })
+  if (!response.ok) {
+    const body = await response.text()
+    throw new Error(`Groq ${response.status}: ${body.slice(0, 180)}`)
+  }
+  const payload = await response.json()
+  return parseTranslatedFlat(payload?.choices?.[0]?.message?.content || '')
+}
+
 async function geminiTranslate(targetName, targetCode) {
+  if (!geminiKeys.length) throw new Error('No Gemini keys')
   const prompt = buildPrompt(targetName, targetCode)
   let lastError = null
   for (const model of geminiModels) {
     for (let attempt = 0; attempt < 3; attempt += 1) {
-      const apiKey = nextKey()
+      const apiKey = nextFrom(geminiKeys)
       const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`
       const response = await fetch(url, {
         method: 'POST',
@@ -154,8 +184,7 @@ async function geminiTranslate(targetName, targetCode) {
 
 async function openrouterTranslate(targetName, targetCode) {
   if (!openrouterKeys.length) throw new Error('No OpenRouter keys')
-  const apiKey = openrouterKeys[keyCursor % openrouterKeys.length]
-  keyCursor += 1
+  const apiKey = nextFrom(openrouterKeys)
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
@@ -179,27 +208,30 @@ async function openrouterTranslate(targetName, targetCode) {
     throw new Error(`OpenRouter ${response.status}: ${body.slice(0, 180)}`)
   }
   const payload = await response.json()
-  const text = payload?.choices?.[0]?.message?.content || ''
-  return parseTranslatedFlat(text)
+  return parseTranslatedFlat(payload?.choices?.[0]?.message?.content || '')
 }
 
 async function translateLocale(targetName, targetCode) {
-  try {
-    return await geminiTranslate(targetName, targetCode)
-  } catch (geminiError) {
+  const errors = []
+  for (const runner of [groqTranslate, geminiTranslate, openrouterTranslate]) {
     try {
-      return await openrouterTranslate(targetName, targetCode)
-    } catch (openrouterError) {
-      throw new Error(`${geminiError.message} | ${openrouterError.message}`)
+      return await runner(targetName, targetCode)
+    } catch (error) {
+      errors.push(error.message)
     }
   }
+  throw new Error(errors.join(' | '))
 }
 
 function alreadyTranslated(code) {
   const filePath = path.join(localesDir, code, 'translation.json')
   if (!fs.existsSync(filePath)) return false
-  const current = fs.readFileSync(filePath, 'utf8')
-  return current !== JSON.stringify(en, null, 2) + '\n' && current !== JSON.stringify(en)
+  try {
+    const current = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    return JSON.stringify(current) !== JSON.stringify(en)
+  } catch {
+    return false
+  }
 }
 
 const targets = LANGUAGES.filter((language) => {
@@ -209,7 +241,7 @@ const targets = LANGUAGES.filter((language) => {
   return true
 })
 
-console.log(`translate targets=${targets.length} geminiModels=${geminiModels.join(',')} openrouter=${openrouterModel} concurrency=${concurrency}`)
+console.log(`translate targets=${targets.length} providers=groq,gemini,openrouter concurrency=${concurrency}`)
 
 async function mapPool(items, limit, worker) {
   const results = []

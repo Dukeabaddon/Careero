@@ -1,19 +1,21 @@
 import { useEffect, useRef, useState } from 'react'
 import { ChevronDown, Search } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { SUPPORTED_LANGUAGES } from '../i18n.js'
+import { SUPPORTED_LANGUAGES, setAppLanguage } from '../i18n.js'
 
 export default function LanguageSelector({ onLanguageChange, compact = false }) {
   const { t, i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
+  const [isSwitching, setIsSwitching] = useState(false)
   const dropdownRef = useRef(null)
 
   const currentLang = SUPPORTED_LANGUAGES.find((l) => l.code === i18n.language) || SUPPORTED_LANGUAGES[0]
 
   const filteredLanguages = SUPPORTED_LANGUAGES.filter((l) =>
     l.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    l.code.toLowerCase().includes(searchTerm.toLowerCase())
+    l.code.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    l.short.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
   useEffect(() => {
@@ -26,11 +28,17 @@ export default function LanguageSelector({ onLanguageChange, compact = false }) 
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const selectLanguage = (code) => {
-    i18n.changeLanguage(code)
-    onLanguageChange?.(code)
-    setIsOpen(false)
-    setSearchTerm('')
+  const selectLanguage = async (code) => {
+    if (isSwitching) return
+    setIsSwitching(true)
+    try {
+      await setAppLanguage(code)
+      onLanguageChange?.(code)
+      setIsOpen(false)
+      setSearchTerm('')
+    } finally {
+      setIsSwitching(false)
+    }
   }
 
   return (
@@ -42,6 +50,7 @@ export default function LanguageSelector({ onLanguageChange, compact = false }) 
         aria-expanded={isOpen}
         aria-label={t('nav.language')}
         data-testid="language-dropdown"
+        disabled={isSwitching}
       >
         <span className="flag-icon text-sm">{currentLang.flag}</span>
         <span className="lang-name">{currentLang.short}</span>
@@ -69,9 +78,12 @@ export default function LanguageSelector({ onLanguageChange, compact = false }) 
                   type="button"
                   className={`language-option ${lang.code === currentLang.code ? 'active' : ''}`}
                   onClick={() => selectLanguage(lang.code)}
+                  disabled={isSwitching}
                 >
                   <span className="flag-icon">{lang.flag}</span>
                   <span className="lang-full-name">{lang.name}</span>
+                  {lang.quality === 'draft' ? <span className="lang-code-badge">draft</span> : null}
+                  {lang.quality === 'machine' ? <span className="lang-code-badge">auto</span> : null}
                   <span className="lang-code-badge">{lang.code.toUpperCase()}</span>
                 </button>
               ))

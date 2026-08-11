@@ -79,7 +79,6 @@ export default function App() {
   }
 
   const handleLanguageChange = (code) => {
-    i18n.changeLanguage(code)
     if (phase === 'quiz' && assessmentState) {
       const nextState = { ...assessmentState, language: code }
       saveQuizState(nextState)

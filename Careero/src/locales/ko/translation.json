@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "개인 맞춤형 직업 지능"
+  },
+  "nav": {
+    "language": "언어",
+    "clearData": "내 데이터 지우기",
+    "home": "홈",
+    "howItWorks": "작동 방식",
+    "dimensions": "차원",
+    "faq": "자주 묻는 질문",
+    "startAssessment": "평가 시작",
+    "searchLanguage": "언어 검색...",
+    "noLanguageFound": "언어를 찾을 수 없습니다"
+  },
+  "hero": {
+    "badge": "성격 기반 매칭",
+    "title": "당신의 사고방식에 맞춰진 직업 경로를 발견하세요.",
+    "titleAccent": "AI 및 RIASEC 지능 기반.",
+    "description": "시각적이고 과학적인 평가를 통해 당신이 구축하고, 질문하고, 창조하고, 연결하고, 이끌고, 조직하는 방식을 파악한 다음, 그 프로필을 지역 직업 경로로 전환합니다.",
+    "start": "평가 시작",
+    "resume": "평가 재개",
+    "duration": "30가지 시각적 선택 · 약 6분",
+    "privacy": "계정 없음. 개인 데이터 없음. 진행 상황은 이 기기에 저장됩니다."
+  },
+  "dimensions": {
+    "label": "당신의 6가지 신호 프로필",
+    "title": "하나 이상의 직업 유형.",
+    "subtitle": "RIASEC은 당신의 흥미가 번성하는 경향이 있는 환경의 조합을 측정합니다.",
+    "signalsShort": "신호",
+    "R": {
+      "name": "현실형",
+      "description": "구축하고, 수리하며, 직접 작업합니다."
+    },
+    "I": {
+      "name": "탐구형",
+      "description": "질문하고, 분석하며, 발견합니다."
+    },
+    "A": {
+      "name": "예술형",
+      "description": "상상하고, 표현하며, 디자인합니다."
+    },
+    "S": {
+      "name": "사회형",
+      "description": "가르치고, 지원하며, 연결합니다."
+    },
+    "E": {
+      "name": "진취형",
+      "description": "이끌고, 설득하며, 시작합니다."
+    },
+    "C": {
+      "name": "관습형",
+      "description": "조직하고, 확인하며, 개선합니다."
+    }
+  },
+  "location": {
+    "step": "위치 · 2단계 중 {{step}}단계",
+    "titleCountry": "어디에서 미래를 만들어가고 있나요?",
+    "titleCity": "어떤 도시 또는 지역이 당신의 추천을 형성해야 할까요?",
+    "descriptionCountry": "먼저 국가를 선택하세요. 저희는 직업, 급여, 학습 경로를 현지화하는 데만 사용합니다.",
+    "descriptionCity": "도시를 선택하거나, 지역을 입력하거나, {{country}}에 대해 이 단계를 건너뛰세요.",
+    "searchCountry": "국가 검색",
+    "searchCity": "도시 검색",
+    "noResults": "일치하는 항목을 찾을 수 없습니다.",
+    "back": "뒤로",
+    "confirm": "{{city}}, {{country}}에서 시작",
+    "skipCity": "{{country}}만으로 계속",
+    "useRegion": "{{region}}을 내 지역으로 사용",
+    "close": "위치 선택기 닫기",
+    "country": "국가",
+    "city": "도시",
+    "selectCountry": "국가 선택",
+    "selectCityOptional": "도시 선택 (선택 사항)",
+    "continue": "계속",
+    "noMatches": "일치하는 항목 없음"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "일치하는 직업",
+      "description": "당신의 RIASEC 프로필을 기반으로, 당신의 흥미와 강점에 맞는 직업을 찾아드립니다."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC 심리 모델",
+      "description": "6가지 흥미 신호는 당신이 구축하고, 탐구하고, 창조하고, 연결하고, 이끌고, 조직하는 방식을 보여줍니다."
+    },
+    "free": {
+      "value": "100% 무료",
+      "label": "계정 필요 없음",
+      "description": "계정 필요 없음. 당신의 평가 진행 상황은 이 기기에 저장됩니다."
+    },
+    "groupLabel": "Careero 주요 내용"
+  },
+  "howItWorks": {
+    "title": "Careero 작동 방식",
+    "subtitle": "맞춤형 직업 경로와 교육 허브를 발견하는 3가지 간단한 단계.",
+    "step1": {
+      "title": "30가지 시각적 선택하기",
+      "description": "당신의 자연스러운 선호도와 일치하는 활동 및 작업 환경을 선택하세요."
+    },
+    "step2": {
+      "title": "Pearson 벡터 수학 엔진",
+      "description": "당신의 6-벡터 프로필과 {{count}}개의 직업 벡터 간의 Pearson r 상관관계를 계산합니다."
+    },
+    "step3": {
+      "title": "일치하는 경로 잠금 해제",
+      "description": "현지화된 최고의 직업 추천, 급여 정보 및 대학 매칭을 받으세요."
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "Careero 평가 엔진에 대해 알아야 할 모든 것.",
+    "items": [
+      {
+        "q": "RIASEC 평가는 어떻게 작동하나요?",
+        "a": "RIASEC은 현실형, 탐구형, 예술형, 사회형, 진취형, 관습형의 6가지 벡터에 걸쳐 흥미를 측정합니다. 당신의 30가지 시각적 선택은 정규화된 프로필을 생성합니다. Careero는 Pearson 상관관계를 통해 {{count}}개의 직업 순위를 매깁니다. 따라서 다른 흥미 조합은 다른 상위 10개 직업을 생성합니다."
+      },
+      {
+        "q": "내 데이터는 비공개이며 안전한가요?",
+        "a": "네. Careero는 당신의 브라우저에서 100% 로컬로 작동합니다. 계정 등록이나 개인 데이터는 수집되거나 외부 추적 데이터베이스에 업로드되지 않습니다."
+      },
+      {
+        "q": "대학 및 장학금 검색에 사용할 수 있나요?",
+        "a": "물론입니다. 당신의 일치하는 직업 프로필을 기반으로, Careero는 현지화된 학위 프로그램, 최고의 지역 대학 및 맞춤형 장학금 링크를 제공합니다."
+      },
+      {
+        "q": "평가는 얼마나 걸리나요?",
+        "a": "평가는 30가지의 빠르고 시각적인 이진 선택으로 구성되며 완료하는 데 약 3~5분이 소요됩니다."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "글로벌 AI 직업 나침반 및 교육 매칭 플랫폼.",
+    "features": "기능",
+    "howItWorks": "작동 방식",
+    "dimensions": "차원",
+    "faq": "자주 묻는 질문",
+    "startAssessment": "평가 시작",
+    "copyright": "© 2026 Careero 플랫폼. 개방형 글로벌 교육 접근을 위해 구축되었습니다."
+  },
+  "quiz": {
+    "questionOf": "{{total}}개 중 {{current}}번째 질문",
+    "percentComplete": "{{percent}}% 완료",
+    "title": "어떤 것을 더 하고 싶으신가요?",
+    "subtitle": "하나의 활동을 선택하고 얼마나 즐길지 평가하세요. (팁: 다음 질문으로 넘어가려면 두 번 클릭하세요!)",
+    "or": "또는",
+    "choose": "더 즐길 활동을 선택하세요.",
+    "keyboardHint": "키보드: A/B, 1–3, 그리고 Enter.",
+    "intensity": "이것이 얼마나 잘 맞나요?",
+    "okay": "괜찮아요",
+    "like": "좋아요",
+    "love": "정말 좋아요",
+    "reactionJustOkay": "그냥 괜찮아요",
+    "reactionGreat": "훌륭해요!",
+    "reactionLoveIt": "정말 좋아요!",
+    "previous": "이전",
+    "next": "다음",
+    "nextQuestion": "다음 질문",
+    "finish": "내 프로필 보기",
+    "reset": "진행 상황 초기화",
+    "resumeTitle": "당신의 여정이 기다리고 있습니다.",
+    "sessionSaved": "세션 저장됨",
+    "resumeBody": "이전 답변이 모두 복원된 상태로 {{question}}번 질문부터 계속하세요.",
+    "resume": "재개",
+    "fresh": "새로 시작"
+  },
+  "results": {
+    "label": "당신의 직업 신호",
+    "title": "당신에게 활력을 주는 것들로 만들어진 프로필.",
+    "cached": "캐시에서 로드됨",
+    "live": "새로운 AI 통찰력",
+    "topProfile": "최고 프로필",
+    "localMatches": "지속적으로 적합한 직업 매칭",
+    "aiTitle": "{{location}} 근처 {{profession}}을 위한 학교 및 자금 지원",
+    "aiLoading": "배경에서 우수한 학교, 장학금 및 프로그램을 찾는 중…",
+    "aiUnavailable": "AI 통찰력을 사용할 수 없지만, 당신의 지역 상관관계 매칭은 준비되었습니다.",
+    "refresh": "AI 통찰력 새로 고침",
+    "retry": "다시 시도",
+    "skills": "구축할 기술",
+    "programs": "장학금 및 프로그램",
+    "topProfession": "최고 추천",
+    "shareHeading": "당신의 직업 특성 공유하기",
+    "shareDescription": "다운로드하거나 게시할 수 있는 카드를 여세요 — 답변은 비공개로 유지됩니다.",
+    "shareTitle": "내 Careero 결과",
+    "shareProfession": "최고 직업: {{profession}} · {{percent}}% 일치",
+    "shareText": "내 Careero 특성은 {{archetype}} ({{code}})입니다. 내 최고 직업 일치도는 {{profession}}에서 {{percent}}%입니다.",
+    "share": "결과 공유",
+    "shareModalTitle": "결과 공유",
+    "shareModalSubtitle": "카드 미리보기 · 스토리에 게시하거나 나중에 저장",
+    "shareToSocial": "공유",
+    "downloadCard": "카드 다운로드",
+    "sharing": "공유 중…",
+    "savingCard": "저장 중…",
+    "shareDownloaded": "공유 카드 다운로드 완료!",
+    "shareSavedCopied": "카드 저장됨 · 캡션 복사됨!",
+    "shareClose": "닫기",
+    "shared": "공유됨",
+    "copied": "복사됨",
+    "shareFailed": "공유할 수 없었습니다.",
+    "sources": "기반 소스",
+    "opensNewTab": "새 탭에서 열기",
+    "startAgain": "평가 다시 시작",
+    "match": "{{percent}}% 프로필 일치",
+    "archetypeBlurb": "당신의 가장 강력한 조합은 {{code}}입니다. 아래의 학교 및 장학금은 직업을 열 때 해당 패턴을 따릅니다.",
+    "riasecScores": "RIASEC 점수",
+    "patternNote": "최고 조합: {{combo}}. 직업을 확장하여 학교 및 장학금을 로드하세요.",
+    "matchesEyebrow": "Pearson 6-벡터",
+    "professionMatches": "당신을 위한 직업 매칭",
+    "matchesNote": "각 경로가 당신에게 얼마나 잘 맞는지에 따라 순위가 매겨집니다 — 취업 또는 입학 보장은 아닙니다.",
+    "topMatchBadge": "최고 일치",
+    "professionLabel": "직업",
+    "whyPath": "이 경로가 유망하게 느껴지는 이유",
+    "topSchools": "이 경로를 위한 최고 학교",
+    "topScholarships": "이 직업을 위한 최고 장학금",
+    "visitSchool": "학교 웹사이트 방문",
+    "openScholarship": "장학금 열기",
+    "noSchools": "이 위치에 대해 아직 확인된 학교가 없습니다.",
+    "noScholarships": "이 위치에 대해 아직 확인된 장학금이 없습니다.",
+    "archetypes": {
+      "pathfinder": "개척자",
+      "creator": "창조자",
+      "strategist": "전략가",
+      "visionary": "선구자",
+      "analyst": "분석가",
+      "builder": "건축가",
+      "guardian": "수호자"
+    },
+    "tagAlignment": "{{dimension}} 정렬",
+    "tagCampusFit": "{{dimension}} 캠퍼스 적합성",
+    "tagKeywords": "{{count}}개 프로그램 키워드",
+    "tagKeywordsOne": "1개 프로그램 키워드",
+    "tagFlagship": "주요 옵션",
+    "tagSystemsFit": "강력한 시스템 적합성",
+    "shareCardTopFit": "최고 직업 적합성",
+    "shareCardMatch": "{{percent}}% 일치",
+    "shareCardSummary": "간결한 Careero 프로필 카드 — 퀴즈 답변은 포함되지 않습니다.",
+    "shareCardFooter": "careero · 당신에게 맞는 직업을 찾으세요"
+  }
+}

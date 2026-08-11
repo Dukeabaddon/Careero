@@ -123,6 +123,11 @@ button:disabled {
   border: 0;
 }
 
+.text-center {
+  text-align: center;
+  margin-inline: auto;
+}
+
 .section-wrap {
   width: min(1240px, calc(100% - 48px));
   margin-inline: auto;
@@ -135,10 +140,6 @@ button:disabled {
   scroll-margin-top: 96px;
 }
 
-.how-it-works,
-.faq-section {
-  padding-top: 32px;
-}
 
 .screen-loader {
   min-height: calc(100vh - 76px);
@@ -343,68 +344,15 @@ button:disabled {
   color: var(--text);
 }
 
-.hero {
-  min-height: calc(100vh - 76px);
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  align-items: center;
-  gap: clamp(30px, 5vw, 80px);
-  padding-block: 40px 60px;
-}
 
-.hero-100dvh {
-  height: calc(100dvh - 76px);
-  min-height: 520px;
-  padding-block: 20px 40px;
-}
-
-.hero h1,
-.results-heading h1,
-.hero-heading {
-  max-width: 800px;
+.results-heading h1 {
+  max-width: 627px;
   margin: 0;
   font-family: "Outfit", sans-serif;
-  font-size: clamp(2.4rem, 4.2vw, 4.2rem);
+  font-size: clamp(2.4rem, 4.67vw, 4.2rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.04em;
-}
-
-.hero h1 em {
-  display: block;
-  color: transparent;
-  font-style: normal;
-  background: linear-gradient(105deg, #2563eb, #0284c7 72%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.hero-description {
-  max-width: 620px;
-  margin: 20px 0 24px;
-  color: var(--muted);
-  font-size: clamp(0.98rem, 1.25vw, 1.1rem);
-  line-height: 1.65;
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 22px;
-}
-
-.hero-actions>span,
-.privacy-line {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 0.82rem;
-}
-
-.privacy-line {
-  margin-top: 18px;
 }
 
 .primary-button,
@@ -1005,277 +953,6 @@ html.lenis, html.lenis body { height: auto; }
   }
 }
 
-/* Stats Bar Section (KursoKo Reference) */
-.stats-bar {
-  margin-block: 40px 80px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.stat-card {
-  padding: 24px;
-  border: 1px solid var(--border-strong);
-  border-radius: 20px;
-  background: var(--surface);
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
-}
-
-.stat-icon {
-  color: var(--primary);
-  flex-shrink: 0;
-}
-
-.stat-custom-svg,
-.step-custom-svg {
-  flex-shrink: 0;
-  display: block;
-}
-
-.step-custom-svg {
-  margin-bottom: 16px;
-}
-
-.stat-card strong {
-  display: block;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
-  color: var(--text);
-}
-
-.stat-card span {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-/* How It Works Section (KursoKo Reference) */
-.how-it-works {
-  padding-block: 80px;
-}
-
-.text-center {
-  text-align: center;
-  margin-inline: auto;
-}
-
-.section-badge {
-  display: inline-block;
-  padding: 4px 12px;
-  margin-bottom: 12px;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.08);
-  color: var(--primary);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 48px;
-}
-
-.step-card {
-  position: relative;
-  padding: 32px 24px 28px;
-  border: 1px solid var(--border-strong);
-  border-radius: 24px;
-  background: var(--surface);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
-}
-
-.step-number {
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  font-family: "Outfit", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--text);
-}
-
-/* Dimensions Grid Section */
-.dimensions {
-  --book-asset-width: min(31.25rem, 42vw);
-  --book-asset-right: -300px;
-  --book-asset-bottom: -24px;
-  --book-asset-opacity: 1;
-  padding-block: 80px;
-}
-.dimensions-book-asset {
-  position: absolute;
-  right: var(--book-asset-right);
-  bottom: var(--book-asset-bottom);
-  z-index: 10;
-  pointer-events: none;
-  opacity: var(--book-asset-opacity);
-}
-
-.dimensions-book-asset img {
-  width: var(--book-asset-width);
-  height: auto;
-  filter: drop-shadow(0 18px 28px rgba(15, 23, 42, 0.12));
-}
-
-.step-icon {
-  color: var(--primary);
-  margin-bottom: 16px;
-}
-
-.step-card h3 {
-  margin: 0 0 10px;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.35rem;
-  color: var(--text);
-}
-
-.step-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.section-heading h2 {
-  margin: 0;
-  font-family: "Outfit", sans-serif;
-  font-size: clamp(2.2rem, 4vw, 4.5rem);
-  line-height: 1;
-  letter-spacing: -0.05em;
-  color: var(--text);
-}
-
-.section-heading>p:last-child {
-  max-width: 600px;
-  margin-top: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.dimension-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr 1fr;
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.dimension-card {
-  position: relative;
-  min-height: 290px;
-  overflow: hidden;
-  padding: 24px;
-  border: 1px solid var(--border-strong);
-  border-radius: 24px;
-  background: var(--surface);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.dimension-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-  opacity: 1;
-  transform: none !important;
-  transition: none;
-}
-
-.dimension-card>div {
-  position: relative;
-  z-index: 2;
-  inset: auto;
-  margin-top: 12px;
-}
-
-.dimension-card span {
-  color: var(--primary);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.dimension-card h3 {
-  margin: 4px 0 6px;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.45rem;
-  color: var(--text);
-}
-
-.dimension-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-/* FAQ Section (KursoKo Reference) */
-.faq-section {
-  padding-block: 80px 120px;
-}
-
-.faq-list {
-  max-width: 780px;
-  margin: 40px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.faq-item {
-  border: 1px solid var(--border-strong);
-  border-radius: 18px;
-  background: var(--surface);
-  padding: 20px 24px;
-  cursor: pointer;
-  transition: border-color 180ms;
-}
-
-.faq-item:hover {
-  border-color: var(--primary);
-}
-
-.faq-question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.faq-question h3 {
-  margin: 0;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.1rem;
-  color: var(--text);
-}
-
-.faq-chevron {
-  color: var(--muted);
-  transition: transform 200ms;
-}
-
-.faq-item.open .faq-chevron {
-  transform: rotate(180deg);
-  color: var(--primary);
-}
-
-.faq-answer {
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.65;
-}
 
 /* Location Modal (Country → City Selection Overlay) */
 .modal-backdrop {
@@ -2470,36 +2147,6 @@ button[data-testid="open-share-modal-btn"]:not(:disabled):hover {
     justify-items: start;
   }
 }
-
-@media (max-width: 960px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 70px;
-  }
-
-  .hero-actions,
-  .privacy-line {
-    justify-content: center;
-  }
-
-  .hero-description {
-    margin-inline: auto;
-  }
-
-  .orbit-stage {
-    width: min(78vw, 500px);
-  }
-
-  .stats-grid,
-  .steps-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dimension-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 720px) {
   .section-wrap {
     width: min(100% - 28px, 1240px);
@@ -2510,46 +2157,8 @@ button[data-testid="open-share-modal-btn"]:not(:disabled):hover {
     padding-inline: 14px;
   }
 
-  .hero {
-    min-height: auto;
-    padding-block: 70px;
-  }
-
-  .hero h1,
-  .hero-heading {
-    font-size: clamp(1.85rem, 8.5vw, 2.6rem);
-    line-height: 1.05;
-  }
-
-  .orbit-stage {
-    display: none;
-  }
-
-  .dimensions {
-    --book-asset-width: min(9.5rem, 34vw);
-    --book-asset-right: -18px;
-    --book-asset-bottom: -8px;
-    --book-asset-opacity: 0.42;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-  }
-
-  .orbit-stage {
-    width: min(92vw, 440px);
-  }
-
   .orbit-node {
     border-radius: 18px;
-  }
-
-  .dimensions {
-    padding-block: 80px;
-  }
-
-  .dimension-grid {
-    grid-template-columns: 1fr;
   }
 
   .footer-top {

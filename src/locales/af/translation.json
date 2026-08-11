@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Loopbaanintelligensie, persoonlik gemaak"
+  },
+  "nav": {
+    "language": "Taal",
+    "clearData": "Vee my data uit",
+    "home": "Tuis",
+    "howItWorks": "Hoe dit werk",
+    "dimensions": "Dimensies",
+    "faq": "Vrae",
+    "startAssessment": "Begin assessering",
+    "searchLanguage": "Soek taal...",
+    "noLanguageFound": "Geen taal gevind nie"
+  },
+  "hero": {
+    "badge": "Persoonlikheid-gebaseerde passing",
+    "title": "Ontdek die loopbaanpad wat gebou is vir hoe jou gedagtes werk.",
+    "titleAccent": "Aangedryf deur KI en RIASEC-intelligensie.",
+    "description": "'n Visuele, wetenskaplik ondersteunde assessering karteer hoe jy bou, vra, skep, verbind, lei en organiseer—en verander daardie profiel in plaaslike loopbaanpaaie.",
+    "start": "Begin die assessering",
+    "resume": "Hervat assessering",
+    "duration": "30 visuele keuses · ongeveer 6 minute",
+    "privacy": "Geen rekening nie. Geen persoonlike data nie. Jou vordering bly op hierdie toestel."
+  },
+  "dimensions": {
+    "label": "Jou ses-sein profiel",
+    "title": "Meer as een loopbaantipe.",
+    "subtitle": "RIASEC meet die kombinasie van omgewings waar jou belangstellings floreer.",
+    "signalsShort": "seine",
+    "R": {
+      "name": "Realisties",
+      "description": "Bou, herstel en werk prakties."
+    },
+    "I": {
+      "name": "Ondersoekend",
+      "description": "Vra, ontleed en ontdek."
+    },
+    "A": {
+      "name": "Artistiek",
+      "description": "Verbeel, druk uit en ontwerp."
+    },
+    "S": {
+      "name": "Sosiaal",
+      "description": "Leer, ondersteun en verbind."
+    },
+    "E": {
+      "name": "Ondernemend",
+      "description": "Lei, oortuig en begin."
+    },
+    "C": {
+      "name": "Konvensioneel",
+      "description": "Organiseer, verifieer en verbeter."
+    }
+  },
+  "location": {
+    "step": "Ligging · Stap {{step}} van 2",
+    "titleCountry": "Waar bou jy jou toekoms?",
+    "titleCity": "Watter stad of streek moet jou aanbevelings vorm?",
+    "descriptionCountry": "Kies eers 'n land. Ons gebruik dit slegs om loopbane, salarisse en leerpadde te plaaslik te maak.",
+    "descriptionCity": "Kies 'n stad, tik 'n streek in, of slaan hierdie stap oor vir {{country}}.",
+    "searchCountry": "Soek lande",
+    "searchCity": "Soek stede",
+    "noResults": "Geen ooreenkomste gevind nie.",
+    "back": "Terug",
+    "confirm": "Begin vir {{city}}, {{country}}",
+    "skipCity": "Gaan voort met slegs {{country}}",
+    "useRegion": "Gebruik {{region}} as my streek",
+    "close": "Sluit liggingkieser",
+    "country": "Land",
+    "city": "Stad",
+    "selectCountry": "Kies land",
+    "selectCityOptional": "Kies stad (opsioneel)",
+    "continue": "Gaan voort",
+    "noMatches": "Geen ooreenkomste nie"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Gepaste beroepe",
+      "description": "Gebaseer op jou RIASEC-profiel, pas ons jou by loopbane wat by jou belangstellings en sterkpunte pas."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC Sielkundige Model",
+      "description": "Ses belangstellingsseine onthul hoe jy bou, verken, skep, verbind, lei en organiseer."
+    },
+    "free": {
+      "value": "100% Gratis",
+      "label": "Geen Rekening Vereis Nie",
+      "description": "Geen rekening vereis nie. Jou assesseringsvordering bly op hierdie toestel."
+    },
+    "groupLabel": "Careero hoogtepunte"
+  },
+  "howItWorks": {
+    "title": "Hoe Careero Werk",
+    "subtitle": "3 eenvoudige stappe om jou pasgemaakte loopbaanpaaie en opvoedkundige hubs te ontdek.",
+    "step1": {
+      "title": "Maak 30 Visuele Keuses",
+      "description": "Kies aktiwiteite en werkomgewings wat by jou natuurlike voorkeure resoneer."
+    },
+    "step2": {
+      "title": "Pearson Vektor Wiskunde-enjin",
+      "description": "Bereken Pearson r-korrelasie tussen jou 6-vektor profiel en {{count}} loopbaanvektore."
+    },
+    "step3": {
+      "title": "Ontsluit Gepaste Paaie",
+      "description": "Ontvang plaaslike top loopbaanaanbevelings, salarisinsigte en universiteits-passings."
+    }
+  },
+  "faq": {
+    "title": "Gereelde Vrae",
+    "subtitle": "Alles wat jy moet weet oor die Careero assesseringsenjin.",
+    "items": [
+      {
+        "q": "Hoe werk die RIASEC-assessering?",
+        "a": "RIASEC meet belangstelling oor 6 vektore: Realisties, Ondersoekend, Artistiek, Sosiaal, Ondernemend en Konvensioneel. Jou 30 visuele keuses skep 'n genormaliseerde profiel. Careero rangskik {{count}} beroepe volgens Pearson-korrelasie — so verskillende belangstellingsmengsels lewer verskillende top-10 loopbane."
+      },
+      {
+        "q": "Is my data privaat en veilig?",
+        "a": "Ja. Careero werk 100% plaaslik in jou blaaier. Geen rekeningregistrasie of persoonlike data word versamel of na eksterne dopdatabasisse opgelaai nie."
+      },
+      {
+        "q": "Kan ek dit vir universiteit- en beursontdekking gebruik?",
+        "a": "Absoluut. Gebaseer op jou gepaste loopbaanprofiel, verskaf Careero plaaslike graadprogramme, top streekuniversiteite en gerigte beurskakels."
+      },
+      {
+        "q": "Hoe lank neem die assessering?",
+        "a": "Die assessering bestaan uit 30 vinnige visuele binêre keuses en neem ongeveer 3 tot 5 minute om te voltooi."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globale KI Loopbaankompas en Opvoedkundige Passingplatform.",
+    "features": "Kenmerke",
+    "howItWorks": "Hoe dit werk",
+    "dimensions": "Dimensies",
+    "faq": "Vrae",
+    "startAssessment": "Begin assessering",
+    "copyright": "© 2026 Careero Platform. Gebou vir oop globale opvoedkundige toegang."
+  },
+  "quiz": {
+    "questionOf": "Vraag {{current}} van {{total}}",
+    "percentComplete": "{{percent}}% voltooi",
+    "title": "Watter sou jy eerder doen?",
+    "subtitle": "Kies een aktiwiteit en gradeer hoeveel jy daarvan sou geniet. (Wenk: Dubbelklik om na die volgende vraag te gaan!)",
+    "or": "of",
+    "choose": "Kies die aktiwiteit wat jy meer sou geniet.",
+    "keyboardHint": "Sleutelbord: A/B, 1–3, dan Enter.",
+    "intensity": "Hoe sterk pas dit?",
+    "okay": "Goed",
+    "like": "Hou van",
+    "love": "Hou baie daarvan",
+    "reactionJustOkay": "Net Goed",
+    "reactionGreat": "Geweldig!",
+    "reactionLoveIt": "Hou Baie Daarvan!",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "nextQuestion": "Volgende vraag",
+    "finish": "Sien my profiel",
+    "reset": "Herstel vordering",
+    "resumeTitle": "Jou reis wag.",
+    "sessionSaved": "Sessie gestoor",
+    "resumeBody": "Gaan voort by vraag {{question}} met elke vorige antwoord herstel.",
+    "resume": "Hervat",
+    "fresh": "Begin vars"
+  },
+  "results": {
+    "label": "Jou loopbaansein",
+    "title": "'n Profiel gebou uit wat jou energie gee.",
+    "cached": "Gelaai uit kas",
+    "live": "Vars KI-insig",
+    "topProfile": "Top profiel",
+    "localMatches": "Deurlopende-passing loopbaan-passings",
+    "aiTitle": "Skole en befondsing vir {{profession}} naby {{location}}",
+    "aiLoading": "Soek sterk skole, beurse en programme op die agtergrond…",
+    "aiUnavailable": "KI-insigte is nie beskikbaar nie, maar jou plaaslike korrelasie-passings is gereed.",
+    "refresh": "Verfris KI-insigte",
+    "retry": "Probeer weer",
+    "skills": "Vaardighede om te bou",
+    "programs": "Beurse en programme",
+    "topProfession": "Top aanbeveling",
+    "shareHeading": "Deel jou loopbaankarakter",
+    "shareDescription": "Maak 'n kaart oop wat jy kan aflaai of plaas — antwoorde bly privaat.",
+    "shareTitle": "My Careero resultaat",
+    "shareProfession": "Top loopbaan: {{profession}} · {{percent}}% passing",
+    "shareText": "My Careero-karakter is {{archetype}} ({{code}}). My top loopbaanpassing is {{profession}} by {{percent}}%.",
+    "share": "Deel resultaat",
+    "shareModalTitle": "Deel jou resultaat",
+    "shareModalSubtitle": "Voorskou jou kaart · plaas op stories of stoor vir later",
+    "shareToSocial": "Deel",
+    "downloadCard": "Laai kaart af",
+    "sharing": "Deel tans…",
+    "savingCard": "Stoor tans…",
+    "shareDownloaded": "Deelkaart afgelaai!",
+    "shareSavedCopied": "Kaart gestoor · onderskrif gekopieer!",
+    "shareClose": "Sluit",
+    "shared": "Gedeel",
+    "copied": "Gekopieer",
+    "shareFailed": "Deel was nie beskikbaar nie.",
+    "sources": "Grondslagbronne",
+    "opensNewTab": "maak oop in 'n nuwe oortjie",
+    "startAgain": "Neem assessering weer",
+    "match": "{{percent}}% profielpassing",
+    "archetypeBlurb": "Jou sterkste mengsel is {{code}}. Skole en beurse hieronder volg daardie patroon wanneer jy 'n beroep oopmaak.",
+    "riasecScores": "RIASEC-tellings",
+    "patternNote": "Top kombinasie: {{combo}}. Brei 'n beroep uit om skole en beurse te laai.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Beroeppassings vir jou",
+    "matchesNote": "Gerangskik volgens hoe goed elke pad by jou pas — nie 'n werk- of toelatingswaarborg nie.",
+    "topMatchBadge": "Top passing",
+    "professionLabel": "Beroep",
+    "whyPath": "Hoekom voel hierdie pad belowend",
+    "topSchools": "Top skole vir hierdie pad",
+    "topScholarships": "Top beurse vir hierdie beroep",
+    "visitSchool": "Besoek skoolwebwerf",
+    "openScholarship": "Maak beurs oop",
+    "noSchools": "Geen geverifieerde skole vir hierdie ligging gevind nie.",
+    "noScholarships": "Geen geverifieerde beurse vir hierdie ligging gevind nie.",
+    "archetypes": {
+      "pathfinder": "Die Padvinder",
+      "creator": "Die Skepper",
+      "strategist": "Die Strateeg",
+      "visionary": "Die Visionêr",
+      "analyst": "Die Ontleder",
+      "builder": "Die Bouer",
+      "guardian": "Die Bewaker"
+    },
+    "tagAlignment": "{{dimension}} belyning",
+    "tagCampusFit": "{{dimension}} kampuspassing",
+    "tagKeywords": "{{count}} program-sleutelwoorde",
+    "tagKeywordsOne": "1 program-sleutelwoord",
+    "tagFlagship": "Vlagskipopsie",
+    "tagSystemsFit": "Sterk stelselpassing",
+    "shareCardTopFit": "Top loopbaanpassing",
+    "shareCardMatch": "{{percent}}% passing",
+    "shareCardSummary": "'n Kompakte Careero-profielkaart — geen vasvra-antwoorde ingesluit nie.",
+    "shareCardFooter": "careero · vind loopbaan wat by jou pas"
+  }
+}

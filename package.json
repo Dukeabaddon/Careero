@@ -22,7 +22,9 @@
     "build:careers": "node scripts/build-career-catalog.mjs",
     "build:careers:onet": "node scripts/build-careers-from-onet.mjs",
     "check:secrets": "node scripts/check-secrets.mjs",
-    "check": "npm run check:secrets && npm run lint && npm run validate:i18n && npm test && npm run build"
+    "check": "npm run check:secrets && npm run lint && npm run validate:i18n && npm test && npm run build",
+    "scaffold:locales": "node scripts/scaffold-locales.mjs",
+    "translate:locales": "node --env-file=.env.local scripts/translate-locales.mjs"
   },
   "keywords": [],
   "engines": {

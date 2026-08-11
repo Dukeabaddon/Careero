@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Karijerna inteligencija, personalizirana"
+  },
+  "nav": {
+    "language": "Jezik",
+    "clearData": "Obriši moje podatke",
+    "home": "Početna",
+    "howItWorks": "Kako radi",
+    "dimensions": "Dimenzije",
+    "faq": "Česta pitanja",
+    "startAssessment": "Započni procjenu",
+    "searchLanguage": "Pretraži jezik...",
+    "noLanguageFound": "Nije pronađen jezik"
+  },
+  "hero": {
+    "badge": "Usklađivanje temeljeno na osobnosti",
+    "title": "Otkrijte karijerni put stvoren za način na koji vaš um funkcionira.",
+    "titleAccent": "Pokreće AI i RIASEC inteligencija.",
+    "description": "Vizualna, znanstveno potkrijepljena procjena mapira kako gradite, propitujete, stvarate, povezujete se, vodite i organizirate – zatim taj profil pretvara u lokalne karijerne putove.",
+    "start": "Započni procjenu",
+    "resume": "Nastavi procjenu",
+    "duration": "30 vizualnih izbora · oko 6 minuta",
+    "privacy": "Nema računa. Nema osobnih podataka. Vaš napredak ostaje na ovom uređaju."
+  },
+  "dimensions": {
+    "label": "Vaš profil sa šest signala",
+    "title": "Više od jednog tipa karijere.",
+    "subtitle": "RIASEC mjeri kombinaciju okruženja u kojima vaši interesi najbolje uspijevaju.",
+    "signalsShort": "signali",
+    "R": {
+      "name": "Realističan",
+      "description": "Gradite, popravljajte i radite praktično."
+    },
+    "I": {
+      "name": "Istraživački",
+      "description": "Propitujte, analizirajte i otkrivajte."
+    },
+    "A": {
+      "name": "Umjetnički",
+      "description": "Zamišljajte, izražavajte se i dizajnirajte."
+    },
+    "S": {
+      "name": "Društveni",
+      "description": "Podučavajte, podržavajte i povezujte se."
+    },
+    "E": {
+      "name": "Poduzetnički",
+      "description": "Vodite, uvjeravajte i inicirajte."
+    },
+    "C": {
+      "name": "Konvencionalan",
+      "description": "Organizirajte, provjeravajte i poboljšavajte."
+    }
+  },
+  "location": {
+    "step": "Lokacija · Korak {{step}} od 2",
+    "titleCountry": "Gdje gradite svoju budućnost?",
+    "titleCity": "Koji grad ili regija bi trebali oblikovati vaše preporuke?",
+    "descriptionCountry": "Prvo odaberite državu. Koristimo je samo za lokalizaciju karijera, plaća i obrazovnih putova.",
+    "descriptionCity": "Odaberite grad, upišite regiju ili preskočite ovaj korak za {{country}}.",
+    "searchCountry": "Pretraži države",
+    "searchCity": "Pretraži gradove",
+    "noResults": "Nema pronađenih podudarnosti.",
+    "back": "Natrag",
+    "confirm": "Započni za {{city}}, {{country}}",
+    "skipCity": "Nastavi samo s {{country}}",
+    "useRegion": "Koristi {{region}} kao moju regiju",
+    "close": "Zatvori odabir lokacije",
+    "country": "Država",
+    "city": "Grad",
+    "selectCountry": "Odaberi državu",
+    "selectCityOptional": "Odaberi grad (opcionalno)",
+    "continue": "Nastavi",
+    "noMatches": "Nema podudarnosti"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Usklađena zanimanja",
+      "description": "Na temelju vašeg RIASEC profila, usklađujemo vas s karijerama koje odgovaraju vašim interesima i snagama."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC psihološki model",
+      "description": "Šest signala interesa otkrivaju kako gradite, istražujete, stvarate, povezujete se, vodite i organizirate."
+    },
+    "free": {
+      "value": "100% besplatno",
+      "label": "Nije potreban račun",
+      "description": "Nije potreban račun. Vaš napredak procjene ostaje na ovom uređaju."
+    },
+    "groupLabel": "Careero istaknuto"
+  },
+  "howItWorks": {
+    "title": "Kako Careero radi",
+    "subtitle": "3 jednostavna koraka za otkrivanje vaših prilagođenih karijernih putova i obrazovnih centara.",
+    "step1": {
+      "title": "Napravite 30 vizualnih izbora",
+      "description": "Odaberite aktivnosti i radna okruženja koja odgovaraju vašim prirodnim preferencijama."
+    },
+    "step2": {
+      "title": "Pearson Vector Math Engine",
+      "description": "Izračunava Pearson r korelaciju između vašeg 6-vektorskog profila i {{count}} karijernih vektora."
+    },
+    "step3": {
+      "title": "Otključajte usklađene putove",
+      "description": "Primite lokalizirane vrhunske preporuke za karijeru, uvide u plaće i podudarnosti s sveučilištima."
+    }
+  },
+  "faq": {
+    "title": "Često postavljana pitanja",
+    "subtitle": "Sve što trebate znati o Careero sustavu procjene.",
+    "items": [
+      {
+        "q": "Kako funkcionira RIASEC procjena?",
+        "a": "RIASEC mjeri interes kroz 6 vektora: Realističan, Istraživački, Umjetnički, Društveni, Poduzetnički i Konvencionalan. Vaših 30 vizualnih odabira stvara normalizirani profil. Careero rangira {{count}} zanimanja prema Pearson korelaciji — tako da različite kombinacije interesa proizvode različite top-10 karijere."
+      },
+      {
+        "q": "Jesu li moji podaci privatni i sigurni?",
+        "a": "Da. Careero radi 100% lokalno u vašem pregledniku. Nema registracije računa niti se osobni podaci prikupljaju ili prenose u vanjske baze podataka za praćenje."
+      },
+      {
+        "q": "Mogu li ovo koristiti za otkrivanje sveučilišta i stipendija?",
+        "a": "Apsolutno. Na temelju vašeg usklađenog karijernog profila, Careero pruža lokalizirane studijske programe, vrhunska regionalna sveučilišta i ciljane poveznice za stipendije."
+      },
+      {
+        "q": "Koliko dugo traje procjena?",
+        "a": "Procjena se sastoji od 30 brzih vizualnih binarnih izbora i traje otprilike 3 do 5 minuta."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globalna AI platforma za karijerni kompas i obrazovno usklađivanje.",
+    "features": "Značajke",
+    "howItWorks": "Kako radi",
+    "dimensions": "Dimenzije",
+    "faq": "Česta pitanja",
+    "startAssessment": "Započni procjenu",
+    "copyright": "© 2026 Careero Platform. Izgrađeno za otvoren globalni pristup obrazovanju."
+  },
+  "quiz": {
+    "questionOf": "Pitanje {{current}} od {{total}}",
+    "percentComplete": "{{percent}}% dovršeno",
+    "title": "Što biste radije radili?",
+    "subtitle": "Odaberite jednu aktivnost i ocijenite koliko biste uživali u njoj. (Savjet: Dvaput kliknite za prelazak na sljedeće pitanje!)",
+    "or": "ili",
+    "choose": "Odaberite aktivnost u kojoj biste više uživali.",
+    "keyboardHint": "Tipkovnica: A/B, 1–3, zatim Enter.",
+    "intensity": "Koliko se snažno ovo podudara?",
+    "okay": "U redu",
+    "like": "Sviđa mi se",
+    "love": "Obožavam",
+    "reactionJustOkay": "Samo u redu",
+    "reactionGreat": "Odlično!",
+    "reactionLoveIt": "Obožavam!",
+    "previous": "Prethodno",
+    "next": "Sljedeće",
+    "nextQuestion": "Sljedeće pitanje",
+    "finish": "Pogledaj moj profil",
+    "reset": "Poništi napredak",
+    "resumeTitle": "Vaše putovanje čeka.",
+    "sessionSaved": "Sesija spremljena",
+    "resumeBody": "Nastavite s pitanjem {{question}} sa svim prethodnim odgovorima vraćenim.",
+    "resume": "Nastavi",
+    "fresh": "Započni ispočetka"
+  },
+  "results": {
+    "label": "Vaš karijerni signal",
+    "title": "Profil izgrađen na onome što vas energizira.",
+    "cached": "Učitano iz predmemorije",
+    "live": "Svježi AI uvid",
+    "topProfile": "Vrhunski profil",
+    "localMatches": "Karijerne podudarnosti s kontinuiranim uklapanjem",
+    "aiTitle": "Škole i financiranje za {{profession}} blizu {{location}}",
+    "aiLoading": "Pronalaženje dobrih škola, stipendija i programa u pozadini…",
+    "aiUnavailable": "AI uvidi nisu dostupni, ali vaše lokalne korelacijske podudarnosti su spremne.",
+    "refresh": "Osvježi AI uvide",
+    "retry": "Pokušaj ponovno",
+    "skills": "Vještine za razvoj",
+    "programs": "Stipendije i programi",
+    "topProfession": "Vrhunska preporuka",
+    "shareHeading": "Podijelite svoj karijerni karakter",
+    "shareDescription": "Otvorite karticu koju možete preuzeti ili objaviti — odgovori ostaju privatni.",
+    "shareTitle": "Moj Careero rezultat",
+    "shareProfession": "Vrhunska karijera: {{profession}} · {{percent}}% podudarnost",
+    "shareText": "Moj Careero karakter je {{archetype}} ({{code}}). Moja vrhunska karijerna podudarnost je {{profession}} s {{percent}}%.",
+    "share": "Podijeli rezultat",
+    "shareModalTitle": "Podijelite svoj rezultat",
+    "shareModalSubtitle": "Pregledajte svoju karticu · objavite na pričama ili spremite za kasnije",
+    "shareToSocial": "Podijeli",
+    "downloadCard": "Preuzmi karticu",
+    "sharing": "Dijeljenje…",
+    "savingCard": "Spremanje…",
+    "shareDownloaded": "Kartica za dijeljenje preuzeta!",
+    "shareSavedCopied": "Kartica spremljena · natpis kopiran!",
+    "shareClose": "Zatvori",
+    "shared": "Podijeljeno",
+    "copied": "Kopirano",
+    "shareFailed": "Dijeljenje nije bilo dostupno.",
+    "sources": "Izvori",
+    "opensNewTab": "otvara se u novoj kartici",
+    "startAgain": "Ponovno pokreni procjenu",
+    "match": "{{percent}}% podudarnost profila",
+    "archetypeBlurb": "Vaša najjača kombinacija je {{code}}. Škole i stipendije u nastavku slijede taj obrazac kada otvorite zanimanje.",
+    "riasecScores": "RIASEC rezultati",
+    "patternNote": "Vrhunska kombinacija: {{combo}}. Proširite zanimanje za učitavanje škola i stipendija.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Podudarnosti zanimanja za vas",
+    "matchesNote": "Rangirano prema tome koliko vam svaki put odgovara — nije jamstvo zaposlenja ili upisa.",
+    "topMatchBadge": "Vrhunska podudarnost",
+    "professionLabel": "Zanimanje",
+    "whyPath": "Zašto ovaj put obećava",
+    "topSchools": "Vrhunske škole za ovaj put",
+    "topScholarships": "Vrhunske stipendije za ovo zanimanje",
+    "visitSchool": "Posjeti web stranicu škole",
+    "openScholarship": "Otvori stipendiju",
+    "noSchools": "Još nema provjerenih škola za ovu lokaciju.",
+    "noScholarships": "Još nema provjerenih stipendija za ovu lokaciju.",
+    "archetypes": {
+      "pathfinder": "Tragač",
+      "creator": "Stvaratelj",
+      "strategist": "Strateg",
+      "visionary": "Vizionar",
+      "analyst": "Analitičar",
+      "builder": "Graditelj",
+      "guardian": "Čuvar"
+    },
+    "tagAlignment": "{{dimension}} usklađenost",
+    "tagCampusFit": "{{dimension}} uklapanje u kampus",
+    "tagKeywords": "{{count}} ključnih riječi programa",
+    "tagKeywordsOne": "1 ključna riječ programa",
+    "tagFlagship": "Glavna opcija",
+    "tagSystemsFit": "Snažno sistemsko uklapanje",
+    "shareCardTopFit": "Vrhunsko karijerno uklapanje",
+    "shareCardMatch": "{{percent}}% podudarnost",
+    "shareCardSummary": "Kompaktna Careero profilna kartica — bez uključenih odgovora na kviz.",
+    "shareCardFooter": "careero · pronađite karijeru koja vam odgovara"
+  }
+}

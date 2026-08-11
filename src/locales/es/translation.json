@@ -14,7 +14,7 @@
     "noLanguageFound": "No se encontró el idioma"
   },
   "hero": {
-    "badge": "Brújula profesional global con IA",
+    "badge": "Emparejamiento basado en la personalidad",
     "title": "Encuentra el trabajo que se sienta",
     "titleAccent": "como tu futuro.",
     "description": "Una evaluación visual con base científica revela cómo construyes, investigas, creas, conectas, lideras y organizas, y convierte el perfil en rutas profesionales locales.",
@@ -77,16 +77,20 @@
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Ocupaciones emparejadas"
+      "label": "Ocupaciones emparejadas",
+      "description": "Según tu perfil RIASEC, te emparejamos con carreras alineadas con tus intereses y fortalezas."
     },
     "dimensions": {
-      "value": "6 dimensiones",
-      "label": "Modelo psicológico RIASEC"
+      "value": "6",
+      "label": "Modelo psicológico RIASEC",
+      "description": "Seis señales de interés muestran cómo construyes, exploras, creas, conectas, lideras y organizas."
     },
     "free": {
       "value": "100% gratis",
-      "label": "Sin cuenta requerida"
-    }
+      "label": "Sin cuenta requerida",
+      "description": "Sin cuenta. Tu progreso se guarda solo en este dispositivo."
+    },
+    "groupLabel": "Aspectos destacados de Careero"
   },
   "howItWorks": {
     "title": "Cómo funciona Careero",

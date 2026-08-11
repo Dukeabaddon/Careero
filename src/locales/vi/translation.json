@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Trí tuệ nghề nghiệp, cá nhân hóa"
+  },
+  "nav": {
+    "language": "Ngôn ngữ",
+    "clearData": "Xóa dữ liệu của tôi",
+    "home": "Trang chủ",
+    "howItWorks": "Cách thức hoạt động",
+    "dimensions": "Các chiều",
+    "faq": "Câu hỏi thường gặp",
+    "startAssessment": "Bắt đầu đánh giá",
+    "searchLanguage": "Tìm kiếm ngôn ngữ...",
+    "noLanguageFound": "Không tìm thấy ngôn ngữ nào"
+  },
+  "hero": {
+    "badge": "Ghép nối dựa trên tính cách",
+    "title": "Khám phá con đường sự nghiệp được xây dựng dựa trên cách tư duy của bạn.",
+    "titleAccent": "Được thúc đẩy bởi AI & trí tuệ RIASEC.",
+    "description": "Một bài đánh giá trực quan, được khoa học chứng minh sẽ lập bản đồ cách bạn xây dựng, đặt câu hỏi, sáng tạo, kết nối, lãnh đạo và tổ chức—sau đó biến hồ sơ đó thành các con đường sự nghiệp tại địa phương.",
+    "start": "Bắt đầu đánh giá",
+    "resume": "Tiếp tục đánh giá",
+    "duration": "30 lựa chọn trực quan · khoảng 6 phút",
+    "privacy": "Không cần tài khoản. Không có dữ liệu cá nhân. Tiến trình của bạn được lưu trên thiết bị này."
+  },
+  "dimensions": {
+    "label": "Hồ sơ sáu tín hiệu của bạn",
+    "title": "Hơn một loại hình sự nghiệp.",
+    "subtitle": "RIASEC đo lường sự kết hợp của các môi trường nơi sở thích của bạn có xu hướng phát triển mạnh.",
+    "signalsShort": "tín hiệu",
+    "R": {
+      "name": "Thực tế",
+      "description": "Xây dựng, sửa chữa và làm việc thực tế."
+    },
+    "I": {
+      "name": "Nghiên cứu",
+      "description": "Đặt câu hỏi, phân tích và khám phá."
+    },
+    "A": {
+      "name": "Nghệ thuật",
+      "description": "Tưởng tượng, thể hiện và thiết kế."
+    },
+    "S": {
+      "name": "Xã hội",
+      "description": "Dạy dỗ, hỗ trợ và kết nối."
+    },
+    "E": {
+      "name": "Mạo hiểm",
+      "description": "Lãnh đạo, thuyết phục và khởi xướng."
+    },
+    "C": {
+      "name": "Quy ước",
+      "description": "Tổ chức, xác minh và cải thiện."
+    }
+  },
+  "location": {
+    "step": "Địa điểm · Bước {{step}} trên 2",
+    "titleCountry": "Bạn đang xây dựng tương lai của mình ở đâu?",
+    "titleCity": "Thành phố hoặc khu vực nào nên định hình các đề xuất của bạn?",
+    "descriptionCountry": "Chọn một quốc gia trước. Chúng tôi chỉ sử dụng nó để bản địa hóa nghề nghiệp, mức lương và lộ trình học tập.",
+    "descriptionCity": "Chọn một thành phố, nhập một khu vực hoặc bỏ qua bước này cho {{country}}.",
+    "searchCountry": "Tìm kiếm quốc gia",
+    "searchCity": "Tìm kiếm thành phố",
+    "noResults": "Không tìm thấy kết quả nào.",
+    "back": "Quay lại",
+    "confirm": "Bắt đầu cho {{city}}, {{country}}",
+    "skipCity": "Tiếp tục chỉ với {{country}}",
+    "useRegion": "Sử dụng {{region}} làm khu vực của tôi",
+    "close": "Đóng bộ chọn địa điểm",
+    "country": "Quốc gia",
+    "city": "Thành phố",
+    "selectCountry": "Chọn quốc gia",
+    "selectCityOptional": "Chọn thành phố (tùy chọn)",
+    "continue": "Tiếp tục",
+    "noMatches": "Không có kết quả phù hợp"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Nghề nghiệp phù hợp",
+      "description": "Dựa trên hồ sơ RIASEC của bạn, chúng tôi sẽ ghép nối bạn với những nghề nghiệp phù hợp với sở thích và thế mạnh của bạn."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "Mô hình tâm lý RIASEC",
+      "description": "Sáu tín hiệu sở thích tiết lộ cách bạn xây dựng, khám phá, sáng tạo, kết nối, lãnh đạo và tổ chức."
+    },
+    "free": {
+      "value": "Miễn phí 100%",
+      "label": "Không yêu cầu tài khoản",
+      "description": "Không yêu cầu tài khoản. Tiến trình đánh giá của bạn được lưu trên thiết bị này."
+    },
+    "groupLabel": "Điểm nổi bật của Careero"
+  },
+  "howItWorks": {
+    "title": "Cách Careero hoạt động",
+    "subtitle": "3 bước đơn giản để khám phá các con đường sự nghiệp và trung tâm giáo dục phù hợp với bạn.",
+    "step1": {
+      "title": "Thực hiện 30 lựa chọn trực quan",
+      "description": "Chọn các hoạt động và môi trường làm việc phù hợp với sở thích tự nhiên của bạn."
+    },
+    "step2": {
+      "title": "Công cụ toán học vector Pearson",
+      "description": "Tính toán tương quan Pearson r giữa hồ sơ 6 vector của bạn và {{count}} vector nghề nghiệp."
+    },
+    "step3": {
+      "title": "Mở khóa các con đường phù hợp",
+      "description": "Nhận các đề xuất nghề nghiệp hàng đầu được bản địa hóa, thông tin chi tiết về mức lương và các trường đại học phù hợp."
+    }
+  },
+  "faq": {
+    "title": "Các câu hỏi thường gặp",
+    "subtitle": "Mọi thứ bạn cần biết về công cụ đánh giá Careero.",
+    "items": [
+      {
+        "q": "Bài đánh giá RIASEC hoạt động như thế nào?",
+        "a": "RIASEC đo lường sở thích trên 6 vector: Thực tế, Nghiên cứu, Nghệ thuật, Xã hội, Mạo hiểm và Quy ước. 30 lựa chọn trực quan của bạn tạo ra một hồ sơ chuẩn hóa. Careero xếp hạng {{count}} nghề nghiệp theo tương quan Pearson — vì vậy các sự kết hợp sở thích khác nhau sẽ tạo ra 10 nghề nghiệp hàng đầu khác nhau."
+      },
+      {
+        "q": "Dữ liệu của tôi có riêng tư và an toàn không?",
+        "a": "Có. Careero hoạt động 100% cục bộ trên trình duyệt của bạn. Không có đăng ký tài khoản hoặc dữ liệu cá nhân nào được thu thập hoặc tải lên các cơ sở dữ liệu theo dõi bên ngoài."
+      },
+      {
+        "q": "Tôi có thể sử dụng cái này để tìm kiếm trường đại học và học bổng không?",
+        "a": "Chắc chắn rồi. Dựa trên hồ sơ nghề nghiệp phù hợp của bạn, Careero cung cấp các chương trình cấp bằng được bản địa hóa, các trường đại học khu vực hàng đầu và các liên kết học bổng mục tiêu."
+      },
+      {
+        "q": "Bài đánh giá mất bao lâu?",
+        "a": "Bài đánh giá bao gồm 30 lựa chọn nhị phân trực quan nhanh chóng và mất khoảng 3 đến 5 phút để hoàn thành."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Nền tảng la bàn nghề nghiệp AI toàn cầu & ghép nối giáo dục.",
+    "features": "Tính năng",
+    "howItWorks": "Cách thức hoạt động",
+    "dimensions": "Các chiều",
+    "faq": "Câu hỏi thường gặp",
+    "startAssessment": "Bắt đầu đánh giá",
+    "copyright": "© 2026 Nền tảng Careero. Được xây dựng để tiếp cận giáo dục toàn cầu mở."
+  },
+  "quiz": {
+    "questionOf": "Câu hỏi {{current}} trên {{total}}",
+    "percentComplete": "Hoàn thành {{percent}}%",
+    "title": "Bạn muốn làm gì hơn?",
+    "subtitle": "Chọn một hoạt động và đánh giá mức độ bạn thích nó. (Mẹo: Nhấp đúp để chuyển sang câu hỏi tiếp theo!)",
+    "or": "hoặc",
+    "choose": "Chọn hoạt động bạn sẽ thích hơn.",
+    "keyboardHint": "Bàn phím: A/B, 1–3, sau đó Enter.",
+    "intensity": "Mức độ phù hợp mạnh mẽ như thế nào?",
+    "okay": "Ổn",
+    "like": "Thích",
+    "love": "Rất thích",
+    "reactionJustOkay": "Chỉ ổn",
+    "reactionGreat": "Tuyệt vời!",
+    "reactionLoveIt": "Rất thích!",
+    "previous": "Trước",
+    "next": "Tiếp",
+    "nextQuestion": "Câu hỏi tiếp theo",
+    "finish": "Xem hồ sơ của tôi",
+    "reset": "Đặt lại tiến trình",
+    "resumeTitle": "Hành trình của bạn đang chờ đợi.",
+    "sessionSaved": "Phiên đã lưu",
+    "resumeBody": "Tiếp tục tại câu hỏi {{question}} với tất cả các câu trả lời trước đó đã được khôi phục.",
+    "resume": "Tiếp tục",
+    "fresh": "Bắt đầu lại"
+  },
+  "results": {
+    "label": "Tín hiệu nghề nghiệp của bạn",
+    "title": "Một hồ sơ được xây dựng từ những gì tiếp thêm năng lượng cho bạn.",
+    "cached": "Đã tải từ bộ nhớ cache",
+    "live": "Thông tin chi tiết AI mới",
+    "topProfile": "Hồ sơ hàng đầu",
+    "localMatches": "Các nghề nghiệp phù hợp liên tục",
+    "aiTitle": "Trường học và tài trợ cho {{profession}} gần {{location}}",
+    "aiLoading": "Đang tìm kiếm các trường học, học bổng và chương trình tốt trong nền…",
+    "aiUnavailable": "Thông tin chi tiết AI không khả dụng, nhưng các kết quả tương quan cục bộ của bạn đã sẵn sàng.",
+    "refresh": "Làm mới thông tin chi tiết AI",
+    "retry": "Thử lại",
+    "skills": "Kỹ năng cần xây dựng",
+    "programs": "Học bổng và chương trình",
+    "topProfession": "Đề xuất hàng đầu",
+    "shareHeading": "Chia sẻ tính cách nghề nghiệp của bạn",
+    "shareDescription": "Mở một thẻ bạn có thể tải xuống hoặc đăng — câu trả lời vẫn riêng tư.",
+    "shareTitle": "Kết quả Careero của tôi",
+    "shareProfession": "Nghề nghiệp hàng đầu: {{profession}} · {{percent}}% phù hợp",
+    "shareText": "Tính cách Careero của tôi là {{archetype}} ({{code}}). Nghề nghiệp phù hợp nhất của tôi là {{profession}} với {{percent}}%.",
+    "share": "Chia sẻ kết quả",
+    "shareModalTitle": "Chia sẻ kết quả của bạn",
+    "shareModalSubtitle": "Xem trước thẻ của bạn · đăng lên tin hoặc lưu lại sau",
+    "shareToSocial": "Chia sẻ",
+    "downloadCard": "Tải xuống thẻ",
+    "sharing": "Đang chia sẻ…",
+    "savingCard": "Đang lưu…",
+    "shareDownloaded": "Đã tải xuống thẻ chia sẻ!",
+    "shareSavedCopied": "Đã lưu thẻ · đã sao chép chú thích!",
+    "shareClose": "Đóng",
+    "shared": "Đã chia sẻ",
+    "copied": "Đã sao chép",
+    "shareFailed": "Không thể chia sẻ.",
+    "sources": "Nguồn tham khảo",
+    "opensNewTab": "mở trong tab mới",
+    "startAgain": "Làm lại bài đánh giá",
+    "match": "{{percent}}% phù hợp hồ sơ",
+    "archetypeBlurb": "Sự kết hợp mạnh nhất của bạn là {{code}}. Các trường học và học bổng bên dưới tuân theo mô hình đó khi bạn mở một nghề nghiệp.",
+    "riasecScores": "Điểm RIASEC",
+    "patternNote": "Kết hợp hàng đầu: {{combo}}. Mở rộng một nghề nghiệp để tải các trường học và học bổng.",
+    "matchesEyebrow": "Pearson 6-vector",
+    "professionMatches": "Các nghề nghiệp phù hợp với bạn",
+    "matchesNote": "Được xếp hạng theo mức độ phù hợp của mỗi con đường với bạn — không phải là sự đảm bảo về việc làm hoặc nhập học.",
+    "topMatchBadge": "Phù hợp nhất",
+    "professionLabel": "Nghề nghiệp",
+    "whyPath": "Tại sao con đường này có vẻ hứa hẹn",
+    "topSchools": "Các trường hàng đầu cho con đường này",
+    "topScholarships": "Các học bổng hàng đầu cho nghề nghiệp này",
+    "visitSchool": "Truy cập trang web trường học",
+    "openScholarship": "Mở học bổng",
+    "noSchools": "Chưa tìm thấy trường học được xác minh nào cho địa điểm này.",
+    "noScholarships": "Chưa tìm thấy học bổng được xác minh nào cho địa điểm này.",
+    "archetypes": {
+      "pathfinder": "Người khai phá",
+      "creator": "Người sáng tạo",
+      "strategist": "Nhà chiến lược",
+      "visionary": "Người có tầm nhìn",
+      "analyst": "Nhà phân tích",
+      "builder": "Người xây dựng",
+      "guardian": "Người bảo vệ"
+    },
+    "tagAlignment": "Sự phù hợp {{dimension}}",
+    "tagCampusFit": "Sự phù hợp khuôn viên {{dimension}}",
+    "tagKeywords": "{{count}} từ khóa chương trình",
+    "tagKeywordsOne": "1 từ khóa chương trình",
+    "tagFlagship": "Tùy chọn hàng đầu",
+    "tagSystemsFit": "Phù hợp hệ thống mạnh mẽ",
+    "shareCardTopFit": "Phù hợp nghề nghiệp hàng đầu",
+    "shareCardMatch": "{{percent}}% phù hợp",
+    "shareCardSummary": "Một thẻ hồ sơ Careero nhỏ gọn — không bao gồm câu trả lời bài kiểm tra.",
+    "shareCardFooter": "careero · tìm sự nghiệp phù hợp với bạn"
+  }
+}

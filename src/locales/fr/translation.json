@@ -14,7 +14,7 @@
     "noLanguageFound": "Aucune langue trouvée"
   },
   "hero": {
-    "badge": "Boussole mondiale des carrières par IA",
+    "badge": "Appariement basé sur la personnalité",
     "title": "Trouvez le métier qui ressemble",
     "titleAccent": "à votre avenir.",
     "description": "Une évaluation visuelle et scientifique révèle comment vous construisez, explorez, créez, reliez, dirigez et organisez, puis transforme ce profil en parcours locaux.",
@@ -77,16 +77,20 @@
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Métiers appariés"
+      "label": "Métiers appariés",
+      "description": "Selon votre profil RIASEC, nous vous proposons des métiers alignés avec vos intérêts et forces."
     },
     "dimensions": {
-      "value": "6 dimensions",
-      "label": "Modèle psychologique RIASEC"
+      "value": "6",
+      "label": "Modèle psychologique RIASEC",
+      "description": "Six signaux d’intérêt révèlent comment vous construisez, explorez, créez, reliez, dirigez et organisez."
     },
     "free": {
       "value": "100 % gratuit",
-      "label": "Sans compte requis"
-    }
+      "label": "Sans compte requis",
+      "description": "Sans compte. Votre progression reste sur cet appareil."
+    },
+    "groupLabel": "Points forts de Careero"
   },
   "howItWorks": {
     "title": "Comment fonctionne Careero",

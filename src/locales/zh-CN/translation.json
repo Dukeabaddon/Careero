@@ -14,7 +14,7 @@
     "noLanguageFound": "未找到语言"
   },
   "hero": {
-    "badge": "全球 AI 职业指南",
+    "badge": "基于性格的匹配",
     "title": "找到真正适合你的工作，",
     "titleAccent": "走向自己的未来。",
     "description": "通过科学的视觉测评，了解你如何实践、探索、创造、连接、领导与组织，并转化为本地职业路径。",
@@ -77,16 +77,20 @@
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "匹配职业数"
+      "label": "匹配职业数",
+      "description": "根据你的 RIASEC 画像，匹配与你的兴趣和优势相符的职业。"
     },
     "dimensions": {
-      "value": "6 个维度",
-      "label": "RIASEC 心理模型"
+      "value": "6",
+      "label": "RIASEC 心理模型",
+      "description": "六个兴趣信号揭示你如何实践、探索、创造、连接、领导与组织。"
     },
     "free": {
       "value": "完全免费",
-      "label": "无需账户"
-    }
+      "label": "无需账户",
+      "description": "无需账户。测评进度仅保存在本设备。"
+    },
+    "groupLabel": "Careero 亮点"
   },
   "howItWorks": {
     "title": "Careero 如何运作",

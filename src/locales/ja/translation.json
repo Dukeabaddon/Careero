@@ -14,7 +14,7 @@
     "noLanguageFound": "言語が見つかりません"
   },
   "hero": {
-    "badge": "グローバルAIキャリアコンパス",
+    "badge": "性格に基づくマッチング",
     "title": "自分らしい仕事を、",
     "titleAccent": "未来の選択に。",
     "description": "つくる、考える、表現する、つながる、導く、整える。科学的なビジュアル診断で興味を分析し、地域に合うキャリアへつなげます。",
@@ -77,16 +77,20 @@
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "適合職業データ"
+      "label": "適合職業データ",
+      "description": "RIASECプロフィールに基づき、あなたの興味と強みに合う職業をマッチングします。"
     },
     "dimensions": {
-      "value": "6つの次元",
-      "label": "RIASEC心理モデル"
+      "value": "6",
+      "label": "RIASEC心理モデル",
+      "description": "6つの興味シグナルで、つくる・探す・創る・つなぐ・導く・整える傾向を示します。"
     },
     "free": {
       "value": "完全無料",
-      "label": "アカウント不要"
-    }
+      "label": "アカウント不要",
+      "description": "アカウント不要。診断の進捗はこの端末に保存されます。"
+    },
+    "groupLabel": "Careeroの特長"
   },
   "howItWorks": {
     "title": "Careeroの仕組み",

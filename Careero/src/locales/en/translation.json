@@ -1,5 +1,7 @@
 {
-  "brand": { "tagline": "Career intelligence, made personal" },
+  "brand": {
+    "tagline": "Career intelligence, made personal"
+  },
   "nav": {
     "language": "Language",
     "clearData": "Clear my data",
@@ -12,7 +14,7 @@
     "noLanguageFound": "No language found"
   },
   "hero": {
-    "badge": "Global AI career compass",
+    "badge": "Personality-Based Matching",
     "title": "Discover the career path built for how your mind works.",
     "titleAccent": "Driven by AI & RIASEC intelligence.",
     "description": "A visual, science-backed assessment maps how you build, question, create, connect, lead, and organize—then turns that profile into local career pathways.",
@@ -26,12 +28,30 @@
     "title": "More than one career type.",
     "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
     "signalsShort": "signals",
-    "R": { "name": "Realistic", "description": "Build, repair, and work hands-on." },
-    "I": { "name": "Investigative", "description": "Question, analyze, and discover." },
-    "A": { "name": "Artistic", "description": "Imagine, express, and design." },
-    "S": { "name": "Social", "description": "Teach, support, and connect." },
-    "E": { "name": "Enterprising", "description": "Lead, persuade, and initiate." },
-    "C": { "name": "Conventional", "description": "Organize, verify, and improve." }
+    "R": {
+      "name": "Realistic",
+      "description": "Build, repair, and work hands-on."
+    },
+    "I": {
+      "name": "Investigative",
+      "description": "Question, analyze, and discover."
+    },
+    "A": {
+      "name": "Artistic",
+      "description": "Imagine, express, and design."
+    },
+    "S": {
+      "name": "Social",
+      "description": "Teach, support, and connect."
+    },
+    "E": {
+      "name": "Enterprising",
+      "description": "Lead, persuade, and initiate."
+    },
+    "C": {
+      "name": "Conventional",
+      "description": "Organize, verify, and improve."
+    }
   },
   "location": {
     "step": "Location · Step {{step}} of 2",
@@ -55,9 +75,22 @@
     "noMatches": "No matches"
   },
   "stats": {
-    "occupations": { "value": "538", "label": "Matched occupations" },
-    "dimensions": { "value": "6 Dimensions", "label": "RIASEC Psychological Model" },
-    "free": { "value": "100% Free", "label": "No Account Required" }
+    "occupations": {
+      "value": "538",
+      "label": "Matched occupations",
+      "description": "Based on your RIASEC profile, we match you with careers that align with your interests and strengths."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC Psychological Model",
+      "description": "Six interest signals reveal how you build, explore, create, connect, lead, and organize."
+    },
+    "free": {
+      "value": "100% Free",
+      "label": "No Account Required",
+      "description": "No account required. Your assessment progress stays on this device."
+    },
+    "groupLabel": "Careero highlights"
   },
   "howItWorks": {
     "title": "How Careero Works",

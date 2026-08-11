@@ -14,7 +14,7 @@
     "noLanguageFound": "Walang nahanap na wika"
   },
   "hero": {
-    "badge": "Pandaigdigang AI career compass",
+    "badge": "Pagtutugma batay sa personalidad",
     "title": "Hanapin ang trabahong parang",
     "titleAccent": "kinabukasan mo.",
     "description": "Sinusukat ng isang biswal at makaagham na assessment kung paano ka bumubuo, nagsisiyasat, lumilikha, nakikipag-ugnayan, namumuno, at nag-aayos—at ginagawa itong lokal na career paths.",
@@ -77,16 +77,20 @@
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Mga tumugmang trabaho"
+      "label": "Mga tumugmang trabaho",
+      "description": "Batay sa RIASEC profile mo, itinutugma namin ang mga karera na akma sa interes at lakas mo."
     },
     "dimensions": {
-      "value": "6 Dimensyon",
-      "label": "RIASEC Psychological Model"
+      "value": "6",
+      "label": "RIASEC Psychological Model",
+      "description": "Anim na signal ng interes ang nagpapakita kung paano ka bumubuo, nagsisiyasat, lumilikha, kumokonekta, namumuno, at nag-aayos."
     },
     "free": {
       "value": "100% Libre",
-      "label": "Walang Account na Kailangan"
-    }
+      "label": "Walang Account na Kailangan",
+      "description": "Walang account. Ang progress mo ay nananatili sa device na ito."
+    },
+    "groupLabel": "Mga highlight ng Careero"
   },
   "howItWorks": {
     "title": "Paano Gumagana ang Careero",

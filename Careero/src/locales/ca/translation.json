@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Intel·ligència de carrera, personalitzada"
+  },
+  "nav": {
+    "language": "Idioma",
+    "clearData": "Neteja les meves dades",
+    "home": "Inici",
+    "howItWorks": "Com funciona",
+    "dimensions": "Dimensions",
+    "faq": "Preguntes freqüents",
+    "startAssessment": "Inicia l'avaluació",
+    "searchLanguage": "Cerca d'idioma...",
+    "noLanguageFound": "No s'ha trobat cap idioma"
+  },
+  "hero": {
+    "badge": "Coincidència basada en la personalitat",
+    "title": "Descobreix la carrera que s'adapta a la manera com funciona la teva ment",
+    "titleAccent": "Impulsat per la intel·ligència d'AI i RIASEC",
+    "description": "Una avaluació visual, basada en la ciència, que mapa com construeixes, preguntes, crees, connectes, lideres i organitzes—i després converteix aquest perfil en camins de carrera locals",
+    "start": "Inicia l'avaluació",
+    "resume": "Reprende l'avaluació",
+    "duration": "30 eleccions visuals · uns 6 minuts",
+    "privacy": "Sense compte. Sense dades personals. El teu progrés roman en aquest dispositiu"
+  },
+  "dimensions": {
+    "label": "El teu perfil de sis senyals",
+    "title": "Més d'un tipus de carrera",
+    "subtitle": "RIASEC mesura la combinació d'entorns on tendeixen a prosperar els teus interessos",
+    "signalsShort": "senyals",
+    "R": {
+      "name": "Realista",
+      "description": "Construeix, repara i treballa amb les mans"
+    },
+    "I": {
+      "name": "Investigador",
+      "description": "Pregunta, analitza i descobreix"
+    },
+    "A": {
+      "name": "Artístic",
+      "description": "Imagina, expressa i dissenya"
+    },
+    "S": {
+      "name": "Social",
+      "description": "Ensenya, dona suport i connecta"
+    },
+    "E": {
+      "name": "Emprendedor",
+      "description": "Lidera, persuadí i inicia"
+    },
+    "C": {
+      "name": "Convencional",
+      "description": "Organitza, verifica i millora"
+    }
+  },
+  "location": {
+    "step": "Ubicació · Pas {{step}} de 2",
+    "titleCountry": "On estàs construint el teu futur?",
+    "titleCity": "Quina ciutat o regió hauria de donar forma a les teves recomanacions?",
+    "descriptionCountry": "Trieu un país primer. Només l'usarem per localitzar les carreres, els salaris i els camins d'aprenentatge",
+    "descriptionCity": "Seleccioneu una ciutat, escriviu una regió o salteu aquest pas per a {{country}}",
+    "searchCountry": "Cerca de països",
+    "searchCity": "Cerca de ciutats",
+    "noResults": "No s'han trobat resultats",
+    "back": "Enrere",
+    "confirm": "Inicia per a {{city}}, {{country}}",
+    "skipCity": "Continua amb {{country}} només",
+    "useRegion": "Utilitza {{region}} com la meva regió",
+    "close": "Tanca el selector d'ubicació",
+    "country": "País",
+    "city": "Ciutat",
+    "selectCountry": "Seleccioneu país",
+    "selectCityOptional": "Seleccioneu ciutat (opcional)",
+    "continue": "Continua",
+    "noMatches": "No hi ha coincidències"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Ocupacions coincidents",
+      "description": "Basat en el teu perfil RIASEC, et fem coincidir amb carreres que s'ajusten als teus interessos i forces"
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "Model psicològic RIASEC",
+      "description": "Sis senyals d'interès que revelen com construeixes, explores, crees, connectes, lideres i organitzes"
+    },
+    "free": {
+      "value": "100% gratuït",
+      "label": "Sense compte necessari",
+      "description": "Sense compte necessari. El progrés de la teva avaluació roman en aquest dispositiu"
+    },
+    "groupLabel": "Destacats de Careero"
+  },
+  "howItWorks": {
+    "title": "Com funciona Careero",
+    "subtitle": "3 passos senzills per descobrir els teus camins de carrera personalitzats i els centres educatius",
+    "step1": {
+      "title": "Fes 30 eleccions visuals",
+      "description": "Seleccioneu activitats i entorns de treball que ressonin amb les teves preferències naturals"
+    },
+    "step2": {
+      "title": "Motor de càlcul de vectors de Pearson",
+      "description": "Calcula la correlació de Pearson entre el teu perfil de 6 vectors i {{count}} vectors de carrera"
+    },
+    "step3": {
+      "title": "Desbloqueja les coincidències de carrera",
+      "description": "Rebeu les recomanacions de carrera locals, les perspectives salarials i les coincidències universitàries"
+    }
+  },
+  "faq": {
+    "title": "Preguntes freqüents",
+    "subtitle": "Tot el que necessites saber sobre el motor d'avaluació de Careero",
+    "items": [
+      {
+        "q": "Com funciona l'avaluació RIASEC?",
+        "a": "RIASEC mesura els interessos en 6 vectors: Realista, Investigador, Artístic, Social, Emprendedor i Convencional. Les teves 30 eleccions visuals creen un perfil normalitzat. Careero classifica {{count}} ocupacions per correlació de Pearson — així que diferents barreges d'interessos produeixen diferents carreres del top-10"
+      },
+      {
+        "q": "Les meves dades són privades i segures?",
+        "a": "Sí. Careero opera 100% localment al teu navegador. No es requereix registre de compte ni es recopilen dades personals"
+      },
+      {
+        "q": "Puc utilitzar això per a la descoberta d'universitat i beques?",
+        "a": "Absolutament. Basat en el teu perfil de carrera coincident, Careero proporciona programes de grau locals, universitats regionals i enllaços de beques objectius"
+      },
+      {
+        "q": "Quant de temps triga l'avaluació?",
+        "a": "L'avaluació consisteix en 30 eleccions visuals ràpides i triga aproximadament 3 a 5 minuts"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Brúixola de carrera d'IA global i plataforma de coincidència educativa",
+    "features": "Característiques",
+    "howItWorks": "Com funciona",
+    "dimensions": "Dimensions",
+    "faq": "Preguntes freqüents",
+    "startAssessment": "Inicia l'avaluació",
+    "copyright": " 2026 Plataforma Careero. Construïda per a l'accés obert a l'educació global"
+  },
+  "quiz": {
+    "questionOf": "Pregunta {{current}} de {{total}}",
+    "percentComplete": "{{percent}}% completat",
+    "title": "Què preferiries fer?",
+    "subtitle": "Trieu una activitat i valoréu fins a quin punt gaudiríeu d'ella. (Consell: feu doble clic per avançar a la propera pregunta!)",
+    "or": "o",
+    "choose": "Trieu l'activitat que més us agradi",
+    "keyboardHint": "Teclat: A/B, 1–3, i després Intro",
+    "intensity": "Quina força té aquesta coincidència?",
+    "okay": "D'acord",
+    "like": "M'agrada",
+    "love": "M'encanta",
+    "reactionJustOkay": "Només d'acord",
+    "reactionGreat": "Genial!",
+    "reactionLoveIt": "M'encanta!",
+    "previous": "Anterior",
+    "next": "Següent",
+    "nextQuestion": "Propera pregunta",
+    "finish": "Veure el meu perfil",
+    "reset": "Restableix el progrés",
+    "resumeTitle": "El teu viatge t'espera",
+    "sessionSaved": "Sessió desada",
+    "resumeBody": "Continua a la pregunta {{question}} amb totes les respostes anteriors restaurades",
+    "resume": "Reprende",
+    "fresh": "Comença de nou"
+  },
+  "results": {
+    "label": "La teva senyal de carrera",
+    "title": "Un perfil construït a partir del que et dóna energia",
+    "cached": "Carregat des de la memòria cau",
+    "live": "Perspectiva d'IA en temps real",
+    "topProfile": "Perfil superior",
+    "localMatches": "Coincidències de carrera de ajust continu",
+    "aiTitle": "Escoles i finançament per a {{profession}} a prop de {{location}}",
+    "aiLoading": "Cercant escoles, beques i programes forts al fons…",
+    "aiUnavailable": "Les perspectives d'IA no estan disponibles, però les teves coincidències de correlació locals estan preparades",
+    "refresh": "Actualitza les perspectives d'IA",
+    "retry": "Torna-ho a provar",
+    "skills": "Habilidades per desenvolupar",
+    "programs": "Becas i programes",
+    "topProfession": "Recomanació superior",
+    "shareHeading": "Comparteix el teu caràcter de carrera",
+    "shareDescription": "Obre una targeta que pots descarregar o publicar — les respostes romanen privades",
+    "shareTitle": "El meu resultat de Careero",
+    "shareProfession": "Carrera superior: {{profession}} · {{percent}}% de coincidència",
+    "shareText": "El meu caràcter de Careero és {{archetype}} ({{code}}). La meva carrera superior coincideix amb {{profession}} al {{percent}}%",
+    "share": "Comparteix resultat",
+    "shareModalTitle": "Comparteix el teu resultat",
+    "shareModalSubtitle": "Visualitza la targeta · publica a les històries o desa per a més tard",
+    "shareToSocial": "Comparteix",
+    "downloadCard": "Descarrega la targeta",
+    "sharing": "Compartint…",
+    "savingCard": "Desant…",
+    "shareDownloaded": "Targeta de compartició descarregada!",
+    "shareSavedCopied": "Targeta desada · llegenda copiada!",
+    "shareClose": "Tanca",
+    "shared": "Compartit",
+    "copied": "Copiat",
+    "shareFailed": "La compartició no estava disponible",
+    "sources": "Fonts de referència",
+    "opensNewTab": "s'obre en una nova pestanya",
+    "startAgain": "Torna a fer l'avaluació",
+    "match": "{{percent}}% de coincidència de perfil",
+    "archetypeBlurb": "La teva barreja més forta és {{code}}. Les escoles i les beques que hi ha a sota segueixen aquest patró quan obres una professió",
+    "riasecScores": "Puntuacions RIASEC",
+    "patternNote": "Combinació superior: {{combo}}. Expandeix una professió per carregar escoles i beques",
+    "matchesEyebrow": "Vector de 6 dimensions de Pearson",
+    "professionMatches": "Coincidències de professió per a tu",
+    "matchesNote": "Classificats per com de bé s'ajusta cada camí — no és una garantia de feina o d'admissió",
+    "topMatchBadge": "Coincidència superior",
+    "professionLabel": "Professió",
+    "whyPath": "Per què aquest camí sembla prometedor",
+    "topSchools": "Millors escoles per a aquest camí",
+    "topScholarships": "Millors beques per a aquesta professió",
+    "visitSchool": "Visita el lloc web de l'escola",
+    "openScholarship": "Obre la beca",
+    "noSchools": "No s'han trobat escoles verificades per a aquesta ubicació",
+    "noScholarships": "No s'han trobat beques verificades per a aquesta ubicació",
+    "archetypes": {
+      "pathfinder": "El Trobador de Camins",
+      "creator": "El Creador",
+      "strategist": "L'Estrateg",
+      "visionary": "El Visionari",
+      "analyst": "L'Analista",
+      "builder": "El Constructor",
+      "guardian": "El Guardià"
+    },
+    "tagAlignment": "Alineació {{dimension}}",
+    "tagCampusFit": "Ajust de campus {{dimension}}",
+    "tagKeywords": "{{count}} paraules clau del programa",
+    "tagKeywordsOne": "1 paraula clau del programa",
+    "tagFlagship": "Opció insígnia",
+    "tagSystemsFit": "Ajust de sistemes fort",
+    "shareCardTopFit": "Ajust de carrera superior",
+    "shareCardMatch": "{{percent}}% de coincidència",
+    "shareCardSummary": "Una targeta de perfil de Careero compacta — sense incloure respostes de la pregunta",
+    "shareCardFooter": "careero · troba la carrera que t'ajusta"
+  }
+}

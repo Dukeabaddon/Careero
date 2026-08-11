@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Karjeras intelekts, personalizēts"
+  },
+  "nav": {
+    "language": "Valoda",
+    "clearData": "Dzēst manus datus",
+    "home": "Sākums",
+    "howItWorks": "Kā tas darbojas",
+    "dimensions": "Dimensijas",
+    "faq": "BUJ",
+    "startAssessment": "Sākt novērtējumu",
+    "searchLanguage": "Meklēt valodu...",
+    "noLanguageFound": "Valoda nav atrasta"
+  },
+  "hero": {
+    "badge": "Personības balstīta saskaņošana",
+    "title": "Atklājiet karjeras ceļu, kas veidots jūsu prāta darbības principam.",
+    "titleAccent": "Darbināts ar AI un RIASEC intelektu.",
+    "description": "Vizuāls, zinātniski pamatots novērtējums atklāj, kā jūs veidojat, jautājat, radāt, saistojat, vadāt un organizējat—tad pārvērš šo profilu vietējos karjeras ceļos.",
+    "start": "Sākt novērtējumu",
+    "resume": "Turpināt novērtējumu",
+    "duration": "30 vizuāli izvēles · apmēram 6 minūtes",
+    "privacy": "Nav konta. Nav personīgo datu. Jūsu progress paliek šajā ierīcē."
+  },
+  "dimensions": {
+    "label": "Jūsu sešu signālu profils",
+    "title": "Vairāk nekā viens karjeras tips.",
+    "subtitle": "RIASEC mēra vides kombināciju, kurā jūsu intereses parasti plaukst.",
+    "signalsShort": "signāli",
+    "R": {
+      "name": "Reālists",
+      "description": "Veidot, labot un strādāt praktiski."
+    },
+    "I": {
+      "name": "Izpētnisks",
+      "description": "Jautāt, analizēt un atklāt."
+    },
+    "A": {
+      "name": "Mākslinisks",
+      "description": "Iedomāties, izteikt un veidot."
+    },
+    "S": {
+      "name": "Sociāls",
+      "description": "Mācīt, atbalstīt un saistīt."
+    },
+    "E": {
+      "name": "Uzņēmīgs",
+      "description": "Vadīt, pārliecināt un iniciēt."
+    },
+    "C": {
+      "name": "Konvencionāls",
+      "description": "Organizēt, pārbaudīt un uzlabot."
+    }
+  },
+  "location": {
+    "step": "Vieta · Solis {{step}} no 2",
+    "titleCountry": "Kur veidojat savu nākotni?",
+    "titleCity": "Kura pilsēta vai reģions veido jūsu ieteikumus?",
+    "descriptionCountry": "Vispirms izvēlieties valsti. Mēs to izmantojam tikai karjeru, algu un mācību ceļu lokalizācijai.",
+    "descriptionCity": "Izvēlieties pilsētu, ierakstiet reģionu vai izlaidiet šo soli {{country}}.",
+    "searchCountry": "Meklēt valstis",
+    "searchCity": "Meklēt pilsētas",
+    "noResults": "Atbilstības nav atrastas.",
+    "back": "Atpakaļ",
+    "confirm": "Sākt {{city}}, {{country}}",
+    "skipCity": "Turpināt tikai ar {{country}}",
+    "useRegion": "Izmantot {{region}} kā manu reģionu",
+    "close": "Aizvērt vietas izvēli",
+    "country": "Valsts",
+    "city": "Pilsēta",
+    "selectCountry": "Izvēlēties valsti",
+    "selectCityOptional": "Izvēlēties pilsētu (neobligāti)",
+    "continue": "Turpināt",
+    "noMatches": "Nav atbilstību"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Saskaņotas profesijas",
+      "description": "Pamatojoties uz jūsu RIASEC profilu, mēs saskaņojam ar karjerām, kas atbilst jūsu interesēm un stiprībām."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC psiholoģiskais modelis",
+      "description": "Seši interešu signāli atklāj, kā jūs veidojat, izpētāt, radāt, saistojat, vadāt un organizējat."
+    },
+    "free": {
+      "value": "100% bezmaksas",
+      "label": "Konts nav nepieciešams",
+      "description": "Konts nav nepieciešams. Jūsu novērtējuma progress paliek šajā ierīcē."
+    },
+    "groupLabel": "Careero izceltie punkti"
+  },
+  "howItWorks": {
+    "title": "Kā darbojas Careero",
+    "subtitle": "3 vienkārši soļi, lai atklātu pielāgotus karjeras ceļus un izglītības centrus.",
+    "step1": {
+      "title": "Veiciet 30 vizuālas izvēles",
+      "description": "Izvēlieties aktivitātes un darba vides, kas atbilst jūsu dabiskajām preferencēm."
+    },
+    "step2": {
+      "title": "Pearson vektoru skaitļošanas sistēma",
+      "description": "Aprēķina Pearson r korelāciju starp jūsu 6 vektoru profilu un {{count}} karjeras vektoriem."
+    },
+    "step3": {
+      "title": "Atveriet saskaņotus ceļus",
+      "description": "Saņemiet lokalizētas labākās karjeras ieteikumus, algu ieskatus un universitāšu atbilstības."
+    }
+  },
+  "faq": {
+    "title": "Biežāk uzdotie jautājumi",
+    "subtitle": "Viss, kas jāzina par Careero novērtējuma sistēmu.",
+    "items": [
+      {
+        "q": "Kā darbojas RIASEC novērtējums?",
+        "a": "RIASEC mēra intereses 6 vektoros: Reālists, Izpētnisks, Mākslinisks, Sociāls, Uzņēmīgs un Konvencionāls. Jūsu 30 vizuālās izvēles veido normalizētu profilu. Careero rangā {{count}} profesijas pēc Pearson korelācijas — dažādi interešu maisījumi rada dažādas 10 labākās karjeras."
+      },
+      {
+        "q": "Vai mani dati ir privāti un droši?",
+        "a": "Jā. Careero darbojas 100% lokāli jūsu pārlūkā. Nav konta reģistrācijas vai personīgo datu vākšanas vai augšupielādes uz ārējām izsekošanas datubāzēm."
+      },
+      {
+        "q": "Vai varu to izmantot universitāšu un stipendiju meklēšanai?",
+        "a": "Noteikti. Pamatojoties uz jūsu saskaņoto karjeras profilu, Careero nodrošina lokalizētas studiju programmas, labākās reģionālās universitātes un mērķētas stipendiju saites."
+      },
+      {
+        "q": "Cik ilgs ir novērtējums?",
+        "a": "Novērtējums sastāv no 30 ātriem vizuāliem bināriem izvēlēm un aizņem aptuveni 3–5 minūtes."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globāla AI karjeras kompasa un izglītības saskaņošanas platforma.",
+    "features": "Funkcijas",
+    "howItWorks": "Kā tas darbojas",
+    "dimensions": "Dimensijas",
+    "faq": "BUJ",
+    "startAssessment": "Sākt novērtējumu",
+    "copyright": "© 2026 Careero Platform. Veidots atvērtai globālai izglītības pieejai."
+  },
+  "quiz": {
+    "questionOf": "Jautājums {{current}} no {{total}}",
+    "percentComplete": "{{percent}}% pabeigts",
+    "title": "Ko jūs labprātāk darītu?",
+    "subtitle": "Izvēlieties vienu aktivitāti un novērtējiet, cik jums tā patiktu. (Padoms: dubultklikšķis, lai pāriet uz nākamo jautājumu!)",
+    "or": "vai",
+    "choose": "Izvēlieties aktivitāti, kas jums patiktu vairāk.",
+    "keyboardHint": "Tastatūra: A/B, 1–3, tad Enter.",
+    "intensity": "Cik stipri tas atbilst?",
+    "okay": "Labi",
+    "like": "Patīk",
+    "love": "Ļoti patīk",
+    "reactionJustOkay": "Tikai labi",
+    "reactionGreat": "Lieliski!",
+    "reactionLoveIt": "Ļoti patīk!",
+    "previous": "Iepriekšējais",
+    "next": "Nākamais",
+    "nextQuestion": "Nākamais jautājums",
+    "finish": "Skatīt manu profilu",
+    "reset": "Sākt no jauna",
+    "resumeTitle": "Jūsu ceļojums gaida.",
+    "sessionSaved": "Sesija saglabāta",
+    "resumeBody": "Turpiniet no jautājuma {{question}} ar visiem iepriekšējiem atbildēm.",
+    "resume": "Turpināt",
+    "fresh": "Sākt no jauna"
+  },
+  "results": {
+    "label": "Jūsu karjeras signāls",
+    "title": "Profils, veidots no tā, kas jums dod enerģiju.",
+    "cached": "Ielādēts no kešatmiņas",
+    "live": "Jauns AI ieskats",
+    "topProfile": "Labākais profils",
+    "localMatches": "Nepārtraukta atbilstības karjeras saskaņojumi",
+    "aiTitle": "Skolas un finansējums {{profession}} tuvumā {{location}}",
+    "aiLoading": "Fonā meklē labas skolas, stipendijas un programmas…",
+    "aiUnavailable": "AI ieskati nav pieejami, bet jūsu vietējās korelācijas atbilstības ir gatavas.",
+    "refresh": "Atjaunot AI ieskatus",
+    "retry": "Mēģināt vēlreiz",
+    "skills": "Prasmes, ko attīstīt",
+    "programs": "Stipendijas un programmas",
+    "topProfession": "Labākais ieteikums",
+    "shareHeading": "Dalieties ar savu karjeras raksturu",
+    "shareDescription": "Atveriet karti, ko varat lejupielādēt vai publicēt — atbildes paliek privātas.",
+    "shareTitle": "Mans Careero rezultāts",
+    "shareProfession": "Labākā karjera: {{profession}} · {{percent}}% atbilstība",
+    "shareText": "Mans Careero raksturs ir {{archetype}} ({{code}}). Mans labākais karjeras atbilstība ir {{profession}} ar {{percent}}%.",
+    "share": "Dalīties ar rezultātu",
+    "shareModalTitle": "Dalīties ar rezultātu",
+    "shareModalSubtitle": "Priekšskatīt karti · publicēt vai saglabāt",
+    "shareToSocial": "Dalīties",
+    "downloadCard": "Lejupielādēt karti",
+    "sharing": "Dalās…",
+    "savingCard": "Saglabā…",
+    "shareDownloaded": "Dalīšanas karte lejupielādēta!",
+    "shareSavedCopied": "Karte saglabāta · teksts nokopēts!",
+    "shareClose": "Aizvērt",
+    "shared": "Dalīts",
+    "copied": "Nokopēts",
+    "shareFailed": "Dalīšana nav pieejama.",
+    "sources": "Avotu pamatojums",
+    "opensNewTab": "atveras jaunā cilnē",
+    "startAgain": "Veikt novērtējumu vēlreiz",
+    "match": "{{percent}}% profila atbilstība",
+    "archetypeBlurb": "Jūsu stiprākais maisījums ir {{code}}. Skolas un stipendijas zemāk seko šim modelim, kad atverat profesiju.",
+    "riasecScores": "RIASEC rezultāti",
+    "patternNote": "Labākais maisījums: {{combo}}. Izvērsiet profesiju, lai ielādētu skolas un stipendijas.",
+    "matchesEyebrow": "Pearson 6 vektori",
+    "professionMatches": "Profesiju atbilstības jums",
+    "matchesNote": "Rangā pēc, cik labi katrs ceļš jums der — ne darba vai uzņemšanas garantija.",
+    "topMatchBadge": "Labākā atbilstība",
+    "professionLabel": "Profesija",
+    "whyPath": "Kāpēc šis ceļš izskatās perspektīvs",
+    "topSchools": "Labākās skolas šim ceļam",
+    "topScholarships": "Labākās stipendijas šai profesijai",
+    "visitSchool": "Apmeklēt skolas vietni",
+    "openScholarship": "Atvērt stipendiju",
+    "noSchools": "Šajā vietā vēl nav atrastas verificētas skolas.",
+    "noScholarships": "Šajā vietā vēl nav atrastas verificētas stipendijas.",
+    "archetypes": {
+      "pathfinder": "Ceļa meklētājs",
+      "creator": "Radītājs",
+      "strategist": "Stratēģis",
+      "visionary": "Vizionārs",
+      "analyst": "Analītiķis",
+      "builder": "Veidotājs",
+      "guardian": "Aizsargs"
+    },
+    "tagAlignment": "{{dimension}} saskaņošana",
+    "tagCampusFit": "{{dimension}} campus piemērotība",
+    "tagKeywords": "{{count}} programmas atslēgvārdi",
+    "tagKeywordsOne": "1 programmas atslēgvārds",
+    "tagFlagship": "Galvenā izvēle",
+    "tagSystemsFit": "Stipra sistēmas piemērotība",
+    "shareCardTopFit": "Labākā karjeras atbilstība",
+    "shareCardMatch": "{{percent}}% atbilstība",
+    "shareCardSummary": "Kompakta Careero profila karte — bez novērtējuma atbildēm.",
+    "shareCardFooter": "careero · atrodi karjeru, kas tev der"
+  }
+}

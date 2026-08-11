@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Karriereintelligenz, persönlich gemacht"
+  },
+  "nav": {
+    "language": "Sprache",
+    "clearData": "Meine Daten löschen",
+    "home": "Startseite",
+    "howItWorks": "So funktioniert's",
+    "dimensions": "Dimensionen",
+    "faq": "FAQ",
+    "startAssessment": "Bewertung starten",
+    "searchLanguage": "Sprache suchen...",
+    "noLanguageFound": "Keine Sprache gefunden"
+  },
+  "hero": {
+    "badge": "Persönlichkeitsbasiertes Matching",
+    "title": "Entdecken Sie den Karriereweg, der zu Ihrer Denkweise passt.",
+    "titleAccent": "Angetrieben von KI & RIASEC-Intelligenz.",
+    "description": "Eine visuelle, wissenschaftlich fundierte Bewertung erfasst, wie Sie bauen, hinterfragen, kreieren, verbinden, führen und organisieren – und wandelt dieses Profil dann in lokale Karrierewege um.",
+    "start": "Bewertung starten",
+    "resume": "Bewertung fortsetzen",
+    "duration": "30 visuelle Entscheidungen · ca. 6 Minuten",
+    "privacy": "Kein Konto. Keine persönlichen Daten. Ihr Fortschritt bleibt auf diesem Gerät."
+  },
+  "dimensions": {
+    "label": "Ihr Sechs-Signal-Profil",
+    "title": "Mehr als ein Karrieretyp.",
+    "subtitle": "RIASEC misst die Kombination von Umgebungen, in denen Ihre Interessen am besten gedeihen.",
+    "signalsShort": "Signale",
+    "R": {
+      "name": "Realistisch",
+      "description": "Bauen, reparieren und praktisch arbeiten."
+    },
+    "I": {
+      "name": "Forschend",
+      "description": "Hinterfragen, analysieren und entdecken."
+    },
+    "A": {
+      "name": "Künstlerisch",
+      "description": "Vorstellen, ausdrücken und gestalten."
+    },
+    "S": {
+      "name": "Sozial",
+      "description": "Lehren, unterstützen und verbinden."
+    },
+    "E": {
+      "name": "Unternehmerisch",
+      "description": "Führen, überzeugen und initiieren."
+    },
+    "C": {
+      "name": "Konventionell",
+      "description": "Organisieren, überprüfen und verbessern."
+    }
+  },
+  "location": {
+    "step": "Standort · Schritt {{step}} von 2",
+    "titleCountry": "Wo bauen Sie Ihre Zukunft auf?",
+    "titleCity": "Welche Stadt oder Region soll Ihre Empfehlungen prägen?",
+    "descriptionCountry": "Wählen Sie zuerst ein Land. Wir verwenden es nur, um Karrieren, Gehälter und Lernpfade zu lokalisieren.",
+    "descriptionCity": "Wählen Sie eine Stadt, geben Sie eine Region ein oder überspringen Sie diesen Schritt für {{country}}.",
+    "searchCountry": "Länder suchen",
+    "searchCity": "Städte suchen",
+    "noResults": "Keine Übereinstimmungen gefunden.",
+    "back": "Zurück",
+    "confirm": "Starten für {{city}}, {{country}}",
+    "skipCity": "Nur mit {{country}} fortfahren",
+    "useRegion": "{{region}} als meine Region verwenden",
+    "close": "Standortauswahl schließen",
+    "country": "Land",
+    "city": "Stadt",
+    "selectCountry": "Land auswählen",
+    "selectCityOptional": "Stadt auswählen (optional)",
+    "continue": "Weiter",
+    "noMatches": "Keine Übereinstimmungen"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Passende Berufe",
+      "description": "Basierend auf Ihrem RIASEC-Profil finden wir Berufe, die Ihren Interessen und Stärken entsprechen."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC Psychologisches Modell",
+      "description": "Sechs Interessensignale zeigen, wie Sie bauen, erforschen, kreieren, verbinden, führen und organisieren."
+    },
+    "free": {
+      "value": "100% Kostenlos",
+      "label": "Kein Konto erforderlich",
+      "description": "Kein Konto erforderlich. Ihr Bewertungsfortschritt bleibt auf diesem Gerät."
+    },
+    "groupLabel": "Careero Highlights"
+  },
+  "howItWorks": {
+    "title": "So funktioniert Careero",
+    "subtitle": "3 einfache Schritte, um Ihre maßgeschneiderten Karrierewege und Bildungszentren zu entdecken.",
+    "step1": {
+      "title": "Treffen Sie 30 visuelle Entscheidungen",
+      "description": "Wählen Sie Aktivitäten und Arbeitsumgebungen aus, die Ihren natürlichen Vorlieben entsprechen."
+    },
+    "step2": {
+      "title": "Pearson Vektor-Mathematik-Engine",
+      "description": "Berechnet die Pearson-r-Korrelation zwischen Ihrem 6-Vektor-Profil und {{count}} Karrierevektoren."
+    },
+    "step3": {
+      "title": "Passende Karrierewege freischalten",
+      "description": "Erhalten Sie lokalisierte Top-Karriereempfehlungen, Gehaltseinblicke und Hochschul-Matches."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über die Careero Bewertungs-Engine wissen müssen.",
+    "items": [
+      {
+        "q": "Wie funktioniert die RIASEC-Bewertung?",
+        "a": "RIASEC misst Interessen über 6 Vektoren: Realistisch, Forschend, Künstlerisch, Sozial, Unternehmerisch und Konventionell. Ihre 30 visuellen Auswahlen erstellen ein normalisiertes Profil. Careero ordnet {{count}} Berufe nach Pearson-Korrelation – so führen unterschiedliche Interessenmischungen zu unterschiedlichen Top-10-Karrieren."
+      },
+      {
+        "q": "Sind meine Daten privat und sicher?",
+        "a": "Ja. Careero funktioniert zu 100 % lokal in Ihrem Browser. Es werden keine Kontoregistrierungen oder persönlichen Daten gesammelt oder auf externe Tracking-Datenbanken hochgeladen."
+      },
+      {
+        "q": "Kann ich dies für die Suche nach Universitäten und Stipendien nutzen?",
+        "a": "Absolut. Basierend auf Ihrem passenden Karriereprofil bietet Careero lokalisierte Studiengänge, führende regionale Universitäten und gezielte Stipendienlinks."
+      },
+      {
+        "q": "Wie lange dauert die Bewertung?",
+        "a": "Die Bewertung besteht aus 30 schnellen visuellen binären Entscheidungen und dauert etwa 3 bis 5 Minuten."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globale KI-Karrierekompass- & Bildungs-Matching-Plattform.",
+    "features": "Funktionen",
+    "howItWorks": "So funktioniert's",
+    "dimensions": "Dimensionen",
+    "faq": "FAQ",
+    "startAssessment": "Bewertung starten",
+    "copyright": "© 2026 Careero Plattform. Entwickelt für offenen globalen Bildungszugang."
+  },
+  "quiz": {
+    "questionOf": "Frage {{current}} von {{total}}",
+    "percentComplete": "{{percent}}% abgeschlossen",
+    "title": "Was würden Sie lieber tun?",
+    "subtitle": "Wählen Sie eine Aktivität aus und bewerten Sie, wie sehr sie Ihnen gefallen würde. (Tipp: Doppelklicken Sie, um zur nächsten Frage zu gelangen!)",
+    "or": "oder",
+    "choose": "Wählen Sie die Aktivität, die Ihnen mehr Spaß machen würde.",
+    "keyboardHint": "Tastatur: A/B, 1–3, dann Enter.",
+    "intensity": "Wie stark passt das?",
+    "okay": "Okay",
+    "like": "Gefällt mir",
+    "love": "Ich liebe es",
+    "reactionJustOkay": "Geht so",
+    "reactionGreat": "Großartig!",
+    "reactionLoveIt": "Ich liebe es!",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "nextQuestion": "Nächste Frage",
+    "finish": "Mein Profil ansehen",
+    "reset": "Fortschritt zurücksetzen",
+    "resumeTitle": "Ihre Reise wartet.",
+    "sessionSaved": "Sitzung gespeichert",
+    "resumeBody": "Fahren Sie bei Frage {{question}} fort, wobei alle früheren Antworten wiederhergestellt sind.",
+    "resume": "Fortsetzen",
+    "fresh": "Neu starten"
+  },
+  "results": {
+    "label": "Ihr Karrieresignal",
+    "title": "Ein Profil, das aus dem aufgebaut ist, was Sie antreibt.",
+    "cached": "Aus Cache geladen",
+    "live": "Frische KI-Erkenntnis",
+    "topProfile": "Top-Profil",
+    "localMatches": "Kontinuierlich passende Karriere-Matches",
+    "aiTitle": "Schulen und Finanzierung für {{profession}} in der Nähe von {{location}}",
+    "aiLoading": "Starke Schulen, Stipendien und Programme werden im Hintergrund gesucht…",
+    "aiUnavailable": "KI-Einblicke sind nicht verfügbar, aber Ihre lokalen Korrelations-Matches sind bereit.",
+    "refresh": "KI-Einblicke aktualisieren",
+    "retry": "Erneut versuchen",
+    "skills": "Fähigkeiten zum Aufbau",
+    "programs": "Stipendien und Programme",
+    "topProfession": "Top-Empfehlung",
+    "shareHeading": "Teilen Sie Ihren Karriere-Charakter",
+    "shareDescription": "Öffnen Sie eine Karte, die Sie herunterladen oder posten können – Antworten bleiben privat.",
+    "shareTitle": "Mein Careero Ergebnis",
+    "shareProfession": "Top-Karriere: {{profession}} · {{percent}}% Übereinstimmung",
+    "shareText": "Mein Careero-Charakter ist {{archetype}} ({{code}}). Meine Top-Karriereübereinstimmung ist {{profession}} mit {{percent}}%.",
+    "share": "Ergebnis teilen",
+    "shareModalTitle": "Ihr Ergebnis teilen",
+    "shareModalSubtitle": "Vorschau Ihrer Karte · in Stories posten oder für später speichern",
+    "shareToSocial": "Teilen",
+    "downloadCard": "Karte herunterladen",
+    "sharing": "Wird geteilt…",
+    "savingCard": "Wird gespeichert…",
+    "shareDownloaded": "Teilen-Karte heruntergeladen!",
+    "shareSavedCopied": "Karte gespeichert · Bildunterschrift kopiert!",
+    "shareClose": "Schließen",
+    "shared": "Geteilt",
+    "copied": "Kopiert",
+    "shareFailed": "Teilen war nicht verfügbar.",
+    "sources": "Grundlagenquellen",
+    "opensNewTab": "öffnet in neuem Tab",
+    "startAgain": "Bewertung erneut durchführen",
+    "match": "{{percent}}% Profilübereinstimmung",
+    "archetypeBlurb": "Ihre stärkste Mischung ist {{code}}. Schulen und Stipendien unten folgen diesem Muster, wenn Sie einen Beruf öffnen.",
+    "riasecScores": "RIASEC-Werte",
+    "patternNote": "Top-Kombination: {{combo}}. Erweitern Sie einen Beruf, um Schulen und Stipendien zu laden.",
+    "matchesEyebrow": "Pearson 6-Vektor",
+    "professionMatches": "Berufs-Matches für Sie",
+    "matchesNote": "Rangfolge danach, wie gut jeder Weg zu Ihnen passt – keine Job- oder Zulassungsgarantie.",
+    "topMatchBadge": "Top-Match",
+    "professionLabel": "Beruf",
+    "whyPath": "Warum dieser Weg vielversprechend erscheint",
+    "topSchools": "Top-Schulen für diesen Weg",
+    "topScholarships": "Top-Stipendien für diesen Beruf",
+    "visitSchool": "Schul-Website besuchen",
+    "openScholarship": "Stipendium öffnen",
+    "noSchools": "Noch keine verifizierten Schulen für diesen Standort gefunden.",
+    "noScholarships": "Noch keine verifizierten Stipendien für diesen Standort gefunden.",
+    "archetypes": {
+      "pathfinder": "Der Pfadfinder",
+      "creator": "Der Schöpfer",
+      "strategist": "Der Stratege",
+      "visionary": "Der Visionär",
+      "analyst": "Der Analyst",
+      "builder": "Der Erbauer",
+      "guardian": "Der Wächter"
+    },
+    "tagAlignment": "{{dimension}}-Ausrichtung",
+    "tagCampusFit": "{{dimension}}-Campus-Passung",
+    "tagKeywords": "{{count}} Programm-Keywords",
+    "tagKeywordsOne": "1 Programm-Keyword",
+    "tagFlagship": "Flaggschiff-Option",
+    "tagSystemsFit": "Starke Systempassung",
+    "shareCardTopFit": "Top Karriere-Passung",
+    "shareCardMatch": "{{percent}}% Übereinstimmung",
+    "shareCardSummary": "Eine kompakte Careero-Profilkarte – keine Quizantworten enthalten.",
+    "shareCardFooter": "careero · finde die Karriere, die zu dir passt"
+  }
+}

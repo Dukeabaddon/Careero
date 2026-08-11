@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Karyera zəkası, fərdi"
+  },
+  "nav": {
+    "language": "Dil",
+    "clearData": "Məlumatlarımı sil",
+    "home": "Ana səhifə",
+    "howItWorks": "Necə işləyir",
+    "dimensions": "Ölçülər",
+    "faq": "Suallar",
+    "startAssessment": "Qiymətləndirməyə başla",
+    "searchLanguage": "Dil axtar...",
+    "noLanguageFound": "Dil tapılmadı"
+  },
+  "hero": {
+    "badge": "Şəxsiyyət əsaslı uyğunlaşdırma",
+    "title": "Ağlınızın işləmə tərzinə uyğun karyera yolunu kəşf edin.",
+    "titleAccent": "Süni intellekt və RIASEC zəkası ilə idarə olunur.",
+    "description": "Vizual, elmi əsaslı qiymətləndirmə sizin necə qurduğunuzu, sual verdiyinizi, yaratdığınızı, əlaqə qurduğunuzu, rəhbərlik etdiyinizi və təşkil etdiyinizi xəritələyir—və bu profili yerli karyera yollarına çevirir.",
+    "start": "Qiymətləndirməyə başla",
+    "resume": "Qiymətləndirməyə davam et",
+    "duration": "30 vizual seçim · təxminən 6 dəqiqə",
+    "privacy": "Hesab yoxdur. Şəxsi məlumat yoxdur. Tərəqqiniz bu cihazda qalır."
+  },
+  "dimensions": {
+    "label": "Altı siqnallı profiliniz",
+    "title": "Birdən çox karyera növü.",
+    "subtitle": "RIASEC maraqlarınızın inkişaf etdiyi mühitlərin birləşməsini ölçür.",
+    "signalsShort": "siqnal",
+    "R": {
+      "name": "Realist",
+      "description": "Qur, təmir et və əl ilə işlə."
+    },
+    "I": {
+      "name": "Araşdırıcı",
+      "description": "Sual ver, təhlil et və kəşf et."
+    },
+    "A": {
+      "name": "Sənətkar",
+      "description": "Xəyal et, ifadə et və dizayn et."
+    },
+    "S": {
+      "name": "Sosial",
+      "description": "Öyrət, dəstəklə və əlaqə qur."
+    },
+    "E": {
+      "name": "Müəssisəçi",
+      "description": "Rəhbərlik et, inandır və başla."
+    },
+    "C": {
+      "name": "Konvensional",
+      "description": "Təşkil et, yoxla və təkmilləşdir."
+    }
+  },
+  "location": {
+    "step": "Məkan · Addım {{step}} / 2",
+    "titleCountry": "Gələcəyinizi harada qurursunuz?",
+    "titleCity": "Hansı şəhər və ya region tövsiyələrinizi formalaşdırmalıdır?",
+    "descriptionCountry": "Əvvəlcə ölkə seçin. Yalnız karyeraları, maaşları və öyrənmə yollarını yerli dilləşdirmək üçün istifadə edirik.",
+    "descriptionCity": "Şəhər seçin, region yazın və ya {{country}} üçün bu addımı keçin.",
+    "searchCountry": "Ölkələri axtar",
+    "searchCity": "Şəhərləri axtar",
+    "noResults": "Uyğunluq tapılmadı.",
+    "back": "Geri",
+    "confirm": "{{city}}, {{country}} üçün başla",
+    "skipCity": "Yalnız {{country}} ilə davam et",
+    "useRegion": "{{region}}-i regionum kimi istifadə et",
+    "close": "Məkan seçicisini bağla",
+    "country": "Ölkə",
+    "city": "Şəhər",
+    "selectCountry": "Ölkə seç",
+    "selectCityOptional": "Şəhər seç (istəyə bağlı)",
+    "continue": "Davam et",
+    "noMatches": "Uyğunluq yoxdur"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Uyğun peşələr",
+      "description": "RIASEC profilinizə əsasən, sizi maraqlarınıza və güclü tərəflərinizə uyğun karyeralarla uyğunlaşdırırıq."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC Psixoloji Modeli",
+      "description": "Altı maraq siqnalı sizin necə qurduğunuzu, araşdırdığınızı, yaratdığınızı, əlaqə qurduğunuzu, rəhbərlik etdiyinizi və təşkil etdiyinizi açıqlayır."
+    },
+    "free": {
+      "value": "100% Pulsuz",
+      "label": "Hesab Tələb Olunmur",
+      "description": "Hesab tələb olunmur. Qiymətləndirmə tərəqqiniz bu cihazda qalır."
+    },
+    "groupLabel": "Careero xüsusiyyətləri"
+  },
+  "howItWorks": {
+    "title": "Careero Necə İşləyir",
+    "subtitle": "Fərdi karyera yollarınızı və təhsil mərkəzlərinizi kəşf etmək üçün 3 sadə addım.",
+    "step1": {
+      "title": "30 Vizual Seçim Edin",
+      "description": "Təbii üstünlüklərinizlə rezonans edən fəaliyyətləri və iş mühitlərini seçin."
+    },
+    "step2": {
+      "title": "Pearson Vektor Riyaziyyat Mühərriki",
+      "description": "6 vektorlu profiliniz ilə {{count}} karyera vektoru arasında Pearson r korrelyasiyasını hesablayır."
+    },
+    "step3": {
+      "title": "Uyğun Yolları Açın",
+      "description": "Yerli ən yaxşı karyera tövsiyələri, maaş məlumatları və universitet uyğunluqları alın."
+    }
+  },
+  "faq": {
+    "title": "Tez-tez Verilən Suallar",
+    "subtitle": "Careero qiymətləndirmə mühərriki haqqında bilməli olduğunuz hər şey.",
+    "items": [
+      {
+        "q": "RIASEC qiymətləndirməsi necə işləyir?",
+        "a": "RIASEC 6 vektor üzrə marağı ölçür: Realist, Araşdırıcı, Sənətkar, Sosial, Müəssisəçi və Konvensional. 30 vizual seçiminiz normallaşdırılmış profil yaradır. Careero {{count}} peşəni Pearson korrelyasiyası ilə sıralayır — fərqli maraq qarışımları fərqli top-10 karyeralar yaradır."
+      },
+      {
+        "q": "Məlumatlarım məxfi və təhlükəsizdirmi?",
+        "a": "Bəli. Careero brauzerinizdə 100% yerli işləyir. Heç bir hesab qeydiyyatı və ya şəxsi məlumat toplanmır və ya xarici izləmə verilənlər bazalarına yüklənmir."
+      },
+      {
+        "q": "Bunu universitet və təqaüd kəşfi üçün istifadə edə bilərəmmi?",
+        "a": "Əlbəttə. Uyğun karyera profilinizə əsasən, Careero yerli dərəcə proqramları, regional ən yaxşı universitetlər və hədəfli təqaüd keçidləri təqdim edir."
+      },
+      {
+        "q": "Qiymətləndirmə nə qədər vaxt aparır?",
+        "a": "Qiymətləndirmə 30 sürətli vizual ikili seçimdən ibarətdir və tamamlamaq təxminən 3-5 dəqiqə çəkir."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Qlobal Süni İntellekt Karyera Kompası və Təhsil Uyğunlaşdırma Platforması.",
+    "features": "Xüsusiyyətlər",
+    "howItWorks": "Necə işləyir",
+    "dimensions": "Ölçülər",
+    "faq": "Suallar",
+    "startAssessment": "Qiymətləndirməyə başla",
+    "copyright": "© 2026 Careero Platform. Açıq qlobal təhsilə giriş üçün qurulub."
+  },
+  "quiz": {
+    "questionOf": "Sual {{current}} / {{total}}",
+    "percentComplete": "{{percent}}% tamamlandı",
+    "title": "Hansını etməyi üstün tutardınız?",
+    "subtitle": "Bir fəaliyyət seçin və nə qədər zövq alacağınızı qiymətləndirin. (İpucu: Növbəti suala keçmək üçün iki dəfə klikləyin!)",
+    "or": "və ya",
+    "choose": "Daha çox zövq alacağınız fəaliyyəti seçin.",
+    "keyboardHint": "Klaviatura: A/B, 1–3, sonra Enter.",
+    "intensity": "Bu nə qədər uyğundur?",
+    "okay": "Yaxşı",
+    "like": "Bəyənirəm",
+    "love": "Çox bəyənirəm",
+    "reactionJustOkay": "Sadəcə Yaxşı",
+    "reactionGreat": "Əla!",
+    "reactionLoveIt": "Çox Bəyənirəm!",
+    "previous": "Əvvəlki",
+    "next": "Növbəti",
+    "nextQuestion": "Növbəti sual",
+    "finish": "Profilimi gör",
+    "reset": "Tərəqqini sıfırla",
+    "resumeTitle": "Səyahətiniz gözləyir.",
+    "sessionSaved": "Sessiya saxlanıldı",
+    "resumeBody": "{{question}}-ci sualdan davam edin, əvvəlki bütün cavablar bərpa olunub.",
+    "resume": "Davam et",
+    "fresh": "Yenidən başla"
+  },
+  "results": {
+    "label": "Karyera siqnalınız",
+    "title": "Sizi enerjiləndirən şeylərdən qurulmuş profil.",
+    "cached": "Keşdən yükləndi",
+    "live": "Təzə süni intellekt məlumatı",
+    "topProfile": "Ən yaxşı profil",
+    "localMatches": "Davamlı uyğun karyera uyğunluqları",
+    "aiTitle": "{{location}} yaxınlığında {{profession}} üçün məktəblər və maliyyələşdirmə",
+    "aiLoading": "Arxa planda güclü məktəblər, təqaüdlər və proqramlar axtarılır…",
+    "aiUnavailable": "Süni intellekt məlumatları mövcud deyil, lakin yerli korrelyasiya uyğunluqlarınız hazırdır.",
+    "refresh": "Süni intellekt məlumatlarını yenilə",
+    "retry": "Yenidən cəhd et",
+    "skills": "Qurulacaq bacarıqlar",
+    "programs": "Təqaüdlər və proqramlar",
+    "topProfession": "Ən yaxşı tövsiyə",
+    "shareHeading": "Karyera xarakterinizi paylaşın",
+    "shareDescription": "Yükləyə və ya paylaşa biləcəyiniz kartı açın — cavablar məxfi qalır.",
+    "shareTitle": "Careero nəticəm",
+    "shareProfession": "Ən yaxşı karyera: {{profession}} · {{percent}}% uyğunluq",
+    "shareText": "Careero xarakterim {{archetype}} ({{code}}). Ən yaxşı karyera uyğunluğum {{profession}} — {{percent}}%.",
+    "share": "Nəticəni paylaş",
+    "shareModalTitle": "Nəticənizi paylaşın",
+    "shareModalSubtitle": "Kartınıza baxın · hekayələrdə paylaşın və ya sonra saxlayın",
+    "shareToSocial": "Paylaş",
+    "downloadCard": "Kartı yüklə",
+    "sharing": "Paylaşılır…",
+    "savingCard": "Saxlanılır…",
+    "shareDownloaded": "Paylaşım kartı yükləndi!",
+    "shareSavedCopied": "Kart saxlanıldı · başlıq kopyalandı!",
+    "shareClose": "Bağla",
+    "shared": "Paylaşıldı",
+    "copied": "Kopyalandı",
+    "shareFailed": "Paylaşım mövcud deyildi.",
+    "sources": "Mənbə mənbələri",
+    "opensNewTab": "yeni vərəqdə açılır",
+    "startAgain": "Qiymətləndirməni təkrar et",
+    "match": "{{percent}}% profil uyğunluğu",
+    "archetypeBlurb": "Ən güclü qarışımınız {{code}}. Peşə açdıqda aşağıdakı məktəblər və təqaüdlər bu nümunəni izləyir.",
+    "riasecScores": "RIASEC balları",
+    "patternNote": "Ən yaxşı kombinasiya: {{combo}}. Məktəb və təqaüdləri yükləmək üçün peşəni genişləndirin.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Sizin üçün peşə uyğunluqları",
+    "matchesNote": "Hər yolun sizə nə qədər uyğun olduğuna görə sıralanır — iş və ya qəbul zəmanəti deyil.",
+    "topMatchBadge": "Ən yaxşı uyğunluq",
+    "professionLabel": "Peşə",
+    "whyPath": "Bu yol niyə perspektivli hiss olunur",
+    "topSchools": "Bu yol üçün ən yaxşı məktəblər",
+    "topScholarships": "Bu peşə üçün ən yaxşı təqaüdlər",
+    "visitSchool": "Məktəb saytına daxil ol",
+    "openScholarship": "Təqaüdü aç",
+    "noSchools": "Bu məkan üçün təsdiqlənmiş məktəb tapılmadı.",
+    "noScholarships": "Bu məkan üçün təsdiqlənmiş təqaüd tapılmadı.",
+    "archetypes": {
+      "pathfinder": "Yol Tapıcı",
+      "creator": "Yaradıcı",
+      "strategist": "Strateg",
+      "visionary": "Vizyoner",
+      "analyst": "Analitik",
+      "builder": "Qurucu",
+      "guardian": "Mühafizəçi"
+    },
+    "tagAlignment": "{{dimension}} uyğunluğu",
+    "tagCampusFit": "{{dimension}} kampus uyğunluğu",
+    "tagKeywords": "{{count}} proqram açar sözü",
+    "tagKeywordsOne": "1 proqram açar sözü",
+    "tagFlagship": "Bayraq gəmi seçimi",
+    "tagSystemsFit": "Güclü sistem uyğunluğu",
+    "shareCardTopFit": "Ən yaxşı karyera uyğunluğu",
+    "shareCardMatch": "{{percent}}% uyğunluq",
+    "shareCardSummary": "Kompakt Careero profil kartı — test cavabları daxil deyil.",
+    "shareCardFooter": "careero · sizə uyğun karyera tapın"
+  }
+}

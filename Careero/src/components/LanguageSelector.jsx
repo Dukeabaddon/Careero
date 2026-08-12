@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ChevronDown, Search } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { SUPPORTED_LANGUAGES, setAppLanguage } from '../i18n.js'
+import './LanguageSelector.css'
 
 export default function LanguageSelector({ onLanguageChange, compact = false }) {
   const { t, i18n } = useTranslation()

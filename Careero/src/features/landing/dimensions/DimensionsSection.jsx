@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { RIASEC_CODES } from '../../../utils/riasecScoring.js'
 import { scrollRevealProps } from '../shared/scrollReveal.js'
+import { sectionHeadingClass, sectionSubtitleClass, sectionTitleClass } from '../shared/sectionHeading.js'
 import './DimensionsSection.css'
 
 const dimensionAssets = import.meta.glob('../../../assets/riasec/riasec_*.webp', {
@@ -20,9 +21,9 @@ export default function DimensionsSection() {
 
   return (
     <section className="dimensions section-wrap relative pb-28 z-0" id="dimensions">
-      <div className="section-heading">
-        <h2>{t('dimensions.title')}</h2>
-        <p>{t('dimensions.subtitle')}</p>
+      <div className={sectionHeadingClass}>
+        <h2 className={sectionTitleClass}>{t('dimensions.title')}</h2>
+        <p className={sectionSubtitleClass}>{t('dimensions.subtitle')}</p>
       </div>
 
       <motion.div className="dimension-grid relative z-20" {...scrollRevealProps}>

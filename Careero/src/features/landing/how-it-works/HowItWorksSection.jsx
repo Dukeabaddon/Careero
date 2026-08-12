@@ -2,18 +2,19 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { CAREER_COUNT } from '../../../data/careers.js'
 import { scrollRevealProps } from '../shared/scrollReveal.js'
+import { sectionHeadingClass, sectionSubtitleClass, sectionTitleClass } from '../shared/sectionHeading.js'
 import './HowItWorksSection.css'
 
 export default function HowItWorksSection() {
   const { t } = useTranslation()
 
   return (
-    <section className="how-it-works section-wrap" id="how-it-works">
-      <div className="section-heading text-center">
-        <h2>{t('howItWorks.title')}</h2>
-        <p>{t('howItWorks.subtitle')}</p>
+    <section className="section-wrap py-20 md:py-20" id="how-it-works">
+      <div className={sectionHeadingClass}>
+        <h2 className={sectionTitleClass}>{t('howItWorks.title')}</h2>
+        <p className={sectionSubtitleClass}>{t('howItWorks.subtitle')}</p>
       </div>
-      <motion.div className="steps-grid" {...scrollRevealProps}>
+      <motion.div className="mt-12 grid gap-6 md:grid-cols-3" {...scrollRevealProps}>
         <div className="step-card">
           <div className="step-number">01</div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="color-combination" width="38" height="38" className="step-custom-svg mb-4">

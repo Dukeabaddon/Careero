@@ -3,13 +3,14 @@ import { ArrowLeft, ArrowRight, ChevronDown, Search } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Country, City } from 'country-state-city'
-import ClickSpark from './ClickSpark.jsx'
-import { getLocalizedQuestion } from '../data/localizedQuestions.js'
-import questionsData from '../data/questions.json'
+import ClickSpark from '@/components/ClickSpark.jsx'
+import { getLocalizedQuestion } from '@/features/assessment/data/localizedQuestions.js'
+import questionsData from '@/features/assessment/data/questions.json'
+import './Assessment.css'
 
 const defaultQuestions = questionsData.questions || questionsData
 
-const questionAssets = import.meta.glob('../assets/riasec/questions/*.webp', {
+const questionAssets = import.meta.glob('@/assets/riasec/questions/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',

@@ -13,12 +13,13 @@ import {
   Sparkles,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { CAREER_VECTORS } from '../data/careers.js'
-import { buildProfessionTags, coverageTag, rankCareerMatches, RIASEC_CODES } from '../utils/riasecScoring.js'
-import { getRecommendations } from '../services/recommendations.js'
+import { CAREER_VECTORS } from '@/data/careers.js'
+import { buildProfessionTags, coverageTag, rankCareerMatches, RIASEC_CODES } from '@/utils/riasecScoring.js'
+import { getRecommendations } from '@/services/recommendations.js'
 import RadarChart from './RadarChart.jsx'
 import ShareResultModal from './ShareResultModal.jsx'
-import ClickSpark from './ClickSpark.jsx'
+import ClickSpark from '@/components/ClickSpark.jsx'
+import './Results.css'
 
 const archetypeAssets = import.meta.glob('../assets/riasec/archetype_*.webp', {
   eager: true,

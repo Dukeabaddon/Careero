@@ -8,8 +8,9 @@ import {
   exportElementAsBlob,
   exportElementAsPng,
   getShareSiteUrl,
-} from '../utils/shareExport.js'
+} from '@/utils/shareExport.js'
 import ShareCard from './ShareCard.jsx'
+import './ShareResultModal.css'
 
 function ButtonSpinner() {
   return <span className="share-btn-spinner" aria-hidden="true" />

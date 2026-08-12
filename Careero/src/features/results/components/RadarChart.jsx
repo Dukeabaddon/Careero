@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
-import { RIASEC_CODES } from '../utils/riasecScoring.js'
+import { RIASEC_CODES } from '@/utils/riasecScoring.js'
 
 function point(index, radius, center = 120) {
   const angle = (Math.PI * 2 * index) / RIASEC_CODES.length - Math.PI / 2

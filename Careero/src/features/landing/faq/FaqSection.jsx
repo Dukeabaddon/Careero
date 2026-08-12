@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { CAREER_COUNT } from '../../../data/careers.js'
 import { scrollRevealProps } from '../shared/scrollReveal.js'
+import { sectionHeadingClass, sectionSubtitleClass, sectionTitleClass } from '../shared/sectionHeading.js'
 import './FaqSection.css'
 
 const FAQ_KEYS = [0, 1, 2, 3]
@@ -13,12 +14,12 @@ export default function FaqSection() {
   const [activeFaq, setActiveFaq] = useState(null)
 
   return (
-    <section className="faq-section section-wrap mt-12" id="faq">
-      <motion.div className="section-heading text-center" {...scrollRevealProps}>
-        <h2>{t('faq.title')}</h2>
-        <p className="text-center mx-auto">{t('faq.subtitle')}</p>
+    <section className="section-wrap mt-12 py-20 pb-[120px]" id="faq">
+      <motion.div className={sectionHeadingClass} {...scrollRevealProps}>
+        <h2 className={sectionTitleClass}>{t('faq.title')}</h2>
+        <p className={sectionSubtitleClass}>{t('faq.subtitle')}</p>
       </motion.div>
-      <motion.div className="faq-list" {...scrollRevealProps}>
+      <motion.div className="mx-auto mt-10 flex max-w-[780px] flex-col gap-3" {...scrollRevealProps}>
         {FAQ_KEYS.map((idx) => {
           const isOpen = activeFaq === idx
           return (

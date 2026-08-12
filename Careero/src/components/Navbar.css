@@ -1,0 +1,227 @@
+/* Base Navbar Layout */
+.navbar-base-layout {
+  padding: 0 max(24px, calc((100vw - 1240px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: -2px;
+}
+
+.brand-text {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+
+.results-heading h1 {
+  max-width: 627px;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.4rem, 4.67vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.primary-button,
+.secondary-button,
+.text-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 220ms var(--ease-out), border-color 180ms, background 180ms;
+}
+
+.primary-button {
+  padding: 0 24px;
+  border: 1px solid rgba(37, 99, 235, 0.62);
+  color: var(--on-primary);
+  background: var(--primary);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.primary-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  background: #1d4ed8;
+}
+
+.secondary-button:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+/* Task 34: Start Assessment Navbar Button with 1.2s smooth hover transition */
+.nav-start-btn {
+  height: 42px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+  cursor: pointer;
+  transition: background-color 1.2s ease, border-color 1.2s ease, transform 200ms ease;
+}
+
+.nav-start-btn:hover {
+  background-color: #0f172a;
+  border-color: #0f172a;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-right: 4px;
+  margin-right: 0;
+}
+
+/* Landing rest bar only — keep actions slightly inset to the right edge */
+.navbar.nav-mode-rest .nav-actions {
+  margin-right: -24px;
+}
+
+.navbar.nav-mode-pill .nav-actions {
+  margin-right: 0;
+  flex-shrink: 0;
+}
+
+.navbar.nav-mode-pill {
+  top: 14px;
+  /* Center with left + translateX so width can transition smoothly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1040px, calc(100vw - 32px));
+  height: 64px;
+  border-radius: 999px;
+  padding: 0 18px 0 22px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(16px);
+  overflow: visible;
+}
+
+.navbar.nav-mode-pill .nav-links-center {
+  gap: 1.35rem;
+}
+
+.navbar.nav-mode-pill .nav-start-btn {
+  height: 38px;
+  padding: 0 18px;
+  font-size: 0.82rem;
+}
+
+/* Task 36: KursoKo Floating Pill Navbar — smooth morph between rest ↔ pill */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Transition ALL properties that change between rest ↔ pill */
+  transition:
+    top 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    left 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    width 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    height 400ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    padding 400ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 350ms ease,
+    box-shadow 400ms ease,
+    border-color 350ms ease,
+    backdrop-filter 300ms ease,
+    transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar.nav-mode-rest {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  border-radius: 0;
+  padding: 0 max(24px, calc((100vw - 1240px) / 2));
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--border);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  backdrop-filter: blur(20px);
+}
+
+.navbar.navbar-quiz,
+.navbar.navbar-compact {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(100% - 28px, 1240px);
+  height: 64px;
+  margin: 12px auto 0;
+  transform: none;
+  padding: 0 20px;
+  background: #f1f5f9;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  box-shadow: none;
+  backdrop-filter: none;
+  z-index: 50;
+}
+
+.navbar.navbar-compact .quiz-nav-home,
+.navbar.navbar-quiz .quiz-nav-home {
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: font-weight 120ms ease, color 160ms ease, background 160ms ease;
+}
+
+.navbar.navbar-compact .quiz-nav-home:hover,
+.navbar.navbar-quiz .quiz-nav-home:hover,
+.navbar.navbar-compact .brand:hover .brand-text,
+.navbar.navbar-quiz .brand:hover .brand-text {
+  font-weight: 800;
+  color: var(--text);
+}
+
+.quiz-nav-brand {
+  margin-left: auto;
+}
+
+.quiz-nav-home {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 720px) {
+  .navbar {
+    height: 68px;
+    padding-inline: 14px;
+  }
+}

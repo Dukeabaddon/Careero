@@ -1,6 +1,6 @@
 {
   "brand": {
-    "tagline": "Karjäärinõustamise intelligents, isikupärastatud"
+    "tagline": "Karjääriintelligentsus, isikupärastatud"
   },
   "nav": {
     "language": "Keel",
@@ -8,63 +8,63 @@
     "home": "Avaleht",
     "howItWorks": "Kuidas see töötab",
     "dimensions": "Mõõtmed",
-    "faq": "Korduma kippuvad küsimused",
+    "faq": "KKK",
     "startAssessment": "Alusta hindamist",
     "searchLanguage": "Otsi keelt...",
     "noLanguageFound": "Keelt ei leitud"
   },
   "hero": {
-    "badge": "Isiksusepõhine vastavus",
-    "title": "Avasta karjääridee, mis on loodud sinu mõtlemisviisi järgi.",
-    "titleAccent": "Juhib AI ja RIASEC intelligents.",
-    "description": "Visuaalne, teaduslikult põhjendatud hindamine kaardistab, kuidas sa ehitad, küsid, lood, ühendad, juhid ja korraldad – seejärel teisendab selle profiili kohalikeks karjäärideedeks.",
+    "badge": "Isiksusepõhine sobitamine",
+    "title": "Avasta karjääritee, mis on loodud sinu mõtteviisi järgi.",
+    "titleAccent": "Põhineb tehisintellektil ja RIASEC intelligentsusel.",
+    "description": "Visuaalne, teaduspõhine hindamine kaardistab, kuidas sa ehitad, küsid, lood, ühendad, juhid ja organiseerid – ning muudab selle profiili kohalikeks karjääriteedeks.",
     "start": "Alusta hindamist",
     "resume": "Jätka hindamist",
     "duration": "30 visuaalset valikut · umbes 6 minutit",
-    "privacy": "Konto puudub. Isiklikke andmeid ei salvestata. Teie edenemine jääb sellel seadmel."
+    "privacy": "Kontot pole. Isikuandmeid pole. Sinu edenemine jääb sellesse seadmesse."
   },
   "dimensions": {
-    "label": "Teie kuue signaali profiil",
-    "title": "Enam kui üks karjääritüüp.",
-    "subtitle": "RIASEC mõõdab keskkondi, kus teie huvid õitsevad.",
+    "label": "Sinu kuue signaali profiil",
+    "title": "Rohkem kui üks karjääritüüp.",
+    "subtitle": "RIASEC mõõdab keskkondade kombinatsiooni, kus sinu huvid kipuvad õitsema.",
     "signalsShort": "signaalid",
     "R": {
-      "name": "Reaalne",
-      "description": "Ehitamine, parandamine ja käsitöö."
+      "name": "Realistlik",
+      "description": "Ehita, paranda ja tööta kätega."
     },
     "I": {
       "name": "Uuriv",
-      "description": "Küsimine, analüüs ja avastamine."
+      "description": "Küsi, analüüsi ja avasta."
     },
     "A": {
       "name": "Kunstiline",
-      "description": "Kujutamine, väljendamine ja disain."
+      "description": "Kujutle, väljenda ja disaini."
     },
     "S": {
       "name": "Sotsiaalne",
-      "description": "Õpetamine, toetamine ja ühendamine."
+      "description": "Õpeta, toeta ja loo ühendusi."
     },
     "E": {
       "name": "Ettevõtlik",
-      "description": "Juhtimine, veenmine ja algatamine."
+      "description": "Juhi, veena ja algata."
     },
     "C": {
-      "name": "Konventsionaalne",
-      "description": "Korraldamine, verifitseerimine ja parandamine."
+      "name": "Tavapärane",
+      "description": "Organiseeri, kontrolli ja täiusta."
     }
   },
   "location": {
     "step": "Asukoht · Samm {{step}} 2-st",
-    "titleCountry": "Kus te ehitate oma tulevikku?",
-    "titleCity": "Milline linn või piirkond peaks kujundama teie soovitusi?",
-    "descriptionCountry": "Valige esmalt riik. Me kasutame seda ainult karjääride, palkade ja õppeteede lokaliseerimiseks.",
-    "descriptionCity": "Valige linn, sisestage piirkond või jätke see samm vahele {{country}} jaoks.",
+    "titleCountry": "Kus sa oma tulevikku ehitad?",
+    "titleCity": "Milline linn või piirkond peaks sinu soovitusi kujundama?",
+    "descriptionCountry": "Vali esmalt riik. Kasutame seda ainult karjääride, palkade ja õppeteede lokaliseerimiseks.",
+    "descriptionCity": "Vali linn, sisesta piirkond või jäta see samm vahele {{country}} jaoks.",
     "searchCountry": "Otsi riike",
     "searchCity": "Otsi linnu",
-    "noResults": "Tulemusi ei leitud.",
+    "noResults": "Vasteid ei leitud.",
     "back": "Tagasi",
     "confirm": "Alusta {{city}}, {{country}} jaoks",
-    "skipCity": "Jätka ainult {{country}}ga",
+    "skipCity": "Jätka ainult {{country}} abil",
     "useRegion": "Kasuta {{region}} minu piirkonnana",
     "close": "Sulge asukoha valija",
     "country": "Riik",
@@ -72,169 +72,169 @@
     "selectCountry": "Vali riik",
     "selectCityOptional": "Vali linn (valikuline)",
     "continue": "Jätka",
-    "noMatches": "Tulemusi ei leitud"
+    "noMatches": "Vasteid pole"
   },
   "stats": {
     "occupations": {
       "value": "538",
-      "label": "Vastavus karjääridele",
-      "description": "Teie RIASEC profiili põhjal meie teile karjäärid, mis on kooskõlas teie huvid ja tugevused."
+      "label": "Sobitatud ametid",
+      "description": "Sinu RIASEC profiili põhjal sobitame sind karjääridega, mis on kooskõlas sinu huvide ja tugevustega."
     },
     "dimensions": {
       "value": "6",
       "label": "RIASEC Psühholoogiline Mudel",
-      "description": "Kuus huvi signaali näitab, kuidas te ehitate, uurite, loote, ühendate, juhite ja korraldate."
+      "description": "Kuus huvipakkuvat signaali näitavad, kuidas sa ehitad, uurid, lood, ühendad, juhid ja organiseerid."
     },
     "free": {
       "value": "100% Tasuta",
-      "label": "Konto ei ole vajalik",
-      "description": "Konto ei ole vajalik. Teie hindamise edenemine jääb sellel seadmel."
+      "label": "Kontot pole vaja",
+      "description": "Kontot pole vaja. Sinu hindamise edenemine jääb sellesse seadmesse."
     },
-    "groupLabel": "Careero esilehel"
+    "groupLabel": "Careero esiletõstmised"
   },
   "howItWorks": {
     "title": "Kuidas Careero töötab",
-    "subtitle": "3 lihtsat sammu, et avastada teie kohandatud karjäärideed ja hariduskeskused.",
+    "subtitle": "3 lihtsat sammu, et avastada oma kohandatud karjääriteed ja hariduskeskused.",
     "step1": {
       "title": "Tee 30 visuaalset valikut",
-      "description": "Valige tegevused ja töökeskkonnad, mis sobivad teie loomulike eelistustega."
+      "description": "Vali tegevused ja töökeskkonnad, mis resoneerivad sinu loomulike eelistustega."
     },
     "step2": {
-      "title": "Pearson Vektormatemaatika mootor",
-      "description": "Arvutab Pearsooni korrelatsiooni teie 6-vektor profiili ja {{count}} karjääri vektorite vahel."
+      "title": "Pearsoni vektormatemaatika mootor",
+      "description": "Arvutab Pearson r korrelatsiooni sinu 6-vektorilise profiili ja {{count}} karjäärivektori vahel."
     },
     "step3": {
-      "title": "Ava vastavad teed",
-      "description": "Saage lokaliseeritud karjääri soovitusi, palku ülevaateid ja ülikoolide vastavusi."
+      "title": "Ava sobivad teed",
+      "description": "Saad lokaliseeritud parimad karjäärisoovitused, palgateabe ja ülikoolide vasted."
     }
   },
   "faq": {
-    "title": "Korduma kippuvad küsimused",
-    "subtitle": "Kõik, mida te vajate teada Careero hindamismootori kohta.",
+    "title": "Korduma Kippuvad Küsimused",
+    "subtitle": "Kõik, mida pead teadma Careero hindamismootori kohta.",
     "items": [
       {
-        "q": "Kuidas töötab RIASEC hindamine?",
-        "a": "RIASEC mõõdab huvi kuue vektori: Reaalne, Uuriv, Kunstiline, Sotsiaalne, Ettevõtlik ja Konventsionaalne. Teie 30 visuaalset valikut loob normaliseeritud profiili. Careero klassifitseerib {{count}} karjääre Pearsooni korrelatsiooni põhjal — erinevad huvi kombinatsioonid toovad erinevad esikümne karjäärid."
+        "q": "Kuidas RIASEC hindamine töötab?",
+        "a": "RIASEC mõõdab huvi 6 vektori lõikes: realistlik, uuriv, kunstiline, sotsiaalne, ettevõtlik ja tavapärane. Sinu 30 visuaalset valikut loovad normaliseeritud profiili. Careero reastab {{count}} ametit Pearsoni korrelatsiooni järgi – nii annavad erinevad huvide segud erinevad top-10 karjäärid."
       },
       {
         "q": "Kas minu andmed on privaatsed ja turvalised?",
-        "a": "Jah. Careero töötab 100% kohalikult teie brauseris. Konto registreerimist või isiklikke andmeid ei koguta ega laadita välisele jälitussüsteemile."
+        "a": "Jah. Careero töötab 100% lokaalselt sinu brauseris. Kontot ei registreerita ega isikuandmeid ei koguta ega laadita üles välistesse jälgimisandmebaasidesse."
       },
       {
-        "q": "Kas ma võin seda kasutada ülikooli ja stipendiumi otsinguteks?",
-        "a": "Täielikult. Teie vastavus karjääri profiili põhjal Careero pakub lokaliseeritud kraadi programme, ülikoolide ja stipendiumi lingid."
+        "q": "Kas ma saan seda kasutada ülikoolide ja stipendiumide leidmiseks?",
+        "a": "Absoluutselt. Sinu sobitatud karjäärprofiili põhjal pakub Careero lokaliseeritud kraadiõppeprogramme, parimaid piirkondlikke ülikoole ja sihipäraseid stipendiumilinke."
       },
       {
-        "q": "Kui kaua kestab hindamine?",
-        "a": "Hindamine koosneb 30 kiirest visuaalsest valikust ja võtab umbes 3-5 minutit."
+        "q": "Kui kaua hindamine aega võtab?",
+        "a": "Hindamine koosneb 30 kiirest visuaalsest binaarsest valikust ja võtab aega umbes 3 kuni 5 minutit."
       }
     ]
   },
   "footer": {
-    "tagline": "Globaalne AI karjääri kompass ja haridusvahendite platvorm.",
+    "tagline": "Globaalne AI karjäärinavigaator ja haridussobitusplatvorm.",
     "features": "Funktsioonid",
     "howItWorks": "Kuidas see töötab",
     "dimensions": "Mõõtmed",
-    "faq": "Korduma kippuvad küsimused",
+    "faq": "KKK",
     "startAssessment": "Alusta hindamist",
-    "copyright": "2026 Careero platvorm. Ehitatud avatud globaalse hariduse jaoks."
+    "copyright": "© 2026 Careero platvorm. Loodud avatud globaalse hariduse kättesaadavuse jaoks."
   },
   "quiz": {
     "questionOf": "Küsimus {{current}} {{total}}-st",
     "percentComplete": "{{percent}}% valmis",
-    "title": "Mida te eelistate teha?",
-    "subtitle": "Valige üks tegevus ja hinnake, kui palju te sellest nautite. (Nõuanne: Topeltklõpsake edasi liikumiseks!)",
+    "title": "Mida sa pigem teeksid?",
+    "subtitle": "Vali üks tegevus ja hinda, kui palju sa seda naudiksid. (Vihje: Järgmisele küsimusele liikumiseks topeltklõpsa!)",
     "or": "või",
-    "choose": "Valige tegevus, mida te rohkem nautite.",
-    "keyboardHint": "Klaviatuur: A/B, 1-3, siis Enter.",
-    "intensity": "Kui tugevasti see sobib?",
-    "okay": "Ok",
+    "choose": "Vali tegevus, mida sa rohkem naudiksid.",
+    "keyboardHint": "Klaviatuur: A/B, 1–3, seejärel Enter.",
+    "intensity": "Kui tugevalt see sobib?",
+    "okay": "Sobib",
     "like": "Meeldib",
     "love": "Armastan seda",
-    "reactionJustOkay": "Lihtsalt ok",
+    "reactionJustOkay": "Lihtsalt sobib",
     "reactionGreat": "Suurepärane!",
     "reactionLoveIt": "Armastan seda!",
     "previous": "Eelmine",
     "next": "Järgmine",
     "nextQuestion": "Järgmine küsimus",
     "finish": "Vaata minu profiili",
-    "reset": "Nulli edenemine",
-    "resumeTitle": "Teie tee on ootel.",
-    "sessionSaved": "Seanss salvestatud",
-    "resumeBody": "Jätka küsimusest {{question}} kõigi varasemate vastustega.",
+    "reset": "Lähtesta edenemine",
+    "resumeTitle": "Sinu teekond ootab.",
+    "sessionSaved": "Sessioon salvestatud",
+    "resumeBody": "Jätka küsimusest {{question}}, kõik varasemad vastused on taastatud.",
     "resume": "Jätka",
     "fresh": "Alusta uuesti"
   },
   "results": {
-    "label": "Teie karjääri signaal",
-    "title": "Profiil, mis on koostatud teie energia põhjal.",
-    "cached": "Laaditud puhverist",
-    "live": "Värsked AI andmed",
+    "label": "Sinu karjäärisignaal",
+    "title": "Profiil, mis on loodud sellest, mis sind energiaga laeb.",
+    "cached": "Laetud vahemälust",
+    "live": "Värske AI ülevaade",
     "topProfile": "Parim profiil",
-    "localMatches": "Kohalikud karjääri vastavad",
-    "aiTitle": "Koolid ja stipendiumid {{profession}} lähedal {{location}}",
-    "aiLoading": "Otsin tugevaid koolid, stipendiume ja programme taustal…",
-    "aiUnavailable": "AI andmed on saadaval, kuid teie kohalikud vastavad on valmis.",
-    "refresh": "Värskenda AI andmeid",
+    "localMatches": "Pidevalt sobivad karjäärivasted",
+    "aiTitle": "Koolid ja rahastus {{profession}} jaoks {{location}} lähedal",
+    "aiLoading": "Otsin taustal tugevaid koole, stipendiume ja programme…",
+    "aiUnavailable": "AI ülevaated pole saadaval, kuid sinu kohalikud korrelatsioonivasted on valmis.",
+    "refresh": "Värskenda AI ülevaateid",
     "retry": "Proovi uuesti",
-    "skills": "Oskused, mida arendada",
-    "programs": "Stipendiumid ja programm",
+    "skills": "Arendatavad oskused",
+    "programs": "Stipendiumid ja programmid",
     "topProfession": "Parim soovitus",
-    "shareHeading": "Jagage teie karjääri iseloom",
-    "shareDescription": "Ava kaart, mida saate alla laadida või postitada – vastused jäävad privaatselt.",
+    "shareHeading": "Jaga oma karjääri iseloomu",
+    "shareDescription": "Ava kaart, mille saad alla laadida või postitada – vastused jäävad privaatseks.",
     "shareTitle": "Minu Careero tulemus",
-    "shareProfession": "Parim karjääri vastavus: {{profession}} · {{percent}}% vastavus",
-    "shareText": "Minu Careero iseloom on {{archetype}} ({{code}}). Minu parim karjääri vastavus on {{profession}} {{percent}}%.",
+    "shareProfession": "Parim karjäär: {{profession}} · {{percent}}% sobivus",
+    "shareText": "Minu Careero iseloom on {{archetype}} ({{code}}). Minu parim karjäärivaste on {{profession}} {{percent}}% sobivusega.",
     "share": "Jaga tulemust",
-    "shareModalTitle": "Jagage teie tulemust",
-    "shareModalSubtitle": "Eelvaade teie kaardile · postitage lugu või salvestage hiljem",
+    "shareModalTitle": "Jaga oma tulemust",
+    "shareModalSubtitle": "Eelvaata oma kaarti · postita lugudesse või salvesta hilisemaks",
     "shareToSocial": "Jaga",
-    "downloadCard": "Laadi alla kaart",
+    "downloadCard": "Laadi kaart alla",
     "sharing": "Jagamine…",
     "savingCard": "Salvestamine…",
-    "shareDownloaded": "Jagatud kaart alla laaditud!",
-    "shareSavedCopied": "Kaart salvestatud · kopeeritud!",
+    "shareDownloaded": "Jagamiskaart alla laetud!",
+    "shareSavedCopied": "Kaart salvestatud · pealkiri kopeeritud!",
     "shareClose": "Sulge",
     "shared": "Jagatud",
     "copied": "Kopeeritud",
-    "shareFailed": "Jagamine ebaõnnestus.",
-    "sources": "Allikad",
-    "opensNewTab": "Ava uus vahekaart",
-    "startAgain": "Alusta hindamist uuesti",
-    "match": "{{percent}}% profiili vastavus",
-    "archetypeBlurb": "Teie tugevaim kombinatsioon on {{code}}. Koolid ja stipendiumid allpool järgivad seda muster, kui te avate professiooni.",
+    "shareFailed": "Jagamine polnud saadaval.",
+    "sources": "Alusallikad",
+    "opensNewTab": "avaneb uuel vahelehel",
+    "startAgain": "Tee hindamine uuesti",
+    "match": "{{percent}}% profiili sobivus",
+    "archetypeBlurb": "Sinu tugevaim segu on {{code}}. Koolid ja stipendiumid allpool järgivad seda mustrit, kui avad elukutse.",
     "riasecScores": "RIASEC skoorid",
-    "patternNote": "Parim kombinatsioon: {{combo}}. Avage professioon, et laadida koolid ja stipendiumid.",
-    "matchesEyebrow": "Pearsooni 6-vektor",
-    "professionMatches": "Professiooni vastavad teile",
-    "matchesNote": "Järjestatud, kui hästi iga tee sobib teile – mitte töö- või vastuvõtu garantiia.",
-    "topMatchBadge": "Parim vastavus",
-    "professionLabel": "Professioon",
-    "whyPath": "Miks see tee tundub lubav",
-    "topSchools": "Parimad koolid selle tee jaoks",
-    "topScholarships": "Parimad stipendiumid selle professiooni jaoks",
-    "visitSchool": "Külasta kooli kodulehte",
+    "patternNote": "Parim kombo: {{combo}}. Laienda elukutset, et laadida koole ja stipendiume.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Elukutse vasted sinule",
+    "matchesNote": "Reastatud selle järgi, kui hästi iga tee sulle sobib – mitte töö- või vastuvõtugarantii.",
+    "topMatchBadge": "Parim vaste",
+    "professionLabel": "Elukutse",
+    "whyPath": "Miks see tee tundub paljutõotav",
+    "topSchools": "Parimad koolid sellele teele",
+    "topScholarships": "Parimad stipendiumid sellele elukutsele",
+    "visitSchool": "Külasta kooli veebisaiti",
     "openScholarship": "Ava stipendium",
-    "noSchools": "Kinnitamata koolid selle asukoha jaoks ei leitud.",
-    "noScholarships": "Kinnitamata stipendiumid selle asukoha jaoks ei leitud.",
+    "noSchools": "Selle asukoha jaoks pole veel kinnitatud koole leitud.",
+    "noScholarships": "Selle asukoha jaoks pole veel kinnitatud stipendiume leitud.",
     "archetypes": {
-      "pathfinder": "Rajaja",
+      "pathfinder": "Teeotsija",
       "creator": "Looja",
       "strategist": "Strateeg",
-      "visionary": "Visioonär",
+      "visionary": "Visionäär",
       "analyst": "Analüütik",
       "builder": "Ehitaja",
       "guardian": "Kaitsja"
     },
-    "tagAlignment": "{{dimension}} vastavus",
-    "tagCampusFit": "{{dimension}} kampus vastavus",
-    "tagKeywords": "{{count}} programmi märksõnad",
+    "tagAlignment": "{{dimension}} joondus",
+    "tagCampusFit": "{{dimension}} ülikoolilinnaku sobivus",
+    "tagKeywords": "{{count}} programmi märksõna",
     "tagKeywordsOne": "1 programmi märksõna",
-    "tagFlagship": "Lipulaev",
-    "tagSystemsFit": "Tugev süsteemivastavus",
-    "shareCardTopFit": "Parim karjääri vastavus",
-    "shareCardMatch": "{{percent}}% vastavus",
-    "shareCardSummary": "Kompaktne Careero profiilikaart – hindamisvastused ei ole kaasatud.",
-    "shareCardFooter": "careero · leia karjäär, mis sobib teile"
+    "tagFlagship": "Lipulaeva valik",
+    "tagSystemsFit": "Tugev süsteemide sobivus",
+    "shareCardTopFit": "Parim karjäärisobivus",
+    "shareCardMatch": "{{percent}}% sobivus",
+    "shareCardSummary": "Kompaktne Careero profiilikaart – viktoriini vastuseid ei sisalda.",
+    "shareCardFooter": "careero · leia karjäär, mis sulle sobib"
   }
 }

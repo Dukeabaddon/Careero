@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, Check, MapPin, Search, X } from 'lucide-react'
 import { countries, getEmojiFlag } from 'countries-list'
 import { useTranslation } from 'react-i18next'
+import './LocationModal.css'
 
 const MAJOR_CITIES = {
   AU: ['Sydney', 'Melbourne', 'Brisbane', 'Perth'],

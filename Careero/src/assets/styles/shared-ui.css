@@ -1,0 +1,68 @@
+.results-heading h1 {
+  max-width: 627px;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.4rem, 4.67vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.primary-button,
+.secondary-button,
+.text-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 220ms var(--ease-out), border-color 180ms, background 180ms;
+}
+
+.primary-button {
+  padding: 0 24px;
+  border: 1px solid rgba(37, 99, 235, 0.62);
+  color: var(--on-primary);
+  background: var(--primary);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.primary-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  padding: 0 24px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.secondary-button:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.text-button {
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+}
+
+.spinner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid rgba(37, 99, 235, 0.15);
+  border-top-color: var(--primary);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -2,6 +2,7 @@ import { ChevronLeft } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useScrollNavbar } from '../hooks/useScrollNavbar.js'
 import LanguageSelector from './LanguageSelector.jsx'
+import './Navbar.css'
 
 export default function Navbar({ onLanguageChange, onStart, compact, onGoHome }) {
   const { t } = useTranslation()

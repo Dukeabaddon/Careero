@@ -51,7 +51,10 @@
     "C": {
       "name": "ਰਵਾਇਤੀ",
       "description": "ਸੰਗਠਿਤ ਕਰੋ, ਪੁਸ਼ਟੀ ਕਰੋ, ਅਤੇ ਸੁਧਾਰ ਕਰੋ।"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "ਸਥਾਨ · ਕਦਮ {{step}} ਵਿੱਚੋਂ 2",
@@ -90,7 +93,9 @@
       "label": "ਕੋਈ ਖਾਤਾ ਲੋੜੀਂਦਾ ਨਹੀਂ",
       "description": "ਕੋਈ ਖਾਤਾ ਲੋੜੀਂਦਾ ਨਹੀਂ। ਤੁਹਾਡੀ ਅਸੈਸਮੈਂਟ ਪ੍ਰਗਤੀ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਰਹਿੰਦੀ ਹੈ।"
     },
-    "groupLabel": "Careero ਹਾਈਲਾਈਟਸ"
+    "groupLabel": "Careero ਹਾਈਲਾਈਟਸ",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",

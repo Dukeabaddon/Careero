@@ -51,7 +51,10 @@
     "C": {
       "name": "Конвенционален",
       "description": "Организирайте, проверявайте и подобрявате."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Местоположение · Стъпка {{step}} от 2",
@@ -90,7 +93,9 @@
       "label": "Няма необходимост от акаунт",
       "description": "Няма необходимост от акаунт. Вашите данни остават на това устройство."
     },
-    "groupLabel": "Careero изделия"
+    "groupLabel": "Careero изделия",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Как работи Careero",

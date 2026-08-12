@@ -34,6 +34,10 @@ function resolveArchetypeImage(asset) {
   return Object.entries(archetypeAssets).find(([path]) => path.endsWith(`archetype_${asset}.webp`))?.[1]
 }
 
+export function resolveArchetypeImageAsset(asset) {
+  return resolveArchetypeImage(asset)
+}
+
 export function resolveArchetype(code) {
   const direct = archetypes[code] || archetypes[code.split('').reverse().join('')]
   const [asset, stroke, fill, title = asset] = direct || primaryFallback[code[0]]

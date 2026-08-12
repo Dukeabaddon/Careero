@@ -51,7 +51,10 @@
     "C": {
       "name": "প্রথাগত",
       "description": "সংগঠিত করুন, যাচাই করুন, এবং উন্নত করুন।"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "অবস্থান · ধাপ {{step}} এর ২",
@@ -90,7 +93,9 @@
       "label": "কোন অ্যাকাউন্টের প্রয়োজন নেই",
       "description": "কোন অ্যাকাউন্টের প্রয়োজন নেই। আপনার মূল্যায়ন অগ্রগতি এই ডিভাইসে থাকে।"
     },
-    "groupLabel": "Careero হাইলাইটস"
+    "groupLabel": "Careero হাইলাইটস",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero কিভাবে কাজ করে",

@@ -51,7 +51,10 @@
     "C": {
       "name": "Conventional",
       "description": "Mag-ayos, magsuri, at magpahusay."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Lokasyon · Hakbang {{step}} sa 2",
@@ -90,7 +93,9 @@
       "label": "Walang Account na Kailangan",
       "description": "Walang account. Ang progress mo ay nananatili sa device na ito."
     },
-    "groupLabel": "Mga highlight ng Careero"
+    "groupLabel": "Mga highlight ng Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Paano Gumagana ang Careero",

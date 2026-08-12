@@ -51,7 +51,10 @@
     "C": {
       "name": "ಸಾಂಪ್ರದಾಯಿಕ",
       "description": "ಸಂಘಟಿಸಿ, ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸುಧಾರಿಸಿ."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "ಸ್ಥಳ · ಹಂತ {{step}} / 2",
@@ -90,7 +93,9 @@
       "label": "ಖಾತೆ ಅಗತ್ಯವಿಲ್ಲ",
       "description": "ಖಾತೆ ಅಗತ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಮೌಲ್ಯಮಾಪನ ಪ್ರಗತಿ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ."
     },
-    "groupLabel": "Careero ಮುಖ್ಯಾಂಶಗಳು"
+    "groupLabel": "Careero ಮುಖ್ಯಾಂಶಗಳು",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ",

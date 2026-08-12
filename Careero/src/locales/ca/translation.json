@@ -51,7 +51,10 @@
     "C": {
       "name": "Convencional",
       "description": "Organitza, verifica i millora"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Ubicació · Pas {{step}} de 2",
@@ -90,7 +93,9 @@
       "label": "Sense compte necessari",
       "description": "Sense compte necessari. El progrés de la teva avaluació roman en aquest dispositiu"
     },
-    "groupLabel": "Destacats de Careero"
+    "groupLabel": "Destacats de Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Com funciona Careero",

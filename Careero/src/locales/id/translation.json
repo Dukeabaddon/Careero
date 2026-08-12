@@ -51,7 +51,10 @@
     "C": {
       "name": "Konvensional",
       "description": "Mengatur, memverifikasi, dan meningkatkan."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Lokasi · Langkah {{step}} dari 2",
@@ -90,7 +93,9 @@
       "label": "Tidak Perlu Akun",
       "description": "Tidak perlu akun. Kemajuan penilaian Anda tetap di perangkat ini."
     },
-    "groupLabel": "Sorotan Careero"
+    "groupLabel": "Sorotan Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Cara Kerja Careero",

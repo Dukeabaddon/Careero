@@ -51,7 +51,10 @@
     "C": {
       "name": "常规型",
       "description": "组织、核对与改进。"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "地区 · 第 {{step}} 步，共 2 步",
@@ -90,7 +93,9 @@
       "label": "无需账户",
       "description": "无需账户。测评进度仅保存在本设备。"
     },
-    "groupLabel": "Careero 亮点"
+    "groupLabel": "Careero 亮点",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero 如何运作",

@@ -51,7 +51,10 @@
     "C": {
       "name": "Conventioneel",
       "description": "Organiseren, verifiëren en verbeteren."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Locatie · Stap {{step}} van 2",
@@ -90,7 +93,9 @@
       "label": "Geen account vereist",
       "description": "Geen account vereist. Je voortgang van de beoordeling blijft op dit apparaat."
     },
-    "groupLabel": "Careero hoogtepunten"
+    "groupLabel": "Careero hoogtepunten",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Hoe Careero werkt",

@@ -51,7 +51,10 @@
     "C": {
       "name": "Conventional",
       "description": "จัดระเบียบ ตรวจสอบ และปรับปรุง"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "ตำแหน่ง · ขั้นตอนที่ {{step}} จาก 2",
@@ -90,7 +93,9 @@
       "label": "ไม่ต้องใช้บัญชี",
       "description": "ไม่ต้องใช้บัญชี ความคืบหน้าในการประเมินของคุณจะอยู่ในอุปกรณ์นี้"
     },
-    "groupLabel": "จุดเด่นของ Careero"
+    "groupLabel": "จุดเด่นของ Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero ทำงานอย่างไร",

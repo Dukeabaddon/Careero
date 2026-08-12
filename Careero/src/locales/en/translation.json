@@ -27,30 +27,33 @@
     "label": "Your six-signal profile",
     "title": "More than one career type.",
     "subtitle": "RIASEC measures the combination of environments where your interests tend to thrive.",
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment",
     "signalsShort": "signals",
     "R": {
       "name": "Realistic",
-      "description": "Build, repair, and work hands-on."
+      "description": "You prefer practical, hands-on work—building, fixing, and working with real tools and systems. Careers here emphasize tangible results, physical skill, and active problem-solving in the field or workshop."
     },
     "I": {
       "name": "Investigative",
-      "description": "Question, analyze, and discover."
+      "description": "You are drawn to ideas, research, and solving puzzles through analysis and experimentation. This dimension favors curiosity, logic, and environments where you can investigate how things work."
     },
     "A": {
       "name": "Artistic",
-      "description": "Imagine, express, and design."
+      "description": "You thrive when creating, expressing ideas, and shaping visual or emotional experiences. Artistic interests point toward design, storytelling, and open-ended creative work with room to experiment."
     },
     "S": {
       "name": "Social",
-      "description": "Teach, support, and connect."
+      "description": "You energize through helping, teaching, and connecting with people. Social dimensions highlight collaboration, empathy, and roles that support communities, students, or clients."
     },
     "E": {
       "name": "Enterprising",
-      "description": "Lead, persuade, and initiate."
+      "description": "You like leading initiatives, persuading others, and taking calculated risks. Enterprising paths favor influence, negotiation, and turning ideas into action in competitive settings."
     },
     "C": {
       "name": "Conventional",
-      "description": "Organize, verify, and improve."
+      "description": "You value structure, accuracy, and well-organized systems. Conventional strengths fit roles with clear processes, reliable data, planning, and steady follow-through."
     }
   },
   "location": {
@@ -75,6 +78,8 @@
     "noMatches": "No matches"
   },
   "stats": {
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships.",
     "occupations": {
       "value": "538",
       "label": "Matched occupations",

@@ -51,7 +51,10 @@
     "C": {
       "name": "Традиционный",
       "description": "Организовывать, проверять и улучшать."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Местоположение · Шаг {{step}} из 2",
@@ -90,7 +93,9 @@
       "label": "Аккаунт не требуется",
       "description": "Аккаунт не требуется. Ваш прогресс оценки сохраняется на этом устройстве."
     },
-    "groupLabel": "Основные моменты Careero"
+    "groupLabel": "Основные моменты Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Как работает Careero",

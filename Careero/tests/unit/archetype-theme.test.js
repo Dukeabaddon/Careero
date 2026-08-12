@@ -27,4 +27,15 @@ describe('archetype theme assets', () => {
     expect(archetype.titleKey).toBe('results.archetypes.analyst')
     expect(archetype.image).toBeTruthy()
   })
+
+  it('resolves primary archetype artwork for single RIASEC dimensions', () => {
+    const realistic = resolveArchetype('R')
+    expect(realistic.asset).toBe('pathfinder')
+    expect(realistic.titleKey).toBe('results.archetypes.pathfinder')
+
+    const conventional = resolveArchetype('C')
+    expect(conventional.asset).toBe('builder')
+    expect(conventional.titleKey).toBe('results.archetypes.builder')
+    expect(conventional.image).toBeTruthy()
+  })
 })

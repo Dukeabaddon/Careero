@@ -51,7 +51,10 @@
     "C": {
       "name": "Konvencinis",
       "description": "Organizuoti, patikrinti ir tobulinti."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Vieta · Žingsnis {{step}} iš 2",
@@ -90,7 +93,9 @@
       "label": "Nėra reikalinga paskyra",
       "description": "Nėra reikalinga paskyra. Jūsų vertinimo pažanga lieka šiame įrenginyje."
     },
-    "groupLabel": "Careero išskirtiniai"
+    "groupLabel": "Careero išskirtiniai",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Kaip veikia Careero",

@@ -31,7 +31,7 @@ export default function Footer({ onStart }) {
           </nav>
 
           <button
-            className="mx-auto min-h-11 self-start rounded-full border border-blue-600/45 bg-blue-600 px-5 text-sm font-extrabold text-white shadow-[0_10px_24px_rgba(37,99,235,0.2)] transition hover:bg-blue-700 md:mx-0 md:justify-self-end"
+            className="primary-button mx-auto min-h-11 self-start px-5 text-sm font-extrabold !text-white hover:!text-white md:mx-0 md:justify-self-end"
             type="button"
             onClick={onStart}
           >

@@ -21,18 +21,15 @@ jobs:
       run:
         working-directory: Careero
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
           cache-dependency-path: Careero/package-lock.json
       - run: npm ci
-      - run: npm run lint
-      - run: npm run validate:i18n
-      - run: npm test
-      - run: npm run build
-      - uses: actions/upload-artifact@v4
+      - run: npm run check
+      - uses: actions/upload-artifact@v6
         with:
           name: production-dist
           path: Careero/dist
@@ -51,13 +48,28 @@ jobs:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - name: Check deployment configuration
+        id: deployment
+        shell: bash
+        run: |
+          if [[ -n "$VERCEL_TOKEN" && -n "$VERCEL_ORG_ID" && -n "$VERCEL_PROJECT_ID" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Vercel deployment skipped: repository secrets are not configured."
+          fi
+      - uses: actions/setup-node@v6
+        if: steps.deployment.outputs.configured == 'true'
         with:
           node-version: 24
           cache: npm
           cache-dependency-path: Careero/package-lock.json
-      - run: npm ci
-      - run: npx --yes vercel@latest pull --yes --environment=production --token="$VERCEL_TOKEN"
-      - run: npx --yes vercel@latest build --prod --token="$VERCEL_TOKEN"
-      - run: npx --yes vercel@latest deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+      - if: steps.deployment.outputs.configured == 'true'
+        run: npm ci
+      - if: steps.deployment.outputs.configured == 'true'
+        run: npx --yes vercel@56.3.2 pull --yes --environment=production --token="$VERCEL_TOKEN"
+      - if: steps.deployment.outputs.configured == 'true'
+        run: npx --yes vercel@56.3.2 build --prod --token="$VERCEL_TOKEN"
+      - if: steps.deployment.outputs.configured == 'true'
+        run: npx --yes vercel@56.3.2 deploy --prebuilt --prod --token="$VERCEL_TOKEN"

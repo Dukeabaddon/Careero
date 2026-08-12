@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Kariérní inteligence, personalizovaná"
+  },
+  "nav": {
+    "language": "Jazyk",
+    "clearData": "Vymazat moje data",
+    "home": "Domů",
+    "howItWorks": "Jak to funguje",
+    "dimensions": "Dimenze",
+    "faq": "Často kladené otázky",
+    "startAssessment": "Spustit hodnocení",
+    "searchLanguage": "Hledat jazyk...",
+    "noLanguageFound": "Žádný jazyk nenalezen"
+  },
+  "hero": {
+    "badge": "Párování na základě osobnosti",
+    "title": "Objevte kariérní cestu stvořenou pro to, jak funguje vaše mysl.",
+    "titleAccent": "Poháněno AI a inteligencí RIASEC.",
+    "description": "Vizuální, vědecky podložené hodnocení mapuje, jak budujete, zpochybňujete, tvoříte, propojujete, vedete a organizujete – a poté tento profil přemění na místní kariérní cesty.",
+    "start": "Spustit hodnocení",
+    "resume": "Pokračovat v hodnocení",
+    "duration": "30 vizuálních voleb · asi 6 minut",
+    "privacy": "Žádný účet. Žádná osobní data. Váš pokrok zůstává na tomto zařízení."
+  },
+  "dimensions": {
+    "label": "Váš šestisignálový profil",
+    "title": "Více než jeden typ kariéry.",
+    "subtitle": "RIASEC měří kombinaci prostředí, kde se vaše zájmy nejlépe rozvíjejí.",
+    "signalsShort": "signály",
+    "R": {
+      "name": "Realistický",
+      "description": "Stavět, opravovat a pracovat rukama."
+    },
+    "I": {
+      "name": "Investigativní",
+      "description": "Zpochybňovat, analyzovat a objevovat."
+    },
+    "A": {
+      "name": "Umělecký",
+      "description": "Představovat si, vyjadřovat se a navrhovat."
+    },
+    "S": {
+      "name": "Sociální",
+      "description": "Učit, podporovat a propojovat."
+    },
+    "E": {
+      "name": "Podnikavý",
+      "description": "Vést, přesvědčovat a iniciovat."
+    },
+    "C": {
+      "name": "Konvenční",
+      "description": "Organizovat, ověřovat a zlepšovat."
+    }
+  },
+  "location": {
+    "step": "Místo · Krok {{step}} ze 2",
+    "titleCountry": "Kde budujete svou budoucnost?",
+    "titleCity": "Které město nebo region by mělo formovat vaše doporučení?",
+    "descriptionCountry": "Nejprve vyberte zemi. Používáme ji pouze k lokalizaci kariér, platů a studijních cest.",
+    "descriptionCity": "Vyberte město, zadejte region nebo tento krok přeskočte pro {{country}}.",
+    "searchCountry": "Hledat země",
+    "searchCity": "Hledat města",
+    "noResults": "Nenalezeny žádné shody.",
+    "back": "Zpět",
+    "confirm": "Začít pro {{city}}, {{country}}",
+    "skipCity": "Pokračovat pouze s {{country}}",
+    "useRegion": "Použít {{region}} jako můj region",
+    "close": "Zavřít výběr lokality",
+    "country": "Země",
+    "city": "Město",
+    "selectCountry": "Vyberte zemi",
+    "selectCityOptional": "Vyberte město (volitelné)",
+    "continue": "Pokračovat",
+    "noMatches": "Žádné shody"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Přiřazené profese",
+      "description": "Na základě vašeho RIASEC profilu vás spojíme s kariérami, které odpovídají vašim zájmům a silným stránkám."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "Psychologický model RIASEC",
+      "description": "Šest signálů zájmu odhaluje, jak budujete, zkoumáte, tvoříte, propojujete, vedete a organizujete."
+    },
+    "free": {
+      "value": "100% zdarma",
+      "label": "Není vyžadován účet",
+      "description": "Není vyžadován účet. Váš pokrok v hodnocení zůstává na tomto zařízení."
+    },
+    "groupLabel": "Přednosti Careero"
+  },
+  "howItWorks": {
+    "title": "Jak Careero funguje",
+    "subtitle": "3 jednoduché kroky k objevení vašich přizpůsobených kariérních cest a vzdělávacích center.",
+    "step1": {
+      "title": "Udělejte 30 vizuálních voleb",
+      "description": "Vyberte aktivity a pracovní prostředí, které rezonují s vašimi přirozenými preferencemi."
+    },
+    "step2": {
+      "title": "Pearson Vector Math Engine",
+      "description": "Vypočítá Pearson r korelaci mezi vaším 6-vektorovým profilem a {{count}} kariérními vektory."
+    },
+    "step3": {
+      "title": "Odemkněte přiřazené cesty",
+      "description": "Získejte lokalizovaná doporučení pro nejlepší kariéry, informace o platech a shody s univerzitami."
+    }
+  },
+  "faq": {
+    "title": "Často kladené otázky",
+    "subtitle": "Vše, co potřebujete vědět o hodnotícím enginu Careero.",
+    "items": [
+      {
+        "q": "Jak funguje hodnocení RIASEC?",
+        "a": "RIASEC měří zájem napříč 6 vektory: Realistic, Investigative, Artistic, Social, Enterprising a Conventional. Vašich 30 vizuálních výběrů vytváří normalizovaný profil. Careero řadí {{count}} profesí podle Pearson korelace — takže různé kombinace zájmů produkují různé top-10 kariér."
+      },
+      {
+        "q": "Jsou moje data soukromá a bezpečná?",
+        "a": "Ano. Careero funguje 100% lokálně ve vašem prohlížeči. Není vyžadována registrace účtu ani shromažďování či nahrávání osobních dat do externích sledovacích databází."
+      },
+      {
+        "q": "Mohu to použít pro objevování univerzit a stipendií?",
+        "a": "Rozhodně. Na základě vašeho přiřazeného kariérního profilu Careero poskytuje lokalizované studijní programy, nejlepší regionální univerzity a cílené odkazy na stipendia."
+      },
+      {
+        "q": "Jak dlouho trvá hodnocení?",
+        "a": "Hodnocení se skládá z 30 rychlých vizuálních binárních voleb a trvá přibližně 3 až 5 minut."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globální AI kariérní kompas a platforma pro vzdělávací párování.",
+    "features": "Funkce",
+    "howItWorks": "Jak to funguje",
+    "dimensions": "Dimenze",
+    "faq": "Často kladené otázky",
+    "startAssessment": "Spustit hodnocení",
+    "copyright": "© 2026 Careero Platform. Vytvořeno pro otevřený globální přístup ke vzdělání."
+  },
+  "quiz": {
+    "questionOf": "Otázka {{current}} z {{total}}",
+    "percentComplete": "{{percent}}% dokončeno",
+    "title": "Co byste raději dělali?",
+    "subtitle": "Vyberte jednu aktivitu a ohodnoťte, jak moc byste si ji užili. (Tip: Dvojklikem přejdete na další otázku!)",
+    "or": "nebo",
+    "choose": "Vyberte aktivitu, kterou byste si užili více.",
+    "keyboardHint": "Klávesnice: A/B, 1–3, poté Enter.",
+    "intensity": "Jak silně to sedí?",
+    "okay": "Dobře",
+    "like": "Líbí se",
+    "love": "Miluji to",
+    "reactionJustOkay": "Jen dobře",
+    "reactionGreat": "Skvělé!",
+    "reactionLoveIt": "Miluji to!",
+    "previous": "Předchozí",
+    "next": "Další",
+    "nextQuestion": "Další otázka",
+    "finish": "Zobrazit můj profil",
+    "reset": "Resetovat pokrok",
+    "resumeTitle": "Vaše cesta čeká.",
+    "sessionSaved": "Relace uložena",
+    "resumeBody": "Pokračujte u otázky {{question}} se všemi dřívějšími odpověďmi obnovenými.",
+    "resume": "Pokračovat",
+    "fresh": "Začít znovu"
+  },
+  "results": {
+    "label": "Váš kariérní signál",
+    "title": "Profil vytvořený z toho, co vás nabíjí.",
+    "cached": "Načteno z mezipaměti",
+    "live": "Čerstvý AI vhled",
+    "topProfile": "Nejlepší profil",
+    "localMatches": "Kariérní shody s kontinuálním přizpůsobením",
+    "aiTitle": "Školy a financování pro {{profession}} poblíž {{location}}",
+    "aiLoading": "Hledání silných škol, stipendií a programů na pozadí…",
+    "aiUnavailable": "AI vhledy nejsou k dispozici, ale vaše lokální korelační shody jsou připraveny.",
+    "refresh": "Obnovit AI vhledy",
+    "retry": "Zkusit znovu",
+    "skills": "Dovednosti k rozvoji",
+    "programs": "Stipendia a programy",
+    "topProfession": "Nejlepší doporučení",
+    "shareHeading": "Sdílejte svůj kariérní charakter",
+    "shareDescription": "Otevřete kartu, kterou si můžete stáhnout nebo zveřejnit – odpovědi zůstanou soukromé.",
+    "shareTitle": "Můj výsledek Careero",
+    "shareProfession": "Nejlepší kariéra: {{profession}} · {{percent}}% shoda",
+    "shareText": "Můj Careero charakter je {{archetype}} ({{code}}). Moje nejlepší kariérní shoda je {{profession}} s {{percent}}%.",
+    "share": "Sdílet výsledek",
+    "shareModalTitle": "Sdílejte svůj výsledek",
+    "shareModalSubtitle": "Náhled vaší karty · zveřejněte do příběhů nebo uložte na později",
+    "shareToSocial": "Sdílet",
+    "downloadCard": "Stáhnout kartu",
+    "sharing": "Sdílení…",
+    "savingCard": "Ukládání…",
+    "shareDownloaded": "Karta ke sdílení stažena!",
+    "shareSavedCopied": "Karta uložena · popisek zkopírován!",
+    "shareClose": "Zavřít",
+    "shared": "Sdíleno",
+    "copied": "Zkopírováno",
+    "shareFailed": "Sdílení nebylo k dispozici.",
+    "sources": "Základní zdroje",
+    "opensNewTab": "otevírá se v nové záložce",
+    "startAgain": "Znovu spustit hodnocení",
+    "match": "{{percent}}% shoda profilu",
+    "archetypeBlurb": "Vaše nejsilnější kombinace je {{code}}. Školy a stipendia níže se řídí tímto vzorem, když otevřete profesi.",
+    "riasecScores": "Skóre RIASEC",
+    "patternNote": "Nejlepší kombinace: {{combo}}. Rozbalte profesi pro načtení škol a stipendií.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Shody profesí pro vás",
+    "matchesNote": "Seřazeno podle toho, jak dobře vám každá cesta sedí – není to záruka práce nebo přijetí.",
+    "topMatchBadge": "Nejlepší shoda",
+    "professionLabel": "Profese",
+    "whyPath": "Proč je tato cesta slibná",
+    "topSchools": "Nejlepší školy pro tuto cestu",
+    "topScholarships": "Nejlepší stipendia pro tuto profesi",
+    "visitSchool": "Navštívit web školy",
+    "openScholarship": "Otevřít stipendium",
+    "noSchools": "Pro tuto lokalitu zatím nebyly nalezeny žádné ověřené školy.",
+    "noScholarships": "Pro tuto lokalitu zatím nebyly nalezeny žádné ověřené stipendia.",
+    "archetypes": {
+      "pathfinder": "Průzkumník",
+      "creator": "Tvůrce",
+      "strategist": "Stratég",
+      "visionary": "Vizionář",
+      "analyst": "Analytik",
+      "builder": "Stavitel",
+      "guardian": "Strážce"
+    },
+    "tagAlignment": "Soulad s {{dimension}}",
+    "tagCampusFit": "Soulad s kampusem {{dimension}}",
+    "tagKeywords": "{{count}} klíčových slov programu",
+    "tagKeywordsOne": "1 klíčové slovo programu",
+    "tagFlagship": "Vlajková loď",
+    "tagSystemsFit": "Silný systémový soulad",
+    "shareCardTopFit": "Nejlepší kariérní shoda",
+    "shareCardMatch": "{{percent}}% shoda",
+    "shareCardSummary": "Kompaktní profilová karta Careero – bez odpovědí na kvíz.",
+    "shareCardFooter": "careero · najděte kariéru, která vám sedí"
+  }
+}

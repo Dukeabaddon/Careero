@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Karriärintelligens, personlig"
+  },
+  "nav": {
+    "language": "Språk",
+    "clearData": "Rensa min data",
+    "home": "Hem",
+    "howItWorks": "Så fungerar det",
+    "dimensions": "Dimensioner",
+    "faq": "FAQ",
+    "startAssessment": "Starta bedömning",
+    "searchLanguage": "Sök språk...",
+    "noLanguageFound": "Inget språk hittades"
+  },
+  "hero": {
+    "badge": "Personlighetsbaserad matchning",
+    "title": "Upptäck karriärvägen som är byggd för hur ditt sinne fungerar.",
+    "titleAccent": "Drivs av AI & RIASEC-intelligens.",
+    "description": "En visuell, vetenskapligt underbyggd bedömning kartlägger hur du bygger, ifrågasätter, skapar, ansluter, leder och organiserar – och omvandlar sedan den profilen till lokala karriärvägar.",
+    "start": "Starta bedömningen",
+    "resume": "Återuppta bedömning",
+    "duration": "30 visuella val · cirka 6 minuter",
+    "privacy": "Inget konto. Inga personuppgifter. Dina framsteg sparas på denna enhet."
+  },
+  "dimensions": {
+    "label": "Din sex-signalsprofil",
+    "title": "Mer än en karriärtyp.",
+    "subtitle": "RIASEC mäter kombinationen av miljöer där dina intressen tenderar att blomstra.",
+    "signalsShort": "signaler",
+    "R": {
+      "name": "Realistisk",
+      "description": "Bygga, reparera och arbeta praktiskt."
+    },
+    "I": {
+      "name": "Undersökande",
+      "description": "Ifrågasätta, analysera och upptäcka."
+    },
+    "A": {
+      "name": "Artistisk",
+      "description": "Föreställa sig, uttrycka och designa."
+    },
+    "S": {
+      "name": "Social",
+      "description": "Lära ut, stödja och ansluta."
+    },
+    "E": {
+      "name": "Företagsam",
+      "description": "Leda, övertyga och initiera."
+    },
+    "C": {
+      "name": "Konventionell",
+      "description": "Organisera, verifiera och förbättra."
+    }
+  },
+  "location": {
+    "step": "Plats · Steg {{step}} av 2",
+    "titleCountry": "Var bygger du din framtid?",
+    "titleCity": "Vilken stad eller region ska forma dina rekommendationer?",
+    "descriptionCountry": "Välj ett land först. Vi använder det endast för att lokalisera karriärer, löner och utbildningsvägar.",
+    "descriptionCity": "Välj en stad, skriv en region, eller hoppa över detta steg för {{country}}.",
+    "searchCountry": "Sök länder",
+    "searchCity": "Sök städer",
+    "noResults": "Inga matchningar hittades.",
+    "back": "Tillbaka",
+    "confirm": "Starta för {{city}}, {{country}}",
+    "skipCity": "Fortsätt endast med {{country}}",
+    "useRegion": "Använd {{region}} som min region",
+    "close": "Stäng platsväljare",
+    "country": "Land",
+    "city": "Stad",
+    "selectCountry": "Välj land",
+    "selectCityOptional": "Välj stad (valfritt)",
+    "continue": "Fortsätt",
+    "noMatches": "Inga matchningar"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Matchade yrken",
+      "description": "Baserat på din RIASEC-profil matchar vi dig med karriärer som stämmer överens med dina intressen och styrkor."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC psykologiska modell",
+      "description": "Sex intressesignaler avslöjar hur du bygger, utforskar, skapar, ansluter, leder och organiserar."
+    },
+    "free": {
+      "value": "100% gratis",
+      "label": "Inget konto krävs",
+      "description": "Inget konto krävs. Dina framsteg sparas på denna enhet."
+    },
+    "groupLabel": "Careero höjdpunkter"
+  },
+  "howItWorks": {
+    "title": "Så fungerar Careero",
+    "subtitle": "3 enkla steg för att upptäcka dina skräddarsydda karriärvägar och utbildningsnav.",
+    "step1": {
+      "title": "Gör 30 visuella val",
+      "description": "Välj aktiviteter och arbetsmiljöer som stämmer överens med dina naturliga preferenser."
+    },
+    "step2": {
+      "title": "Pearson Vector Math Engine",
+      "description": "Beräknar Pearson r-korrelation mellan din 6-vektorprofil och {{count}} karriärvektorer."
+    },
+    "step3": {
+      "title": "Lås upp matchade vägar",
+      "description": "Få lokaliserade toppkarriärrekommendationer, löneinsikter och universitetsmatchningar."
+    }
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "subtitle": "Allt du behöver veta om Careero bedömningsmotor.",
+    "items": [
+      {
+        "q": "Hur fungerar RIASEC-bedömningen?",
+        "a": "RIASEC mäter intresse över 6 vektorer: Realistic, Investigative, Artistic, Social, Enterprising och Conventional. Dina 30 visuella val skapar en normaliserad profil. Careero rankar {{count}} yrken efter Pearson-korrelation – så olika intressemixar ger olika topp-10 karriärer."
+      },
+      {
+        "q": "Är min data privat och säker?",
+        "a": "Ja. Careero fungerar 100% lokalt i din webbläsare. Ingen kontoregistrering eller personlig data samlas in eller laddas upp till externa spårningsdatabaser."
+      },
+      {
+        "q": "Kan jag använda detta för att hitta universitet och stipendier?",
+        "a": "Absolut. Baserat på din matchade karriärprofil tillhandahåller Careero lokaliserade utbildningsprogram, toppregionala universitet och riktade stipendielänkar."
+      },
+      {
+        "q": "Hur lång tid tar bedömningen?",
+        "a": "Bedömningen består av 30 snabba visuella binära val och tar cirka 3 till 5 minuter att slutföra."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Global AI Karriärkompass & Utbildningsmatchningsplattform.",
+    "features": "Funktioner",
+    "howItWorks": "Så fungerar det",
+    "dimensions": "Dimensioner",
+    "faq": "FAQ",
+    "startAssessment": "Starta bedömning",
+    "copyright": "© 2026 Careero Platform. Byggd för öppen global utbildningsåtkomst."
+  },
+  "quiz": {
+    "questionOf": "Fråga {{current}} av {{total}}",
+    "percentComplete": "{{percent}}% klart",
+    "title": "Vad skulle du hellre göra?",
+    "subtitle": "Välj en aktivitet och betygsätt hur mycket du skulle tycka om den. (Tips: Dubbelklicka för att gå vidare till nästa fråga!)",
+    "or": "eller",
+    "choose": "Välj den aktivitet du skulle tycka mer om.",
+    "keyboardHint": "Tangentbord: A/B, 1–3, sedan Enter.",
+    "intensity": "Hur starkt passar detta?",
+    "okay": "Okej",
+    "like": "Gillar",
+    "love": "Älskar det",
+    "reactionJustOkay": "Bara okej",
+    "reactionGreat": "Toppen!",
+    "reactionLoveIt": "Älskar det!",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "nextQuestion": "Nästa fråga",
+    "finish": "Se min profil",
+    "reset": "Återställ framsteg",
+    "resumeTitle": "Din resa väntar.",
+    "sessionSaved": "Session sparad",
+    "resumeBody": "Fortsätt vid fråga {{question}} med alla tidigare svar återställda.",
+    "resume": "Återuppta",
+    "fresh": "Börja om"
+  },
+  "results": {
+    "label": "Din karriärsignal",
+    "title": "En profil byggd på det som ger dig energi.",
+    "cached": "Laddad från cache",
+    "live": "Färsk AI-insikt",
+    "topProfile": "Topprofil",
+    "localMatches": "Kontinuerliga karriärmatchningar",
+    "aiTitle": "Skolor och finansiering för {{profession}} nära {{location}}",
+    "aiLoading": "Hittar bra skolor, stipendier och program i bakgrunden…",
+    "aiUnavailable": "AI-insikter är inte tillgängliga, men dina lokala korrelationsmatchningar är redo.",
+    "refresh": "Uppdatera AI-insikter",
+    "retry": "Försök igen",
+    "skills": "Färdigheter att bygga",
+    "programs": "Stipendier och program",
+    "topProfession": "Topprekommendation",
+    "shareHeading": "Dela din karriärkaraktär",
+    "shareDescription": "Öppna ett kort du kan ladda ner eller posta – svar förblir privata.",
+    "shareTitle": "Mitt Careero-resultat",
+    "shareProfession": "Toppkarriär: {{profession}} · {{percent}}% matchning",
+    "shareText": "Min Careero-karaktär är {{archetype}} ({{code}}). Min toppkarriärmatchning är {{profession}} med {{percent}}%.",
+    "share": "Dela resultat",
+    "shareModalTitle": "Dela ditt resultat",
+    "shareModalSubtitle": "Förhandsgranska ditt kort · posta till berättelser eller spara för senare",
+    "shareToSocial": "Dela",
+    "downloadCard": "Ladda ner kort",
+    "sharing": "Delar…",
+    "savingCard": "Sparar…",
+    "shareDownloaded": "Delningskort nedladdat!",
+    "shareSavedCopied": "Kort sparat · bildtext kopierad!",
+    "shareClose": "Stäng",
+    "shared": "Delat",
+    "copied": "Kopierat",
+    "shareFailed": "Delning var inte tillgänglig.",
+    "sources": "Grundläggande källor",
+    "opensNewTab": "öppnas i en ny flik",
+    "startAgain": "Gör bedömningen igen",
+    "match": "{{percent}}% profilmatchning",
+    "archetypeBlurb": "Din starkaste mix är {{code}}. Skolor och stipendier nedan följer det mönstret när du öppnar ett yrke.",
+    "riasecScores": "RIASEC-poäng",
+    "patternNote": "Toppkombination: {{combo}}. Expandera ett yrke för att ladda skolor och stipendier.",
+    "matchesEyebrow": "Pearson 6-vektor",
+    "professionMatches": "Yrkesmatchningar för dig",
+    "matchesNote": "Rankade efter hur väl varje väg passar dig – inte en garanti för jobb eller antagning.",
+    "topMatchBadge": "Toppmatchning",
+    "professionLabel": "Yrke",
+    "whyPath": "Varför denna väg känns lovande",
+    "topSchools": "Toppskolor för denna väg",
+    "topScholarships": "Toppstipendier för detta yrke",
+    "visitSchool": "Besök skolans webbplats",
+    "openScholarship": "Öppna stipendium",
+    "noSchools": "Inga verifierade skolor hittades för denna plats ännu.",
+    "noScholarships": "Inga verifierade stipendier hittades för denna plats ännu.",
+    "archetypes": {
+      "pathfinder": "Vägfinnaren",
+      "creator": "Skaparen",
+      "strategist": "Strategen",
+      "visionary": "Visionären",
+      "analyst": "Analytikern",
+      "builder": "Byggaren",
+      "guardian": "Väktaren"
+    },
+    "tagAlignment": "{{dimension}}-anpassning",
+    "tagCampusFit": "{{dimension}}-campuspassning",
+    "tagKeywords": "{{count}} programnyckelord",
+    "tagKeywordsOne": "1 programnyckelord",
+    "tagFlagship": "Flaggskeppsalternativ",
+    "tagSystemsFit": "Stark systempassning",
+    "shareCardTopFit": "Toppkarriärpassning",
+    "shareCardMatch": "{{percent}}% matchning",
+    "shareCardSummary": "Ett kompakt Careero-profilkort – inga quizsvar ingår.",
+    "shareCardFooter": "careero · hitta karriären som passar dig"
+  }
+}

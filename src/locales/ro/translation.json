@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Inteligență de carieră, personalizată"
+  },
+  "nav": {
+    "language": "Limbă",
+    "clearData": "Șterge datele mele",
+    "home": "Acasă",
+    "howItWorks": "Cum funcționează",
+    "dimensions": "Dimensiuni",
+    "faq": "Întrebări frecvente",
+    "startAssessment": "Începe evaluarea",
+    "searchLanguage": "Caută limbă...",
+    "noLanguageFound": "Nicio limbă găsită"
+  },
+  "hero": {
+    "badge": "Potrivire bazată pe personalitate",
+    "title": "Descoperă calea profesională creată pentru modul în care funcționează mintea ta.",
+    "titleAccent": "Susținut de inteligență AI și RIASEC.",
+    "description": "O evaluare vizuală, susținută de știință, mapează modul în care construiești, pui întrebări, creezi, te conectezi, conduci și organizezi — apoi transformă acel profil în trasee de carieră locale.",
+    "start": "Începe evaluarea",
+    "resume": "Continuă evaluarea",
+    "duration": "30 de alegeri vizuale · aproximativ 6 minute",
+    "privacy": "Fără cont. Fără date personale. Progresul tău rămâne pe acest dispozitiv."
+  },
+  "dimensions": {
+    "label": "Profilul tău cu șase semnale",
+    "title": "Mai mult decât un singur tip de carieră.",
+    "subtitle": "RIASEC măsoară combinația de medii în care interesele tale tind să prospere.",
+    "signalsShort": "semnale",
+    "R": {
+      "name": "Realist",
+      "description": "Construiește, repară și lucrează practic."
+    },
+    "I": {
+      "name": "Investigativ",
+      "description": "Întreabă, analizează și descoperă."
+    },
+    "A": {
+      "name": "Artistic",
+      "description": "Imaginează, exprimă și proiectează."
+    },
+    "S": {
+      "name": "Social",
+      "description": "Predă, sprijină și conectează."
+    },
+    "E": {
+      "name": "Întreprinzător",
+      "description": "Conduce, convinge și inițiază."
+    },
+    "C": {
+      "name": "Convențional",
+      "description": "Organizează, verifică și îmbunătățește."
+    }
+  },
+  "location": {
+    "step": "Locație · Pasul {{step}} din 2",
+    "titleCountry": "Unde îți construiești viitorul?",
+    "titleCity": "Ce oraș sau regiune ar trebui să modeleze recomandările tale?",
+    "descriptionCountry": "Alege mai întâi o țară. O folosim doar pentru a localiza cariere, salarii și trasee de învățare.",
+    "descriptionCity": "Selectează un oraș, tastează o regiune sau sari peste acest pas pentru {{country}}.",
+    "searchCountry": "Caută țări",
+    "searchCity": "Caută orașe",
+    "noResults": "Niciun rezultat găsit.",
+    "back": "Înapoi",
+    "confirm": "Începe pentru {{city}}, {{country}}",
+    "skipCity": "Continuă doar cu {{country}}",
+    "useRegion": "Folosește {{region}} ca regiune",
+    "close": "Închide selectorul de locație",
+    "country": "Țară",
+    "city": "Oraș",
+    "selectCountry": "Selectează țara",
+    "selectCityOptional": "Selectează orașul (opțional)",
+    "continue": "Continuă",
+    "noMatches": "Nicio potrivire"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Ocupații potrivite",
+      "description": "Pe baza profilului tău RIASEC, te potrivim cu cariere care se aliniază intereselor și punctelor tale forte."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "Model psihologic RIASEC",
+      "description": "Șase semnale de interes dezvăluie modul în care construiești, explorezi, creezi, te conectezi, conduci și organizezi."
+    },
+    "free": {
+      "value": "100% Gratuit",
+      "label": "Fără cont necesar",
+      "description": "Nu este necesar un cont. Progresul evaluării rămâne pe acest dispozitiv."
+    },
+    "groupLabel": "Repere Careero"
+  },
+  "howItWorks": {
+    "title": "Cum funcționează Careero",
+    "subtitle": "3 pași simpli pentru a descoperi traseele de carieră și centrele educaționale adaptate ție.",
+    "step1": {
+      "title": "Fă 30 de alegeri vizuale",
+      "description": "Selectează activități și medii de lucru care rezonează cu preferințele tale naturale."
+    },
+    "step2": {
+      "title": "Motor matematic Pearson Vector",
+      "description": "Calculează corelația Pearson r între profilul tău cu 6 vectori și {{count}} vectori de carieră."
+    },
+    "step3": {
+      "title": "Deblochează traseele potrivite",
+      "description": "Primește recomandări de carieră localizate, informații despre salarii și potriviri universitare."
+    }
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce trebuie să știi despre motorul de evaluare Careero.",
+    "items": [
+      {
+        "q": "Cum funcționează evaluarea RIASEC?",
+        "a": "RIASEC măsoară interesul pe 6 vectori: Realist, Investigativ, Artistic, Social, Întreprinzător și Convențional. Cele 30 de selecții vizuale creează un profil normalizat. Careero clasifică {{count}} ocupații după corelația Pearson — astfel, combinații diferite de interese produc cariere top-10 diferite."
+      },
+      {
+        "q": "Datele mele sunt private și securizate?",
+        "a": "Da. Careero funcționează 100% local în browserul tău. Nu se colectează și nu se încarcă date personale sau înregistrări de cont în baze de date externe de urmărire."
+      },
+      {
+        "q": "Pot folosi asta pentru descoperirea universităților și a burselor?",
+        "a": "Absolut. Pe baza profilului tău de carieră potrivit, Careero oferă programe de studiu localizate, universități regionale de top și linkuri către burse țintite."
+      },
+      {
+        "q": "Cât durează evaluarea?",
+        "a": "Evaluarea constă din 30 de alegeri vizuale binare rapide și durează aproximativ 3 până la 5 minute."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Busolă globală de carieră AI și platformă de potrivire educațională.",
+    "features": "Funcții",
+    "howItWorks": "Cum funcționează",
+    "dimensions": "Dimensiuni",
+    "faq": "Întrebări frecvente",
+    "startAssessment": "Începe evaluarea",
+    "copyright": "© 2026 Platforma Careero. Construită pentru acces educațional global deschis."
+  },
+  "quiz": {
+    "questionOf": "Întrebarea {{current}} din {{total}}",
+    "percentComplete": "{{percent}}% complet",
+    "title": "Ce ai prefera să faci?",
+    "subtitle": "Alege o activitate și evaluează cât de mult ți-ar plăcea. (Sfat: Dublu-clic pentru a trece la următoarea întrebare!)",
+    "or": "sau",
+    "choose": "Alege activitatea pe care ai prefera-o mai mult.",
+    "keyboardHint": "Tastatură: A/B, 1–3, apoi Enter.",
+    "intensity": "Cât de bine se potrivește?",
+    "okay": "OK",
+    "like": "Îmi place",
+    "love": "Îmi place mult",
+    "reactionJustOkay": "Doar OK",
+    "reactionGreat": "Grozav!",
+    "reactionLoveIt": "Îmi place mult!",
+    "previous": "Anterior",
+    "next": "Următor",
+    "nextQuestion": "Următoarea întrebare",
+    "finish": "Vezi profilul meu",
+    "reset": "Resetează progresul",
+    "resumeTitle": "Călătoria ta te așteaptă.",
+    "sessionSaved": "Sesiune salvată",
+    "resumeBody": "Continuă la întrebarea {{question}} cu fiecare răspuns anterior restaurat.",
+    "resume": "Continuă",
+    "fresh": "Începe de la zero"
+  },
+  "results": {
+    "label": "Semnalul tău de carieră",
+    "title": "Un profil construit din ceea ce te energizează.",
+    "cached": "Încărcat din cache",
+    "live": "Perspectivă AI proaspătă",
+    "topProfile": "Profil principal",
+    "localMatches": "Potriviri de carieră cu potrivire continuă",
+    "aiTitle": "Școli și finanțare pentru {{profession}} lângă {{location}}",
+    "aiLoading": "Se caută școli, burse și programe puternice în fundal…",
+    "aiUnavailable": "Perspectivele AI nu sunt disponibile, dar potrivirile locale de corelație sunt gata.",
+    "refresh": "Reîmprospătează perspectivele AI",
+    "retry": "Încearcă din nou",
+    "skills": "Abilități de dezvoltat",
+    "programs": "Burse și programe",
+    "topProfession": "Recomandare principală",
+    "shareHeading": "Distribuie-ți caracterul de carieră",
+    "shareDescription": "Deschide un card pe care îl poți descărca sau posta — răspunsurile rămân private.",
+    "shareTitle": "Rezultatul meu Careero",
+    "shareProfession": "Carieră principală: {{profession}} · {{percent}}% potrivire",
+    "shareText": "Caracterul meu Careero este {{archetype}} ({{code}}). Potrivirea mea de carieră principală este {{profession}} la {{percent}}%.",
+    "share": "Distribuie rezultatul",
+    "shareModalTitle": "Distribuie rezultatul",
+    "shareModalSubtitle": "Previzualizează cardul · postează în stories sau salvează pentru mai târziu",
+    "shareToSocial": "Distribuie",
+    "downloadCard": "Descarcă cardul",
+    "sharing": "Se distribuie…",
+    "savingCard": "Se salvează…",
+    "shareDownloaded": "Card de distribuire descărcat!",
+    "shareSavedCopied": "Card salvat · text copiat!",
+    "shareClose": "Închide",
+    "shared": "Distribuit",
+    "copied": "Copiat",
+    "shareFailed": "Distribuirea nu a fost disponibilă.",
+    "sources": "Surse de fundamentare",
+    "opensNewTab": "se deschide într-un tab nou",
+    "startAgain": "Refă evaluarea",
+    "match": "{{percent}}% potrivire de profil",
+    "archetypeBlurb": "Combinația ta cea mai puternică este {{code}}. Școlile și bursele de mai jos urmează acel model când deschizi o profesie.",
+    "riasecScores": "Scoruri RIASEC",
+    "patternNote": "Combinație principală: {{combo}}. Extinde o profesie pentru a încărca școli și burse.",
+    "matchesEyebrow": "Pearson 6-vector",
+    "professionMatches": "Potriviri de profesie pentru tine",
+    "matchesNote": "Clasificate după cât de bine se potrivește fiecare traseu — nu o garanție de angajare sau admitere.",
+    "topMatchBadge": "Potrivire principală",
+    "professionLabel": "Profesie",
+    "whyPath": "De ce acest traseu pare promițător",
+    "topSchools": "Școli de top pentru acest traseu",
+    "topScholarships": "Burse de top pentru această profesie",
+    "visitSchool": "Vizitează site-ul școlii",
+    "openScholarship": "Deschide bursa",
+    "noSchools": "Nu s-au găsit încă școli verificate pentru această locație.",
+    "noScholarships": "Nu s-au găsit încă burse verificate pentru această locație.",
+    "archetypes": {
+      "pathfinder": "Exploratorul",
+      "creator": "Creatorul",
+      "strategist": "Strategul",
+      "visionary": "Vizionarul",
+      "analyst": "Analistul",
+      "builder": "Constructorul",
+      "guardian": "Gardianul"
+    },
+    "tagAlignment": "Aliniere {{dimension}}",
+    "tagCampusFit": "Potrivire campus {{dimension}}",
+    "tagKeywords": "{{count}} cuvinte cheie de program",
+    "tagKeywordsOne": "1 cuvânt cheie de program",
+    "tagFlagship": "Opțiune emblematică",
+    "tagSystemsFit": "Potrivire puternică de sisteme",
+    "shareCardTopFit": "Potrivire de carieră principală",
+    "shareCardMatch": "{{percent}}% potrivire",
+    "shareCardSummary": "Un card compact de profil Careero — fără răspunsuri la quiz incluse.",
+    "shareCardFooter": "careero · găsește cariera care ți se potrivește"
+  }
+}

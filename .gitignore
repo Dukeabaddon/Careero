@@ -9,7 +9,7 @@
 !**/.env.example
 .DS_Store
 npm-debug.log*
-**/graphify-out/cache/
+**/graphify-out/
 graphify-out/20*/
 
 # Moat task system
@@ -21,7 +21,6 @@ graphify-out/20*/
 # Temporary O*NET extracts
 Careero/tmp_onet/
 Careero/tmp_onet.zip
-
 
 # Windsurf configuration
 .windsurf/
@@ -35,5 +34,3 @@ docs/code01.md
 
 # Cursor local agent notes / arena scratch
 .cursor/
-
-graphify-out/

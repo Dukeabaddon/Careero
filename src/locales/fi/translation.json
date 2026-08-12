@@ -1,0 +1,240 @@
+{
+  "brand": {
+    "tagline": "Kariyerintäsmys, räätälöity sinulle"
+  },
+  "nav": {
+    "language": "Kieli",
+    "clearData": "Tyhjennä tietoni",
+    "home": "Koti",
+    "howItWorks": "Miten se toimii",
+    "dimensions": "Ulottuvuudet",
+    "faq": "UKK",
+    "startAssessment": "Aloita arviointi",
+    "searchLanguage": "Etsi kieltä...",
+    "noLanguageFound": "Kieltä ei löytynyt"
+  },
+  "hero": {
+    "badge": "Personaalipohjainen vastaavuus",
+    "title": "Löydä urapolku, joka on rakennettu mielesi toiminnan mukaan.",
+    "titleAccent": "Ohjattu tekoälyn ja RIASEC-älykkyyden avulla.",
+    "description": "Visuaalinen, tieteellisesti tukema arviointi kartoittaa, miten rakennat, kysyt, luot, yhdistät, johdat ja järjestät – ja muuntaa sen profiiliksi paikalliset urapolut.",
+    "start": "Aloita arviointi",
+    "resume": "Jatka arviointia",
+    "duration": "30 visuaalista valintaa · noin 6 minuuttia",
+    "privacy": "Ei tiliä. Ei henkilökohtaisia tietoja. Edistymäsi pysyy tässä laitteessa."
+  },
+  "dimensions": {
+    "label": "Sinun kuusi signaalia sisältävä profiili",
+    "title": "Enemmän kuin yksi uratyyppi.",
+    "subtitle": "RIASEC mittaa ympäristöjen yhdistelmää, joissa kiinnostuksesi kukoistaa.",
+    "signalsShort": "signaaleja",
+    "R": {
+      "name": "Realistinen",
+      "description": "Rakennat, korjaat ja työskentelet kätevästi."
+    },
+    "I": {
+      "name": "Tutkiva",
+      "description": "Kysyt, analysoit ja löydät."
+    },
+    "A": {
+      "name": "Taiteellinen",
+      "description": "Kuvittelet, ilmaiset ja suunnittelet."
+    },
+    "S": {
+      "name": "Sosiaalinen",
+      "description": "Opetat, tuet ja yhdistät."
+    },
+    "E": {
+      "name": "Kaupallinen",
+      "description": "Johtat, vakuutat ja aloitat."
+    },
+    "C": {
+      "name": "Perinteinen",
+      "description": "Järjestät, vahvistat ja parannat."
+    }
+  },
+  "location": {
+    "step": "Sijainti · Vaihe {{step}} / 2",
+    "titleCountry": "Missä rakennat tulevaisuuttasi?",
+    "titleCity": "Mikä kaupunki tai alue muotoilee suosituksesi?",
+    "descriptionCountry": "Valitse ensin maa. Käytämme sitä vain urien, palkan ja oppimispolkujen paikallistamiseen.",
+    "descriptionCity": "Valitse kaupunki, kirjoita alue tai ohita tämä vaihe {{country}}:lle.",
+    "searchCountry": "Etsi maita",
+    "searchCity": "Etsi kaupunkeja",
+    "noResults": "Ei löytynyt vastaavuuksia.",
+    "back": "Takaisin",
+    "confirm": "Aloita {{city}}, {{country}}:lle",
+    "skipCity": "Jatka vain {{country}}:lla",
+    "useRegion": "Käytä {{region}} alueellasi",
+    "close": "Sulje sijaintivalitsin",
+    "country": "Maa",
+    "city": "Kaupunki",
+    "selectCountry": "Valitse maa",
+    "selectCityOptional": "Valitse kaupunki (valinnainen)",
+    "continue": "Jatka",
+    "noMatches": "Ei vastaavuuksia"
+  },
+  "stats": {
+    "occupations": {
+      "value": "538",
+      "label": "Vastaavat ammatit",
+      "description": "RIASEC-profiilisi perusteella sovitamme sinut uriin, jotka vastaavat kiinnostuksen kohteitasi ja vahvuuksiasi."
+    },
+    "dimensions": {
+      "value": "6",
+      "label": "RIASEC-psykologinen malli",
+      "description": "Kuusi kiinnostuksen signaalia paljastaa, miten rakennat, tutkit, luot, yhdistät, johdat ja järjestät."
+    },
+    "free": {
+      "value": "100 % ilmainen",
+      "label": "Tiliä ei tarvita",
+      "description": "Tiliä ei tarvita. Arviointiasentumasi pysyy tässä laitteessa."
+    },
+    "groupLabel": "Careero:n kohokohdat"
+  },
+  "howItWorks": {
+    "title": "Miten Careero toimii",
+    "subtitle": "Kolme helppoa vaihetta räätälöityjen urapolkujen ja oppimisympäristöjen löytämiseen.",
+    "step1": {
+      "title": "Valitse 30 visuaalista vaihtoehtoa",
+      "description": "Valitse aktiviteetit ja työympäristöt, jotka sopivat luonnollisiin mieltymyksiisi."
+    },
+    "step2": {
+      "title": "Pearsonin vektori- matemaattinen moottori",
+      "description": "Laskee Pearson r -korrelaation 6-vektoriprofiilisi ja {{count}} uravektorin välillä."
+    },
+    "step3": {
+      "title": "Avaa vastaavat polut",
+      "description": "Saat paikallisia parhaimpia urasuosituksia, palkkatietoja ja yliopistovastaavuuksia."
+    }
+  },
+  "faq": {
+    "title": "Usein kysytyt kysymykset",
+    "subtitle": "Kaikki, mitä sinun tarvitsee tietää Careero:n arviointimoottorista.",
+    "items": [
+      {
+        "q": "Miten RIASEC-arviointi toimii?",
+        "a": "RIASEC mittaa kiinnostusta 6 vektoriin: Realistinen, Tutkiva, Taiteellinen, Sosiaalinen, Kaupallinen ja Perinteinen. 30 visuaalista valintaa luo normalisoidun profiilin. Careero sijoittaa {{count}} ammattia Pearsonin korrelaation mukaan – eri kiinnostuksen sekoitukset tuottavat erilaisia top-10-uravaihtoehtoja."
+      },
+      {
+        "q": "Onko tietoni yksityisiä ja turvassa?",
+        "a": "Kyllä. Careero toimii 100 % paikallisesti selaimessasi. Tiliä ei rekisteröidä eikä henkilökohtaisia tietoja kerätä tai ladata ulkoisiin seurantadatoihin."
+      },
+      {
+        "q": "Voinko käyttää tätä yliopiston ja apurahojen löytämiseen?",
+        "a": "Totta kai. Vastaavan uraprosessisi perusteella Careero tarjoaa paikallisia tutkintoharjoja, parhaat alueelliset yliopistot ja kohdennetut apurahalinkit."
+      },
+      {
+        "q": "Kuinka kauan arviointi kestää?",
+        "a": "Arviointi koostuu 30 nopeasta visuaalisesta binäärivalinnasta ja kestää noin 3–5 minuuttia."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Globaali tekoälypohjainen urakompassi ja oppimismuuntamisalusta.",
+    "features": "Ominaisuudet",
+    "howItWorks": "Miten se toimii",
+    "dimensions": "Ulottuvuudet",
+    "faq": "UKK",
+    "startAssessment": "Aloita arviointi",
+    "copyright": "© 2026 Careero Platform. Rakennettu avoimeen globaaliseen koulutukseen."
+  },
+  "quiz": {
+    "questionOf": "Kysymys {{current}} / {{total}}",
+    "percentComplete": "{{percent}} % valmis",
+    "title": "Mitä haluaisit tehdä?",
+    "subtitle": "Valitse yksi aktiviteetti ja arvioi, kuinka paljon nautit siitä. (Vinkki: Kaksoisnapsauta siirtyäksesi seuraavaan kysymykseen!)",
+    "or": "tai",
+    "choose": "Valitse aktiviteetti, josta nautit enemmän.",
+    "keyboardHint": "Näppäimistö: A/B, 1–3, sitten Enter.",
+    "intensity": "Kuinka vahvasti tämä sopii?",
+    "okay": "Hyvä",
+    "like": "Tykkään",
+    "love": "Rakastan",
+    "reactionJustOkay": "Vain ok",
+    "reactionGreat": "Mahtavaa!",
+    "reactionLoveIt": "Rakastan sitä!",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "nextQuestion": "Seuraava kysymys",
+    "finish": "Näytä profiilini",
+    "reset": "Nollaa edistys",
+    "resumeTitle": "Matkasi odottaa.",
+    "sessionSaved": "Istunto tallennettu",
+    "resumeBody": "Jatka kysymyksestä {{question}} ja kaikki aiemmat vastaukset palautetaan.",
+    "resume": "Jatka",
+    "fresh": "Aloita alusta"
+  },
+  "results": {
+    "label": "Uraprofiilisi signaali",
+    "title": "Profiili, joka perustuu siihen, mikä sinut energisoi.",
+    "cached": "Ladattu välimuistista",
+    "live": "Tuore tekoälyn näkemys",
+    "topProfile": "Parhaimmaksi profiili",
+    "localMatches": "Jatkuva sopivuus uravastaavuuksiin",
+    "aiTitle": "Koulut ja rahoitus {{profession}}:lle lähellä {{location}}",
+    "aiLoading": "Etsitään vahvoja kouluja, apurahoja ja ohjelmia taustalla…",
+    "aiUnavailable": "Tekoälyn näkemykset eivät ole käytettävissä, mutta paikalliset korrelaatiovastaavuudet ovat valmiita.",
+    "refresh": "Päivitä tekoälyn näkemykset",
+    "retry": "Yritä uudelleen",
+    "skills": "Kehitettävät taidot",
+    "programs": "Apurahat ja ohjelmat",
+    "topProfession": "Parhaiten suositeltu",
+    "shareHeading": "Jaa uraprosessisi",
+    "shareDescription": "Avaa kortti, jonka voit ladata tai jakaa – vastaukset pysyvät yksityisinä.",
+    "shareTitle": "Minun Careero-tulokseni",
+    "shareProfession": "Parhaimmaksi uraksi: {{profession}} · {{percent}} % vastaavuus",
+    "shareText": "Careero-ominaisuuteni on {{archetype}} ({{code}}). Parhaimmaksi uravastaavuudeksi on {{profession}} {{percent}} %.",
+    "share": "Jaa tulos",
+    "shareModalTitle": "Jaa tuloksesi",
+    "shareModalSubtitle": "Esikatsele korttiasi · jaa tarinoihin tai tallenna myöhemmin",
+    "shareToSocial": "Jaa",
+    "downloadCard": "Lataa kortti",
+    "sharing": "Jaetaan…",
+    "savingCard": "Tallennetaan…",
+    "shareDownloaded": "Jaa kortti ladattu!",
+    "shareSavedCopied": "Kortti tallennettu · otsikko kopioitu!",
+    "shareClose": "Sulje",
+    "shared": "Jaettu",
+    "copied": "Kopioitu",
+    "shareFailed": "Jakaminen ei ollut käytettävissä.",
+    "sources": "Perustelulähteet",
+    "opensNewTab": "avautuu uuteen välilehteen",
+    "startAgain": "Ota arviointi uudelleen",
+    "match": "{{percent}} % profiili-sopivuus",
+    "archetypeBlurb": "Suurin sekoituksesi on {{code}}. Alla olevat koulut ja apurahat noudattavat tätä mallia, kun avaat ammatin.",
+    "riasecScores": "RIASEC-pisteet",
+    "patternNote": "Parhaimmaksi yhdistelmä: {{combo}}. Laajenna ammatin lataaksesi koulut ja apurahat.",
+    "matchesEyebrow": "Pearson 6-vektori",
+    "professionMatches": "Ammattiluokat sinulle",
+    "matchesNote": "Sijoitettu sen mukaan, kuinka hyvin jokainen polku sopii sinulle – ei työtä tai hyväksyntää takaa.",
+    "topMatchBadge": "Parhaimmaksi vastaavuus",
+    "professionLabel": "Ammatti",
+    "whyPath": "Miksi tämä polku tuntuu lupaavalta",
+    "topSchools": "Parhaimmat koulut tälle polulle",
+    "topScholarships": "Parhaimmat apurahat tälle ammatille",
+    "visitSchool": "Käy koulun verkkosivustolla",
+    "openScholarship": "Avaa apuraha",
+    "noSchools": "Tälle sijainnille ei ole vielä vahvistettuja kouluja.",
+    "noScholarships": "Tälle sijainnille ei ole vielä vahvistettuja apurahoja.",
+    "archetypes": {
+      "pathfinder": "Polkuja etsijä",
+      "creator": "Luova",
+      "strategist": "Strategi",
+      "visionary": "Visio",
+      "analyst": "Analyytikko",
+      "builder": "Rakentaja",
+      "guardian": "Suojaaja"
+    },
+    "tagAlignment": "{{dimension}} tasaus",
+    "tagCampusFit": "{{dimension}} kampus-sopivuus",
+    "tagKeywords": "{{count}} ohjelma-avainsanat",
+    "tagKeywordsOne": "1 ohjelma-avainsana",
+    "tagFlagship": "Etusijalla oleva vaihtoehto",
+    "tagSystemsFit": "Vahva järjestelmä-sopivuus",
+    "shareCardTopFit": "Parhaimmaksi urasopivuus",
+    "shareCardMatch": "{{percent}} % vastaavuus",
+    "shareCardSummary": "Kompakti Careero-profiilikortti – kyselyvastauksia ei sisälly.",
+    "shareCardFooter": "careero · löydä sinulle sopiva ura"
+  }
+}

@@ -248,3 +248,14 @@
   color: var(--text);
 }
 
+.choice-card-select {
+  font: inherit;
+  color: inherit;
+}
+
+.choice-card-select:focus-visible {
+  outline: 2px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+

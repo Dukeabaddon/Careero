@@ -38,7 +38,9 @@ Where:
 - $\bar{u}$ and $\bar{c}$ are the vector means.
 
 #### Match Percentage Formula:
-$$\text{MatchPercent} = \text{Math.round}\left( \frac{r(u, c) + 1}{2} \times 100 \right)$$
+$$\text{MatchPercent} = \text{Math.round}\left( \max(0, r(u, c)) \times 100 \right)$$
+
+This is a readable alignment score, not a probability of career success. Negative correlations are shown as `0%` rather than being shifted into a misleading positive percentage.
 
 ---
 

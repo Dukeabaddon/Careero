@@ -51,7 +51,10 @@
     "C": {
       "name": "慣習的",
       "description": "整理し、確認し、改善する。"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "地域 · 2ステップ中{{step}}",
@@ -90,7 +93,9 @@
       "label": "アカウント不要",
       "description": "アカウント不要。診断の進捗はこの端末に保存されます。"
     },
-    "groupLabel": "Careeroの特長"
+    "groupLabel": "Careeroの特長",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careeroの仕組み",

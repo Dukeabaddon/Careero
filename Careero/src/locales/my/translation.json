@@ -51,7 +51,10 @@
     "C": {
       "name": "ရိုးရာသမား",
       "description": "စီစဉ်ခြင်း၊ စစ်ဆေးခြင်းနှင့် တိုးတက်အောင်လုပ်ဆောင်ခြင်း။"
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "တည်နေရာ · အဆင့် {{step}} / ၂",
@@ -90,7 +93,9 @@
       "label": "အကောင့်မလိုအပ်ပါ",
       "description": "အကောင့်မလိုအပ်ပါ။ သင်၏အကဲဖြတ်မှု တိုးတက်မှုသည် ဤစက်ပစ္စည်းပေါ်တွင်သာ ရှိနေမည်။"
     },
-    "groupLabel": "Careero ၏ ထူးခြားချက်များ"
+    "groupLabel": "Careero ၏ ထူးခြားချက်များ",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero အလုပ်လုပ်ပုံ",

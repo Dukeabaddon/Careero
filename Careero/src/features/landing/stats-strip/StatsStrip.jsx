@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { CAREER_COUNT } from '../../../data/careers.js'
 import { CompassStatIcon, EngineerStatIcon, UnlockStatIcon } from './StatFeatureIcons.jsx'
 import { scrollRevealProps } from '../shared/scrollReveal.js'
+import { sectionSubtitleClass, sectionTitleClass } from '../shared/sectionHeading.js'
 import './StatsStrip.css'
 
 export default function StatsStrip() {
@@ -11,6 +12,11 @@ export default function StatsStrip() {
   return (
     <section className="stats-showcase" id="features">
       <div className="stats-showcase-shell">
+        <div className="stats-showcase-heading section-wrap">
+          <h2 className={sectionTitleClass}>{t('stats.title')}</h2>
+          <p className={sectionSubtitleClass}>{t('stats.subtitle')}</p>
+        </div>
+
         <div
           className="stats-showcase-grid section-wrap"
           role="group"

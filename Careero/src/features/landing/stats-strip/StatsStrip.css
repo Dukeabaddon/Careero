@@ -16,6 +16,16 @@
   background: #bcccf1;
 }
 
+.stats-showcase-heading {
+  text-align: center;
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+.stats-showcase-heading .section-subtitle,
+.stats-showcase-heading p {
+  color: #2e3866;
+}
+
 .stats-showcase-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

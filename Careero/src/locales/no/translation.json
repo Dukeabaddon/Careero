@@ -51,7 +51,10 @@
     "C": {
       "name": "Konvensjonell",
       "description": "Organisere, verifisere og forbedre."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Sted · Trinn {{step}} av 2",
@@ -90,7 +93,9 @@
       "label": "Ingen konto kreves",
       "description": "Ingen konto kreves. Fremdriften din forblir på denne enheten."
     },
-    "groupLabel": "Careero høydepunkter"
+    "groupLabel": "Careero høydepunkter",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Slik fungerer Careero",

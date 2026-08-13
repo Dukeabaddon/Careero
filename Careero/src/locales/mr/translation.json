@@ -51,7 +51,10 @@
     "C": {
       "name": "पारंपारिक",
       "description": "व्यवस्थित करा, पडताळा आणि सुधारा."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "स्थान · पायरी {{step}} / 2",
@@ -90,7 +93,9 @@
       "label": "खाते आवश्यक नाही",
       "description": "खाते आवश्यक नाही. तुमची मूल्यांकन प्रगती या डिव्हाइसवर राहते."
     },
-    "groupLabel": "Careero हायलाइट्स"
+    "groupLabel": "Careero हायलाइट्स",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero कसे कार्य करते",

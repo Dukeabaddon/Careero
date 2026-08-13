@@ -51,7 +51,10 @@
     "C": {
       "name": "பாரம்பரிய",
       "description": "ஒழுங்குபடுத்து, சரிபார் மற்றும் மேம்படுத்து."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "இடம் · படி {{step}} / 2",
@@ -90,7 +93,9 @@
       "label": "கணக்கு தேவையில்லை",
       "description": "கணக்கு தேவையில்லை. உங்கள் மதிப்பீட்டு முன்னேற்றம் இந்த சாதனத்திலேயே இருக்கும்."
     },
-    "groupLabel": "Careero சிறப்பம்சங்கள்"
+    "groupLabel": "Careero சிறப்பம்சங்கள்",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero எப்படி செயல்படுகிறது",

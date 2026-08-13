@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const localesDir = path.join(projectRoot, 'src', 'locales')
 const baseLanguage = 'en'
-const languagesModuleUrl = pathToFileURL(path.join(projectRoot, 'src', 'i18n', 'languages.js')).href
+const languagesModuleUrl = pathToFileURL(path.join(projectRoot, 'src', 'features', 'i18n', 'languages.js')).href
 
 const { LANGUAGES } = await import(languagesModuleUrl)
 

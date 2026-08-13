@@ -51,7 +51,10 @@
     "C": {
       "name": "관습형",
       "description": "조직하고, 확인하며, 개선합니다."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "위치 · 2단계 중 {{step}}단계",
@@ -90,7 +93,9 @@
       "label": "계정 필요 없음",
       "description": "계정 필요 없음. 당신의 평가 진행 상황은 이 기기에 저장됩니다."
     },
-    "groupLabel": "Careero 주요 내용"
+    "groupLabel": "Careero 주요 내용",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero 작동 방식",

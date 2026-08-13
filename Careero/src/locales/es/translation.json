@@ -51,7 +51,10 @@
     "C": {
       "name": "Convencional",
       "description": "Organizar, verificar y mejorar."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Ubicación · Paso {{step}} de 2",
@@ -90,7 +93,9 @@
       "label": "Sin cuenta requerida",
       "description": "Sin cuenta. Tu progreso se guarda solo en este dispositivo."
     },
-    "groupLabel": "Aspectos destacados de Careero"
+    "groupLabel": "Aspectos destacados de Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Cómo funciona Careero",

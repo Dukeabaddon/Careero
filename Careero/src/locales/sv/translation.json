@@ -51,7 +51,10 @@
     "C": {
       "name": "Konventionell",
       "description": "Organisera, verifiera och förbättra."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Plats · Steg {{step}} av 2",
@@ -90,7 +93,9 @@
       "label": "Inget konto krävs",
       "description": "Inget konto krävs. Dina framsteg sparas på denna enhet."
     },
-    "groupLabel": "Careero höjdpunkter"
+    "groupLabel": "Careero höjdpunkter",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Så fungerar Careero",

@@ -51,7 +51,10 @@
     "C": {
       "name": "සාම්ප්‍රදායික",
       "description": "සංවිධානය, සත්‍යාපනය, සහ වර්ධනය."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "ස්ථානය · පියවර {{step}} / 2",
@@ -90,7 +93,9 @@
       "label": "ගිණුමක් අවශ්‍ය නැත",
       "description": "ගිණුමක් අවශ්‍ය නැත. ඔබගේ ඇගයීමේ ප්‍රගතිය මෙම උපාංගයේ පවතිනවා."
     },
-    "groupLabel": "Careero ප්‍රධාන ලක්ෂණ"
+    "groupLabel": "Careero ප්‍රධාන ලක්ෂණ",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero ක්‍රියා කරන ආකාරය",

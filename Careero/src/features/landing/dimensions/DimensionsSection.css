@@ -1,98 +1,394 @@
 .dimensions {
-  --book-asset-width: min(31.25rem, 42vw);
-  --book-asset-right: -300px;
-  --book-asset-bottom: -24px;
-  --book-asset-opacity: 1;
-  padding-block: 80px;
-}
-.dimensions-book-asset {
-  position: absolute;
-  right: var(--book-asset-right);
-  bottom: var(--book-asset-bottom);
-  z-index: 10;
-  pointer-events: none;
-  opacity: var(--book-asset-opacity);
-}
-
-.dimensions-book-asset img {
-  width: var(--book-asset-width);
-  height: auto;
-  filter: drop-shadow(0 18px 28px rgba(15, 23, 42, 0.12));
-}
-
-.dimension-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr 1fr;
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.dimension-card {
+  --grid-chip-size: clamp(108px, 11cqw, 148px);
+  --grid-chip-radius: 13px;
+  --detail-panel-width: 460px;
+  --detail-image-width: 280px;
+  --detail-image-height: clamp(260px, 24vw, 320px);
+  --riasec-chip-border: #9490c4;
+  --dimensions-blue: #e8f1ff;
+  --dimensions-blue-deep: #dbeafe;
   position: relative;
-  min-height: 290px;
-  overflow: hidden;
-  padding: 24px;
-  border: 1px solid var(--border-strong);
-  border-radius: 24px;
-  background: var(--surface);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 3;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: clamp(48px, 8vw, 80px);
 }
 
-.dimension-card img {
+.dimensions-shell {
+  position: relative;
   width: 100%;
-  height: 160px;
-  object-fit: contain;
-  opacity: 1;
-  transform: none !important;
-  transition: none;
+  padding: clamp(56px, 6vw, 88px) clamp(16px, 5.5vw, 80px);
+  border-radius: 32px;
+  overflow: hidden;
 }
 
-.dimension-card>div {
+.dimensions-split-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--surface);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.dimensions-split-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--dimensions-blue) 0%,
+    color-mix(in srgb, var(--dimensions-blue-deep) 88%, var(--surface)) 100%
+  );
+  /* Blue slice is wider at the top and tapers narrower toward the bottom */
+  clip-path: polygon(0 0, 55% 0, 40% 100%, 0 100%);
+}
+
+.dimensions-inner {
   position: relative;
-  z-index: 2;
-  inset: auto;
-  margin-top: 12px;
+  z-index: 1;
 }
 
-.dimension-card span {
-  color: var(--primary);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
+.dimension-explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--detail-panel-width);
+  grid-template-rows: auto auto;
+  gap: clamp(24px, 3vw, 36px) clamp(48px, 8vw, 120px);
+  align-items: start;
+  justify-content: center;
 }
 
-.dimension-card h3 {
-  margin: 4px 0 6px;
+.dimension-section-heading {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: min(100%, 420px);
+  text-align: left;
+}
+
+.dimension-section-title {
+  margin: 0;
   font-family: "Outfit", sans-serif;
-  font-size: 1.45rem;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
   color: var(--text);
 }
 
-.dimension-card p {
-  margin: 0;
+.dimension-section-subtitle {
+  margin: 14px 0 0;
+  max-width: 38ch;
   color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-@media (max-width: 960px) {
-  .dimension-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.55;
 }
 
-@media (max-width: 720px) {
+.dimension-grid {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(2, var(--grid-chip-size));
+  grid-template-rows: repeat(3, auto);
+  gap: 12px;
+  width: calc(var(--grid-chip-size) * 2 + 12px);
+}
+
+.dimension-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: var(--grid-chip-size);
+  min-width: var(--grid-chip-size);
+  max-width: var(--grid-chip-size);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dimension-grid-media {
+  display: block;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: var(--grid-chip-size);
+  height: auto;
+  border-radius: var(--grid-chip-radius);
+  overflow: hidden;
+  background: #f4f5f7;
+  border: 1px solid var(--border);
+  line-height: 0;
+  transform: scale(0.96);
+  transform-origin: center center;
+  transition:
+    border-color 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    background-color 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    transform 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    box-shadow 480ms cubic-bezier(0.42, 0, 0.18, 1);
+}
+
+.dimension-grid-item.is-active .dimension-grid-media {
+  border-color: var(--riasec-chip-border);
+  background: var(--surface);
+  transform: scale(1);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.dimension-grid-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  transition:
+    filter 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    opacity 480ms cubic-bezier(0.42, 0, 0.18, 1);
+}
+
+.dimension-grid-item:not(.is-active) .dimension-grid-media img {
+  filter: grayscale(1) saturate(0.35) brightness(1.08);
+  opacity: 0.72;
+}
+
+.dimension-grid-name {
+  width: 100%;
+  max-width: var(--grid-chip-size);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--muted);
+  transition:
+    color 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    opacity 480ms cubic-bezier(0.42, 0, 0.18, 1),
+    transform 480ms cubic-bezier(0.42, 0, 0.18, 1);
+  transform: translateY(1px);
+}
+
+.dimension-grid-item:not(.is-active) .dimension-grid-name {
+  opacity: 0.55;
+}
+
+.dimension-grid-item.is-active .dimension-grid-name {
+  color: var(--text);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dimension-detail-panel {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: var(--detail-panel-width);
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.dimension-detail-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: calc(var(--detail-image-width) + 20px);
+  height: calc(var(--detail-image-height) + 20px);
+  min-width: calc(var(--detail-image-width) + 20px);
+  min-height: calc(var(--detail-image-height) + 20px);
+  max-width: calc(var(--detail-image-width) + 20px);
+  max-height: calc(var(--detail-image-height) + 20px);
+  padding: 10px;
+  border: 2px solid var(--riasec-chip-border);
+  border-radius: 18px;
+  background: #fff9f2;
+  overflow: hidden;
+}
+
+.dimension-detail-image {
+  position: absolute;
+  inset: 10px;
+  display: block;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: contain;
+  object-position: center;
+  transform-origin: center center;
+}
+
+/* Per-image zoom inside the fixed frame — class lives on each img so exits keep their scale */
+.dimension-detail-image--r {
+  transform: scale(1.1);
+}
+
+.dimension-detail-image--s {
+  transform: scale(1.2);
+}
+
+.dimension-detail-image--e {
+  transform: scale(1.28);
+}
+
+.dimension-detail-copy {
+  position: relative;
+  width: 100%;
+  min-height: 22rem;
+  overflow: visible;
+}
+
+.dimension-detail-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dimension-detail-archetype {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dimension-detail-name {
+  margin: 8px 0 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.1rem, 3.4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  color: var(--text);
+}
+
+.dimension-detail-description {
+  margin: 0;
+  min-height: 4.5em;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.dimension-detail-examples {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.dimension-detail-examples-label {
+  margin: 0 0 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.dimension-detail-examples ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dimension-detail-examples li {
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--surface-raised);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+@media (max-width: 1200px) {
   .dimensions {
-    --book-asset-width: min(9.5rem, 34vw);
-    --book-asset-right: -18px;
-    --book-asset-bottom: -8px;
-    --book-asset-opacity: 0.42;
-    padding-block: 80px;
+    --grid-chip-size: clamp(100px, 10cqw, 136px);
+  }
+}
+
+@media (max-width: 960px) {
+  .dimensions-shell {
+    border-radius: 24px;
+    padding-inline: 12px;
+  }
+
+  .dimensions-split-bg::before {
+    clip-path: polygon(0 0, 100% 0, 100% 64%, 0 54%);
+  }
+
+  .dimension-explorer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 28px;
+  }
+
+  .dimension-section-heading {
+    grid-column: 1;
+    grid-row: auto;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .dimension-section-subtitle {
+    max-width: 100%;
+  }
+
+  .dimension-detail-panel {
+    grid-column: 1;
+    grid-row: auto;
+    align-self: auto;
+    width: 100%;
+    max-width: var(--detail-panel-width);
+    justify-self: center;
+  }
+
+  .dimension-detail-visual {
+    align-self: center;
   }
 
   .dimension-grid {
-    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .dimensions {
+    --detail-image-width: min(280px, calc(100vw - 56px));
+  }
+
+  .dimension-grid {
+    gap: 10px;
+  }
+
+  .dimensions {
+    --grid-chip-size: clamp(92px, 30vw, 124px);
+  }
+
+  .dimension-grid-name {
+    font-size: 0.72rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dimension-grid-media,
+  .dimension-grid-media img,
+  .dimension-grid-name {
+    transition: none;
+    transform: none;
+  }
+
+  .dimension-grid-item.is-active .dimension-grid-media {
+    box-shadow: none;
   }
 }

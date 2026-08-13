@@ -51,7 +51,10 @@
     "C": {
       "name": "קונבנציונלי",
       "description": "ארגן, אמת ושפר."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "מיקום · שלב {{step}} מתוך 2",
@@ -90,7 +93,9 @@
       "label": "ללא צורך בחשבון",
       "description": "ללא צורך בחשבון. התקדמות ההערכה שלך נשארת במכשיר זה."
     },
-    "groupLabel": "דגשי Careero"
+    "groupLabel": "דגשי Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "איך Careero עובד",

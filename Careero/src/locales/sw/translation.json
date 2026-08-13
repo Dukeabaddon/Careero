@@ -51,7 +51,10 @@
     "C": {
       "name": "Kimila",
       "description": "Panga, thibitisha, na boresha."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Mahali · Hatua ya {{step}} kati ya 2",
@@ -90,7 +93,9 @@
       "label": "Hakuna Akaunti Inayohitajika",
       "description": "Hakuna akaunti inayohitajika. Maendeleo ya tathmini yako yanabaki kwenye kifaa hiki."
     },
-    "groupLabel": "Vivutio vya Careero"
+    "groupLabel": "Vivutio vya Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Jinsi Careero Inavyofanya Kazi",

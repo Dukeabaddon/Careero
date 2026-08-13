@@ -51,7 +51,10 @@
     "C": {
       "name": "Konvenční",
       "description": "Organizovat, ověřovat a zlepšovat."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "Místo · Krok {{step}} ze 2",
@@ -90,7 +93,9 @@
       "label": "Není vyžadován účet",
       "description": "Není vyžadován účet. Váš pokrok v hodnocení zůstává na tomto zařízení."
     },
-    "groupLabel": "Přednosti Careero"
+    "groupLabel": "Přednosti Careero",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Jak Careero funguje",

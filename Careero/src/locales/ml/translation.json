@@ -51,7 +51,10 @@
     "C": {
       "name": "പരമ്പരാഗത",
       "description": "സംഘടിപ്പിക്കുക, സ്ഥിരീകരിക്കുക, മെച്ചപ്പെടുത്തുക."
-    }
+    },
+    "carouselLabel": "RIASEC interest dimensions",
+    "examplesLabel": "Example careers",
+    "orbitPaused": "Paused — resumes in a moment"
   },
   "location": {
     "step": "സ്ഥലം · ഘട്ടം {{step}} of 2",
@@ -90,7 +93,9 @@
       "label": "അക്കൗണ്ട് ആവശ്യമില്ല",
       "description": "അക്കൗണ്ട് ആവശ്യമില്ല. നിങ്ങളുടെ അസസ്മെന്റ് പുരോഗതി ഈ ഉപകരണത്തിൽ തന്നെ നിലനിൽക്കും."
     },
-    "groupLabel": "Careero ഹൈലൈറ്റുകൾ"
+    "groupLabel": "Careero ഹൈലൈറ്റുകൾ",
+    "title": "What powers your matches",
+    "subtitle": "Three signals behind every top-ten list—before you expand a single career for schools or scholarships."
   },
   "howItWorks": {
     "title": "Careero എങ്ങനെ പ്രവർത്തിക്കുന്നു",

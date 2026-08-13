@@ -92,8 +92,11 @@ export default function Assessment({
 
   const selectOptionAndRatingRef = useRef(selectOptionAndRating)
   const moveNextRef = useRef(moveNext)
-  selectOptionAndRatingRef.current = selectOptionAndRating
-  moveNextRef.current = moveNext
+
+  useEffect(() => {
+    selectOptionAndRatingRef.current = selectOptionAndRating
+    moveNextRef.current = moveNext
+  })
 
   useAssessmentKeyboard({
     enabled: hasLocation,

@@ -2,7 +2,10 @@
 .env.*
 coverage
 docs
+dump
 graphify-out
-tests
-tmp_onet
-tmp_onet.zip
+Careero/coverage
+Careero/docs
+Careero/tmp_onet
+Careero/tmp_onet.zip
+Careero/tests

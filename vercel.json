@@ -4,7 +4,7 @@
   "buildCommand": "npm --prefix Careero run build",
   "outputDirectory": "Careero/dist",
   "functions": {
-    "Careero/api/v1/recommendations.js": {
+    "api/v1/recommendations.js": {
       "maxDuration": 90
     }
   },
